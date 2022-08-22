@@ -17,7 +17,7 @@ How and what to install and/or download...
 <h2>Component structure</h2>
 Description of components in more classic way - like https://ihor-doroschenko.github.io/#section-modules
 <br />
-(Based on one component group of the Compare Tool)
+Currently it is based on one component group of the Compare Tool. The typical description consists of component name, path, info text, props & methods section and the source code. It is also intended to add hook & HOC & utils section to describe all the hooks, HOCs and utils used in the components.
 <h2>Settings</h2>
 <h3>Configuration Options</h3>
 How to configure the code of the app with all steps behind it...
