@@ -19,7 +19,7 @@ Description of components in more classic way - like https://ihor-doroschenko.gi
 <br /><br />
 Currently it is based on one component group of the Compare Tool. The typical description consists of component name, path, info text, props & methods section and the source code. It is also intended to add hook & HOC & utils section to describe all the hooks, HOCs and utils used in the components.
 <br /><br />
-Of course, the textes should be discussed in the future.
+Of course, the textes are still a matter of discussions.
 <h2>Settings</h2>
 <h3>Configuration Options</h3>
 How to configure the code of the app with all steps behind it...
