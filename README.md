@@ -18,8 +18,6 @@ How and what to install and/or download...
 Description of components in more classic way - like https://ihor-doroschenko.github.io/
 <br />
 (Based on one component group of the Compare Tool)
-<br /><br />
-Or alternative component tree like https://bkrem.github.io/react-d3-tree/ - fake data example
 <h2>Settings</h2>
 <h3>Configuration Options</h3>
 How to configure the code of the app with all steps behind it...
