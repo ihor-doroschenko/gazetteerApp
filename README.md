@@ -15,7 +15,7 @@ How to use the app...
 <h2>Installation/Download</h2>
 How and what to install and/or download...
 <h2>Component structure</h2>
-Description of components in more classic way - like https://ihor-doroschenko.github.io/
+Description of components in more classic way - like [https://ihor-doroschenko.github.io/](https://ihor-doroschenko.github.io/#section-modules)
 <br />
 (Based on one component group of the Compare Tool)
 <h2>Settings</h2>
