@@ -23,7 +23,7 @@ What dependencies does the app have...
 
 | name  | version |  link  |
 | ------------- | ------------- | ------------- |
-| @fortawesome/fontawesome-svg-core  | ^1.2.30  | https://www.npmjs.com/package/@fortawesome/fontawesome-svg-core  |
+| <a href="https://www.npmjs.com/package/@fortawesome/fontawesome-svg-core" >@fortawesome/fontawesome-svg-core</a>  | ^1.2.30  | https://www.npmjs.com/package/@fortawesome/fontawesome-svg-core  |
 | @fortawesome/free-solid-svg-icons  | ^5.14.0  | https://www.npmjs.com/package/@fortawesome/free-solid-svg-icons  |
 
 
