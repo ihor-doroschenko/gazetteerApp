@@ -21,10 +21,10 @@ How to configure the code of the app with all steps behind it...
 What dependencies does the app have...
 <br />
 
-| name  | version |
-| ------------- | ------------- |
-| @fortawesome/fontawesome-svg-core  | ^1.2.30  |
-| @fortawesome/free-solid-svg-icons  | ^5.14.0  |
+| name  | version |  link  |
+| ------------- | ------------- | ------------- |
+| @fortawesome/fontawesome-svg-core  | ^1.2.30  | https://www.npmjs.com/package/@fortawesome/fontawesome-svg-core  |
+| @fortawesome/free-solid-svg-icons  | ^5.14.0  | https://www.npmjs.com/package/@fortawesome/free-solid-svg-icons  |
 
 
 |name   | version  | link  |  description |
