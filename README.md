@@ -16,7 +16,12 @@ How to use the app...
 How and what to install and/or download...
 <h2>Settings</h2>
 <h3>Configuration Options</h3>
-How to configure the code of the app with all steps behind it...
+Steps to start the development process:
+<br />
+<br />
+1. Download the code ot clone the directory.
+<br />
+2. 
 <h3>Dependencies</h3>
 List of the dependencies:
 
