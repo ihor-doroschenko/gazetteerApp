@@ -27,7 +27,7 @@ List of the dependencies:
 | <a href="https://www.npmjs.com/package/@fortawesome/free-solid-svg-icons" >@fortawesome/free-solid-svg-icons</a>  | ^5.14.0  | FontAwesome SVG solid icons component  |
 | <a href="https://www.npmjs.com/package/@fortawesome/react-fontawesome" >@fortawesome/react-fontawesome</a>  | ^0.1.11  | Font Awesome 5 React component  |
 | <a href="https://www.npmjs.com/package/@material-ui/core" >@material-ui/core</a>  | ^4.11.3  | Material UI core component  |
-| <a href="https://www.npmjs.com/package/@material-ui/core" >@testing-library/jest-dom</a>  | ^5.11.10  | Custom jest matchers to test the state of the DOM  |
+| <a href="https://www.npmjs.com/package/@testing-library/jest-dom" >@testing-library/jest-dom</a>  | ^5.11.10  | Custom jest matchers to test the state of the DOM  |
 
 List of the development dependencies:
 | name  | version |  description  |
