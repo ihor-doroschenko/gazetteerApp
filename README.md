@@ -52,7 +52,13 @@ List of the dependencies:
 | <a href="https://www.npmjs.com/package/react-scripts" >react-scripts</a>  | 3.2.0  | Configuration and scripts for Create React App |
 | <a href="https://www.npmjs.com/package/react-slick" >react-slick</a>  | ^0.28.0  | React port of slick carousel |
 | <a href="https://www.npmjs.com/package/react-table-6" >react-table-6</a>  | ^6.11.0  | A fast, lightweight, opinionated table and datagrid built on React |
-| <a href="https://www.npmjs.com/package/react-tabs" >react-table-6</a>  | ^3.2.0  | An accessible and easy tab component for ReactJS |
+| <a href="https://www.npmjs.com/package/react-tabs" >react-tabs</a>  | ^3.2.0  | An accessible and easy tab component for ReactJS |
+| <a href="https://www.npmjs.com/package/redux" >redux</a>  | ^4.0.5  | Predictable state container for JavaScript apps |
+| <a href="https://www.npmjs.com/package/redux-thunk" >redux-thunk</a>  | ^2.3.0  | Thunk middleware for Redux |
+| <a href="https://www.npmjs.com/package/remove-accents" >remove-accents</a>  | ^0.4.2  | Converting the accented characters to their corresponding non-accented ASCII characters |
+| <a href="https://www.npmjs.com/package/reselect" >reselect</a>  | ^4.0.0  | Selectors for Redux |
+| <a href="https://www.npmjs.com/package/scroll-into-view-if-needed" >scroll-into-view-if-needed</a>  | ^2.2.26  | Ponyfill for upcoming Element.scrollIntoView() APIs |
+| <a href="https://www.npmjs.com/package/slick-carousel" >slick-carousel</a>  | ^1.8.1  | Slick carousel original package |
 
 List of the development dependencies:
 | name  | version |  description  |
