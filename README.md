@@ -28,6 +28,9 @@ List of the dependencies:
 | <a href="https://www.npmjs.com/package/@fortawesome/react-fontawesome" >@fortawesome/react-fontawesome</a>  | ^0.1.11  | Font Awesome 5 React component  |
 | <a href="https://www.npmjs.com/package/@material-ui/core" >@material-ui/core</a>  | ^4.11.3  | Material UI core component  |
 | <a href="https://www.npmjs.com/package/@testing-library/jest-dom" >@testing-library/jest-dom</a>  | ^5.11.10  | Custom jest matchers to test the state of the DOM  |
+| <a href="https://www.npmjs.com/package/antd" >antd</a>  | ^4.16.7  | An enterprise-class UI design language and React UI library  |
+| <a href="https://www.npmjs.com/package/axios" >axios</a>  | ^0.19.2  | Promise based HTTP client for the browser and node.js  |
+| <a href="https://www.npmjs.com/package/classnames" >classnames</a>  | ^2.2.6  | A simple JavaScript utility for conditionally joining classNames together  |
 
 List of the development dependencies:
 | name  | version |  description  |
