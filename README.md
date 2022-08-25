@@ -21,7 +21,7 @@ How to configure the code of the app with all steps behind it...
 What dependencies does the app have...
 <br />
 
-| First Header  | Second Header |
+| name  | version |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
