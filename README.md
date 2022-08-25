@@ -33,6 +33,11 @@ List of the dependencies:
 | <a href="https://www.npmjs.com/package/classnames" >classnames</a>  | ^2.2.6  | A simple JavaScript utility for conditionally joining classNames together  |
 | <a href="https://www.npmjs.com/package/export-from-json" >export-from-json</a>  | ^1.6.0  | Export to plain text, css, html, json, csv, xls, xml files from JSON  |
 | <a href="https://www.npmjs.com/package/html-react-parser" >html-react-parser</a>  | ^0.14.0  | HTML to React parser  |
+| <a href="https://www.npmjs.com/package/leaflet" >leaflet</a>  | ^1.6.0  | JavaScript library for interactive maps  |
+| <a href="https://www.npmjs.com/package/leaflet-draw" >leaflet-draw</a>  | ^1.0.4  | Vector drawing plugin for Leaflet  |
+| <a href="https://www.npmjs.com/package/npm-watch" >npm-watch</a>  | ^0.6.0  | Run scripts from package.json when files change  |
+| <a href="https://www.npmjs.com/package/react" >react</a>  | ^16.13.1  | JavaScript library for building user interfaces  |
+| <a href="https://www.npmjs.com/package/react-csv" >react</a>  | ^2.0.3  | Build CSV files on the fly basing on Array/literal object of data  |
 
 List of the development dependencies:
 | name  | version |  description  |
