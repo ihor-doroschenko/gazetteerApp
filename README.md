@@ -41,6 +41,18 @@ List of the dependencies:
 | <a href="https://www.npmjs.com/package/react-dom" >react-dom</a>  | ^16.13.1  | React package for working with the DOM  |
 | <a href="https://www.npmjs.com/package/react-fast-compare" >react-fast-compare</a>  | ^3.2.0  | Fastest deep equal comparison for React |
 | <a href="https://www.npmjs.com/package/react-img-zoom" >react-img-zoom</a>  | ^0.1.0  | A React component to zoom images on hover |
+| <a href="https://www.npmjs.com/package/react-leaflet" >react-leaflet</a>  | ^2.7.0  | React components for Leaflet maps |
+| <a href="https://www.npmjs.com/package/react-leaflet-control" >react-leaflet-control</a>  | ^2.1.2  | Dumb Empty Component for control with react leaflet |
+| <a href="https://www.npmjs.com/package/react-leaflet-draw" >react-leaflet-draw</a>  | ^0.19.0  | React component for leaflet-draw |
+| <a href="https://www.npmjs.com/package/dudesuh-react-leaflet-markercluster" >react-leaflet-markercluster</a>  | ^2.0.0  | React wrapper of Leaflet.markercluster for react-leaflet |
+| <a href="https://www.npmjs.com/package/react-measure" >react-leaflet-markercluster</a>  | ^2.5.2  | Compute measurements of React components |
+| <a href="https://www.npmjs.com/package/react-redux" >react-redux</a>  | ^7.2.0  | React bindings for Redux |
+| <a href="https://www.npmjs.com/package/react-resizable" >react-resizable</a>  | ^1.11.0  | A component that is resizable with handles |
+| <a href="https://www.npmjs.com/package/react-router-dom" >react-router-dom</a>  | ^5.2.0  | Declarative routing for React web applications |
+| <a href="https://www.npmjs.com/package/react-scripts" >react-scripts</a>  | 3.2.0  | Configuration and scripts for Create React App |
+| <a href="https://www.npmjs.com/package/react-slick" >react-slick</a>  | ^0.28.0  | React port of slick carousel |
+| <a href="https://www.npmjs.com/package/react-table-6" >react-table-6</a>  | ^6.11.0  | A fast, lightweight, opinionated table and datagrid built on React |
+| <a href="https://www.npmjs.com/package/react-tabs" >react-table-6</a>  | ^3.2.0  | An accessible and easy tab component for ReactJS |
 
 List of the development dependencies:
 | name  | version |  description  |
