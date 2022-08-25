@@ -31,6 +31,8 @@ List of the dependencies:
 | <a href="https://www.npmjs.com/package/antd" >antd</a>  | ^4.16.7  | An enterprise-class UI design language and React UI library  |
 | <a href="https://www.npmjs.com/package/axios" >axios</a>  | ^0.19.2  | Promise based HTTP client for the browser and node.js  |
 | <a href="https://www.npmjs.com/package/classnames" >classnames</a>  | ^2.2.6  | A simple JavaScript utility for conditionally joining classNames together  |
+| <a href="https://www.npmjs.com/package/export-from-json" >export-from-json</a>  | ^1.6.0  | Export to plain text, css, html, json, csv, xls, xml files from JSON  |
+| <a href="https://www.npmjs.com/package/html-react-parser" >html-react-parser</a>  | ^0.14.0  | HTML to React parser  |
 
 List of the development dependencies:
 | name  | version |  description  |
