@@ -37,7 +37,10 @@ List of the dependencies:
 | <a href="https://www.npmjs.com/package/leaflet-draw" >leaflet-draw</a>  | ^1.0.4  | Vector drawing plugin for Leaflet  |
 | <a href="https://www.npmjs.com/package/npm-watch" >npm-watch</a>  | ^0.6.0  | Run scripts from package.json when files change  |
 | <a href="https://www.npmjs.com/package/react" >react</a>  | ^16.13.1  | JavaScript library for building user interfaces  |
-| <a href="https://www.npmjs.com/package/react-csv" >react</a>  | ^2.0.3  | Build CSV files on the fly basing on Array/literal object of data  |
+| <a href="https://www.npmjs.com/package/react-csv" >react-csv</a>  | ^2.0.3  | Build CSV files on the fly basing on Array/literal object of data  |
+| <a href="https://www.npmjs.com/package/react-dom" >react-dom</a>  | ^16.13.1  | React package for working with the DOM  |
+| <a href="https://www.npmjs.com/package/react-fast-compare" >react-fast-compare</a>  | ^3.2.0  | Fastest deep equal comparison for React |
+| <a href="https://www.npmjs.com/package/react-img-zoom" >react-img-zoom</a>  | ^0.1.0  | A React component to zoom images on hover |
 
 List of the development dependencies:
 | name  | version |  description  |
