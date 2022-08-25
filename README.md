@@ -19,13 +19,13 @@ How and what to install and/or download...
 How to configure the code of the app with all steps behind it...
 <h3>Dependencies</h3>
 What dependencies does the app have...
-
+<br />
 |name   | version  | link  |  description |
 |---|---|---|---|---|
 |@fortawesome/fontawesome-svg-core   | ^1.2.30  | https://www.npmjs.com/package/@fortawesome/fontawesome-svg-core  | FontAwesome SVG icons core package |
 |@fortawesome/free-solid-svg-icons   | ^5.14.0  | https://www.npmjs.com/package/@fortawesome/free-solid-svg-icons  | FontAwesome SVG solid icons package |
 |   |   |   |   |
-
+<br />
 <h2>Component structure</h2>
 Description of components in more classic way - like https://ihor-doroschenko.github.io/#section-modules
 <br /><br />
