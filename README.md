@@ -45,7 +45,7 @@ List of the dependencies:
 | <a href="https://www.npmjs.com/package/react-leaflet-control" >react-leaflet-control</a>  | ^2.1.2  | Dumb Empty Component for control with react leaflet |
 | <a href="https://www.npmjs.com/package/react-leaflet-draw" >react-leaflet-draw</a>  | ^0.19.0  | React component for leaflet-draw |
 | <a href="https://www.npmjs.com/package/dudesuh-react-leaflet-markercluster" >react-leaflet-markercluster</a>  | ^2.0.0  | React wrapper of Leaflet.markercluster for react-leaflet |
-| <a href="https://www.npmjs.com/package/react-measure" >react-leaflet-markercluster</a>  | ^2.5.2  | Compute measurements of React components |
+| <a href="https://www.npmjs.com/package/react-measure" >react-leaflet-measure</a>  | ^2.5.2  | Compute measurements of React components |
 | <a href="https://www.npmjs.com/package/react-redux" >react-redux</a>  | ^7.2.0  | React bindings for Redux |
 | <a href="https://www.npmjs.com/package/react-resizable" >react-resizable</a>  | ^1.11.0  | A component that is resizable with handles |
 | <a href="https://www.npmjs.com/package/react-router-dom" >react-router-dom</a>  | ^5.2.0  | Declarative routing for React web applications |
