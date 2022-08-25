@@ -19,20 +19,20 @@ How and what to install and/or download...
 How to configure the code of the app with all steps behind it...
 <h3>Dependencies</h3>
 List of the dependencies:
-<br />
-<br />
+
+
 | name  | version |  description  |
 | ------------- | ------------- | ------------- |
 | <a href="https://www.npmjs.com/package/@fortawesome/fontawesome-svg-core" >@fortawesome/fontawesome-svg-core</a>  | ^1.2.30  | FontAwesome SVG icons core package  |
 | <a href="https://www.npmjs.com/package/@fortawesome/free-solid-svg-icons" >@fortawesome/free-solid-svg-icons</a>  | ^5.14.0  | FontAwesome SVG solid icons package  |
-<br />
-<br />
+
+
 List of the development dependencies:
 | name  | version |  description  |
 | ------------- | ------------- | ------------- |
 | <a href="https://www.npmjs.com/package/@testing-library/react" >@testing-library/react</a>  | ^11.2.6  | React DOM testing library  |
 | <a href="https://www.npmjs.com/package/json-server" >json-server</a>  | ^0.16.3  | Full fake REST API  |
-<br />
+
 <h2>Component structure</h2>
 Description of components in more classic way - like https://ihor-doroschenko.github.io/#section-modules
 <br /><br />
