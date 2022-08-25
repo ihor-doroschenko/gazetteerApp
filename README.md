@@ -20,6 +20,13 @@ How to configure the code of the app with all steps behind it...
 <h3>Dependencies</h3>
 What dependencies does the app have...
 <br />
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+
 |name   | version  | link  |  description |
 |---|---|---|---|---|
 |@fortawesome/fontawesome-svg-core   | ^1.2.30  | https://www.npmjs.com/package/@fortawesome/fontawesome-svg-core  | FontAwesome SVG icons core package |
