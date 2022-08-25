@@ -23,8 +23,8 @@ What dependencies does the app have...
 
 | name  | version |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| @fortawesome/fontawesome-svg-core  | ^1.2.30  |
+| @fortawesome/free-solid-svg-icons  | ^5.14.0  |
 
 
 |name   | version  | link  |  description |
