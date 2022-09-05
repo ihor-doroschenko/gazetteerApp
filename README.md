@@ -15,7 +15,7 @@ How to use the app...
 <h2>Installation/Download</h2>
 How and what to install and/or download...
 <h2>Settings</h2>
-<h3>Configuration Options</h3>
+<h3>Configuration for development</h3>
 Steps to start the development process:
 <br />
 <br />
@@ -26,6 +26,12 @@ Steps to start the development process:
 3. Download and install Node.js and npm <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">here</a> or <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">here</a>
 <br />
 4. Open terminal in your IDE and install dependencies via command npm install (description of the command is <a href="https://docs.npmjs.com/cli/v8/commands/npm-install">here</a>
+<br />
+5. Run fake json server with dummy data (data.json located in the root directory) using following command in the terminal:
+```
+npx json-server --watch data.json --port 8000
+```
+<h3>Configuration for production</h3>
 <h3>Dependencies</h3>
 List of the dependencies:
 
