@@ -19,33 +19,59 @@ How and what to install and/or download...
 Steps to start the development process:
 <br />
 <br />
-1. Download the code ot clone the directory.
+1. Download the code or clone the directory.
 <br />
 2. Open folder in an IDE (for example, MS Visual Studio Code).
 <br />
-3. Download and install Node.js and npm <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">here</a> or <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">here</a>
+3. Download and install Node.js and npm <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">here</a> or <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">here</a>.
 <br />
-4. Open terminal in your IDE and install dependencies using following command (description of the command is <a href="https://docs.npmjs.com/cli/v8/commands/npm-install">here</a>):<br /><br />
-
+4. Open terminal in your IDE and install dependencies using following command:<br /><br />
 
 ```
 npm install
 ```
-
-5. Create full fake REST API with dummy data (data.json located in the root directory) using following command in the terminal:
+<br />
+5. Create full fake REST API with dummy data (data.json located in the root directory) using following command in the terminal:<br /><br />
 
 ```
 npx json-server --watch data.json --port 8000
 ```
-
-6. Run local server using following command (description of the command is <a href="https://docs.npmjs.com/cli/v8/commands/npm-start">here</a>):
+<br />
+6. Run local server using following command:<br /><br />
 
 ```
 npm start
 ```
-
-7. Enjoy the development process :wink:
+<br />
+7. Enjoy the development process :wink: .
 <h3>Configuration for production</h3>
+Steps to create production build:
+<br />
+<br />
+1. Download the code or clone the directory.
+<br />
+2. Open folder in an IDE (for example, MS Visual Studio Code).
+<br />
+3. Download and install Node.js and npm <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">here</a> or <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">here</a>.
+<br />
+4. Open terminal in your IDE and install dependencies using following command:<br /><br />
+
+```
+npm install
+```
+<br />
+5. Make changes in code (optional).
+<br />
+6. Create an optimized updated build using following command:<br /><br />
+
+```
+npm run build
+```
+<br />
+7. Push your build to the server (you can find the build forder in root directory).
+<br />
+8. Reload your page and enjoy new version of the app :sunglasses: .
+<br />
 <h3>Dependencies</h3>
 List of the dependencies:
 
