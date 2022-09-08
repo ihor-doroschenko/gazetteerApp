@@ -270,11 +270,11 @@ Usually means renaming of the attributes (for example, attribute containing spat
 Below the normalization operations for each gazetteer specificly are listed.<br /><br />
 1. Geonames.<br />
 
- * Coercing of the value of the "geonameId" attribute to string data type
- * Renaming "geonameId" attribute to "id"
- * Renaming "fclName" attribute to "type"
- * Renaming "alternateNames" attribute to "variant names"
- * Combining the attributes "lat" and "lng" into one attribute "position". Coercing the coordinates to float number data type.
+ * Coercing of the value of the `geonameId` attribute to string data type
+ * Renaming `geonameId` attribute to `id`
+ * Renaming `fclName` attribute to `type`
+ * Renaming `alternateNames` attribute to `variant names`
+ * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
 
 <h2>License</h2>
 ...
