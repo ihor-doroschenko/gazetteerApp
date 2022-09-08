@@ -128,11 +128,17 @@ Currently it is based on one component group of the Compare Tool. The typical de
 <br /><br />
 Of course, the textes are still a matter of discussion.
 <h2>Data processing (Front End)</h2>
-<h3>Specification of data</h3>
+<h3>Data documentation</h3>
 Gazetteer data are sent from the server to the client in JavaScript syntax as array with objects inside it. Each of them represents one entity.<br /><br />
 Here are 
 
-```
+1. Geonames<br /><br />
+ * More about Geonames data specification you can read <a href="http://download.geonames.org/export/dump/readme.txt">here</a>.
+ * Example of the data retrieved from the server is here:<br /><br />
+<details>
+  <summary>Geonames</summary>
+  
+  ```
 [{
     "timezone": {
         "gmtOffset": 1,
@@ -207,6 +213,10 @@ Here are
     "link": "https:\/\/www.geonames.org\/763166"
 }]
 ```
+
+</details>
+
+
 <br />
 <h3>Normalization</h3>
 ...
