@@ -265,10 +265,15 @@ More about GOV data specification you can read <a href="https://wiki.genealogy.n
 <br />
 ...
 <h3>Normalization</h3>
-After the client retrieved the data, they are normalized. In this case, it means minimal processing for the representation and/or client-side tools.<br />
-Usually means renaming of the attributes (for example, attribute containing spatial information - it can be named as "position" or as "coordinates", but the component expects to get uniform name). However, in some cases it can mean processing of the values of the attributes (spatil information can be stored as strings, but the component expects it to be numbers).<br />
+After the client retrieved the data, they are normalized. In this case, it means minimal processing for the representation and/or client-side tools.<br /><br />
+Usually means renaming of the attributes (for example, attribute containing spatial information - it can be named as "position" or as "coordinates", but the component expects to get uniform name). However, in some cases it can mean processing of the values of the attributes (spatil information can be stored as strings, but the component expects it to be numbers).<br /><br />
 Below the normalization operations for each gazetteer specificly are listed.<br />
 <h4>Geonames</h4>
+List of the development dependencies:
+| name  | version |  description  |
+| ------------- | ------------- | ------------- |
+| <a href="https://www.npmjs.com/package/@testing-library/react" >@testing-library/react</a>  | ^11.2.6  | React DOM testing library  |
+| <a href="https://www.npmjs.com/package/json-server" >json-server</a>  | ^0.16.3  | Full fake REST API  |
 
 <h2>License</h2>
 ...
