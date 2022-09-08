@@ -129,14 +129,96 @@ Currently it is based on one component group of the Compare Tool. The typical de
 Of course, the textes are still a matter of discussion.
 <h2>Data processing (Front End)</h2>
 <h3>Data documentation</h3>
-Gazetteer data are sent from the server to the client in JavaScript syntax as array with objects inside it. Each of them represents one entity.<br /><br />
-Here are 
+Gazetteer data are sent from the server to the client in JavaScript syntax as array with objects inside it. Each of objects represents one entity.<br /><br />
+Here are basics about the gazetteer data being retrieved from the server (gazetteer specific).
 
-1. Geonames<br /><br />
- * More about Geonames data specification you can read <a href="http://download.geonames.org/export/dump/readme.txt">here</a>.
- * Example of the data retrieved from the server is here:<br /><br />
+<h4>Geonames</h4>
+More about Geonames data specification you can read <a href="http://download.geonames.org/export/dump/readme.txt">here</a>.<br /><br />
 <details>
-  <summary>Geonames</summary>
+  <summary>Snapshot</summary>
+  
+  ```
+[{
+    "timezone": {
+        "gmtOffset": 1,
+        "timeZoneId": "Europe\/Warsaw",
+        "dstOffset": 2
+    },
+    "bbox": {
+        "east": 20.585284545557002,
+        "south": 53.726174801599285,
+        "north": 53.83372319840072,
+        "west": 20.403039454442997,
+        "accuracyLevel": 2
+    },
+    "asciiName": "Olsztyn",
+    "astergdem": 145,
+    "countryId": "798544",
+    "fcl": "P",
+    "srtm3": 139,
+    "score": 94.48225402832031,
+    "adminId2": "7530990",
+    "adminId3": "7532914",
+    "countryCode": "PL",
+    "adminCodes1": {
+        "ISO3166_2": "28"
+    },
+    "adminId1": "858791",
+    "lat": "53.77995",
+    "fcode": "PPLA",
+    "continentCode": "EU",
+    "adminCode2": "2862",
+    "adminCode3": "286201",
+    "adminCode1": "85",
+    "lng": "20.49416",
+    "geonameId": 763166,
+    "toponymName": "Olsztyn",
+    "population": 171803,
+    "adminName5": "",
+    "adminName4": "",
+    "adminName3": "Olsztyn",
+    "alternateNames": [{
+        "isPreferredName": true,
+        "name": "Olsztyn",
+        "lang": "de"
+    }, {
+        "name": "Olsztyn",
+        "lang": "en"
+    }, {
+        "name": "QYO",
+        "lang": "iata"
+    }, {
+        "name": "https:\/\/en.wikipedia.org\/wiki\/Olsztyn",
+        "lang": "link"
+    }, {
+        "name": "Olsztyn",
+        "lang": "pl"
+    }, {
+        "name": "Ольштын",
+        "lang": "ru"
+    }, {
+        "name": "PLOLS",
+        "lang": "unlc"
+    }, {
+        "name": "Q82765",
+        "lang": "wkdt"
+    }],
+    "adminName2": "Olsztyn",
+    "name": "Olsztyn",
+    "fclName": "city, village,...",
+    "countryName": "Poland",
+    "fcodeName": "seat of a first-order administrative division",
+    "adminName1": "Warmia-Masuria",
+    "link": "https:\/\/www.geonames.org\/763166"
+}]
+```
+
+</details>
+
+<h4>GOV</h4>[
+More about GOV data specification you can read <a href="https://wiki.genealogy.net/GOV/Webservice">here</a>.<br /><br />
+<details>
+  <summary>Snapshot</summary>
   
   ```
 [{
