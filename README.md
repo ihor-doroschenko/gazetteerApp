@@ -266,7 +266,7 @@ More about GOV data specification you can read <a href="https://wiki.genealogy.n
 ...
 <h3>Normalization</h3>
 After the client retrieved the data, they are normalized. In this case, it means minimal processing for modular representation as well as client-side tools.<br /><br />
-Usually means renaming of the attributes (for example, attribute containing spatial information - it can be named as "position" or as "coordinates", but the component expects to get uniform name). However, in some cases it can mean processing of the values of the attributes (spatial information can be stored as strings, but the component expects it to be numbers).<br /><br />
+Usually means renaming of the attributes (for example, attribute containing spatial information - it can be named as `position` or as `coordinates`, but the component expects to get uniform name). However, in some cases it can mean processing of the values of the attributes (spatial information can be stored as strings, but the component expects it to be numbers).<br /><br />
 Below the normalization operations for each gazetteer specificly are listed.<br /><br />
 1. Geonames.<br />
 
