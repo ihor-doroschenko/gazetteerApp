@@ -215,93 +215,61 @@ More about Geonames data specification you can read <a href="http://download.geo
 
 </details>
 
-<h4>GOV</h4>[
+<h4>GOV</h4>
 More about GOV data specification you can read <a href="https://wiki.genealogy.net/GOV/Webservice">here</a>.<br /><br />
 <details>
   <summary>Snapshot</summary>
   
   ```
 [{
-    "timezone": {
-        "gmtOffset": 1,
-        "timeZoneId": "Europe\/Warsaw",
-        "dstOffset": 2
+    "id": "ALLER2KO03GS",
+    "last-modification": "2006-12-16T13:57:43.000+01:00",
+    "position": {
+        "lon": 20.5167,
+        "lat": 53.7833,
+        "type": "p"
     },
-    "bbox": {
-        "east": 20.585284545557002,
-        "south": 53.726174801599285,
-        "north": 53.83372319840072,
-        "west": 20.403039454442997,
-        "accuracyLevel": 2
-    },
-    "asciiName": "Olsztyn",
-    "astergdem": 145,
-    "countryId": "798544",
-    "fcl": "P",
-    "srtm3": 139,
-    "score": 94.48225402832031,
-    "adminId2": "7530990",
-    "adminId3": "7532914",
-    "countryCode": "PL",
-    "adminCodes1": {
-        "ISO3166_2": "28"
-    },
-    "adminId1": "858791",
-    "lat": "53.77995",
-    "fcode": "PPLA",
-    "continentCode": "EU",
-    "adminCode2": "2862",
-    "adminCode3": "286201",
-    "adminCode1": "85",
-    "lng": "20.49416",
-    "geonameId": 763166,
-    "toponymName": "Olsztyn",
-    "population": 171803,
-    "adminName5": "",
-    "adminName4": "",
-    "adminName3": "Olsztyn",
-    "alternateNames": [{
-        "isPreferredName": true,
-        "name": "Olsztyn",
-        "lang": "de"
+    "name": [{
+        "source": {
+            "note": "Wohnplatz 1.1",
+            "ref": "source_190237"
+        },
+        "lang": "deu",
+        "value": "Grünberg"
     }, {
-        "name": "Olsztyn",
-        "lang": "en"
-    }, {
-        "name": "QYO",
-        "lang": "iata"
-    }, {
-        "name": "https:\/\/en.wikipedia.org\/wiki\/Olsztyn",
-        "lang": "link"
-    }, {
-        "name": "Olsztyn",
-        "lang": "pl"
-    }, {
-        "name": "Ольштын",
-        "lang": "ru"
-    }, {
-        "name": "PLOLS",
-        "lang": "unlc"
-    }, {
-        "name": "Q82765",
-        "lang": "wkdt"
+        "lang": "pol",
+        "value": "Olsztyn\/Osiedle Grunwaldzkie"
     }],
-    "adminName2": "Olsztyn",
-    "name": "Olsztyn",
-    "fclName": "city, village,...",
-    "countryName": "Poland",
-    "fcodeName": "seat of a first-order administrative division",
-    "adminName1": "Warmia-Masuria",
-    "link": "https:\/\/www.geonames.org\/763166"
+    "type": {
+        "value": "129"
+    },
+    "postal-code": {
+        "value": "PL-10-062",
+        "year": 2004
+    },
+    "w-number": {
+        "value": "50311"
+    },
+    "part-of": {
+        "source": {
+            "ref": "source_190237"
+        },
+        "ref": "ALLEINKO03FS"
+    },
+    "link": "http:\/\/gov.genealogy.net\/item\/show\/ALLER2KO03GS"
 }]
 ```
 
 </details>
 
-
 <br />
-<h3>Normalization</h3>
 ...
+<h3>Normalization</h3>
+After the client retrieved the data, they are normalized. In this case, it means minimal processing for the representation and/or client-side tools.<br />
+Usually means renaming of the attributes (for example, attribute containing spatial information - it can be named as "position" or as "coordinates", but the component expects to get uniform name). However, in some cases it can mean processing of the values of the attributes (spatil information can be stored as strings, but the component expects it to be numbers).<br />
+Below the normalization operations for each gazetteer specificly are listed.<br />
+<h4>Geonames</h4>
+
 <h2>License</h2>
 ...
 <h2>Acknowledgements</h2>
