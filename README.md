@@ -273,8 +273,14 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
  * Coercing of the value of the `geonameId` attribute to string data type
  * Renaming `geonameId` attribute to `id`
  * Renaming `fclName` attribute to `type`
- * Renaming `alternateNames` attribute to `variant names`
  * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
+<br />
+2. GOV.<br />
+
+ * Renaming `lon` attribute in `position` to `lng`. Coercing the coordinates to float number data type.
+ * Reference `type` attribute from number code to unit (e.g. from `2` to ['Amtsbezirk', '(politische) Verwaltung']). Entire list is <a href="http://gov.genealogy.net/type/list">here</a>
+ * Re-creating `name` attribute. Already existing `name` attribute contains multiple names and is to understand more as "all appliable names". As the component expects each entity to have one name to show it both in table and on the map and because this attribute does not exist in GOV gazetteer, it is created on the fly. The first name in `name` attribute is taken, all other ones are considered as "all other appliable names" and are saved in separate attribute `names`.
+ * Coercing value of `id` attribute to string data type.
 
 <h2>License</h2>
 ...
