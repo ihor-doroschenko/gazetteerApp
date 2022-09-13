@@ -281,7 +281,7 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
  * Reference `type` attribute from number code to unit (e.g. from `2` to ['Amtsbezirk', '(politische) Verwaltung']). Entire list is <a href="http://gov.genealogy.net/type/list">here</a>.
  * Re-creating `name` attribute. Already existing `name` attribute contains multiple names and is to understand more as "all appliable names". As the component expects each entity to have one name to show it both in table and on the map and because this attribute does not exist in GOV gazetteer, it is created on the fly. The first name in `name` attribute is taken, all other ones are considered as "all other appliable names" and are saved in separate attribute `names`.
  * Coercing value of `id` attribute to string data type.
-
+<br />
 3. GND.<br />
 
  * Extracting coordinates from `hasGeometry` attribute, coercing it to float number data type, and save it under new created `position` attribute.
@@ -289,7 +289,7 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
  * Renaming `preferredName` attribute to `name` attribute.
  * Renaming `id` attribute to `link` attribute.
  * Renaming `gndIdentifier` attribute to `id` attribute.
-
+<br />
 4. PRNG.<br />
 
  * Renaming `id_prng` attribute to `id` attribute.
