@@ -309,6 +309,21 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
  * Coercing value of `id` attribute to string data type.
  * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
 <br />
+6. BKG Historische Ortsnamen.<br />
+
+ * Coercing value of `id` attribute to string data type.
+ * Renaming of `chron` attribute to `names` attribute.
+<br />
+7. Historical Atlas of Poland.<br />
+
+ * Renaming `objectid` attribute to `id` attribute.
+ * Renaming `nazwa_wspolczesna` attribute to `name` attribute.
+ * Renaming `charakter_osady` attribute to `type` attribute.
+ * Renaming `lon` attribute to `lng` attribute.
+ * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
+ * Coercing value of `id` attribute to string data type.
+ * Transformation of all attribute values having `null` to empty string `''`.
+<br />
 
 
 <h2>License</h2>
