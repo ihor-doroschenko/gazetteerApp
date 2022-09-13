@@ -324,7 +324,25 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
  * Coercing value of `id` attribute to string data type.
  * Transformation of all attribute values having `null` to empty string `''`.
 <br />
+8. Naszekaszuby.<br />
 
+ * Renaming `idx` attribute to `id` attribute.
+ * Renaming `name_polnisch` attribute to `name` attribute.
+ * Coercing value of `id` attribute to string data type.
+<br />
+9. Carpathorusyn.<br />
+
+ * Renaming `name_russinisch` attribute to `name` attribute.
+ * Renaming `refnum` attribute to `id` attribute.
+<br />
+10. Prusijalit.<br />
+
+ * Renaming `idx` attribute to `id` attribute.
+ * Renaming `name_litauisch` attribute to `name` attribute.
+ * Renaming `lon` attribute to `lng` attribute.
+ * Coercing value of `id` attribute to string data type.
+ * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
+<br />
 
 <h2>License</h2>
 ...
