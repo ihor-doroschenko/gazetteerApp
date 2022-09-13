@@ -290,7 +290,14 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
  * Renaming `id` attribute to `link` attribute.
  * Renaming `gndIdentifier` attribute to `id` attribute.
 <br />
-4. PRNG.<br />
+4. Wikidata.<br />
+
+ * Re-creating `name` attribute. Already existing `name` attribute contains multiple names and is to understand more as "all appliable names". As the component expects each entity to have one name to show it both in table and on the map and because this attribute does not exist in GOV gazetteer, it is created on the fly. The first name in `name` attribute is taken, all other ones are considered as "all other appliable names" and are saved in separate attribute `names`.
+ * Transformation of `type` attribute (basically, an object with single string value is coerced into a string).
+ * Extraction of the latitude and longitude from the `coordinates` attribute, coercing it to float number data type, and save it under new created `position` attribute
+ * Coercing value of `id` attribute to string data type.
+<br />
+5. PRNG.<br />
 
  * Renaming `id_prng` attribute to `id` attribute.
  * Renaming `hauptname` attribute to `name` attribute.
@@ -301,6 +308,8 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
  * Renaming `lon` attribute to `geograph_lng` attribute.
  * Coercing value of `id` attribute to string data type.
  * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
+<br />
+
 
 <h2>License</h2>
 ...
