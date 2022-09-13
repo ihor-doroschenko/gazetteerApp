@@ -270,17 +270,37 @@ Usually means renaming of the attributes (for example, attribute containing spat
 Below the normalization operations for each gazetteer specificly are listed.<br /><br />
 1. Geonames.<br />
 
- * Coercing of the value of the `geonameId` attribute to string data type
- * Renaming `geonameId` attribute to `id`
- * Renaming `fclName` attribute to `type`
+ * Coercing of the value of the `geonameId` attribute to string data type.
+ * Renaming `geonameId` attribute to `id` attribute.
+ * Renaming `fclName` attribute to `type` attribute,
  * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
 <br />
 2. GOV.<br />
 
  * Renaming `lon` attribute in `position` to `lng`. Coercing the coordinates to float number data type.
- * Reference `type` attribute from number code to unit (e.g. from `2` to ['Amtsbezirk', '(politische) Verwaltung']). Entire list is <a href="http://gov.genealogy.net/type/list">here</a>
+ * Reference `type` attribute from number code to unit (e.g. from `2` to ['Amtsbezirk', '(politische) Verwaltung']). Entire list is <a href="http://gov.genealogy.net/type/list">here</a>.
  * Re-creating `name` attribute. Already existing `name` attribute contains multiple names and is to understand more as "all appliable names". As the component expects each entity to have one name to show it both in table and on the map and because this attribute does not exist in GOV gazetteer, it is created on the fly. The first name in `name` attribute is taken, all other ones are considered as "all other appliable names" and are saved in separate attribute `names`.
  * Coercing value of `id` attribute to string data type.
+
+3. GND.<br />
+
+ * Extracting coordinates from `hasGeometry` attribute, coercing it to float number data type, and save it under new created `position` attribute.
+ * Coercing value of `id` attribute to string data type.
+ * Renaming `preferredName` attribute to `name` attribute.
+ * Renaming `id` attribute to `link` attribute.
+ * Renaming `gndIdentifier` attribute to `id` attribute.
+
+4. PRNG.<br />
+
+ * Renaming `id_prng` attribute to `id` attribute.
+ * Renaming `hauptname` attribute to `name` attribute.
+ * Renaming `objekttyp` attribute to `type` attribute.
+ * Renaming `lat_normalisiert` attribute to `lat` attribute.
+ * Renaming `lon_normalisiert` attribute to `lng` attribute.
+ * Renaming `lat` attribute to `geograph_lat` attribute.
+ * Renaming `lon` attribute to `geograph_lng` attribute.
+ * Coercing value of `id` attribute to string data type.
+ * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
 
 <h2>License</h2>
 ...
