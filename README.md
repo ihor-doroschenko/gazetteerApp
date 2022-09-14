@@ -131,14 +131,13 @@ Of course, the textes are still a matter of discussion.
 <h3>Data documentation</h3>
 Gazetteer data are sent from the server to the client in JavaScript syntax as array with objects inside it. Each of objects represents one entity.<br /><br />
 Here are basics about the gazetteer data being retrieved from the server (gazetteer specific).
-
-<h4>Geonames</h4>
-More about Geonames data specification you can read <a href="http://download.geonames.org/export/dump/readme.txt">here</a>.<br /><br />
+<br /><br />
 <details>
-  <summary>Snapshot</summary>
+  <summary>Geonames</summary>
   
   ```
-[{
+[
+  {
     "timezone": {
         "gmtOffset": 1,
         "timeZoneId": "Europe\/Warsaw",
@@ -210,18 +209,18 @@ More about Geonames data specification you can read <a href="http://download.geo
     "fcodeName": "seat of a first-order administrative division",
     "adminName1": "Warmia-Masuria",
     "link": "https:\/\/www.geonames.org\/763166"
-}]
+}
+  ]
 ```
 
 </details>
 
-<h4>GOV</h4>
-More about GOV data specification you can read <a href="https://wiki.genealogy.net/GOV/Webservice">here</a>.<br /><br />
 <details>
-  <summary>Snapshot</summary>
+  <summary>GOV</summary>
   
   ```
-[{
+[
+  {
     "id": "ALLER2KO03GS",
     "last-modification": "2006-12-16T13:57:43.000+01:00",
     "position": {
@@ -257,7 +256,342 @@ More about GOV data specification you can read <a href="https://wiki.genealogy.n
         "ref": "ALLEINKO03FS"
     },
     "link": "http:\/\/gov.genealogy.net\/item\/show\/ALLER2KO03GS"
-}]
+}
+  ]
+```
+
+</details>
+
+<details>
+  <summary>GND</summary>
+  
+  ```
+[
+  {
+    "precedingPlaceOrGeographicName": [
+      {
+        "id": "https://d-nb.info/gnd/4001252-9",
+        "label": "Allenstein"
+      }
+    ],
+    "type": [
+      "PlaceOrGeographicName",
+      "TerritorialCorporateBodyOrAdministrativeUnit",
+      "AuthorityResource"
+    ],
+    "@context": "http://lobid.org/gnd/context.jsonld",
+    "oldAuthorityNumber": [
+      "(DE-588b)1008435-6"
+    ],
+    "geographicAreaCode": [
+      {
+        "id": "https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-PL",
+        "label": "Polen"
+      }
+    ],
+    "hasGeometry": [
+      {
+        "asWKT": [
+          "Point ( +020.493888 +053.779722 )"
+        ],
+        "type": "Point"
+      }
+    ],
+    "describedBy": {
+      "license": {
+        "id": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "label": "http://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "dateModified": "2021-08-10T19:38:25.000",
+      "id": "https://d-nb.info/gnd/1008435-6/about"
+    },
+    "gndIdentifier": "1008435-6",
+    "id": "https://d-nb.info/gnd/1008435-6",
+    "preferredName": "Olsztyn",
+    "variantName": [
+      "Ol'štyn",
+      "Allenstein (Olsztyn)",
+      "Allenstein"
+    ],
+    "sameAs": [
+      {
+        "id": "http://id.loc.gov/rwo/agents/n79005067",
+        "collection": {
+          "icon": "http://www.loc.gov/favicon.ico",
+          "name": "NACO Authority File",
+          "publisher": "Library of Congress",
+          "id": "http://www.wikidata.org/entity/Q13219454",
+          "abbr": "LC"
+        }
+      },
+      {
+        "id": "http://isni.org/isni/0000000123015027",
+        "collection": {
+          "id": "http://isni.org"
+        }
+      },
+      {
+        "id": "http://viaf.org/viaf/168103683",
+        "collection": {
+          "icon": "http://viaf.org/viaf/images/viaf.ico",
+          "name": "Virtual International Authority File (VIAF)",
+          "publisher": "OCLC",
+          "id": "http://www.wikidata.org/entity/Q54919",
+          "abbr": "VIAF"
+        }
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q82765",
+        "collection": {
+          "icon": "https://www.wikidata.org/static/favicon/wikidata.ico",
+          "name": "Wikidata",
+          "publisher": "Wikimedia Foundation Inc.",
+          "id": "http://www.wikidata.org/entity/Q2013",
+          "abbr": "WIKIDATA"
+        }
+      },
+      {
+        "collection": {
+          "name": "Gemeinsame Normdatei (GND) im Katalog der Deutschen Nationalbibliothek",
+          "icon": "https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/favicon.png?__blob=normal&v=4",
+          "publisher": "Deutsche Nationalbibliothek",
+          "id": "http://www.wikidata.org/entity/Q36578",
+          "abbr": "DNB"
+        },
+        "id": "https://d-nb.info/gnd/1008435-6/about"
+      },
+      {
+        "id": "https://sws.geonames.org/763166",
+        "collection": {
+          "id": "https://sws.geonames.org"
+        }
+      }
+    ],
+    "depiction": [
+      {
+        "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Olsztyn%2C%20stary%20ratusz..jpg?width=270",
+        "id": "https://commons.wikimedia.org/wiki/Special:FilePath/Olsztyn%2C%20stary%20ratusz..jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Olsztyn%2C%20stary%20ratusz..jpg?uselang=de"
+      }
+    ],
+    "link": "https://d-nb.info/gnd/1008435-6"
+  }
+]
+```
+
+</details>
+
+<details>
+  <summary>Wikidata</summary>
+  
+  ```
+[
+  {
+    "id": "Q11684947",
+    "names": [
+      {
+        "name": "Aleja Marszałka Józefa Piłsudskiego w Olsztynie",
+        "lang": "pl"
+      },
+      {
+        "name": "Piłsudskiego Avenue, Olsztyn",
+        "lang": "en"
+      }
+    ],
+    "coordinates": [
+      {
+        "lat": "53.771722222",
+        "lon": "20.505027777"
+      }
+    ],
+    "types": [
+      {
+        "name": "street"
+      }
+    ],
+    "link": "https://www.wikidata.org/wiki/Q11684947"
+  }
+]
+```
+
+</details>
+
+<details>
+  <summary>PRNG</summary>
+  
+  ```
+[
+  {
+    "id_prng": "129982",
+    "hauptname": "Stary Olsztyn",
+    "objekttyp": "osada",
+    "objektklasse": "miejscowość",
+    "superobjekt": "Linowo",
+    "verwaltungsfunktion": null,
+    "genitiv": "-rego -na",
+    "adjektiv": null,
+    "kommentar": null,
+    "quelle": "Nazwy geograficzne Rzeczypospolitej Polskiej (gazeter)  PPWK - Warszawa 1991./Wykaz urzędowych nazw miejscowości w Polsce, t. I - III  GUS (1980 - 1982)./Mapa topograficzna w skali 1:10 000/Rozporządzenie Ministra Administracji i Cyfryzacji z dnia 13 grudnia 2012 r., Dz. U. z 2013 r., poz. 200",
+    "unterscheidungselement": "Stary Olsztyn",
+    "allg_element": null,
+    "ipa_aussprache": null,
+    "pol_aussprache": null,
+    "lat": "53°43'37''",
+    "lon": "20°31'44''",
+    "kart_koord_y": "652450,15",
+    "kart_koord_x": "600843,31",
+    "aenderungsdatum": "23.06.2016",
+    "darstellungsart": "Punkt centralny",
+    "externes_system": "TERYT",
+    "id_externes_system": "0486824",
+    "id_iip": "00000000-0000-0000-0000-000000129982",
+    "kartenmassstab": null,
+    "namensstatus": "urzędowa",
+    "weitere_namen": null,
+    "sprachcode_weitere_namen": null,
+    "sprache_weitere_namen": null,
+    "romaniserte_form_weitere_namen": null,
+    "historischer_name": null,
+    "sicherer_name": null,
+    "kommentar_weiterer_name": null,
+    "kommentar_historischer_name": null,
+    "kommentar_sicherer_name": null,
+    "exonym_fremd": null,
+    "exonym_geschrieben": null,
+    "exonym_sprache": null,
+    "exonym_romanisiert": null,
+    "endonym_fremd": null,
+    "endonym_geschrieben": null,
+    "endonym_sprache": null,
+    "endonym_romanisiert": null,
+    "staat": "Polska",
+    "wojewodschaft": "warmińsko-mazurskie",
+    "powiat": "olsztyński",
+    "gmina": "Purda-gmina wiejska",
+    "id_territ_gliederung": "2814102",
+    "erfassungsdatum": "07.04.2004",
+    "loeschdatum": null,
+    "namespace": "PL.PZGiK.204.PRNG",
+    "lat_normalisiert": "53.726944444444",
+    "lon_normalisiert": "20.528888888889"
+  }
+]
+```
+
+</details>
+
+<details>
+  <summary>BKG</summary>
+  
+  ```
+[
+  {
+    "id": 4015,
+    "name": "Allenstein",
+    "blatt": "11.0",
+    "netz": "03M",
+    "chron": [
+      {
+        "name": "Allenstein",
+        "zeit": "1939",
+        "staat": "Deutsches Reich",
+        "admin": "Allenstein (St.Kr.)"
+      },
+      {
+        "name": "Olsztyn",
+        "zeit": "1945",
+        "staat": "unter poln. Verwaltung",
+        "admin": "Mrągowo"
+      },
+      {
+        "name": "Olsztyn",
+        "zeit": "1992",
+        "staat": "Polen",
+        "admin": "Olsztyn"
+      }
+    ]
+  }
+]
+```
+
+</details>
+
+<details>
+  <summary>Historical Atlas of Poland</summary>
+  
+  ```
+[
+  {
+    "objectid": 16896,
+    "nazwa_wspolczesna": null,
+    "nazwa_16w": "Olsztyn",
+    "charakter_osady": "miasto",
+    "rodzaj_wlasnosci": "k",
+    "parafia": "Olsztyn",
+    "powiat": "llw",
+    "wojewodztwo": "krk",
+    "funkcje_centralne_panstwowe": null,
+    "funkcje_centralne_koscielne": "parafia",
+    "prng": 92778,
+    "lat": "50.752179621",
+    "lon": "19.2691655730001"
+  }
+]
+```
+
+</details>
+
+<details>
+  <summary>Naszekaszuby</summary>
+  
+  ```
+[
+  {
+    "name_polnisch": "Kartuzy",
+    "name_kaschubisch": "Kartuze, Kartuzë, Kartëzë",
+    "powiat": "KA",
+    "idx": 495
+  }
+]
+```
+
+</details>
+
+<details>
+  <summary>Carpatorusyn</summary>
+  
+  ```
+[
+  {
+    "refnum": " ",
+    "name_ukrainisch": " ",
+    "name_russinisch": "Sjanok (3% Rusyn)",
+    "name_polnisch": "Sanok"
+  }
+]
+```
+
+</details>
+
+<details>
+  <summary>Prusijalit</summary>
+  
+  ```
+[
+  {
+    "name_litauisch": "Alenšteinas",
+    "name_deutsch": "Allenstein",
+    "name_russisch_polnisch": "lenk. Olsztyn",
+    "verwaltungseinheit1": "Alenšteino",
+    "verwaltungseinheit2": "Alenšteino miestas",
+    "koordinaten": "53.77606, 20.47766",
+    "idx": 4,
+    "lat": "53.77606",
+    "lon": "20.47766",
+    "name_russisch": null,
+    "name_polnisch": "Olsztyn"
+  }
+]
 ```
 
 </details>
