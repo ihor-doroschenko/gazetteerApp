@@ -21,11 +21,28 @@ The documentation describes the front end part of the app (graphic user interfac
 
 ![Bild1](https://user-images.githubusercontent.com/56873797/190189574-fabcd433-3cd9-4933-9c46-b08ef165288c.png)
 
-For state management Redux with React wrapper above it is used. To extract data from Redux state, select and reselect libraries are used.
+<h3>State management</h3>
+For state management Redux with React wrapper above it is used. To split state into different areas and to support <a href="https://en.wikipedia.org/wiki/Single-responsibility_principle">SRP</a> principle, 9 reducers are created:
 
-For visualization ant design and diverse React libraries are used.
 
-Map visualization is handled by multiple Leaflet libraries with React wrapper above it.
+ * `compare-reducer.js` - compare tool state, where entities can be compared with each other.
+ * `details-reducer.js` - details view state, where an entity with all its attributes and values.
+ * `filter-reducer.js` - state for filters in results table.
+ * `map-interaction-reducer.js` - state for map interaction effects.
+ * `matching-reducer.js` - state for matchings view.
+ * `nav-reducer.js` - state for boolean flags to control such operations as show/hide, filter/unfilter, etc.
+ * `results-store.js` - state to store main results, pre-processed already.
+ * `search-reducer.js` - state to store search parameters sent to the server.
+ * `table-state-reducer.js` - state to keep actual table dimensions and parameters.
+
+All the reducers are combined in `redux-store.js`. To extract data from Redux state, select and reselect libraries are used.
+
+<h3>User Interface</h3>
+
+For visualization ant design components are used. For specific needs like tables or tabs separate libraries like `react-table` and `react-tabs` are used. For custom styling CSS modules are implemented. In `App.css` classes are listed that are applied globally. In `index.css` classes are listed that rewrite standard classes. 
+
+<h3>Spatial visualization</h3>
+Main map is rendered by `leaflet` library with React wrapper above it. To visualize clusters, `react-markercluster` library is used. To provide draw tools for bounding box, `react-leaflet-draw` library is applied. To provide a possibility for more cutomization for leaflet controls on the map, `react-leaflet-control` library is used.
 
 <h2>Installation/Download</h2>
 How and what to install and/or download...
