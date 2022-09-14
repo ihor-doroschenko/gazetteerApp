@@ -9,9 +9,24 @@ Gazetteer App to combine various gazetteers in one graphic user interface
 ![GitHub contributors](https://img.shields.io/badge/react-16.13-blue) ![GitHub contributors](https://img.shields.io/badge/leaflet-1.6-blue) ![GitHub contributors](https://img.shields.io/badge/antdesign-4.16.7-blue) ![GitHub contributors](https://img.shields.io/badge/redux-4.0.5-blue) ![GitHub contributors](https://img.shields.io/badge/contributions-welcome-green) ![GitHub contributors](https://img.shields.io/github/contributors/ihor-doroschenko/gazetteer)
 
 <h2>Introduction</h2>
-Basic overview, introduction...
-<h2>Usage</h2>
-How to use the app...
+The GazApp web application is developed as part of the Gazetteer research project by the Herder Institute (HI), the Institute for Regional Geography (IfL) and the Justus Liebig University Giessen (JLU). The application is intended to support users in working with different digital gazetteers, and to help them explore their content and metadata structure.
+
+It enables users to search several place name related databases simultaneously in a unified manner and to view and compare data from different gazetteers. In addition, the application supports the identification of items in different databases which refer to the same geographical entity. By linking corresponding items across gazetteers it facilitates data aggregation and comparison.
+
+Basically, the search works on a global level. However, as the the current regional focus of the project is Poland, additional specific gazetteers were integrated for this region. 
+
+Please note that this documentation focuses more on technical side of the app. For more conceptual question please visit the section `Info/Help` in the <a href="https://vhrz1355.hrz.uni-marburg.de/meta.html">app</a>.
+
+The documentation describes the front end part of the app (graphic user interface). To have a look on the back end documentation, please click <a href="www.google.com">here</a>. To overview the entire app architecture, please have a look at the figure below.
+
+![Bild1](https://user-images.githubusercontent.com/56873797/190189574-fabcd433-3cd9-4933-9c46-b08ef165288c.png)
+
+For state management Redux with React wrapper above it is used. To extract data from Redux state, select and reselect libraries are used.
+
+For visualization ant design and diverse React libraries are used.
+
+Map visualization is handled by multiple Leaflet libraries with React wrapper above it.
+
 <h2>Installation/Download</h2>
 How and what to install and/or download...
 <h2>Settings</h2>
