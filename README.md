@@ -21,7 +21,15 @@ The documentation describes the front end part of the app (graphic user interfac
 
 ![Bild1](https://user-images.githubusercontent.com/56873797/190189574-fabcd433-3cd9-4933-9c46-b08ef165288c.png)
 
-The most important components of front end part of the app includes state management, user interface components and spatial visualization.
+The most important components of front end part of the app include data access level, state management, and actual user interface components.
+
+<h3>Data access level</h3>
+Data access level (DAL) is implemented with the help of `axios` library using REST API. The entire DAL logic is saved in file `API.js`. Following DAL API objects are exported from the file:
+
+ * `resultsAPI` with method `getMainResults` of get-type with 4 required parameters (`gaz`, `name`, `resultschema`, `namesearchmode`) and 6 optional parameters (`north`, `south`, `west`, `east`, `settlement`, `matchings`).
+ * `entityAPI` with method `getEntityById` of get-type with 3 required parameters (`gaz`, `id`, `resultschema`).
+ * `partOfAPI` with method `getPartOf` of get-type with 3 required parameters (`gaz`, `id`, `resultschema`) and with method `getPartOfPicture` of get-type with 3 required parameters (`gaz`, `id`, `partofimg`).
+
 
 <h3>State management</h3>
 For state management Redux with React wrapper above it is used. To split state into different areas and to support <a href="https://en.wikipedia.org/wiki/Single-responsibility_principle">SRP</a> principle, 9 reducers are created:
@@ -43,7 +51,6 @@ All the reducers are combined in `redux-store.js`. To extract data from Redux st
 
 For visualization ant design components are used. For specific needs like tables or tabs separate libraries like `react-table` and `react-tabs` are used. For custom styling CSS modules are implemented. In `App.css` classes are listed that are applied globally. In `index.css` classes are listed that rewrite standard classes. 
 
-<h3>Spatial visualization</h3>
 Main map is rendered by `leaflet` library with React wrapper above it. To visualize clusters, `react-markercluster` library is used. To provide draw tools for bounding box, `react-leaflet-draw` library is applied. To provide a possibility for more cutomization for leaflet controls on the map, `react-leaflet-control` library is used.
 
 <h2>Installation/Download</h2>
@@ -630,7 +637,6 @@ Here are basics about the gazetteer data being retrieved from the server (gazett
 
 </details>
 
-<br />
 <h3>Normalization</h3>
 After the client retrieved the data, they are normalized. In this case, it means minimal processing for modular representation as well as client-side tools.<br /><br />
 Usually means renaming of the attributes (for example, attribute containing spatial information - it can be named as `position` or as `coordinates`, but the component expects to get uniform name). However, in some cases it can mean processing of the values of the attributes (spatial information can be stored as strings, but the component expects it to be numbers).<br /><br />
