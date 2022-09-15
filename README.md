@@ -8,7 +8,16 @@ Gazetteer App to combine various gazetteers in one graphic user interface
 
 ![GitHub contributors](https://img.shields.io/badge/react-16.13-blue) ![GitHub contributors](https://img.shields.io/badge/leaflet-1.6-blue) ![GitHub contributors](https://img.shields.io/badge/antdesign-4.16.7-blue) ![GitHub contributors](https://img.shields.io/badge/redux-4.0.5-blue) ![GitHub contributors](https://img.shields.io/badge/contributions-welcome-green) ![GitHub contributors](https://img.shields.io/github/contributors/ihor-doroschenko/gazetteer)
 
-<h2>Introduction</h2>
+##### Table of Contents  
+[Introduction](#introduction)  
+[Installation/Download](#installationDownload)  
+[Settings](#settings)  
+[Component structure](#component structure)  
+[Data processing (Front End)](#dataProcessing)  
+[License](#license)  
+[Acknowledgements](#acknowledgements)
+
+<a name="introduction"><h2>Introduction</h2></a>
 The GazApp web application is developed as part of the Gazetteer research project by the Herder Institute (HI), the Institute for Regional Geography (IfL) and the Justus Liebig University Giessen (JLU). The application is intended to support users in working with different digital gazetteers, and to help them explore their content and metadata structure.
 
 It enables users to search several place name related databases simultaneously in a unified manner and to view and compare data from different gazetteers. In addition, the application supports the identification of items in different databases which refer to the same geographical entity. By linking corresponding items across gazetteers it facilitates data aggregation and comparison.
@@ -53,9 +62,9 @@ For visualization ant design components are used. For specific needs like tables
 
 Main map is rendered by `leaflet` library with React wrapper above it. To visualize clusters, `react-markercluster` library is used. To provide draw tools for bounding box, `react-leaflet-draw` library is applied. To provide a possibility for more cutomization for leaflet controls on the map, `react-leaflet-control` library is used.
 
-<h2>Installation/Download</h2>
+<a name="installationDownload"><h2>Installation/Download</h2></a>
 Clone or download the repository and open folder with an IDE (for example, <a href="https://code.visualstudio.com/">Miscrosoft Visual Studio Code</a>). 
-<h2>Settings</h2>
+<a name="settings"><h2>Settings</h2></a>
 <h3>Configuration for development</h3>
 Steps to start the development process:
 <br />
@@ -162,13 +171,13 @@ List of the development dependencies:
 | <a href="https://www.npmjs.com/package/@testing-library/react" >@testing-library/react</a>  | ^11.2.6  | React DOM testing library  |
 | <a href="https://www.npmjs.com/package/json-server" >json-server</a>  | ^0.16.3  | Full fake REST API  |
 
-<h2>Component structure</h2>
+<a name="componentStructure"><h2>Component structure</h2></a>
 Description of components in more classic way - like https://ihor-doroschenko.github.io/#section-modules
 <br /><br />
 Currently it is based on one component group of the Compare Tool. The typical description consists of component name, path, info text, props & methods section and the source code. It is also intended to add hook & HOC & utils section to describe all the hooks, HOCs and utils used in the components.
 <br /><br />
 Of course, the textes are still a matter of discussion.
-<h2>Data processing (Front End)</h2>
+<a name="dataProcessing"><h2>Data processing (Front End)</h2></a>
 <h3>Data documentation</h3>
 Gazetteer data are sent from the server to the client in JavaScript syntax as array with objects inside it. Each of objects represents one entity.<br /><br />
 Here are basics about the gazetteer data being retrieved from the server (gazetteer specific).
@@ -717,7 +726,7 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
  * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
 <br />
 
-<h2>License</h2>
+<a name="introduction"><h2>License</h2></a>
 ...
-<h2>Acknowledgements</h2>
+<a name="acknowledgements"><h2>Acknowledgements</h2></a>
 ...
