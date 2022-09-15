@@ -21,6 +21,8 @@ The documentation describes the front end part of the app (graphic user interfac
 
 ![Bild1](https://user-images.githubusercontent.com/56873797/190189574-fabcd433-3cd9-4933-9c46-b08ef165288c.png)
 
+The most important components of front end part of the app includes state management, user interface components and spatial visualization.
+
 <h3>State management</h3>
 For state management Redux with React wrapper above it is used. To split state into different areas and to support <a href="https://en.wikipedia.org/wiki/Single-responsibility_principle">SRP</a> principle, 9 reducers are created:
 
@@ -37,7 +39,7 @@ For state management Redux with React wrapper above it is used. To split state i
 
 All the reducers are combined in `redux-store.js`. To extract data from Redux state, select and reselect libraries are used.
 
-<h3>User Interface</h3>
+<h3>User Interface Components</h3>
 
 For visualization ant design components are used. For specific needs like tables or tabs separate libraries like `react-table` and `react-tabs` are used. For custom styling CSS modules are implemented. In `App.css` classes are listed that are applied globally. In `index.css` classes are listed that rewrite standard classes. 
 
@@ -45,7 +47,7 @@ For visualization ant design components are used. For specific needs like tables
 Main map is rendered by `leaflet` library with React wrapper above it. To visualize clusters, `react-markercluster` library is used. To provide draw tools for bounding box, `react-leaflet-draw` library is applied. To provide a possibility for more cutomization for leaflet controls on the map, `react-leaflet-control` library is used.
 
 <h2>Installation/Download</h2>
-How and what to install and/or download...
+Clone or download the repository and open folder with an IDE (for example, <a href="https://code.visualstudio.com/">Miscrosoft Visual Studio Code</a>). 
 <h2>Settings</h2>
 <h3>Configuration for development</h3>
 Steps to start the development process:
