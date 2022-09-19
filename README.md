@@ -37,7 +37,7 @@ Please note that this documentation focuses more on technical side of the app. F
 
 The documentation describes the front end part of the app (graphic user interface). To have a look on the back end documentation, please click <a href="www.google.com">here</a>. To overview the entire app architecture, please have a look at the figure below.
 
-<img align="center" width="508" alt="AppSchema" src="https://user-images.githubusercontent.com/56873797/191030252-9bbf0ea6-de0d-409c-9e0e-c6a4cab69776.png">
+<p align="center"><img width="508" alt="AppSchema" src="https://user-images.githubusercontent.com/56873797/191030252-9bbf0ea6-de0d-409c-9e0e-c6a4cab69776.png"></p>
 
 The most important components of front end part of the app include data access level, state management, and actual user interface components.
 
