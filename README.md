@@ -41,7 +41,7 @@ The documentation describes the front end part of the app (graphic user interfac
 
 The most important components of front end part of the app include data access level, state management, and actual user interface components.
 
-<img align="center" width="508" alt="190189574-fabcd433-3cd9-4933-9c46-b08ef165288c" src="https://user-images.githubusercontent.com/56873797/191030290-8d823854-ffd1-4e84-84b8-5770cb6b0ff5.png">
+<p align="center"><img width="508" alt="190189574-fabcd433-3cd9-4933-9c46-b08ef165288c" src="https://user-images.githubusercontent.com/56873797/191030290-8d823854-ffd1-4e84-84b8-5770cb6b0ff5.png"></p>
 
 <a name="dataAccessLevel"><h3>1.1. Data access level</h3></a>
 Data access level (DAL) is implemented with the help of `axios` library using REST API. The entire DAL logic is saved in file `API.js`. Following DAL API objects are exported from the file:
