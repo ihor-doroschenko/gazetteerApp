@@ -10,11 +10,19 @@ Gazetteer App to combine various gazetteers in one graphic user interface
 
 <h2>Table of contents</h2>
 
-[1. Introduction](#introduction)  
+[1. Introduction](#introduction) <br /> 
+&nbsp;&nbsp;&nbsp;[1.1. Data access level](#dataAccessLevel) <br />
+&nbsp;&nbsp;&nbsp;[1.2. State management](#stateManagement) <br />
+&nbsp;&nbsp;&nbsp;[1.3. User interface components](#userInterfaceComponents) <br />
 [2. Installation/Download](#installationDownload)  
 [3. Settings](#settings)  
+&nbsp;&nbsp;&nbsp;[3.1. Configuration for development](#configurationForDevelopment) <br />
+&nbsp;&nbsp;&nbsp;[3.2. Configuration for production](#configurationForProduction) <br />
+&nbsp;&nbsp;&nbsp;[3.2. Dependencies](#dependencies) <br />
 [4. Component structure](#componentStructure)  
 [5. Data processing (Front End)](#dataProcessing)  
+&nbsp;&nbsp;&nbsp;[5.1. Data documentation](#dataDocumentation) <br />
+&nbsp;&nbsp;&nbsp;[5.2. Normalization](#normalization) <br />
 [6. License](#license)  
 [7. Acknowledgements](#acknowledgements)
 
@@ -33,7 +41,7 @@ The documentation describes the front end part of the app (graphic user interfac
 
 The most important components of front end part of the app include data access level, state management, and actual user interface components.
 
-<h3>Data access level</h3>
+<a name="dataAccessLevel"><h3>1.1. Data access level</h3></a>
 Data access level (DAL) is implemented with the help of `axios` library using REST API. The entire DAL logic is saved in file `API.js`. Following DAL API objects are exported from the file:
 
  * `resultsAPI` with method `getMainResults` of get-type with 4 required parameters (`gaz`, `name`, `resultschema`, `namesearchmode`) and 6 optional parameters (`north`, `south`, `west`, `east`, `settlement`, `matchings`).
@@ -41,7 +49,7 @@ Data access level (DAL) is implemented with the help of `axios` library using RE
  * `partOfAPI` with method `getPartOf` of get-type with 3 required parameters (`gaz`, `id`, `resultschema`) and with method `getPartOfPicture` of get-type with 3 required parameters (`gaz`, `id`, `partofimg`).
 
 
-<h3>State management</h3>
+<a name="stateManagement"><h3>1.2. State management</h3></a>
 For state management Redux with React wrapper above it is used. To split state into different areas and to support <a href="https://en.wikipedia.org/wiki/Single-responsibility_principle">SRP</a> principle, 9 reducers are created:
 
 
@@ -57,7 +65,7 @@ For state management Redux with React wrapper above it is used. To split state i
 
 All the reducers are combined in `redux-store.js`. To extract data from Redux state, select and reselect libraries are used.
 
-<h3>User Interface Components</h3>
+<a name="userInterfaceComponents"><h3>1.3. User Interface Components</h3></a>
 
 For visualization ant design components are used. For specific needs like tables or tabs separate libraries like `react-table` and `react-tabs` are used. For custom styling CSS modules are implemented. In `App.css` classes are listed that are applied globally. In `index.css` classes are listed that rewrite standard classes. 
 
@@ -66,7 +74,7 @@ Main map is rendered by `leaflet` library with React wrapper above it. To visual
 <a name="installationDownload"><h2>2. Installation/Download</h2></a>
 Clone or download the repository and open folder with an IDE (for example, <a href="https://code.visualstudio.com/">Miscrosoft Visual Studio Code</a>). 
 <a name="settings"><h2>3. Settings</h2></a>
-<h3>Configuration for development</h3>
+<a name="configurationForDevelopment"><h3>3.1. Configuration for development</h3></a>
 Steps to start the development process:
 <br />
 <br />
@@ -95,7 +103,7 @@ npm start
 ```
 <br />
 7. Enjoy the development process :wink: .
-<h3>Configuration for production</h3>
+<a name="configurationForProduction"><h3>3.2. Configuration for production</h3></a>
 Steps to create production build:
 <br />
 <br />
@@ -123,7 +131,7 @@ npm run build
 <br />
 8. Reload your page and enjoy new version of the app :sunglasses: .
 <br />
-<h3>Dependencies</h3>
+<a name="dependencies"><h3>3.3. Dependencies</h3></a>
 List of the dependencies:
 
 
@@ -179,7 +187,7 @@ Currently it is based on one component group of the Compare Tool. The typical de
 <br /><br />
 Of course, the textes are still a matter of discussion.
 <a name="dataProcessing"><h2>5. Data processing (Front End)</h2></a>
-<h3>Data documentation</h3>
+<a name="dataDocumentation"><h3>5.1. Data documentation</h3></a>
 Gazetteer data are sent from the server to the client in JavaScript syntax as array with objects inside it. Each of objects represents one entity.<br /><br />
 Here are basics about the gazetteer data being retrieved from the server (gazetteer specific).
 <br /><br />
@@ -647,7 +655,7 @@ Here are basics about the gazetteer data being retrieved from the server (gazett
 
 </details>
 
-<h3>Normalization</h3>
+<a name="normalization"><h3>5.2. Normalization</h3></a>
 After the client retrieved the data, they are normalized. In this case, it means minimal processing for modular representation as well as client-side tools.<br /><br />
 Usually means renaming of the attributes (for example, attribute containing spatial information - it can be named as `position` or as `coordinates`, but the component expects to get uniform name). However, in some cases it can mean processing of the values of the attributes (spatial information can be stored as strings, but the component expects it to be numbers).<br /><br />
 Below the normalization operations for each gazetteer specificly are listed.<br /><br />
@@ -727,7 +735,7 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
  * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
 <br />
 
-<a name="introduction"><h2>6. License</h2></a>
+<a name="license"><h2>6. License</h2></a>
 ...
 <a name="acknowledgements"><h2>7. Acknowledgements</h2></a>
 ...
