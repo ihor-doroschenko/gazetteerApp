@@ -37,9 +37,11 @@ Please note that this documentation focuses more on technical side of the app. F
 
 The documentation describes the front end part of the app (graphic user interface). To have a look on the back end documentation, please click <a href="www.google.com">here</a>. To overview the entire app architecture, please have a look at the figure below.
 
-![Bild1](https://user-images.githubusercontent.com/56873797/190189574-fabcd433-3cd9-4933-9c46-b08ef165288c.png)
+<img width="508" alt="AppSchema" src="https://user-images.githubusercontent.com/56873797/191030252-9bbf0ea6-de0d-409c-9e0e-c6a4cab69776.png">
 
 The most important components of front end part of the app include data access level, state management, and actual user interface components.
+
+<img width="508" alt="190189574-fabcd433-3cd9-4933-9c46-b08ef165288c" src="https://user-images.githubusercontent.com/56873797/191030290-8d823854-ffd1-4e84-84b8-5770cb6b0ff5.png">
 
 <a name="dataAccessLevel"><h3>1.1. Data access level</h3></a>
 Data access level (DAL) is implemented with the help of `axios` library using REST API. The entire DAL logic is saved in file `API.js`. Following DAL API objects are exported from the file:
