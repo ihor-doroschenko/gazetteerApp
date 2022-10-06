@@ -182,12 +182,6 @@ List of the development dependencies:
 | <a href="https://www.npmjs.com/package/@testing-library/react" >@testing-library/react</a>  | ^11.2.6  | React DOM testing library  |
 | <a href="https://www.npmjs.com/package/json-server" >json-server</a>  | ^0.16.3  | Full fake REST API  |
 
-<a name="componentStructure"><h2>4. Component structure</h2></a>
-Description of components in more classic way - like https://ihor-doroschenko.github.io/#section-modules
-<br /><br />
-Currently it is based on one component group of the Compare Tool. The typical description consists of component name, path, info text, props & methods section and the source code. It is also intended to add hook & HOC & utils section to describe all the hooks, HOCs and utils used in the components.
-<br /><br />
-Of course, the textes are still a matter of discussion.
 <a name="dataProcessing"><h2>5. Data processing (Front End)</h2></a>
 <a name="dataDocumentation"><h3>5.1. Data documentation</h3></a>
 Gazetteer data are sent from the server to the client in JavaScript syntax as array with objects inside it. Each of objects represents one entity.<br /><br />
