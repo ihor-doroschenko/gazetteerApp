@@ -19,12 +19,11 @@ Gazetteer App to combine various gazetteers in one graphic user interface
 &nbsp;&nbsp;&nbsp;[3.1. Configuration for development](#configurationForDevelopment) <br />
 &nbsp;&nbsp;&nbsp;[3.2. Configuration for production](#configurationForProduction) <br />
 &nbsp;&nbsp;&nbsp;[3.2. Dependencies](#dependencies) <br />
-[4. Component structure](#componentStructure)  
-[5. Data processing (Front End)](#dataProcessing)  
-&nbsp;&nbsp;&nbsp;[5.1. Data documentation](#dataDocumentation) <br />
-&nbsp;&nbsp;&nbsp;[5.2. Normalization](#normalization) <br />
-[6. License](#license)  
-[7. Acknowledgements](#acknowledgements)
+[4. Data processing (Front End)](#dataProcessing)  
+&nbsp;&nbsp;&nbsp;[4.1. Data documentation](#dataDocumentation) <br />
+&nbsp;&nbsp;&nbsp;[4.2. Normalization](#normalization) <br />
+[5. License](#license)  
+[6. Acknowledgements](#acknowledgements)
 
 <a name="introduction"><h2>1. Introduction</h2></a>
 The GazApp web application is developed as part of the Gazetteer research project by the Herder Institute (HI), the Institute for Regional Geography (IfL) and the Justus Liebig University Giessen (JLU). The application is intended to support users in working with different digital gazetteers, and to help them explore their content and metadata structure.
@@ -182,8 +181,8 @@ List of the development dependencies:
 | <a href="https://www.npmjs.com/package/@testing-library/react" >@testing-library/react</a>  | ^11.2.6  | React DOM testing library  |
 | <a href="https://www.npmjs.com/package/json-server" >json-server</a>  | ^0.16.3  | Full fake REST API  |
 
-<a name="dataProcessing"><h2>5. Data processing (Front End)</h2></a>
-<a name="dataDocumentation"><h3>5.1. Data documentation</h3></a>
+<a name="dataProcessing"><h2>4. Data processing (Front End)</h2></a>
+<a name="dataDocumentation"><h3>4.1. Data documentation</h3></a>
 Gazetteer data are sent from the server to the client in JavaScript syntax as array with objects inside it. Each of objects represents one entity.<br /><br />
 Here are basics about the gazetteer data being retrieved from the server (gazetteer specific).
 <br /><br />
@@ -651,7 +650,7 @@ Here are basics about the gazetteer data being retrieved from the server (gazett
 
 </details>
 
-<a name="normalization"><h3>5.2. Normalization</h3></a>
+<a name="normalization"><h3>4.2. Normalization</h3></a>
 After the client retrieved the data, they are normalized. In this case, it means minimal processing for modular representation as well as client-side tools.<br /><br />
 Usually means renaming of the attributes (for example, attribute containing spatial information - it can be named as `position` or as `coordinates`, but the component expects to get uniform name). However, in some cases it can mean processing of the values of the attributes (spatial information can be stored as strings, but the component expects it to be numbers).<br /><br />
 Below the normalization operations for each gazetteer specificly are listed.<br /><br />
@@ -731,7 +730,7 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
  * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
 <br />
 
-<a name="license"><h2>6. License</h2></a>
+<a name="license"><h2>5. License</h2></a>
 ...
-<a name="acknowledgements"><h2>7. Acknowledgements</h2></a>
+<a name="acknowledgements"><h2>6. Acknowledgements</h2></a>
 ...
