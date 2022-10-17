@@ -81,9 +81,9 @@ Steps to start the development process:
 <br />
 1\. Download the code or clone the directory.
 <br />
-2\. Open folder in an IDE (for example, MS Visual Studio Code).
+2\. Download and install Node.js and npm <a href="https://nodejs.org/en/download/">here</a> or <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">here</a>.
 <br />
-3\. Download and install Node.js and npm <a href="https://nodejs.org/en/download/">here</a> or <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">here</a>.
+3\. Open folder in an IDE (for example, MS Visual Studio Code).
 <br />
 4\. Open new terminal in your IDE and install dependencies using following command:<br /><br />
 
@@ -110,9 +110,9 @@ Steps to create production build:
 <br />
 1. Download the code or clone the directory.
 <br />
-2. Open folder in an IDE (for example, MS Visual Studio Code).
+2. Download and install Node.js and npm <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">here</a> or <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">here</a>.
 <br />
-3. Download and install Node.js and npm <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">here</a> or <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">here</a>.
+3. Open folder in an IDE (for example, MS Visual Studio Code).
 <br />
 4. Open new terminal in your IDE and install dependencies using following command:<br /><br />
 
