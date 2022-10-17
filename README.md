@@ -91,7 +91,7 @@ Steps to start the development process:
 npm install
 ```
 <br />
-5. Open new terminal in your IDE and create full fake REST API with dummy data (data.json located in the root directory) using following command in the terminal:<br /><br />
+5. Create full fake REST API with dummy data (data.json located in the root directory) using following command in the terminal:<br /><br />
 
 ```
 npx json-server --watch data.json --port 8000
@@ -122,7 +122,7 @@ npm install
 <br />
 5. Make changes in code (optional).
 <br />
-6. Open new terminal in your IDE and create an optimized updated build using following command:<br /><br />
+6. Create an optimized updated build using following command:<br /><br />
 
 ```
 npm run build
