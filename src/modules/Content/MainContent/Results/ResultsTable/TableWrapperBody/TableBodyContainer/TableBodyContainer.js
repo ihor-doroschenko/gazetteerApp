@@ -7,7 +7,6 @@ import TableBody from './TableBody/TableBody';
 import TabsWrapper from './TableBody/TabsWrapper/TabsWrapper';
 
 const TableBodyContainer = props => {
-  console.log(props);
   return (
     <>
       {props.actualState === 'done' || props.actualState === 'separate' ? (

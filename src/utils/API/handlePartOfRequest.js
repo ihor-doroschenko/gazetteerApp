@@ -1,4 +1,4 @@
-import { partOfAPI } from 'dal/DAL';
+import { partOfAPI } from 'dal/DALproduction';
 import { referenceTypes } from '../Preprocessing/AdditionalNormalizing/referenceTypesGOV/referenceTypes';
 import { getPartOfErrorMessage } from './getPartOfErrorMessage';
 

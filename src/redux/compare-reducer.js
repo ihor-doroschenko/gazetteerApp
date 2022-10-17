@@ -1,4 +1,4 @@
-import { entityAPI } from 'dal/DAL';
+import { resultsAPI } from 'dal/DALWrapper';
 import { getDetailById } from 'selectors/reselectors/getDetailById';
 import { getEntitiesToCompare } from 'selectors/simple-selectors/compare-selectors';
 import { handleDetailRequestError } from 'utils/Helpers/ReducerHelpers/DetailsReducer/handleDetailRequestError';
@@ -100,7 +100,7 @@ export const addEntityToCompare = (id, gazName) => (dispatch, getState) => {
   const entity = getDetailById(getState(), id);
   if (!entity) {
     dispatch(addEntity({ id: id }, gazName, true));
-    entityAPI
+    resultsAPI
       .getEntityById(gazName, id)
       .then(response => {
         dispatch(addNotAvailableEntityToOriginalData(gazName, response.data));

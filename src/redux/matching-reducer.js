@@ -119,7 +119,6 @@ const setFilterTypes = getSelector => (dispatch, getState) => {
 };
 
 export const filterMatchings = value => (dispatch, getState) => {
-  console.log(1);
   const status = getStatus(getState());
   if (validateStatus(status)) {
     dispatch(resetInitialData());

@@ -1,4 +1,5 @@
-import { entityAPI, partOfAPI } from 'dal/DAL';
+import { partOfAPI } from 'dal/DALproduction';
+import { resultsAPI } from 'dal/DALWrapper';
 import { getDetailById } from 'selectors/reselectors/getDetailById';
 import {
   checkUsedGazetteersStatus,
@@ -361,7 +362,7 @@ const handleNotAvailableEntity = (gazName, id) => (dispatch, getState) => {
   const detail = getDetailsObject(gazName, { id: id });
   dispatch(addToDetails({ loading: true, ...detail }));
   dispatch(switchDetailsStatus(gazName, id));
-  entityAPI
+  resultsAPI
     .getEntityById(gazName, id)
     .then(response => {
       const entity = response.data;

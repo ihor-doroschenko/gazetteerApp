@@ -1,4 +1,4 @@
-import { resultsAPI } from 'dal/DAL';
+import { resultsAPI } from 'dal/DALWrapper';
 import { getIsMatching } from 'selectors/simple-selectors/nav-selectors';
 import {
   getGazetteers,
