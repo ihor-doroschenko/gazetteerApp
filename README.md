@@ -79,13 +79,13 @@ Clone or download the repository and open folder with an IDE (for example, <a hr
 Steps to start the development process:
 <br />
 <br />
-1. Download the code or clone the directory.
+1\. Download the code or clone the directory.
 <br />
-2. Open folder in an IDE (for example, MS Visual Studio Code).
+2\. Open folder in an IDE (for example, MS Visual Studio Code).
 <br />
-3. Download and install Node.js and npm <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">here</a> or <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">here</a>.
+3\. Download and install Node.js and npm <a href="https://nodejs.org/en/download/">here</a> or <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">here</a>.
 <br />
-4. Open terminal in your IDE and install dependencies using following command:<br /><br />
+4\. Open terminal in your IDE and install dependencies using following command:<br /><br />
 
 ```
 npm install
