@@ -85,19 +85,19 @@ Steps to start the development process:
 <br />
 3\. Download and install Node.js and npm <a href="https://nodejs.org/en/download/">here</a> or <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">here</a>.
 <br />
-4\. Open terminal in your IDE and install dependencies using following command:<br /><br />
+4\. Open new terminal in your IDE and install dependencies using following command:<br /><br />
 
 ```
 npm install
 ```
 <br />
-5. Create full fake REST API with dummy data (data.json located in the root directory) using following command in the terminal:<br /><br />
+5. Open new terminal in your IDE and create full fake REST API with dummy data (data.json located in the root directory) using following command in the terminal:<br /><br />
 
 ```
 npx json-server --watch data.json --port 8000
 ```
 <br />
-6. Run local server using following command:<br /><br />
+6. Open new terminal in your IDE and run local server using following command:<br /><br />
 
 ```
 npm start
@@ -114,7 +114,7 @@ Steps to create production build:
 <br />
 3. Download and install Node.js and npm <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">here</a> or <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">here</a>.
 <br />
-4. Open terminal in your IDE and install dependencies using following command:<br /><br />
+4. Open new terminal in your IDE and install dependencies using following command:<br /><br />
 
 ```
 npm install
@@ -122,7 +122,7 @@ npm install
 <br />
 5. Make changes in code (optional).
 <br />
-6. Create an optimized updated build using following command:<br /><br />
+6. Open new terminal in your IDE and create an optimized updated build using following command:<br /><br />
 
 ```
 npm run build
