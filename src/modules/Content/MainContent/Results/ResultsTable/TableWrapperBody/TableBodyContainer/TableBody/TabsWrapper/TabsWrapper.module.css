@@ -1,0 +1,25 @@
+/* Tab list background */
+.tabListBackground {
+  background-color: #dddddd;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-top: 1px solid #dddddd;
+}
+.tabListBackground > li {
+  border-radius: 5px 5px 0 0;
+  background-color: #f7f7f7;
+  margin-right: 2px;
+}
+.tabListBackground > li:hover {
+  background-color: #f3f3f3;
+}
+.tabListBackground > li:first-child {
+  margin-left: 2px;
+}
+.tabSelected {
+  background-color: white !important;
+}
+.tabSelected > div {
+  padding: 6px 10px;
+}

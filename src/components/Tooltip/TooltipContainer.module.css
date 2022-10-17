@@ -1,0 +1,16 @@
+.cursor {
+  cursor: pointer;
+}
+.icon {
+  min-width: 15px !important;
+  min-height: 15px !important;
+  margin: 5px;
+  color: black;
+}
+.icon:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

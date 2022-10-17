@@ -1,0 +1,42 @@
+.mainWindowWrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-left: 0px;
+  transition: margin 0.5s;
+  font-size: 0.9rem !important;
+  -webkit-box-shadow: 5px 5px 5px -2px #aaaaaa;
+  -moz-box-shadow: 5px 5px 5px -2px #aaaaaa;
+  box-shadow: 5px 5px 5px -2px #aaaaaa;
+}
+.mainWindow {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+.mainWindow > div {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.mainWindow > div:last-child {
+  border-bottom: none;
+}
+.resizer {
+  position: relative;
+  float: right;
+  height: auto;
+  width: 2px;
+  cursor: ew-resize;
+  background-color: white;
+}
+/* media queries */
+@media (max-width: 1772px) {
+  .mainWindow > div {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+}

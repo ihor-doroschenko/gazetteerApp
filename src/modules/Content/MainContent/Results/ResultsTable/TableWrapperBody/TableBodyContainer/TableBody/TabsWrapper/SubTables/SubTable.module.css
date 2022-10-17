@@ -1,0 +1,17 @@
+/* Table Ref Wrapper */
+.subTableWrapper {
+  min-width: 100%;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+.subTableBottomWrapper {
+  height: 100%;
+  max-height: 100%;
+}
+.subTableSideWrapper {
+  max-height: 300px;
+}
+.subTable {
+  max-height: inherit;
+  border: none;
+}

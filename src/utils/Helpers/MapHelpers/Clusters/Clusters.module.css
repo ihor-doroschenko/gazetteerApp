@@ -1,0 +1,44 @@
+.cluster {
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  background: rgb(54, 144, 192);
+  filter: drop-shadow(gray 5px -3px 5px);
+}
+.cluster50 {
+  background: rgb(5, 112, 176);
+}
+.cluster100 {
+  background: rgb(3, 78, 123);
+}
+.cluster div,
+.cluster50 div,
+.cluster100 div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mousedCluster {
+  margin-left: -20px !important;
+  margin-top: -20px !important;
+  animation-name: change-border;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes change-border {
+  25% {
+    background: rgb(254, 227, 145);
+  }
+  50% {
+    background: rgb(254, 196, 79);
+  }
+  100% {
+    background: rgb(252, 186, 3);
+  }
+}

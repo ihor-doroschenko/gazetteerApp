@@ -1,0 +1,35 @@
+.rightResizeWrapper {
+  display: grid;
+  font-size: 0.9rem;
+  grid-template-rows: 50% 50%;
+  scrollbar-width: thin;
+  position: relative;
+  margin-right: 0%;
+  background-color: white;
+  box-shadow: 0 10px 6px -6px #aaa;
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+  transition: margin 0.5s, visibility 0.5s ease-out;
+}
+.rightResizeWrapper > div {
+  overflow: hidden;
+  scrollbar-width: thin;
+  display: grid;
+  grid-template-rows: 45px calc(100% - 45px);
+  height: inherit;
+}
+.rightResizeWrapper > div > div > div {
+  text-align: center;
+}
+.bottomResizeWrapper {
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  background-color: white;
+  text-align: center;
+  box-shadow: -5px 2px 3px -2px #aaa;
+  transition: margin 0.5s;
+}
+.bottomResizeWrapper > div {
+  height: 100%;
+  grid-template-rows: 45px calc(100% - 45px);
+  display: grid;
+}

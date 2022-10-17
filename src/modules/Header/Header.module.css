@@ -1,0 +1,54 @@
+/* main header */
+.header {
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+/* main modules of the header */
+.headline {
+  display: flex;
+  justify-content: center;
+}
+.headline > div,
+.login,
+.language {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.headline > div {
+  font-family: 'CustomFontBold', Arial, sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+/* icons */
+.icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.icon {
+  height: 24px;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+/* InfoHelp */
+.infoHelp {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.infoHelp > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.infoHelp a {
+  font-family: 'CustomFontBold', Arial, sans-serif;
+  color: black;
+  display: flex;
+  align-items: center;
+}

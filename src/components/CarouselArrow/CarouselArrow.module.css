@@ -1,0 +1,18 @@
+.arrow > svg {
+  height: 25px;
+  width: 25px !important;
+  color: black;
+  cursor: pointer;
+}
+.arrowNext svg,
+.arrowPrev svg {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 10px !important;
+}
+.arrowNext {
+  right: 0px;
+}
+.arrowPrev {
+  left: 0px;
+}

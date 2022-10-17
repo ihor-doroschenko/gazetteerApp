@@ -1,0 +1,38 @@
+.boundingBox {
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 2px;
+}
+.activeDraw {
+  background-color: #d1cece;
+}
+.passiveRemove {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.passiveDraw:hover,
+.activeRemove:hover {
+  background-color: #d1cece;
+}
+/* Bounding Box icons */
+.icons {
+  height: 16px;
+  width: 16px !important;
+}
+.iconContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.iconContainer > svg {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  color: black !important;
+}
+.subIcon {
+  margin-left: 5px;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  margin-top: 4px;
+}

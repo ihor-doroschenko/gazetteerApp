@@ -1,0 +1,6 @@
+.content {
+  position: relative;
+}
+.lowResolution > div:first-child {
+  height: 100%;
+}

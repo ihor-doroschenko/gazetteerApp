@@ -1,0 +1,100 @@
+/* html body */
+html,
+body,
+#root,
+.appwrapper {
+  height: 100vh;
+  font-family: 'CustomFont', Arial, sans-serif !important;
+  font-size: 13px !important;
+  line-height: initial !important;
+  overflow: hidden;
+}
+.appwrapper {
+  display: grid;
+  grid-template-rows: 5% 95%;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* reset for p */
+p {
+  margin: 0;
+  padding: 0;
+}
+button {
+  font-family: 'CustomFont', Arial, sans-serif !important;
+  font-size: 13px;
+  line-height: initial !important;
+}
+/* headers */
+.smallHeaders {
+  font-size: 1.1rem;
+  font-family: 'CustomFontBold', 'Arial Black', sans-serif;
+  color: black !important;
+  cursor: default;
+}
+/* buttons */
+.buttons {
+  font-size: 1rem;
+  font-weight: bold;
+  background: black;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin: 4px;
+  color: white !important;
+}
+.buttons:hover {
+  background: rgb(80, 79, 79);
+}
+/* without shadow while satellite image */
+.noShadow {
+  box-shadow: none !important;
+}
+/* Shadow for some elements in results table */
+.shadowInResultsTable {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -15px 10px -15px inset;
+}
+/* Borders */
+.borderBottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+/* Breaks for names */
+.namesBreaks {
+  overflow-wrap: break-word;
+}
+/* Flex absolute center */
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* Word break is break all */
+.wordBreak {
+  word-break: break-all;
+}
+.optionTooltips {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.optionTooltips > div {
+  margin-bottom: 8px;
+}
+.gazTooltips {
+  margin: 5px;
+}
+.gazTooltips > div {
+  margin-bottom: 8px;
+}
+/* media queries */
+@media (max-width: 1772px) {
+  .appwrapper {
+    font-size: 12px;
+  }
+}

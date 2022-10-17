@@ -1,0 +1,15 @@
+.detailsToolSet {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.detailsToolSet > div {
+  display: inherit;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.detailsToolSet > div > div:nth-child(2) {
+  font-size: 0.7rem;
+  text-align: center;
+}

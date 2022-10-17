@@ -1,0 +1,7 @@
+.select {
+  height: 30px;
+}
+.noType {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

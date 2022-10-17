@@ -1,0 +1,97 @@
+.tableBottom {
+  z-index: 11;
+  position: absolute;
+  width: 100% !important;
+  height: 55%;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 30px auto;
+  box-shadow: 5px 5px 5px 5px #aaa;
+  bottom: 0;
+}
+.tableBottom > span {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  background-position: bottom right;
+  padding: 0 3px 3px 0;
+  cursor: ns-resize;
+  z-index: 501;
+}
+.gazNamesBottomTable {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.wrapperBottomTables {
+  overflow: hidden;
+}
+.wrapBottomTable {
+  height: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  bottom: none;
+  display: grid !important;
+  grid-template-rows: 30px auto;
+}
+.wrapBottomTable > div:nth-child(2) {
+  min-height: 100%;
+  max-height: 1000px;
+}
+.wrapBottomTable > div:nth-child(2) > div:first-child {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 30px auto;
+}
+.wrapBottomTable > div:nth-child(2) > div:first-child > div:first-child {
+  height: 100%;
+}
+.wrapBottomTableNoData {
+  grid-template-rows: none;
+}
+.resizerWrapper {
+  cursor: ns-resize;
+  height: 20px;
+  margin-top: -5px;
+  background: transparent;
+  display: -webkit-box;
+  display: flex;
+  z-index: 10;
+  -webkit-box-align: center;
+  align-items: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.resizer {
+  cursor: ns-resize;
+  width: 50px;
+  height: 12px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid #d3d3d3;
+  border-radius: 8px;
+  z-index: 10;
+  overflow: hidden;
+  display: -webkit-box;
+  display: flex;
+}
+.resizer > span {
+  text-align: center;
+  line-height: 12px;
+  margin-top: -5px;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  color: #b3b3b3;
+  text-shadow: 1px 0 1px #5a5a5a;
+}
+.resizer > span::after {
+  content: '......';
+}

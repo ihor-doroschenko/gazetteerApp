@@ -1,0 +1,6 @@
+.clickedCrumb {
+  color: black !important;
+}
+.unClickedCrumb {
+  color: grey !important;
+}

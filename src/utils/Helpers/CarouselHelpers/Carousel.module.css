@@ -1,0 +1,11 @@
+.sliderDiv {
+  height: 100%;
+  overflow: hidden;
+}
+.sliderDiv > div > div > div {
+  flex: 1 0 auto;
+}
+.sliderDiv > div > div {
+  display: flex;
+  min-width: 100%;
+}

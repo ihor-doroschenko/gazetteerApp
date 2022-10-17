@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailAttribute snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="attribute"
+  >
+    geographic name
+  </div>
+</DocumentFragment>
+`;

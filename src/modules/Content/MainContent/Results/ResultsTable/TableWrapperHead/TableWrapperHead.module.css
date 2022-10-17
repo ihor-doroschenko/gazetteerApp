@@ -1,0 +1,82 @@
+.results {
+  display: flex;
+  height: 100%;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.results > p {
+  margin: 0;
+  padding-left: 10px;
+}
+.results > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.results > div:first-child {
+  flex: 1 0 10%;
+}
+.results > div:nth-child(2) {
+  flex: 1 0 60%;
+}
+.results > div:last-child {
+  flex: 1 0 30%;
+}
+.resultsBottom > div:first-child {
+  flex: 1 1 95%;
+}
+.resultsBottom > div:last-child {
+  flex: 1 1 5%;
+}
+/* Table tools */
+.tableTools {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.tableTools > div {
+  display: flex;
+  align-items: center;
+}
+/* switch results window*/
+.switchToBottom,
+.switchToRight {
+  height: 100%;
+  width: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.switchToBottom > div,
+.switchToRight > div {
+  border: 1px solid black;
+  background-color: black;
+  box-sizing: border-box;
+}
+.switchToBottom > div {
+  height: 50%;
+  width: 100%;
+}
+.switchToRight > div {
+  height: 100%;
+  width: 50%;
+}
+.switchBottomIcon > div:first-child > a > svg {
+  transform: rotate(90deg);
+}
+/* close results */
+.close {
+  height: 100%;
+  width: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+}

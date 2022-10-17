@@ -1,0 +1,55 @@
+.tableRight {
+  min-height: 50px;
+  height: 100%;
+  scrollbar-width: thin;
+  right: 0px;
+  position: relative;
+  margin-right: 0px;
+  transition: margin 0.5s;
+  box-shadow: 0 10px 6px -6px #aaa;
+}
+.tableRight > div:nth-child(2) {
+  border: none;
+}
+.resultsTableResizeWrapper {
+  display: grid;
+  height: 100%;
+}
+.resultsTableResizeWrapper > div {
+  background-color: white;
+}
+/* For React-Resizing */
+.tableRight > span {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  background-position: bottom right;
+  padding: 0 3px 3px 0;
+  bottom: 0;
+  margin-top: -10px;
+  cursor: ew-resize;
+  z-index: 501;
+}
+.tableWrapperRightContainer {
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content;
+  background-color: #f4f2f2;
+}
+.rightWrapper {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  z-index: 1;
+  visibility: hidden;
+}
+.rightWrapper > div {
+  visibility: visible;
+}

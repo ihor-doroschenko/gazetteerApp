@@ -1,0 +1,24 @@
+.compareToolIcon {
+  height: 20px;
+  width: 20px !important;
+  color: black;
+}
+.resizer {
+  position: relative;
+  float: right;
+  height: 100%;
+  width: 2px;
+  cursor: ew-resize;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.columnsWrapper {
+  display: grid;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -15px 10px -15px inset;
+}
+.columnsWrapper > div:first-child {
+  display: flex;
+}
+.wrapper {
+  z-index: -1;
+}

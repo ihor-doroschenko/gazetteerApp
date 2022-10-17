@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.wrapper p {
+  color: white !important;
+}
+/* media queries */
+@media (max-width: 1772px) {
+  .wrapper {
+    margin-bottom: 0px !important;
+  }
+}

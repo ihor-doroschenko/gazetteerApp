@@ -1,0 +1,20 @@
+.gazHeader {
+  margin: 5px;
+}
+.gazHeader > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  cursor: pointer;
+}
+.gazHeader > p {
+  font-weight: bold;
+}
+.gazHeader svg {
+  margin: 1px;
+  height: 10px;
+  width: 10px !important;
+  min-width: 10px !important;
+  min-height: 10px !important;
+}

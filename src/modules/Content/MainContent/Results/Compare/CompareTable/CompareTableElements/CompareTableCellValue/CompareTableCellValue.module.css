@@ -1,0 +1,8 @@
+.cellValue {
+  overflow: auto;
+  margin-bottom: 5px;
+  scrollbar-width: thin;
+}
+.originalAttribute {
+  color: grey;
+}

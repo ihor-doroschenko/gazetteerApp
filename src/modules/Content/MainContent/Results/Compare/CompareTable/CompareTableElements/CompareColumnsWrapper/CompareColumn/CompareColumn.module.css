@@ -1,0 +1,36 @@
+.table {
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.table > div {
+  height: 100%;
+}
+.tableHead {
+  background-color: #dddddd;
+  box-shadow: none !important;
+  height: 35px;
+}
+.tableHead:hover {
+  background-color: #e9e8e8;
+}
+.tableRtGroup > div,
+.tableRtGroup > div > div {
+  max-height: 100%;
+}
+.tableRtGroup > div > div {
+  overflow: auto !important;
+  scrollbar-width: thin;
+}
+.tableBody {
+  overflow: hidden !important;
+  display: grid !important;
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 10px -15px inset;
+}
+.theadTh > div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

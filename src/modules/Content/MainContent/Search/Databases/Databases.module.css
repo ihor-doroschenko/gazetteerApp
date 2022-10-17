@@ -1,0 +1,107 @@
+.databasesGroup {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.databasesGroup p {
+  color: black;
+}
+.databasesWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.databasesHeader {
+  display: grid;
+  grid-template-columns: 72% 28%;
+}
+.databasesHeader > div:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.databasesResizedWrapper {
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.databasesResizedWrapper .databasesHeader {
+  justify-content: center !important;
+}
+.resizedSelectAllGroup {
+  margin: 5px !important;
+  text-align: center;
+}
+.databasesGroupResized {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(5, 30px);
+}
+.databasesGroupResized > label > span:last-child > div {
+  max-width: 200px;
+}
+.databasesGroupResized > label > span:last-child > div > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* media queries */
+@media (max-height: 900px), (max-width: 1772px) and (max-height: 900px) {
+  .databasesGroup {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 20px);
+    grid-column-gap: 10px;
+    overflow: hidden;
+  }
+  .databasesGroup > label {
+    min-width: 100px;
+    max-width: 250px;
+  }
+  .databasesGroup > label > span:last-child {
+    max-width: 90%;
+  }
+  .databasesGroup > label > span:last-child > div > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .databasesHeader {
+    grid-template-columns: 66% 34%;
+    height: 25px;
+  }
+  .databasesGroupResized {
+    grid-template-rows: repeat(5, 20px);
+  }
+  .databasesWrapper > div:last-child {
+    padding-top: 5px;
+  }
+}
+@media (max-height: 800px), (max-width: 1280px) and (max-height: 800px) {
+  .databasesGroup {
+    max-height: 120px;
+  }
+  .databasesGroupResized {
+    max-height: 100px;
+  }
+  .resizedSelectAllGroup {
+    margin: 5px !important;
+    text-align: center;
+  }
+}
+@media (max-height: 700px), (max-width: 1280px) and (max-height: 700px) {
+  .databasesGroup {
+    max-height: 100px;
+  }
+  .databasesGroupResized {
+    max-height: 100px;
+  }
+  .databasesGroupSide {
+    max-height: 100%;
+  }
+}
+@media (max-height: 600px) {
+  .databasesGroupResized {
+    max-height: 40px;
+  }
+}

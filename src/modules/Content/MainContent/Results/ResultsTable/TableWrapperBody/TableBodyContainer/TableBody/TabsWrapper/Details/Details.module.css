@@ -1,0 +1,69 @@
+.mainDetailsWindow {
+  max-height: 300px;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.mainDetailsWindowHead {
+  position: relative;
+  font-size: 1.1rem;
+  margin: 10px;
+  display: flex;
+}
+.mainDetailsWindowHead > div:first-child {
+  flex: 1 1 80%;
+  display: flex;
+  align-items: center;
+}
+.detailsTable {
+  overflow: auto;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+/* width for Details in bottom view */
+.mainDetailsBottom {
+  max-height: none;
+}
+/* Matching */
+.matchings {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.matchings > div {
+  display: flex;
+  flex-direction: column;
+}
+.matchings > div > div {
+  word-break: break-all;
+}
+.matchings > div:first-child {
+  flex: 1 1 80%;
+}
+.matchings > div:last-child {
+  flex: 1 1 20%;
+}
+/* DetailsTab */
+.windowWrapper {
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+}
+.windowWrapper > div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.windowWrapper > div:first-child {
+  padding-right: 5px;
+}
+.windowWrapper svg {
+  margin: 0px;
+  min-height: 10px !important;
+  min-width: 10px !important;
+  height: 10px;
+  color: #ddd;
+}

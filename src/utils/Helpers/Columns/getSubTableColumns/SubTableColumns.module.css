@@ -1,0 +1,24 @@
+.namesEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cellsWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+.exportWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.exportWrapper > div {
+  flex: 1 0 70%;
+}
+.exportWrapper > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 30%;
+}

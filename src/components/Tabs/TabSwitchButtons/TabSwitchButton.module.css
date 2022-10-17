@@ -1,0 +1,6 @@
+.tabSwitch > svg {
+  height: 15px;
+  width: 15px !important;
+  cursor: pointer;
+  color: grey;
+}

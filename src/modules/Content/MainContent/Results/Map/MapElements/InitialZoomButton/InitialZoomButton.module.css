@@ -1,0 +1,17 @@
+.container {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container > svg {
+  width: 100% !important;
+  height: 100%;
+  padding: 2px;
+}

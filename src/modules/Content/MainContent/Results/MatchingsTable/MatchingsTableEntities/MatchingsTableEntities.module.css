@@ -1,0 +1,61 @@
+.table {
+  border: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.gazNameHead {
+  padding: 15px;
+  background-color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.45);
+  font-weight: bold;
+}
+.td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.panel {
+  height: 100%;
+}
+.panel path {
+  color: black;
+}
+.panel > div:first-child {
+  display: flex;
+  padding: 6px 8px !important;
+  font-size: 0.9rem !important;
+}
+.panel > div:first-child > div:first-child {
+  flex: 1 0 10%;
+}
+.panel > div:first-child > div:last-child {
+  flex: 1 0 90%;
+}
+.even {
+  background-color: white;
+}
+.noData {
+  margin: 10px;
+  color: rgba(0, 0, 0, 0.45);
+}
+.entityHeader {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 35px;
+}
+.entityHeader > span {
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collapseArrowContainer {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0 !important;
+}
+.collapseArrowContainer > svg {
+  min-width: 10px !important;
+  min-height: 10px !important;
+}

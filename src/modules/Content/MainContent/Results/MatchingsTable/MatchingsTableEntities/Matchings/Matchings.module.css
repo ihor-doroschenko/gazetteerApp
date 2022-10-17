@@ -1,0 +1,7 @@
+.matchings span {
+  font-size: 0.9rem;
+}
+.itemValue {
+  color: rgba(0, 0, 0, 0.45);
+  word-break: break-all;
+}

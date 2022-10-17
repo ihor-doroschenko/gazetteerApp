@@ -1,0 +1,9 @@
+.tableBody {
+  display: grid;
+  grid-template-rows: 100px calc(100% - 100px);
+}
+.tableBody > div:last-child {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  overflow-x: hidden;
+}

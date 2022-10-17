@@ -1,0 +1,110 @@
+.optionsWrapper {
+  margin-left: 2px;
+}
+.optionsWrapper > div {
+  display: flex;
+  align-items: center;
+}
+.optionsWrapper > div:first-child {
+  margin-bottom: 0px !important;
+  flex-direction: row-reverse;
+}
+.optionsWrapper > div > div:first-child p {
+  color: black;
+}
+.optionsWrapper > div > div:first-child {
+  flex: 1 1 15%;
+}
+.optionsResizedWrapper > div > div {
+  flex: 1 1 30%;
+  display: grid;
+}
+.optionsResizedTitle {
+  text-align: center;
+}
+.checkboxOptions {
+  display: flex;
+  flex-direction: column;
+}
+.checkboxOptions > label {
+  display: flex;
+  align-items: flex-start;
+}
+.radioOptionsContainer {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+}
+.radioOptionsContainer > div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+.radioOptionsContainer > div:last-child > label {
+  margin-right: 0px !important;
+}
+.radioOptionsContainerResized {
+  flex-direction: column;
+}
+.wrapperMatchingsContainer {
+  display: grid;
+}
+/* media queries */
+@media (max-height: 900px), (max-width: 1772px) and (max-height: 900px) {
+  .optionsWrapper {
+    max-height: 150px;
+  }
+  .radioOptionsContainerResized > div:last-child > label > span:last-child {
+    width: 100px;
+  }
+  .optionsWrapper > div > div {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .optionsWrapper > div > p {
+    flex: 1 1 40%;
+    word-break: break-all;
+  }
+  .optionsWrapper > div > div > label {
+    width: 60%;
+  }
+  .optionsResizedWrapper {
+    max-height: 150px;
+  }
+  .optionsWrapper p {
+    text-align: center;
+    width: 100%;
+  }
+  .optionsResizedWrapper > div > label {
+    width: 100%;
+    line-height: 10px !important;
+    display: flex;
+  }
+  .radioOptionsContainer > div:last-child > label {
+    margin-right: 8px !important;
+  }
+  .optionsWrapper > div > div:first-child {
+    flex: 1 1 30%;
+  }
+  .optionsWrapper > div > div:last-child {
+    flex: 1 1 70%;
+  }
+  .optionsWrapper > div:first-child {
+    flex-direction: row;
+  }
+  .optionsResizedWrapper {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-height: 800px), (max-width: 1280px) and (max-height: 800px) {
+  .optionsWrapper {
+    max-height: 120px;
+  }
+  .optionsResizedWrapper {
+    max-height: 100px;
+  }
+  .radioOptionsContainer > div:last-child > label {
+    margin-right: 8px !important;
+  }
+}
