@@ -25,6 +25,8 @@ Gazetteer App to combine various gazetteers in one graphic user interface
 [5. License](#license)  
 [6. Acknowledgements](#acknowledgements)
 
+<i>This is only part of the GazetteerApp documentation that provides description for front end part of the app. Documentation for the back end part can be found here and concepts of the app can be accessed here. </i>
+
 <a name="introduction"><h2>1. Introduction</h2></a>
 The GazApp web application is developed as part of the Gazetteer research project by the Herder Institute (HI), the Institute for Regional Geography (IfL) and the Justus Liebig University Giessen (JLU). The application is intended to support users in working with different digital gazetteers, and to help them explore their content and metadata structure.
 
