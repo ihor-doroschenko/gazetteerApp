@@ -687,11 +687,10 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
 <br />
 5. PRNG.<br />
 
- * Renaming `id_prng` attribute to `id` attribute.
- * Renaming `hauptname` attribute to `name` attribute.
- * Renaming `objekttyp` attribute to `type` attribute.
- * Renaming `lat_normalisiert` attribute to `lat` attribute.
- * Renaming `lon_normalisiert` attribute to `lng` attribute.
+ * Renaming `main name` attribute to `name` attribute.
+ * Renaming `object type` attribute to `type` attribute.
+ * Renaming `lat normalized` attribute to `lat` attribute.
+ * Renaming `lon normalized` attribute to `lng` attribute.
  * Renaming `lat` attribute to `geograph_lat` attribute.
  * Renaming `lon` attribute to `geograph_lng` attribute.
  * Coercing value of `id` attribute to string data type.
@@ -705,8 +704,8 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
 7. Historical Atlas of Poland.<br />
 
  * Renaming `objectid` attribute to `id` attribute.
- * Renaming `nazwa_wspolczesna` attribute to `name` attribute.
- * Renaming `charakter_osady` attribute to `type` attribute.
+ * Renaming `current name` attribute to `name` attribute.
+ * Renaming `settlement type` attribute to `type` attribute.
  * Renaming `lon` attribute to `lng` attribute.
  * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
  * Coercing value of `id` attribute to string data type.
@@ -715,18 +714,18 @@ Below the normalization operations for each gazetteer specificly are listed.<br 
 8. Naszekaszuby.<br />
 
  * Renaming `idx` attribute to `id` attribute.
- * Renaming `name_polnisch` attribute to `name` attribute.
+ * Renaming `polish name` attribute to `name` attribute.
  * Coercing value of `id` attribute to string data type.
 <br />
 9. Carpathorusyn.<br />
 
- * Renaming `name_russinisch` attribute to `name` attribute.
+ * Renaming `rusyn name` attribute to `name` attribute.
  * Renaming `refnum` attribute to `id` attribute.
 <br />
 10. Prusijalit.<br />
 
  * Renaming `idx` attribute to `id` attribute.
- * Renaming `name_litauisch` attribute to `name` attribute.
+ * Renaming `lithuanian name` attribute to `name` attribute.
  * Renaming `lon` attribute to `lng` attribute.
  * Coercing value of `id` attribute to string data type.
  * Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
