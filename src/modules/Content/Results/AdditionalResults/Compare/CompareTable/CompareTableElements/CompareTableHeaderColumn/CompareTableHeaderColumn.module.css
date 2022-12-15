@@ -1,0 +1,8 @@
+.resizer {
+  position: relative;
+  float: right;
+  height: 100%;
+  width: 2px;
+  cursor: ew-resize;
+  background-color: rgba(0, 0, 0, 0.1);
+}

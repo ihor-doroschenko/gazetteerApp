@@ -4,7 +4,7 @@ import { setFilteredMatchings } from 'redux/matching-reducer';
 import { getMatchingsEntities } from 'selectors/simple-selectors/matching-selectors';
 import { getIsMatching } from 'selectors/simple-selectors/nav-selectors';
 import { getStatus } from 'selectors/simple-selectors/results-selectors';
-import { getStatusIsFinished } from 'utils/Helpers/Matchings/getStatusIsFinished';
+import { validateStatus } from 'utils/validators/PropertyValidators/validateStatus';
 
 // Hook to show all results in results table or to show results only with matchings
 
@@ -14,7 +14,7 @@ export function useMatchingsFilter() {
   const dispatch = useDispatch();
   const isMatching = useSelector(getIsMatching);
   useEffect(() => {
-    const statusIsFinished = getStatusIsFinished(status);
+    const statusIsFinished = validateStatus(status);
     if (isMatching && statusIsFinished) {
       dispatch(setFilteredMatchings(matchings));
     }

@@ -4,13 +4,14 @@ import TooltipContainer from 'components/Tooltip/TooltipContainer';
 import { withReactMemo } from 'HOCs/withReactMemo';
 import { useFilterValuesForExport } from 'Hooks/Export/useFilterValuesForExport';
 import React from 'react';
-import isEqual from 'react-fast-compare';
 import { useSelector } from 'react-redux';
 import { getCombinedFilteredEntities } from 'selectors/reselectors/getCombinedFilteredEntities';
 import ExportClasses from './Export.module.css';
 import ExportCSV from './ExportCSV';
 import ExportGeoJSON from './ExportGeoJSON';
 import ExportJSON from './ExportJSON';
+
+// Component wrapper to contain export components (in CSV, JSON, and geoJSON formats)
 
 const ExportContainer = ({ gazName = false, entries, jsonEntries, headers, filename }) => {
   const combinedFilteredEntries = useSelector(state => getCombinedFilteredEntities(state, gazName));
@@ -37,7 +38,7 @@ const ExportContainer = ({ gazName = false, entries, jsonEntries, headers, filen
           <TooltipContainer
             placement='left'
             icon={faFileDownload}
-            text='tt_export_csv'
+            text='tt_export'
             styleProp={ExportClasses.iconExport}
           />
         </Space>
@@ -46,4 +47,4 @@ const ExportContainer = ({ gazName = false, entries, jsonEntries, headers, filen
   );
 };
 
-export default withReactMemo(ExportContainer, isEqual);
+export default withReactMemo(ExportContainer);

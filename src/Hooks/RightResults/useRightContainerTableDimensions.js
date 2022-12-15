@@ -1,4 +1,4 @@
-import { getRightContainerDimensions } from 'constants/getRightContainerMaxWidth';
+import { defaultElementWidth, rightContainerMaxWidthPercentage } from 'constants/numericConstants';
 import { useHiddenValuesForAllResultWindows } from 'Hooks/useHiddenValuesForAllResultWindows';
 import useWindowDimensions from 'Hooks/useWindowDimensions';
 import { useEffect, useState } from 'react';
@@ -7,7 +7,7 @@ import { setAllResultWindowWidthsToInitial } from 'redux/table-state-reducer';
 import {
   getCompareWidth,
   getMatchingsWidth,
-  getResultsBlockRightWidth,
+  getResultsWidth,
 } from 'selectors/simple-selectors/table-state-selectors';
 import { useCompareTableAutomaticSlideAmountCalculation } from './useCompareTableAutomaticSlideAmountCalculation';
 import { useDimensionSynchronisation } from './useDimensionSynchronisation';
@@ -17,23 +17,20 @@ import { useSearchSwitchController } from './useSearchSwitchController';
 export function useRightContainerTableDimensions() {
   const dispatch = useDispatch();
   const { isMatchingTableHidden, isCompareHidden } = useHiddenValuesForAllResultWindows();
-  const resultsWidth = useSelector(getResultsBlockRightWidth);
+  const resultsSideWidth = useSelector(getResultsWidth);
   const compareGlobalWidth = useSelector(getCompareWidth);
   const matchingsGlobalWidth = useSelector(getMatchingsWidth);
   const { width } = useWindowDimensions();
-  const { rightContainerMaxWidth, rightContainerElementDefaultWidth } =
-    getRightContainerDimensions();
-
-  const maxWidth = (rightContainerMaxWidth * width) / 100;
+  const maxWidth = (rightContainerMaxWidthPercentage * width) / 100;
 
   const [maxResultsWidth, setMaxResultsWidth] = useState(maxWidth);
-  const [resultsLocalWidth, setResultsLocalWidth] = useState(resultsWidth);
+  const [resultsLocalWidth, setResultsLocalWidth] = useState(resultsSideWidth);
   const [maxCompareWidth, setMaxCompareWidth] = useState(maxWidth - resultsLocalWidth);
-  const [compareWidth, setCompareWidth] = useState(compareGlobalWidth);
+  const [compareSideWidth, setCompareWidth] = useState(compareGlobalWidth);
   const [maxMatchingsWidth, setMaxMatchingsWidth] = useState(
-    maxWidth - resultsLocalWidth - compareWidth
+    maxWidth - resultsLocalWidth - compareSideWidth
   );
-  const [matchingsWidth, setMatchingsWidth] = useState(matchingsGlobalWidth);
+  const [matchingsSideWidth, setMatchingsWidth] = useState(matchingsGlobalWidth);
 
   useSearchSwitchController();
 
@@ -44,8 +41,8 @@ export function useRightContainerTableDimensions() {
   useResultsElementsMaxDimensions({
     maxWidth,
     resultsLocalWidth,
-    matchingsWidth,
-    compareWidth,
+    matchingsSideWidth,
+    compareSideWidth,
     setMaxResultsWidth,
     setMaxMatchingsWidth,
     setMaxCompareWidth,
@@ -53,17 +50,17 @@ export function useRightContainerTableDimensions() {
 
   useEffect(() => {
     if (!isCompareHidden || !isMatchingTableHidden) {
-      setMaxResultsWidth(maxWidth - compareWidth - matchingsWidth);
-      setMaxCompareWidth(maxWidth - resultsLocalWidth - matchingsWidth);
-      setMaxMatchingsWidth(maxWidth - resultsLocalWidth - compareWidth);
+      setMaxResultsWidth(maxWidth - compareSideWidth - matchingsSideWidth);
+      setMaxCompareWidth(maxWidth - resultsLocalWidth - matchingsSideWidth);
+      setMaxMatchingsWidth(maxWidth - resultsLocalWidth - compareSideWidth);
       if (
         !isCompareHidden &&
         !isMatchingTableHidden &&
-        resultsLocalWidth + compareWidth + matchingsWidth > maxWidth
+        resultsLocalWidth + compareSideWidth + matchingsSideWidth > maxWidth
       ) {
-        setCompareWidth(rightContainerElementDefaultWidth);
-        setResultsLocalWidth(rightContainerElementDefaultWidth);
-        setMatchingsWidth(rightContainerElementDefaultWidth);
+        setCompareWidth(defaultElementWidth);
+        setResultsLocalWidth(defaultElementWidth);
+        setMatchingsWidth(defaultElementWidth);
         dispatch(setAllResultWindowWidthsToInitial());
       }
     } else {
@@ -74,13 +71,13 @@ export function useRightContainerTableDimensions() {
   return {
     compareDimensions: {
       setElementWidth: setCompareWidth,
-      elementWidth: compareWidth,
+      elementWidth: compareSideWidth,
       maxWidth,
       maxElementWidth: maxCompareWidth,
     },
     matchingsDimensions: {
       setElementWidth: setMatchingsWidth,
-      elementWidth: matchingsWidth,
+      elementWidth: matchingsSideWidth,
       maxWidth,
       maxElementWidth: maxMatchingsWidth,
     },

@@ -1,7 +1,7 @@
 /* main header */
 .header {
   display: grid;
-  grid-template-columns: 20% 70% 10%;
+  grid-template-columns: 20% 65% 15%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 /* main modules of the header */
@@ -37,18 +37,23 @@
 /* InfoHelp */
 .infoHelp {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   cursor: pointer;
 }
-.infoHelp > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
+.infoHelp > a:first-child {
+  margin-right: 10px;
 }
 .infoHelp a {
   font-family: 'CustomFontBold', Arial, sans-serif;
   color: black;
   display: flex;
   align-items: center;
+}
+/* media queries */
+@media (max-width: 1772px) {
+  .header {
+    display: grid;
+    grid-template-columns: 20% 55% 25%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
 }

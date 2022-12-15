@@ -1,4 +1,7 @@
-// In some gazetteers the attribute names can be in German
+// Normalize the Carpathorusyn gazetteer.
+
+// Renaming "rusyn name" attribute to "name" attribute.
+// Renaming "refnum" attribute to "id" attribute.
 
 export const normalizeCarpathorusyn = database => {
   return database

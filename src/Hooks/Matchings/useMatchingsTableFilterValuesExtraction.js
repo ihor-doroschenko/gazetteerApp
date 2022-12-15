@@ -5,7 +5,7 @@ import {
   getMatchingCurrentSourceGazetteer,
   getMatchingDBs,
 } from 'selectors/simple-selectors/matching-selectors';
-import { getGazetteerFilterValues } from 'utils/Helpers/Matchings/getGazetteerFilterValues';
+import { getGazetteerFilterValues } from 'utils/Filtering/getGazetteerFilterValues';
 
 // Hook to extract values for matching filters
 

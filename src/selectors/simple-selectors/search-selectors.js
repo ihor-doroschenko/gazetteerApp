@@ -29,11 +29,13 @@ export const getIsMatchingEnabled = state => {
 };
 
 // Selector to get search textes used previously in current app session
-export const getPreviousSearchTextes = state => {
-  return state.search.previousSearchTextes;
+export const getPreviousSearchedPlaceNames = state => {
+  return state.search.previousSearchedPlaceNames;
 };
 
 // Selector to get actual search text
 export const getSearchText = state => {
-  return state.search.searchText;
+  return state.search.placeName;
 };
+
+//TODO: order reducers vs selectors

@@ -1,13 +1,15 @@
 import exportFromJSON from 'export-from-json';
 import { withReactMemo } from 'HOCs/withReactMemo';
 import React from 'react';
-import { prepareGeoJSONExport } from 'utils/Exporting/prepareGeoJSONExport';
+import { generateGeoJSONExport } from 'utils/Exporting/generateGeoJSONExport';
 import ExportClasses from './Export.module.css';
+
+// Component to contain export component to export data in CSV format
 
 const ExportGeoJSON = ({ data, filename }) => {
   const onclick = () => {
     exportFromJSON({
-      data: prepareGeoJSONExport(data),
+      data: generateGeoJSONExport(data),
       fileName: `${filename}-geo`,
       exportType: exportFromJSON.types.json,
     });

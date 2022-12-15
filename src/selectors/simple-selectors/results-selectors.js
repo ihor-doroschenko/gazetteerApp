@@ -3,9 +3,9 @@ export const getSearchedText = state => {
   return state.results.searchedText;
 };
 
-// Selector to get gazetteers selected by user for search
+// Selector to get gazetteers used by user for search
 export const getUsedGazetteers = state => {
-  return state.results.gazetteers.map(el => el.gazName);
+  return state.results.usedGazetteers.map(el => el.gazName);
 };
 
 // Selector to get status of requested results
@@ -24,6 +24,6 @@ export const getOriginalEntries = state => {
 };
 
 // Selector to get entities originally not included by search (e.g. via matchings, if requested entity is available in database)
-export const getSeparateEntries = state => {
-  return state.results.separateEntries;
+export const getExternEntities = state => {
+  return state.results.externEntities;
 };

@@ -1,12 +1,19 @@
+import { getGazetteerInfo } from 'constants/getGazetteerInfo';
 import { getResultsObjectForTable } from 'utils/FactoryFunctions/getResultsObjectForTable';
+import { checkStatus } from 'utils/validators/checkStatus';
+import { IsGazetteerInUsedGazetteers } from 'utils/validators/IsGazetteerInUsedGazetteers';
 
-export const getDataFromOriginalEntities = (data, status, entries, gazetteers) => {
+// Generate results object for entities from gazetteers used in current request
+
+export const getDataFromOriginalEntities = (data, status, entries, usedGazetteers) => {
   Object.entries(status).forEach(([key, value]) => {
-    const gazeteer = gazetteers.find(g => g.gazName === key);
-    data.push(getResultsObjectForTable(key, gazeteer.text, value, gazeteer.color));
-    if (value === 'done') {
-      const objIndex = data.findIndex(obj => obj.gazName === key);
-      data[objIndex].types = entries[key];
+    if (IsGazetteerInUsedGazetteers(usedGazetteers, key)) {
+      const gazObj = getGazetteerInfo(key);
+      data.push(getResultsObjectForTable(key, gazObj.text, value, gazObj.color));
+      if (checkStatus(value, 'done')) {
+        const objIndex = data.findIndex(obj => obj.gazName === key);
+        data[objIndex].types = entries[key];
+      }
     }
   });
 };

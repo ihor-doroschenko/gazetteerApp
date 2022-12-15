@@ -55,6 +55,12 @@
 .ReactTable .-pagination .-center {
   flex: 3 1;
 }
+.ReactTable .rt-tbody {
+  overflow-x: hidden !important;
+}
+.ReactTable .rt-table {
+  scrollbar-width: thin;
+}
 .ReactTable .rt-tbody .rt-tr-group {
   border: none;
 }
@@ -157,7 +163,7 @@
   margin: 0 !important;
 }
 .slick-disabled {
-  opacity: 0;
+  opacity: 0.4;
   pointer-events: none;
 }
 .slick-vertical .slick-slide {
@@ -183,6 +189,7 @@
 .react-resizable-handle-w,
 .react-resizable-handle-e {
   position: absolute;
+  left: 0;
   width: 10px;
   height: 100%;
   background-repeat: no-repeat;
@@ -259,6 +266,9 @@
 .ant-radio-button-wrapper-checked::before {
   background-color: black !important;
 }
+.ant-btn {
+  padding: 4px 6px !important;
+}
 .ant-btn-primary {
   color: black !important;
   background: white !important;
@@ -300,7 +310,7 @@
   border-color: black !important;
 }
 .ant-checkbox-checked::after {
-  border: 1px solid black !important;
+  border: none !important;
 }
 .ant-checkbox-inner {
   border: 1px solid black !important;
@@ -315,6 +325,7 @@
 .ant-checkbox-wrapper {
   margin-left: 0px !important;
   margin-bottom: 5px;
+  align-items: unset !important;
 }
 .ant-form label {
   font-size: 0.9rem !important;

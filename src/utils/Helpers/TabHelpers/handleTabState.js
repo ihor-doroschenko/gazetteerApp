@@ -1,12 +1,6 @@
-const checkStatus = el => {
-  return el.status;
-};
-
-const getShouldOpen = array => {
-  const index = array.findIndex(checkStatus);
-  return index === -1 ? 0 : index + 1;
-};
+// Handle index of tabs by changing the details (entities selected for the detail view) array
 
 export const handleTabState = detailsFiltered => {
-  return getShouldOpen(detailsFiltered);
+  const index = detailsFiltered.findIndex(el => el.status);
+  return index === -1 ? 0 : index + 1;
 };

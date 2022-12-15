@@ -6,8 +6,8 @@ import {
   getMatchingCurrentGazetteer,
   getMatchingCurrentSourceGazetteer,
 } from 'selectors/simple-selectors/matching-selectors';
-import { filterBySourceGazetteer } from 'utils/Helpers/Matchings/filterBySourceGazetteer';
-import { filterMatchingsByProperty } from '../../utils/Helpers/Matchings/filterMatchingsByProperty';
+import { filterMatchingsByMatchingsGazetteer } from 'utils/Filtering/Matchings/filterMatchingsByMatchingsGazetteer';
+import { filterMatchingsBySourceGazetteer } from 'utils/Filtering/Matchings/filterMatchingsBySourceGazetteer';
 
 // Hook to wrap two filters for matching table in matching view: filter by source gazetteer and by matched gazetteer
 
@@ -17,8 +17,8 @@ export function useMatchingsFilterData() {
   const currentGazetteer = useSelector(getMatchingCurrentGazetteer);
   const dispatch = useDispatch();
   useEffect(() => {
-    let filtered = filterBySourceGazetteer(matchings, currentSourceGazetteer);
-    filtered = filterMatchingsByProperty(filtered, currentGazetteer, 'db');
+    let filtered = filterMatchingsBySourceGazetteer(matchings, currentSourceGazetteer);
+    filtered = filterMatchingsByMatchingsGazetteer(filtered, currentGazetteer, 'db');
     dispatch(setFilteredMatchings(filtered));
   }, [currentSourceGazetteer, currentGazetteer]);
 }

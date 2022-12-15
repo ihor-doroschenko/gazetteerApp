@@ -1,27 +1,19 @@
-import { checkFilteredLengthInSideView } from './changeOverflow/checkFilteredLengthInSideView';
-import { checkLengthInBottomView } from './changeOverflow/checkLengthInBottomView';
+import { checkLengthBottomView } from './changeOverflow/checkLengthBottomView';
+import { checkLengthSideView } from './changeOverflow/checkLengthSideView';
+
+// Conditionally change overflow value for subtables in the results table
 
 export const changeOverflow = (isSideSwitched, entries, filteredEntries, filteredValues) => {
-  const maxVisibleRowsSideView = 5;
-  const minVisibleRowsBottomView = 3;
+  const lengthBottomView = checkLengthBottomView(
+    isSideSwitched,
+    entries,
+    filteredValues,
+    filteredEntries
+  );
+  const lengthSideView = checkLengthSideView(isSideSwitched, filteredEntries, filteredValues);
   return {
     style: {
-      overflow:
-        checkLengthInBottomView(
-          isSideSwitched,
-          entries,
-          filteredValues,
-          filteredEntries,
-          minVisibleRowsBottomView
-        ) ||
-        checkFilteredLengthInSideView(
-          isSideSwitched,
-          filteredEntries,
-          maxVisibleRowsSideView,
-          filteredValues
-        )
-          ? 'hidden'
-          : 'auto',
+      overflow: lengthBottomView || lengthSideView ? 'hidden' : 'auto',
     },
   };
 };

@@ -10,11 +10,11 @@ export function useCompareTableAutomaticSlideAmountCalculation(maxCompareWidth, 
   const dispatch = useDispatch();
   const entitiesToCompare = useSelector(getEntitiesToCompare);
   const slideAmount = useSelector(getSlideAmount);
-  const compareWidth = useSelector(getCompareWidth);
+  const compareSideWidth = useSelector(getCompareWidth);
   useEffect(() => {
     // if new entity is added to the compare table, it will check, whether the compare table can be automatically resized to show as many added entities to compare as possible
     if (entitiesToCompare.length > slideAmount) {
-      const compareWidthUpdated = compareWidth + 200;
+      const compareWidthUpdated = compareSideWidth + 200;
       if (compareWidthUpdated < maxCompareWidth) {
         setCompareWidth(compareWidthUpdated);
         dispatch(setCompareWidthWrapper(compareWidthUpdated));

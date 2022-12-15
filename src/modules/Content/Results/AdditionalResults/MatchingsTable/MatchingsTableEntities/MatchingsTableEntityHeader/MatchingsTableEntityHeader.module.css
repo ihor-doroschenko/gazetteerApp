@@ -1,0 +1,11 @@
+.entityHeader {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 35px;
+}
+.entityHeader > span {
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

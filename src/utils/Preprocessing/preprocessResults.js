@@ -1,4 +1,4 @@
-import { sortArrayByNameProperty } from '../Sorting/sortArrayByNameProperty';
+import { sortObjectByNameProperty } from '../Sorting/sortObjectByNameProperty';
 import { assignInternId } from './AdditionalNormalizing/assignInternId';
 import { normalize } from './normalizeResults';
 
@@ -9,7 +9,7 @@ export const preprocessResults = (entries, gazName) => {
     // Firstly, the results are normalized
     const normalized = normalize(entries, gazName);
     // Secondly, already normalized results are sorted
-    const sorted = normalized.sort(sortArrayByNameProperty);
+    const sorted = normalized.sort(sortObjectByNameProperty);
     // Finally, already normalized and sorted results are assigned intern ids to provide intern indexing
     return assignInternId(sorted);
   }

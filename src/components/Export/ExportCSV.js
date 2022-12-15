@@ -2,13 +2,15 @@ import { withReactMemo } from 'HOCs/withReactMemo';
 import React from 'react';
 import { CSVLink } from 'react-csv';
 import removeAccents from 'remove-accents';
-import { convertToExport } from 'utils/Exporting/convertToExport';
+import { prepareToExport } from 'utils/Exporting/prepareToExport';
 import ExportClasses from './Export.module.css';
+
+// Component to contain export component to export data in CSV format
 
 const ExportCSV = ({ data, headers, filename }) => {
   return (
     <CSVLink
-      data={convertToExport(data)}
+      data={prepareToExport(data)}
       headers={headers}
       separator={';'}
       filename={`${removeAccents(filename)}.csv`}>

@@ -2,7 +2,7 @@
 export const getTableStateExpanded = state => state.tableState.expanded;
 
 // Selector to get width of the results table in side view
-export const getResultsBlockRightWidth = state => state.tableState.resultsWidth;
+export const getResultsWidth = state => state.tableState.resultsSideWidth;
 
 // Selector to get current dimensions of the window
 export const getWindowDimensions = state => state.tableState.windowDimensions;
@@ -11,10 +11,10 @@ export const getWindowDimensions = state => state.tableState.windowDimensions;
 export const getSearchWidth = state => state.tableState.searchWidth;
 
 // Selector to get width of the compare table in side view
-export const getCompareWidth = state => state.tableState.compareWidth;
+export const getCompareWidth = state => state.tableState.compareSideWidth;
 
 // Selector to get width of the matchings table in side view
-export const getMatchingsWidth = state => state.tableState.matchingsWidth;
+export const getMatchingsWidth = state => state.tableState.matchingsSideWidth;
 
 // Selector to get height of the results table in side view
 export const getResultsSideHeight = state => state.tableState.resultsSideHeight;
@@ -25,9 +25,15 @@ export const getCompareSideHeight = state => state.tableState.compareSideHeight;
 // Selector to get height of the compare table in side view
 export const getMatchingsSideHeight = state => state.tableState.matchingsSideHeight;
 
-// Selector to get height either of matchings table or compare table in bottom view
-export const getAdditionalElementOriginalHeight = state =>
-  state.tableState.additionalElementsOriginalHeight;
-
 // Selector to get width either of matchings table or compare table in bottom view
-export const getCompareToolDashboardWidth = state => state.tableState.compareToolDashboardWidth;
+export const getAdditionalResultsBottomWidth = state =>
+  state.tableState.additionalResultsBottomWidth;
+
+// Selector to get actual height for results in bottom view
+export const getResultsBottomHeight = state => state.tableState.resultsBottomHeight;
+
+// Selector to get minimum height for results in bottom view
+export const getResultsBottomMinHeight = state => state.tableState.resultsBottomMinHeight;
+
+// Selector to get maximum height for results in bottom view
+export const getResultsBottomMaxHeight = state => state.tableState.resultsBottomMaxHeight;

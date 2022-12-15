@@ -1,3 +1,5 @@
+// Match meta attributes with original attributes of the gazetteers. It is used for the compare table
+
 export const getOriginalMetaAttributes = (attribute, gazName) => {
   const original = originalMetaAttributes[attribute]
     ? originalMetaAttributes[attribute][gazName]
@@ -45,7 +47,6 @@ const originalMetaAttributes = {
   position: {
     geonames: ['lat', 'lng'],
     wikidata: 'coordinates',
-    gov: 'position',
     gnd: 'hasGeometry',
     prng: ['lat', 'lon'],
     poland16thc: ['lat', 'lon'],

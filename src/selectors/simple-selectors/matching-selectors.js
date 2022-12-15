@@ -1,6 +1,6 @@
 // Selector to get value whether all results are shown or only those having matchings as additional attribute
 export const getIsMatched = state => {
-  return state.matching.isMatched;
+  return state.matching.onlyMatchedResults;
 };
 
 // Selector to get only entities with matchings
@@ -28,7 +28,7 @@ export const getMatchingDBs = state => {
   return state.matching.matchingDBs;
 };
 
-// Selector to get either entities with matchings or all entities (based on value isMatched)
+// Selector to get either entities with matchings or all entities (based on value onlyMatchedResults)
 export const getEntries = state => {
-  return state.matching.isMatched ? state.matching.matchings : state.results.entries;
+  return state.matching.onlyMatchedResults ? state.matching.matchings : state.results.entries;
 };

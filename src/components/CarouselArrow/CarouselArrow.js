@@ -4,6 +4,8 @@ import TooltipContainer from 'components/Tooltip/TooltipContainer';
 import React from 'react';
 import CarouselArrowClasses from './CarouselArrow.module.css';
 
+// Component to contain arrow buttons to switch between elements of the carousel
+
 const CarouselArrow = props => {
   const { className, style, onClick, value } = props;
   return (

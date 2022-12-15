@@ -1,3 +1,5 @@
+// Reference GOV types from number code to real feature type
+
 export const getGOVTypes = () => {
   return {
     124: ['Abtei', 'Kirche'],

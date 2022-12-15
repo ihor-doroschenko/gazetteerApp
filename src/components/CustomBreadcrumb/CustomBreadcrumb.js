@@ -1,26 +1,32 @@
 import { Breadcrumb } from 'antd';
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { changePartOfIsOpened } from 'redux/details-reducer';
+import { changePartOfImageProperty } from 'redux/details-reducer';
 import CustomBreadcrumbClasses from './CustomBreadCrumb.module.css';
+
+// Component to contain breacrumb element to use in part-of attribute of GOV entities to switch between text and graphic representations
 
 const CustomBreadcrumb = ({ id, image }) => {
   const dispatch = useDispatch();
-  const state = image && image.isOpened;
+  const imageState = image && image.isOpened;
   return (
     <Breadcrumb>
       <Breadcrumb.Item
         className={
-          !state ? CustomBreadcrumbClasses.clickedCrumb : CustomBreadcrumbClasses.unClickedCrumb
+          !imageState
+            ? CustomBreadcrumbClasses.clickedCrumb
+            : CustomBreadcrumbClasses.unClickedCrumb
         }
-        onClick={() => dispatch(changePartOfIsOpened(id, false))}>
+        onClick={() => dispatch(changePartOfImageProperty(id, 'isOpened', false))}>
         Text view
       </Breadcrumb.Item>
       <Breadcrumb.Item
         className={
-          !state ? CustomBreadcrumbClasses.unClickedCrumb : CustomBreadcrumbClasses.clickedCrumb
+          !imageState
+            ? CustomBreadcrumbClasses.unClickedCrumb
+            : CustomBreadcrumbClasses.clickedCrumb
         }
-        onClick={() => dispatch(changePartOfIsOpened(id, true))}>
+        onClick={() => dispatch(changePartOfImageProperty(id, 'isOpened', true))}>
         Image view
       </Breadcrumb.Item>
     </Breadcrumb>

@@ -2,6 +2,8 @@ import CarouselArrow from 'components/CarouselArrow/CarouselArrow';
 import React from 'react';
 import { getSlidesToShow } from './getSlidesToShow';
 
+// Get settings for slick wrapper (carousel) in bottom view
+
 export const getBottomViewCarouselSettings = (data, setCurrentIndex) => {
   return {
     dots: false,

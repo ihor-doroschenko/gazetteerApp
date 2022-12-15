@@ -1,6 +1,11 @@
 import { convertArrayItemsToNumbers } from 'utils/Converting/convertArrayItemsToNumbers';
 
-// In some gazetteers the attribute names can be in German
+// Normalize the Prusijalit gazetteer.
+// Renaming `idx` attribute to `id` attribute.
+// Renaming `lithuanian name` attribute to `name` attribute.
+// Renaming `lon` attribute to `lng` attribute.
+// Coercing value of `id` attribute to string data type.
+// Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
 
 export const normalizePrusijalit = database => {
   return database

@@ -1,3 +1,5 @@
+// Reducer to control part of the store related to the results and processes happening immediately after requesting the main results. It contains state and take actions as arguments to modify the state and return new state
+
 import { resultsAPI } from 'dal/DALWrapper';
 import { getIsMatching } from 'selectors/simple-selectors/nav-selectors';
 import {
@@ -7,155 +9,144 @@ import {
   getSearchCoordinates,
   getSearchType,
 } from 'selectors/simple-selectors/search-selectors';
-import { filterEntitiesByMatchingProperty } from 'utils/Filtering/Matching/filterEntitiesByMatchingProperty';
+import { filterEntitiesByMatchingProperty } from 'utils/Filtering/Matchings/filterEntitiesByMatchingProperty';
 import { setValuesForTypeFilter } from 'utils/Filtering/TypeFilter/setValuesForTypeFilter';
-import { getMatchingsDBs } from 'utils/Helpers/ReducerHelpers/ResultsReducer/getMatchingsDBs';
+import { getMatchingsGazetteers } from 'utils/Helpers/ReducerHelpers/ResultsReducer/getMatchingsGazetteers';
 import { preprocessResults } from 'utils/Preprocessing/preprocessResults';
 import { getRequestErrorText } from 'utils/TextHandlers/getRequestErrorText';
 import { setTypes } from './filter-reducer';
 import { setMatchingDBs, setMatchings } from './matching-reducer';
 import { setIsMatching } from './nav-reducer';
-import { setPreviousSearchText } from './search-reducer';
+import { setPreviousSearchedPlaceNames } from './search-reducer';
 import { setStateOfExpandedOfAGazetteer } from './table-state-reducer';
 
-const SET_ENTRIES = 'gazetteer-app/results/SET_ENTRIES';
-const SET_ORIGINAL_ENTRIES = 'gazetteer-app/results/SET_ORIGINAL_ENTRIES';
-const SET_SEARCHEDTEXT = 'gazetteer-app/results/SET_SEARCHEDTEXT';
-const SET_GAZETTEERS = 'gazetteer-app/results/SET_GAZETTEERS';
-const SET_RESULTS_REDUCER_TO_INITIAL = 'gazetteer-app/results/SET_RESULTS_REDUCER_TO_INITIAL';
+// Constants for actions names written using the rule of the redux-ducks - reducer/actions
+// Set entities (main results) from the request
+const SET_ENTITIES = 'gazetteer-app/results/SET_ENTITIES';
+// Set entities (main results) from the request in original to work with non-normalized data
+const SET_ORIGINAL_ENTITIES = 'gazetteer-app/results/SET_ORIGINAL_ENTITIES';
+// Set place name being searched
+const SET_SEARCHED_PLACE_NAME = 'gazetteer-app/results/SET_SEARCHED_PLACE_NAME';
+// Set gazetteers being used in current search
+const SET_USED_GAZETTEERS = 'gazetteer-app/results/SET_USED_GAZETTEERS';
+// Turn on fetching mode to show the request for main results still being processed
 const TURN_ON_FETCHING = 'gazetteer-app/results/TURN_ON_FETCHING';
+// Turn off fetching mode to show that the processing of the request has been done
 const TURN_OFF_FETCHING = 'gazetteer-app/results/TURN_OFF_FETCHING';
-const CATCH_ERROR = 'gazetteer-app/results/CATCH_ERROR';
-const SET_SEPARATE_ENTRIES = 'gazetteer-app/results/SET_SEPARATE_ENTRIES';
-const CLOSE_SEPARATE_ENTRY = 'gazetteer-app/results/CLOSE_SEPARATE_ENTRY';
-const SET_SEPARATE_ENTRIES_TO_INITIAL = 'gazetteer-app/results/SET_SEPARATE_ENTRIES_TO_INITIAL';
-const ADD_NOT_AVAILABLE_ENTITY_TO_ORIGINAL_DATA =
-  'gazetteer-app/results/ADD_NOT_AVAILABLE_ENTITY_TO_ORIGINAL_DATA';
+// Handle error if main results request has failed
+const CATCH_MAIN_RESULTS_ERROR = 'gazetteer-app/results/CATCH_MAIN_RESULTS_ERROR';
+// Add to main results an extern entity
+const ADD_EXTERN_ENTITY_TO_MAIN_RESULTS = 'gazetteer-app/results/ADD_EXTERN_ENTITY_TO_MAIN_RESULTS';
+// Add an extern entity to original data (for compare data)
+const ADD_EXTERN_ENTITY_TO_ORIGINAL_DATA =
+  'gazetteer-app/results/ADD_EXTERN_ENTITY_TO_ORIGINAL_DATA';
+// Close an extern entity
+const CLOSE_EXTERN_ENTITY = 'gazetteer-app/results/CLOSE_EXTERN_ENTITY';
+// Set extern entities into separate storage
+const SET_EXTERN_ENTITIES = 'gazetteer-app/results/SET_EXTERN_ENTITIES';
+// Set separate storage for extern entities to initial
+const SET_EXTERN_ENTITIES_TO_INITIAL = 'gazetteer-app/results/SET_EXTERN_ENTITIES_TO_INITIAL';
+// Set this part of the store that controlls this reducer to initial values
+const SET_RESULTS_REDUCER_TO_INITIAL = 'gazetteer-app/results/SET_RESULTS_REDUCER_TO_INITIAL';
 
+// State to contain data
 let initialState = {
   entries: {},
   originalEntries: {},
-  status: {},
-  gazetteers: [],
   searchedText: null,
-  separateEntries: {},
+  usedGazetteers: [],
+  status: {},
+  externEntities: {},
 };
 
+// Reducer that takes state and action to modify it
 const resultsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case SET_RESULTS_REDUCER_TO_INITIAL:
-      return initialState;
-    case TURN_ON_FETCHING: {
-      let gazetteername = action.gaz;
-      return {
-        ...state,
-        status: {
-          ...state.status,
-          [gazetteername]: 'isFetching',
-        },
-      };
-    }
-    case SET_GAZETTEERS: {
-      return {
-        ...state,
-        gazetteers: action.gaz,
-      };
-    }
-    case SET_ENTRIES: {
-      const { gazetteer, entries } = action;
+    case SET_ENTITIES: {
+      const { gazName, entries } = action;
       return {
         ...state,
         entries: {
           ...state.entries,
-          [gazetteer]: entries,
+          [gazName]: entries,
         },
       };
     }
-    case SET_ORIGINAL_ENTRIES: {
-      const { gazetteer, originalEntries } = action;
+    case SET_ORIGINAL_ENTITIES: {
+      const { gazName, originalEntries } = action;
       return {
         ...state,
         originalEntries: {
           ...state.originalEntries,
-          [gazetteer]: originalEntries,
+          [gazName]: originalEntries,
         },
       };
     }
-    case TURN_OFF_FETCHING: {
-      return {
-        ...state,
-        status: {
-          ...state.status,
-          [action.gazetteer]:
-            state.entries[action.gazetteer] === null || state.entries[action.gazetteer].length === 0
-              ? 'noData'
-              : 'done',
-        },
-      };
-    }
-    case CATCH_ERROR: {
-      return {
-        ...state,
-        status: {
-          ...state.status,
-          [action.gazetteer]: action.errorMessage,
-        },
-      };
-    }
-    case SET_SEARCHEDTEXT: {
+    case SET_SEARCHED_PLACE_NAME: {
       return {
         ...state,
         searchedText: action.text,
       };
     }
-    case SET_SEPARATE_ENTRIES: {
-      const index = Object.keys(state.separateEntries).findIndex(el => el === action.gazName);
-      if (index === -1) {
-        return {
-          ...state,
-          separateEntries: {
-            ...state.separateEntries,
-            [action.gazName]: [action.entity],
-          },
-        };
-      }
+    case SET_USED_GAZETTEERS: {
+      const { gazetteers } = action;
       return {
         ...state,
-        separateEntries: {
-          ...state.separateEntries,
-          [action.gazName]: [...state.separateEntries[action.gazName], action.entity],
+        usedGazetteers: gazetteers,
+      };
+    }
+    case TURN_ON_FETCHING: {
+      let { gazName } = action;
+      return {
+        ...state,
+        status: {
+          ...state.status,
+          [gazName]: 'isFetching',
         },
       };
     }
-    case CLOSE_SEPARATE_ENTRY: {
-      if (state.separateEntries[action.gazName].length === 1) {
-        let { [action.gazName]: value, ...other } = state.separateEntries;
-        return {
-          ...state,
-          separateEntries: other,
-        };
-      }
+    case TURN_OFF_FETCHING: {
+      const { gazName } = action;
       return {
         ...state,
-        separateEntries: {
-          [action.gazName]: state.separateEntries[action.gazName].filter(el => el !== action.id),
+        status: {
+          ...state.status,
+          [gazName]:
+            state.entries[gazName] === null || state.entries[gazName].length === 0
+              ? 'noData'
+              : 'done',
         },
       };
     }
-    case SET_SEPARATE_ENTRIES_TO_INITIAL: {
+    case CATCH_MAIN_RESULTS_ERROR: {
+      const { gazName, message } = action;
       return {
         ...state,
-        separateEntries: {},
+        status: {
+          ...state.status,
+          [gazName]: message,
+        },
       };
     }
-    case ADD_NOT_AVAILABLE_ENTITY_TO_ORIGINAL_DATA: {
-      const index = Object.keys(state.originalEntries).findIndex(el => el === action.gazName);
+    case ADD_EXTERN_ENTITY_TO_MAIN_RESULTS: {
+      const { gazName, entity } = action;
+      return {
+        ...state,
+        entries: {
+          ...state.entries,
+          [gazName]: [...state.entries[gazName], entity],
+        },
+      };
+    }
+    case ADD_EXTERN_ENTITY_TO_ORIGINAL_DATA: {
+      const { gazName, entity } = action;
+      const index = Object.keys(state.originalEntries).findIndex(el => el === gazName);
       if (index === -1) {
         return {
           ...state,
           originalEntries: {
             ...state.originalEntries,
-            [action.gazName]: [action.entity],
+            [gazName]: [entity],
           },
         };
       }
@@ -163,88 +154,142 @@ const resultsReducer = (state = initialState, action) => {
         ...state,
         originalEntries: {
           ...state.originalEntries,
-          [action.gazName]: [...state.originalEntries[action.gazName], action.entity],
+          [gazName]: [...state.originalEntries[gazName], entity],
         },
       };
     }
+    case CLOSE_EXTERN_ENTITY: {
+      const { gazName, id } = action;
+      if (state.externEntities[gazName].length === 1) {
+        let { [gazName]: value, ...other } = state.externEntities;
+        return {
+          ...state,
+          externEntities: other,
+        };
+      }
+      return {
+        ...state,
+        externEntities: {
+          [gazName]: state.externEntities[gazName].filter(el => el !== id),
+        },
+      };
+    }
+    case SET_EXTERN_ENTITIES: {
+      const { gazName, entity } = action;
+      const index = Object.keys(state.externEntities).findIndex(el => el === gazName);
+      if (index === -1) {
+        return {
+          ...state,
+          externEntities: {
+            ...state.externEntities,
+            [gazName]: [entity],
+          },
+        };
+      }
+      return {
+        ...state,
+        externEntities: {
+          ...state.externEntities,
+          [gazName]: [...state.externEntities[gazName], entity],
+        },
+      };
+    }
+    case SET_EXTERN_ENTITIES_TO_INITIAL: {
+      return {
+        ...state,
+        externEntities: {},
+      };
+    }
+    case SET_RESULTS_REDUCER_TO_INITIAL:
+      return initialState;
     default:
       return state;
   }
 };
 
-export const setGazetteersForTable = gaz => ({
-  type: SET_GAZETTEERS,
-  gaz,
-});
-export const setEntries = (entries, gazetteer) => ({
-  type: SET_ENTRIES,
+// Action creators to modify the state
+export const setEntities = (entries, gazName) => ({
+  type: SET_ENTITIES,
   entries,
-  gazetteer,
+  gazName,
 });
-export const setOriginalEntries = (originalEntries, gazetteer) => ({
-  type: SET_ORIGINAL_ENTRIES,
+export const setOriginalEntities = (originalEntries, gazName) => ({
+  type: SET_ORIGINAL_ENTITIES,
   originalEntries,
-  gazetteer,
+  gazName,
 });
-export const turnOffFetching = gazetteer => ({
+export const setSearchedPlaceName = text => ({
+  type: SET_SEARCHED_PLACE_NAME,
+  text,
+});
+export const setUsedGazetteers = gazetteers => ({
+  type: SET_USED_GAZETTEERS,
+  gazetteers,
+});
+export const turnOnFetching = gazName => ({
+  type: TURN_ON_FETCHING,
+  gazName,
+});
+export const turnOffFetching = gazName => ({
   type: TURN_OFF_FETCHING,
-  gazetteer,
+  gazName,
 });
-export const catchError = (errorMessage, gazetteer) => ({
-  type: CATCH_ERROR,
-  errorMessage,
-  gazetteer,
+export const catchMainResultsError = (message, gazName) => ({
+  type: CATCH_MAIN_RESULTS_ERROR,
+  message,
+  gazName,
+});
+export const addExternEntityToMainResults = (gazName, entity) => ({
+  type: ADD_EXTERN_ENTITY_TO_MAIN_RESULTS,
+  gazName,
+  entity,
+});
+export const addExternEntityToOriginalData = (gazName, entity) => ({
+  type: ADD_EXTERN_ENTITY_TO_ORIGINAL_DATA,
+  gazName,
+  entity,
+});
+export const closeExternEntity = (gazName, id) => ({
+  type: CLOSE_EXTERN_ENTITY,
+  gazName,
+  id,
+});
+export const setExternEntities = (gazName, entity) => ({
+  type: SET_EXTERN_ENTITIES,
+  gazName,
+  entity,
+});
+export const setExternEntitiesToInitial = () => ({
+  type: SET_EXTERN_ENTITIES_TO_INITIAL,
 });
 export const setResultsReducerToInitial = () => ({
   type: SET_RESULTS_REDUCER_TO_INITIAL,
 });
-export const turnOnFetching = gaz => ({
-  type: TURN_ON_FETCHING,
-  gaz,
-});
-export const setSearchedText = text => ({
-  type: SET_SEARCHEDTEXT,
-  text,
-});
-export const setSeparateEntries = (gazName, entity) => ({
-  type: SET_SEPARATE_ENTRIES,
-  gazName,
-  entity,
-});
-export const closeSeparateEntry = (gazName, id) => ({
-  type: CLOSE_SEPARATE_ENTRY,
-  gazName,
-  id,
-});
-export const setSeparateEntriesToInitial = () => ({
-  type: SET_SEPARATE_ENTRIES_TO_INITIAL,
-});
-export const addNotAvailableEntityToOriginalData = (gazName, entity) => ({
-  type: ADD_NOT_AVAILABLE_ENTITY_TO_ORIGINAL_DATA,
-  gazName,
-  entity,
-});
 
-export const turnOnFetchingWrapper = gaz => dispatch => {
-  dispatch(turnOnFetching(gaz));
-  dispatch(setStateOfExpandedOfAGazetteer(gaz, true));
+// Thunk creators to modify state under more complex conditions. Often contains asynchronous operations or multiple action calls
+
+// Do additional operations (e.g. handling of expand/collapse state of the subtables) while turning on or off fetching mode for the requestiong of the results
+export const turnOnFetchingWrapper = gazName => dispatch => {
+  dispatch(turnOnFetching(gazName));
+  dispatch(setStateOfExpandedOfAGazetteer(gazName, true));
 };
-export const turnOffFetchingWrapper = gaz => dispatch => {
-  dispatch(turnOffFetching(gaz));
-  dispatch(setStateOfExpandedOfAGazetteer(gaz, false));
+export const turnOffFetchingWrapper = gazName => dispatch => {
+  dispatch(turnOffFetching(gazName));
+  dispatch(setStateOfExpandedOfAGazetteer(gazName, false));
 };
 
+// Wrapper to request the results and do additional operations while it happens to prepare app for the results. It includes handling of the response and of the error, if the request failes.
 export const getMainResultsThunkCreator =
-  (selectedGazetteers, searchText) => (dispatch, getState) => {
+  (selectedGazetteers, placeName) => (dispatch, getState) => {
     const coordinates = getSearchCoordinates(getState());
     const mode = getSearchType(getState());
     const match = getIsMatchingEnabled(getState());
     const settlements = getOnlySettlements(getState());
-    dispatch(doAdditionalOperationsForResults(selectedGazetteers, searchText, match));
+    dispatch(doAdditionalOperationsForResults(selectedGazetteers, placeName, match));
     for (let i of selectedGazetteers) {
       dispatch(turnOnFetchingWrapper(i));
       resultsAPI
-        .getMainResults(i, searchText, coordinates, mode, match, settlements)
+        .getMainResults(i, placeName, coordinates, mode, match, settlements)
         .then(response => {
           dispatch(handleMainResults(response.data, i));
         })
@@ -254,44 +299,51 @@ export const getMainResultsThunkCreator =
     }
   };
 
+// Do additional operations while the results are being requested, e.g. setting static data needed for the representation of the results and checking whether matching search parameter is enabled or not
 const doAdditionalOperationsForResults =
-  (selectedGazetteersObjects, searchText, match) => dispatch => {
-    dispatch(setStaticDataForResults(selectedGazetteersObjects, searchText));
+  (selectedGazetteersObjects, placeName, match) => dispatch => {
+    dispatch(setStaticDataForResults(selectedGazetteersObjects, placeName));
     dispatch(setIsMatching(match));
   };
 
-const setStaticDataForResults = (selectedGazetteers, searchText) => (dispatch, getState) => {
-  const gazetteers = getGazetteers(getState()).filter(g => selectedGazetteers.includes(g.gazName));
-  dispatch(setGazetteersForTable(gazetteers));
-  dispatch(setSearchedText(searchText));
-  dispatch(setPreviousSearchText(searchText));
+// Set static data for results. It includes setting of the used gazetteers in current request, setting the searched place name for the results table head and saving the place name being searched to show it in autocomplete field for next search.
+const setStaticDataForResults = (selectedGazetteers, placeName) => (dispatch, getState) => {
+  const usedGazetteers = getGazetteers(getState()).filter(g =>
+    selectedGazetteers.includes(g.gazName)
+  );
+  dispatch(setUsedGazetteers(usedGazetteers));
+  dispatch(setSearchedPlaceName(placeName));
+  dispatch(setPreviousSearchedPlaceNames(placeName));
 };
 
+// Handling of the response of the request. It includes setting the results in raw, storing the results, storing filter types of the results, turning off the fetching mode and, if the matching search parameter was enabled for this search, handling the matchings
 const handleMainResults = (data, gazName) => (dispatch, getState) => {
   const preprocessedEntries = preprocessResults(data, gazName);
-  dispatch(setOriginalEntries(data, gazName));
-  dispatch(setEntries(preprocessedEntries, gazName));
+  dispatch(setOriginalEntities(data, gazName));
+  dispatch(setEntities(preprocessedEntries, gazName));
   const filterTypeUniqueValues = setValuesForTypeFilter(preprocessedEntries, gazName);
   dispatch(setTypes(filterTypeUniqueValues, gazName));
   dispatch(turnOffFetchingWrapper(gazName));
   if (getIsMatching(getState())) {
-    dispatch(handleMatchingsInResults(preprocessedEntries, gazName));
+    dispatch(handleMatchings(preprocessedEntries, gazName));
   }
 };
 
-const handleMatchingsInResults = (preprocessedEntries, gazName) => dispatch => {
+// Handling the request failure. It includes setting an empty array for request gazettteer, storing error message to show it in results representation for respective gazetteer and turning the fetching mode off
+const handleMainResultsFailure = (error, gazName) => dispatch => {
+  dispatch(setEntities([], gazName));
+  const errorMessage = getRequestErrorText(error.response);
+  dispatch(catchMainResultsError(errorMessage, gazName));
+  dispatch(turnOffFetchingWrapper(gazName));
+};
+
+// Handling the matchings. It includes storing the entities that have matchings, storing matchings themselves and their repsective gazetteers.
+const handleMatchings = (preprocessedEntries, gazName) => dispatch => {
   const entitiesWithMatchings = filterEntitiesByMatchingProperty(preprocessedEntries);
   dispatch(setMatchings(entitiesWithMatchings, gazName));
   const matchings = entitiesWithMatchings.map(el => el.matchings);
-  const dbs = getMatchingsDBs(matchings);
+  const dbs = getMatchingsGazetteers(matchings);
   dispatch(setMatchingDBs(dbs, gazName));
-};
-
-const handleMainResultsFailure = (error, gazName) => dispatch => {
-  dispatch(setEntries([], gazName));
-  const errorMessage = getRequestErrorText(error.response);
-  dispatch(catchError(errorMessage, gazName));
-  dispatch(turnOffFetchingWrapper(gazName));
 };
 
 export default resultsReducer;

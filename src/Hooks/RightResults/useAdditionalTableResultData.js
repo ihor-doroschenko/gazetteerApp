@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { switchCompareTable, switchMatchingTable } from 'redux/nav-reducer';
+import { switchAdditionalResult } from 'redux/nav-reducer';
 import {
   setCompareSideHeight,
   setCompareWidthWrapper,
@@ -23,7 +23,6 @@ import { useTopValueForAdditionalTableResults } from './useTopValueForAdditional
 export function useAdditionalTableResultData(value) {
   const isToolEnabled = useSelector(value ? getIsCompareTool : getIsMatching);
   const isToolHidden = useSelector(value ? getIsCompareHidden : getIsMatchingTableHidden);
-  const switchValue = value ? switchCompareTable : switchMatchingTable;
   const setElementWidthGlobally = value ? setCompareWidthWrapper : setMatchingsWidthWrapper;
   const setElementHeightGlobally = value ? setCompareSideHeight : setMatchingsSideHeight;
   const elementHeight = useSelector(value ? getCompareSideHeight : getMatchingsSideHeight);
@@ -33,7 +32,7 @@ export function useAdditionalTableResultData(value) {
   return {
     isToolEnabled,
     isToolHidden,
-    switchValue,
+    switchValue: switchAdditionalResult,
     setElementWidthGlobally,
     setElementHeightGlobally,
     elementHeight,

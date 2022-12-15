@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { mouseClickClear } from 'redux/map-interaction-reducer';
+import { mouseClickMarkerToInitial } from 'redux/map-interaction-reducer';
 import { getIsSideSwitched } from 'selectors/simple-selectors/nav-selectors';
-import { autoScroll } from 'utils/Autoscroll/AutoScrollTools';
+import { autoScrollWrapper } from 'utils/Autoscroll/autoScrollWrapper';
 
 // Hook used for subtable autoscrolling (only)
 
@@ -11,11 +11,11 @@ export function useAutoscroll(customRef, mouseClickedElement) {
   const dispatch = useDispatch();
   const params = {
     ref: customRef,
-    mouseClickClear: () => dispatch(mouseClickClear()),
+    mouseClickMarkerToInitial: () => dispatch(mouseClickMarkerToInitial()),
     id: mouseClickedElement.id,
     isSwitched: isSideSwitched,
   };
   useEffect(() => {
-    autoScroll(params);
+    autoScrollWrapper(params);
   }, [mouseClickedElement.id]);
 }

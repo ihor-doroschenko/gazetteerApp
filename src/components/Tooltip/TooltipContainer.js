@@ -4,7 +4,9 @@ import classNames from 'classnames';
 import parse from 'html-react-parser';
 import React from 'react';
 import { getTooltipTextes } from 'utils/Helpers/Tooltip/getTooltipTextes';
-import NewTooltipClasses from './TooltipContainer.module.css';
+import TooltipClasses from './TooltipContainer.module.css';
+
+// Wrapper container to contain tooltip-component from antdesign withcustom parameters to adjust tooltip on specific conditions
 
 const TooltipContainer = ({ placement, icon, text, customElement, delay, styleProp, disabled }) => {
   return (
@@ -23,13 +25,13 @@ const TooltipContainer = ({ placement, icon, text, customElement, delay, stylePr
       {icon ? (
         <FontAwesomeIcon
           icon={icon}
-          className={classNames(NewTooltipClasses.icon, NewTooltipClasses.cursor, {
+          className={classNames(TooltipClasses.icon, TooltipClasses.cursor, {
             [styleProp]: styleProp,
-            [NewTooltipClasses.disabled]: disabled,
+            [TooltipClasses.disabled]: disabled,
           })}
         />
       ) : (
-        <div className={NewTooltipClasses.cursor}>{customElement}</div>
+        <div className={TooltipClasses.cursor}>{customElement}</div>
       )}
     </Tooltip>
   );

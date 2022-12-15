@@ -1,5 +1,7 @@
 import { TooltipTextes } from 'constants/TooltipTextes';
 
+// Get textes for tooltips
+
 export const defaultLanguage = 'en';
 
 export const getTooltipTextes = (textid, lang) => {

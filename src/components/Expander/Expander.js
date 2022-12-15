@@ -4,6 +4,8 @@ import React from 'react';
 import { findExpandedRow } from 'utils/Helpers/TableHelpers/findExpandedRow';
 import ExpanderClasses from './Expander.module.css';
 
+// Component to contain an expander to control expanded/collapsed state of the subtables
+
 const Expander = ({ expanded, handleAutoScroll, gazName }) => {
   const found = findExpandedRow(expanded, gazName);
   return (

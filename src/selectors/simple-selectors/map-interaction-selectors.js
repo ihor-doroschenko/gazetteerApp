@@ -22,18 +22,3 @@ export const getMouseOverElement = state => {
 export const getMouseOverElementInfinite = state => {
   return state.mapInteraction.mouseOverElementInfinite;
 };
-
-// Selector to get actual height for results in bottom view
-export const getActualBottomContainerHeight = state => {
-  return state.mapInteraction.actualBottomContainerHeight;
-};
-
-// Selector to get minimum height for results in bottom view
-export const getBottomContainerMinHeight = state => {
-  return state.mapInteraction.bottomContainerMinHeight;
-};
-
-// Selector to get maximum height for results in bottom view
-export const getBottomContainerMaxHeight = state => {
-  return state.mapInteraction.bottomContainerMaxHeight;
-};

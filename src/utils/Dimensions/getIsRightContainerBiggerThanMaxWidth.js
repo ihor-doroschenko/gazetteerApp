@@ -6,7 +6,7 @@ import {
 import {
   getCompareWidth,
   getMatchingsWidth,
-  getResultsBlockRightWidth,
+  getResultsWidth,
 } from 'selectors/simple-selectors/table-state-selectors';
 import { calculateDimensionsConditionally } from './calculateDimensionsConditionally';
 
@@ -14,36 +14,36 @@ export const getIsRightContainerBiggerThanMaxWidth = getState => {
   const isResultsHidden = getIsResultsHidden(getState());
   const isMatchingTableHidden = getIsMatchingTableHidden(getState());
   const isCompareHidden = getIsCompareHidden(getState());
-  const resultsWidth = getResultsBlockRightWidth(getState());
-  const compareWidth = getCompareWidth(getState());
-  const matchingsWidth = getMatchingsWidth(getState());
+  const resultsSideWidth = getResultsWidth(getState());
+  const compareSideWidth = getCompareWidth(getState());
+  const matchingsSideWidth = getMatchingsWidth(getState());
 
   if (!isResultsHidden && !isCompareHidden && !isMatchingTableHidden) {
-    let value = (compareWidth + resultsWidth + matchingsWidth) * 100;
+    let value = (compareSideWidth + resultsSideWidth + matchingsSideWidth) * 100;
     return calculateDimensionsConditionally(value, getState);
   }
   if (!isResultsHidden && !isMatchingTableHidden) {
-    let value = (matchingsWidth + resultsWidth) * 100;
+    let value = (matchingsSideWidth + resultsSideWidth) * 100;
     return calculateDimensionsConditionally(value, getState);
   }
   if (!isResultsHidden && !isCompareHidden) {
-    let value = (compareWidth + resultsWidth) * 100;
+    let value = (compareSideWidth + resultsSideWidth) * 100;
     return calculateDimensionsConditionally(value, getState);
   }
   if (!isCompareHidden && !isMatchingTableHidden) {
-    let value = (matchingsWidth + compareWidth) * 100;
+    let value = (matchingsSideWidth + compareSideWidth) * 100;
     return calculateDimensionsConditionally(value, getState);
   }
   if (!isResultsHidden) {
-    let value = resultsWidth * 100;
+    let value = resultsSideWidth * 100;
     return calculateDimensionsConditionally(value, getState);
   }
   if (!isCompareHidden) {
-    let value = compareWidth * 100;
+    let value = compareSideWidth * 100;
     return calculateDimensionsConditionally(value, getState);
   }
   if (!isMatchingTableHidden) {
-    let value = matchingsWidth * 100;
+    let value = matchingsSideWidth * 100;
     return calculateDimensionsConditionally(value, getState);
   }
 };

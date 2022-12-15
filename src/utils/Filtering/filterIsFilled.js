@@ -1,3 +1,5 @@
+// Filter data for details view and return only those attributes that have values (with removing empty attributes)
+
 export const filterIsFilled = (value, elements) => {
   return value
     ? Object.keys(elements)

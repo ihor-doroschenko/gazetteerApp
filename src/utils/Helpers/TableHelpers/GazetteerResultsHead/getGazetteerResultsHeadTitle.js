@@ -1,51 +1,26 @@
+import { checkSeparateEntities } from 'utils/validators/checkSeparateEntities';
+import { getUsedGazetteerWithoutSeparateEntries } from './getUsedGazetteerWithoutSeparateEntries';
+import { getUsedGazetteerWithSeparateEntries } from './getUsedGazetteerWithSeparateEntries';
+
+// Wrapper function to get head for gazetteers originally requested in the search
+
 export const getHeadForUsedGazetteers = ({
   text,
   startEntries,
   gazName,
-  separateEntries,
+  externEntities,
   matchingsLength,
 }) => {
   const resultsLength = startEntries[gazName] ? startEntries[gazName].length : 0;
-  const separateEntriesGazetteer = separateEntries && separateEntries[gazName];
+  const separateEntriesGazetteer = checkSeparateEntities(externEntities) && externEntities[gazName];
   if (separateEntriesGazetteer) {
-    return getIsUsedGazetteerWithSeparateEntries(
+    return getUsedGazetteerWithSeparateEntries(
       text,
       resultsLength,
       separateEntriesGazetteer,
       matchingsLength
     );
   } else {
-    return getIsUsedGazetteerWithoutSeparateEntries(text, resultsLength, matchingsLength);
+    return getUsedGazetteerWithoutSeparateEntries(text, resultsLength, matchingsLength);
   }
-};
-
-export const getHeadForNotUsedGazetteers = ({ text, separateEntries, gazName }) => {
-  const separateEntriesGazetteer = separateEntries && separateEntries[gazName];
-  if (separateEntriesGazetteer) {
-    return getIsNotUsedGazetteer(text, separateEntriesGazetteer);
-  }
-};
-
-export const getIsUsedGazetteerWithSeparateEntries = (
-  text,
-  resultsLength,
-  separateEntriesGazetteer,
-  matchingsLength
-) => {
-  return {
-    mainText: text,
-    resLength: ` [${resultsLength}] `,
-    matchLength: matchingsLength !== undefined && `[${matchingsLength}]`,
-    description: ` , additional matched entities [${separateEntriesGazetteer.length}]`,
-  };
-};
-export const getIsUsedGazetteerWithoutSeparateEntries = (text, resultsLength, matchingsLength) => {
-  return {
-    mainText: text,
-    resLength: ` [${resultsLength}]`,
-    matchLength: matchingsLength !== undefined && `[${matchingsLength}]`,
-  };
-};
-export const getIsNotUsedGazetteer = (text, separateEntriesGazetteer) => {
-  return { mainText: `Matched entities from ${text} [${separateEntriesGazetteer.length}]` };
 };

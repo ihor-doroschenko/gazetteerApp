@@ -2,9 +2,12 @@ import { convertArrayItemsToNumbers } from 'utils/Converting/convertArrayItemsTo
 import { getNameGOV } from '../AdditionalNormalizing/getNameGOV';
 import { referenceTypes } from '../AdditionalNormalizing/referenceTypesGOV/referenceTypes';
 
+// Normalize the GOV gazetteer.
+// Renaming `lon` attribute in `position` to `lng`. Coercing the coordinates to float number data type.
+// Reference `type` attribute from number code to unit (e.g. from `2` to ['Amtsbezirk', '(politische) Verwaltung']). Entire list is <a href="http://gov.genealogy.net/type/list">here</a>.
+// Re-creating `name` attribute. Already existing `name` attribute contains multiple names and is to understand more as "all appliable names". As the component expects each entity to have one name to show it both in table and on the map and because this attribute does not exist in GOV gazetteer, it is created on the fly. The first name in `name` attribute is taken, all other ones are considered as "all other appliable names" and are saved in separate attribute `names`.
+// Coercing value of `id` attribute to string data type.
 // GOV has coded types which means that they has to be referenced to be understood. The list of types with reference codes is here http://gov.genealogy.net/type/list
-
-// GOV entities does not have "name" attribute. To support modular system, this attribute is created on the fly by taking the first value of "names" attribute
 
 export const normalizeGOV = database => {
   return database

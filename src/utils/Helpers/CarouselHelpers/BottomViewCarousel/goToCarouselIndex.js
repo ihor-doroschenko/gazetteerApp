@@ -1,16 +1,10 @@
-export const goToCarouselIndex = (filtered, element, state, setState, slider) => {
-  const nextCarouselIndex = filtered.findIndex(el => el.gazName === element.gazName);
+import { checkOneSlideIndexes } from './checkOneSlideIndexes';
+
+// Go to required subtable in slick wrapper (carousel) in the bottom view
+
+export const goToCarouselIndex = (nextCarouselIndex, state, setState, slider) => {
   if (checkOneSlideIndexes(state, nextCarouselIndex)) {
     slider.slickGoTo(nextCarouselIndex);
     setState(nextCarouselIndex);
   }
-};
-
-const checkOneSlideIndexes = (index, nextCarouselIndex) => {
-  return (
-    nextCarouselIndex !== -1 &&
-    index !== nextCarouselIndex &&
-    index + 1 !== nextCarouselIndex &&
-    index + 2 !== nextCarouselIndex
-  );
 };

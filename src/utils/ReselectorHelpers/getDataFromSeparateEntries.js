@@ -1,26 +1,17 @@
+import { getGazetteerInfo } from 'constants/getGazetteerInfo';
 import { getResultsObjectForTable } from 'utils/FactoryFunctions/getResultsObjectForTable';
+import { checkSeparateEntities } from 'utils/validators/checkSeparateEntities';
+import { IsGazetteerInUsedGazetteers } from 'utils/validators/IsGazetteerInUsedGazetteers';
 
-export const getDataFromSeparateEntries = (data, separateEntries, gazetteers, details) => {
-  if (Object.keys(separateEntries).length !== 0) {
-    for (const key of Object.keys(separateEntries)) {
-      if (!data.some(d => d.gazName === key)) {
-        const gazeteer = gazetteers.find(g => g.gazName === key);
-        const newSeparateEntry = getResultsObjectForTable(
-          key,
-          gazeteer.text,
-          'separate',
-          '#CEE3EA'
-        );
+// Generate results object for separate entities from gazetteers not used in current request
+
+export const getDataFromSeparateEntries = (data, externEntities, usedGazetteers) => {
+  if (checkSeparateEntities(externEntities)) {
+    for (const key of Object.keys(externEntities)) {
+      if (!IsGazetteerInUsedGazetteers(usedGazetteers, key)) {
+        const gazObj = getGazetteerInfo(key);
+        const newSeparateEntry = getResultsObjectForTable(key, gazObj.text, 'separate', '#CEE3EA');
         data.push(newSeparateEntry);
-      } else if (data.some(d => d.gazName === key)) {
-        const index = data.findIndex(d => d.gazName === key);
-        const filteredSeparateEntities = details.filter(({ details: detail }) =>
-          separateEntries[key].some(el => detail.id === el)
-        );
-        if (data[index].types.length === 0) {
-          data[index].actualState = 'separate';
-        }
-        data[index].types = data[index].types.concat(filteredSeparateEntities);
       }
     }
   }

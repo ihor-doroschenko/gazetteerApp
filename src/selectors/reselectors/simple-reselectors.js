@@ -1,40 +1,45 @@
 import { createSelector } from 'reselect';
+import { areExternEntitiesOfUsedGazetteers } from 'utils/Helpers/TableHelpers/areExternEntitiesOfUsedGazetteers';
+import { IsGazetteerInUsedGazetteers } from 'utils/validators/IsGazetteerInUsedGazetteers';
 import { getTypes } from '../simple-selectors/filter-selectors';
 import { getEntries } from '../simple-selectors/matching-selectors';
-import {
-  getSeparateEntries,
-  getStatus,
-  getUsedGazetteers,
-} from '../simple-selectors/results-selectors';
+import { getExternEntities, getUsedGazetteers } from '../simple-selectors/results-selectors';
 
 // Selector to get results for specific gazetteer
 export const getSelectedEntries = createSelector(
-  [getEntries, getSeparateEntries, (state, gazName) => gazName],
-  (entries, separateEntries, gazName) => {
-    return separateEntries[gazName] ? separateEntries[gazName] : entries[gazName];
+  [getEntries, getUsedGazetteers, getExternEntities, (state, gazName) => gazName],
+  (entities, usedGazetteers, externEntities, gazName) => {
+    return areExternEntitiesOfUsedGazetteers({
+      entities,
+      usedGazetteers,
+      externEntities,
+      gazName,
+    });
   }
 );
 
 // Selector to check whether required gazetteer is in used (selected) gazetteers from original search
 export const findUsedGazetteer = createSelector(
   [getUsedGazetteers, (state, gazName) => gazName],
-  (gazetteers, gazName) => {
-    return gazetteers.some(g => g === gazName);
-  }
-);
-
-// Selector to check whether status of required gazetteer is "done" (which means that there are some results of current search)
-export const checkUsedGazetteersStatus = createSelector(
-  [getStatus, (state, gazName) => gazName],
-  (status, gazName) => {
-    return status[gazName] === 'done';
+  (usedGazetteers, gazName) => {
+    return usedGazetteers.some(g => g === gazName);
   }
 );
 
 // Selector to get type values for required gazetteer
 export const getGazetteerFilterTypesValues = createSelector(
-  [getTypes, getSeparateEntries, (state, gazName) => gazName],
-  (types, separateEntries, gazName) => {
-    return separateEntries[gazName] ? [] : types[gazName];
+  [getTypes, getUsedGazetteers, (state, gazName) => gazName],
+  (types, usedGazetteers, gazName) => {
+    const isUsedGazetteer = IsGazetteerInUsedGazetteers(usedGazetteers, gazName);
+    return isUsedGazetteer ? types[gazName] : [];
   }
 );
+
+/* export const getGazetteerFilterTypesValuesss = createSelector(
+  [getEntries, getStatus, (state, gazName) => gazName],
+  (entities, status) => {
+    const isUsedGazetteer = IsGazetteerInUsedGazetteers(usedGazetteers, gazName);
+    return isUsedGazetteer ? types[gazName] : [];
+  }
+);
+ */

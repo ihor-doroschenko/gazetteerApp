@@ -1,25 +1,21 @@
-import {
-  getHeadForNotUsedGazetteers,
-  getHeadForUsedGazetteers,
-} from './getGazetteerResultsHeadTitle';
+import { IsGazetteerInUsedGazetteers } from 'utils/validators/IsGazetteerInUsedGazetteers';
+import { getHeadForUsedGazetteers } from './getGazetteerResultsHeadTitle';
+import { getHeadForNotUsedGazetteers } from './getHeadForNotUsedGazetteers';
 
-export function getHeadForGazetteersWrapper({
-  usedGazetteers,
-  text,
-  startEntries,
-  gazName,
-  separateEntries,
-  matchingsLength,
-}) {
-  const isUsedGazetteer = usedGazetteers.some(el => el === gazName);
+// Wrapper function to generate actual header for subtale containing gazetteer specific results in the results table
+
+export function getHeadForGazetteersWrapper(params) {
+  const { usedGazetteers, text, startEntries, gazName, externEntities, matchingsLength } = params;
+  const isUsedGazetteer = IsGazetteerInUsedGazetteers(usedGazetteers, gazName);
   if (isUsedGazetteer) {
-    return getHeadForUsedGazetteers({
+    let params = {
       text,
       startEntries,
       gazName,
-      separateEntries,
+      externEntities,
       matchingsLength,
-    });
+    };
+    return getHeadForUsedGazetteers(params);
   }
-  return getHeadForNotUsedGazetteers({ text, separateEntries, gazName });
+  return getHeadForNotUsedGazetteers({ text, externEntities, gazName });
 }

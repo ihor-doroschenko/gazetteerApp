@@ -7,7 +7,7 @@ const instanceAxios = axios.create({
 
 export const resultsAPI = {
   // Request to get main search results with method getMainResults of GET-type with 4 required parameters (gaz, name, resultschema, namesearchmode) and 6 optional parameters (north, south, west, east, settlement, matchings).
-  getMainResults(gazetteer, searchText, coordinates, searchType, match, settlement) {
+  getMainResults(gazetteer, placeName, coordinates, searchType, match, settlement) {
     return instanceAxios.get(`${gazetteer}`);
   },
   // Request to get one entity with method getEntityById of GET-type with 3 required parameters (gaz, id, resultschema).

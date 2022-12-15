@@ -23,7 +23,7 @@ export function useResultsElementsMaxDimensions(props) {
     } else if (!isMatchingTableHidden) {
       handleCompareAndMatchingMaxDimensions(props);
     }
-  }, [props.compareWidth]);
+  }, [props.compareSideWidth]);
 
   useEffect(() => {
     if (!isResultsHidden && !isCompareHidden) {
@@ -33,41 +33,51 @@ export function useResultsElementsMaxDimensions(props) {
     } else if (!isCompareHidden) {
       handleCompareAndMatchingMaxDimensions(props);
     }
-  }, [props.matchingsWidth]);
+  }, [props.matchingsSideWidth]);
 }
 
 const handleAllElementMaxDimensions = props => {
   const {
     maxWidth,
     resultsLocalWidth,
-    matchingsWidth,
-    compareWidth,
+    matchingsSideWidth,
+    compareSideWidth,
     setMaxResultsWidth,
     setMaxMatchingsWidth,
     setMaxCompareWidth,
   } = props;
-  setMaxResultsWidth(maxWidth - matchingsWidth - compareWidth);
-  setMaxMatchingsWidth(maxWidth - resultsLocalWidth - compareWidth);
-  setMaxCompareWidth(maxWidth - resultsLocalWidth - matchingsWidth);
+  setMaxResultsWidth(maxWidth - matchingsSideWidth - compareSideWidth);
+  setMaxMatchingsWidth(maxWidth - resultsLocalWidth - compareSideWidth);
+  setMaxCompareWidth(maxWidth - resultsLocalWidth - matchingsSideWidth);
 };
 
 const handleCompareAndMatchingMaxDimensions = props => {
-  const { maxWidth, matchingsWidth, compareWidth, setMaxMatchingsWidth, setMaxCompareWidth } =
-    props;
-  setMaxMatchingsWidth(maxWidth - compareWidth);
-  setMaxCompareWidth(maxWidth - matchingsWidth);
+  const {
+    maxWidth,
+    matchingsSideWidth,
+    compareSideWidth,
+    setMaxMatchingsWidth,
+    setMaxCompareWidth,
+  } = props;
+  setMaxMatchingsWidth(maxWidth - compareSideWidth);
+  setMaxCompareWidth(maxWidth - matchingsSideWidth);
 };
 
 const handleCompareAndResultsMaxDimensions = props => {
-  const { maxWidth, resultsLocalWidth, compareWidth, setMaxResultsWidth, setMaxCompareWidth } =
+  const { maxWidth, resultsLocalWidth, compareSideWidth, setMaxResultsWidth, setMaxCompareWidth } =
     props;
-  setMaxResultsWidth(maxWidth - compareWidth);
+  setMaxResultsWidth(maxWidth - compareSideWidth);
   setMaxCompareWidth(maxWidth - resultsLocalWidth);
 };
 
 const handlResultsAndMatchingsMaxDimensions = props => {
-  const { maxWidth, resultsLocalWidth, matchingsWidth, setMaxResultsWidth, setMaxMatchingsWidth } =
-    props;
-  setMaxResultsWidth(maxWidth - matchingsWidth);
+  const {
+    maxWidth,
+    resultsLocalWidth,
+    matchingsSideWidth,
+    setMaxResultsWidth,
+    setMaxMatchingsWidth,
+  } = props;
+  setMaxResultsWidth(maxWidth - matchingsSideWidth);
   setMaxMatchingsWidth(maxWidth - resultsLocalWidth);
 };

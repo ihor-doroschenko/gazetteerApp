@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setBottomContainerHeight } from 'redux/map-interaction-reducer';
+import { setBottomContainerHeight } from 'redux/table-state-reducer';
 import { getIsResults, getIsSideSwitched } from 'selectors/simple-selectors/nav-selectors';
 import { getWindowDimensions } from 'selectors/simple-selectors/table-state-selectors';
 

@@ -1,4 +1,4 @@
-import { getRightContainerElementDefaultWidth } from 'constants/getRightContainerMaxWidth';
+import { defaultElementWidth } from 'constants/numericConstants';
 import { useSelector } from 'react-redux';
 import { getIsSideSwitched } from 'selectors/simple-selectors/nav-selectors';
 import { getStatus } from 'selectors/simple-selectors/results-selectors';
@@ -11,11 +11,10 @@ export function useRecenterMapWrapper(mapRef) {
   const status = useSelector(getStatus);
   const isSideSwitched = useSelector(getIsSideSwitched);
   const searchWidth = useSelector(getSearchWidth);
-  const rightContainerElementDefaultWidth = getRightContainerElementDefaultWidth();
 
   const paramsForStartRecentering = {
     paddingTopLeft: [searchWidth, 50],
-    paddingBottomRight: [rightContainerElementDefaultWidth, 50],
+    paddingBottomRight: [defaultElementWidth, 50],
     // 100 because of initial values, less costly operation, and absence of animation
     seconds: 100,
     dependencies: [status],

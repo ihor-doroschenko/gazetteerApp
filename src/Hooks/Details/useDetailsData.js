@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { getAttributesAndValuesOfEntity } from 'utils/Converting/getAttributesAndValuesOfEntity';
 import { filterIsEssential } from 'utils/Filtering/filterIsEssential';
 import { filterIsFilled } from 'utils/Filtering/filterIsFilled';
+import { getAttributesAndValuesOfEntity } from 'utils/ObjectOperations/getAttributesAndValuesOfEntity';
 import { sortObject } from 'utils/Sorting/sortObject';
 
 // Hook to generate details data to render in the detail view

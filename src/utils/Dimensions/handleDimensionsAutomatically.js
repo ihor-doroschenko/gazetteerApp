@@ -1,5 +1,5 @@
-import { getRightContainerDimensions } from 'constants/getRightContainerMaxWidth';
-import { switchCompareTable, switchMatchingTable, switchResultsHidden } from 'redux/nav-reducer';
+import { defaultElementWidth } from 'constants/numericConstants';
+import { switchAdditionalResult, switchResultsHidden } from 'redux/nav-reducer';
 import { setCompareWidth, setMatchingsWidth, setResultsWidth } from 'redux/table-state-reducer';
 import {
   getIsCompareHidden,
@@ -7,7 +7,7 @@ import {
   getIsResultsHidden,
 } from 'selectors/simple-selectors/nav-selectors';
 import { getWindowDimensions } from 'selectors/simple-selectors/table-state-selectors';
-import { AreAllResultWidthsBiggerThatFreeSpace } from './AreAllResultWidthsBiggerThatFreeSpace';
+import { areAllResultWidthsBiggerThatFreeSpace } from './areAllResultWidthsBiggerThatFreeSpace';
 import { getFreeSpace } from './getFreeSpace';
 import { getWidthPercentage, getWidthPercentages } from './getWidthPercentage';
 
@@ -16,16 +16,15 @@ export const handleDimensionsAutomatically = (dispatch, getState) => {
   const isResultsHidden = getIsResultsHidden(getState());
   const isMatchingTableHidden = getIsMatchingTableHidden(getState());
   const isCompareHidden = getIsCompareHidden(getState());
-  const { rightContainerElementDefaultWidth } = getRightContainerDimensions();
   const { widthResultsPercentage, widthMatchingsPercentage, widthComparePercentage } =
     getWidthPercentages(getState);
   const freeSpace = getFreeSpace(getState);
-  if (AreAllResultWidthsBiggerThatFreeSpace(getState)) {
+  if (areAllResultWidthsBiggerThatFreeSpace(getState)) {
     if (!isResultsHidden && !isCompareHidden && !isMatchingTableHidden) {
-      dispatch(setCompareWidth(rightContainerElementDefaultWidth));
+      dispatch(setCompareWidth(defaultElementWidth));
       const newWidthComparePercentage = getWidthPercentage(
         isCompareHidden,
-        rightContainerElementDefaultWidth,
+        defaultElementWidth,
         width
       );
       if (
@@ -34,12 +33,12 @@ export const handleDimensionsAutomatically = (dispatch, getState) => {
       ) {
         return;
       }
-      dispatch(switchCompareTable(true));
+      dispatch(switchAdditionalResult(true, true));
     } else if (!isResultsHidden && !isMatchingTableHidden) {
-      dispatch(setMatchingsWidth(rightContainerElementDefaultWidth));
+      dispatch(setMatchingsWidth(defaultElementWidth));
       const newWidthMatchingsPercentage = getWidthPercentage(
         isMatchingTableHidden,
-        rightContainerElementDefaultWidth,
+        defaultElementWidth,
         width
       );
       if (
@@ -48,12 +47,12 @@ export const handleDimensionsAutomatically = (dispatch, getState) => {
       ) {
         return;
       }
-      dispatch(switchMatchingTable(true));
+      dispatch(switchAdditionalResult(true));
     } else if (!isResultsHidden && !isCompareHidden) {
-      dispatch(setCompareWidth(rightContainerElementDefaultWidth));
+      dispatch(setCompareWidth(defaultElementWidth));
       const newWidthComparePercentage = getWidthPercentage(
         isCompareHidden,
-        rightContainerElementDefaultWidth,
+        defaultElementWidth,
         width
       );
       if (
@@ -62,12 +61,12 @@ export const handleDimensionsAutomatically = (dispatch, getState) => {
       ) {
         return;
       }
-      dispatch(switchCompareTable(true));
+      dispatch(switchAdditionalResult(true, true));
     } else if (!isCompareHidden && !isMatchingTableHidden) {
-      dispatch(setCompareWidth(rightContainerElementDefaultWidth));
+      dispatch(setCompareWidth(defaultElementWidth));
       const newWidthComparePercentage = getWidthPercentage(
         isCompareHidden,
-        rightContainerElementDefaultWidth,
+        defaultElementWidth,
         width
       );
       if (
@@ -76,12 +75,12 @@ export const handleDimensionsAutomatically = (dispatch, getState) => {
       ) {
         return;
       }
-      dispatch(switchCompareTable(true));
+      dispatch(switchAdditionalResult(true, true));
     } else if (!isResultsHidden) {
-      dispatch(setResultsWidth(rightContainerElementDefaultWidth));
+      dispatch(setResultsWidth(defaultElementWidth));
       const newWidthResultsPercentage = getWidthPercentage(
         isResultsHidden,
-        rightContainerElementDefaultWidth,
+        defaultElementWidth,
         width
       );
       if (
@@ -92,10 +91,10 @@ export const handleDimensionsAutomatically = (dispatch, getState) => {
       }
       dispatch(switchResultsHidden(true));
     } else if (!isCompareHidden) {
-      dispatch(setCompareWidth(rightContainerElementDefaultWidth));
+      dispatch(setCompareWidth(defaultElementWidth));
       const newWidthComparePercentage = getWidthPercentage(
         isCompareHidden,
-        rightContainerElementDefaultWidth,
+        defaultElementWidth,
         width
       );
       if (
@@ -104,12 +103,12 @@ export const handleDimensionsAutomatically = (dispatch, getState) => {
       ) {
         return;
       }
-      dispatch(switchCompareTable(true));
+      dispatch(switchAdditionalResult(true, true));
     } else if (!isMatchingTableHidden) {
-      dispatch(setMatchingsWidth(rightContainerElementDefaultWidth));
+      dispatch(setMatchingsWidth(defaultElementWidth));
       const newWidthMatchingsPercentage = getWidthPercentage(
         isMatchingTableHidden,
-        rightContainerElementDefaultWidth,
+        defaultElementWidth,
         width
       );
       if (
@@ -118,7 +117,7 @@ export const handleDimensionsAutomatically = (dispatch, getState) => {
       ) {
         return;
       }
-      dispatch(switchMatchingTable(true));
+      dispatch(switchAdditionalResult(true));
     }
   }
 };

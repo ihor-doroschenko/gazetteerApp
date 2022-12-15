@@ -1,191 +1,160 @@
+// Reducer to control part of the store related to the map and interaction with the map. It contains state and take actions as arguments to modify the state and return new state
+
 import { getInitialZoom } from 'selectors/simple-selectors/map-interaction-selectors';
 import { getIsResultsHidden } from 'selectors/simple-selectors/nav-selectors';
-import { getSeparateEntries } from 'selectors/simple-selectors/results-selectors';
-import {
-  getTableStateExpanded,
-  getWindowDimensions,
-} from 'selectors/simple-selectors/table-state-selectors';
-import { isEntryInSeparatedEntries } from 'utils/Finding/isEntryInSeparatedEntries';
+import { getTableStateExpanded } from 'selectors/simple-selectors/table-state-selectors';
+import { checkIfPropertyIsFalse } from 'utils/validators/PropertyValidators/checkIfPropertyIsFalse';
 import { validateLocations } from 'utils/validators/PropertyValidators/validateLocations';
-import { setDetailsStatusToPassive } from './details-reducer';
+import { setDetailsStatusesOfGazetteerToPassive } from './details-reducer';
 import { switchResultsHidden } from './nav-reducer';
 import { setStateOfExpandedOfAGazetteer } from './table-state-reducer';
 
-const SET_ZOOM_TO = 'gazetteer-app/map-interaction/SET_ZOOM_TO';
-const SET_INITIAL_ZOOM = 'gazetteer-app/map-interaction/SET_INITIAL_ZOOM';
-const SET_ZOOM_TO_NULL = 'gazetteer-app/map-interaction/SET_ZOOM_TO_NULL';
-const MOUSE_CLICK = 'gazetteer-app/map-interaction/MOUSE_CLICK';
-const MOUSE_CLICK_CLEAR = 'gazetteer-app/map-interaction/MOUSE_CLICK_CLEAR';
-const MOUSE_OVER_INFINITE = 'gazetteer-app/map-interaction/MOUSE_OVER_INFINITE';
-const MOUSE_OVER = 'gazetteer-app/map-interaction/MOUSE_OVER';
-const MOUSE_OUT = 'gazetteer-app/map-interaction/MOUSE_OUT';
-const MOUSE_OUT_INFINITE = 'gazetteer-app/map-interaction/MOUSE_OUT_INFINITE';
-const SET_MAP_HEIGHT = 'gazetteer-app/map-interaction/SET_MAP_HEIGHT';
-const SET_BOTTOM_CONTAINER_MIN_HEIGHT =
-  'gazetteer-app/map-interaction/SET_BOTTOM_CONTAINER_MIN_HEIGHT';
-const SET_BOTTOM_CONTAINER_MAX_HEIGHT =
-  'gazetteer-app/map-interaction/SET_BOTTOM_CONTAINER_MAX_HEIGHT';
+// Constants for actions names written using the rule of the redux-ducks - reducer/actions
+// Set parameters for zooming to the entity on the map
+const SET_ZOOM_TO_ENTITY = 'gazetteer-app/map-interaction/SET_ZOOM_TO_ENTITY';
+// Set parameters for zooming to the entity on the map to initial
+const SET_ZOOM_TO_ENTITY_TO_INITIAL = 'gazetteer-app/map-interaction/SET_ZOOM_TO_ENTITY_TO_INITIAL';
+// Set initial zoom level for the map
+const SET_INITIAL_ZOOM_LEVEL = 'gazetteer-app/map-interaction/SET_INITIAL_ZOOM_LEVEL';
+// Set id and gazetteer name of the marker of the entity being clicked on the map
+const MOUSE_CLICK_MARKER = 'gazetteer-app/map-interaction/MOUSE_CLICK_MARKER';
+// Set id and gazetteer name of the marker of the entity being clicked on the map to empty
+const MOUSE_CLICK_MARKER_TO_INITIAL = 'gazetteer-app/map-interaction/MOUSE_CLICK_MARKER_TO_INITIAL';
+// Set id and gazetteer name of the entity being moved by the mouse in the table
+const MOUSE_OVER_MARKER_INFINITE = 'gazetteer-app/map-interaction/MOUSE_OVER_MARKER_INFINITE';
+// Set id and gazetteer name of the entity being moved by the mouse in the table to empty
+const MOUSE_OUT_MARKER_INFINITE = 'gazetteer-app/map-interaction/MOUSE_OUT_MARKER_INFINITE';
+// Set id and gazetteer name of the entity being moved by the mouse on the map
+const MOUSE_OVER_MARKER = 'gazetteer-app/map-interaction/MOUSE_OVER_MARKER';
+// Set id and gazetteer name of the entity being moved by the mouse on the map to empty
+const MOUSE_OUT_MARKER = 'gazetteer-app/map-interaction/MOUSE_OUT_MARKER';
 
 let initialState = {
-  zoomTo: [],
+  zoomTo: { id: '', gazName: '', position: [] },
   initialZoomValue: false,
-  actualBottomContainerHeight: 300,
-  bottomContainerMinHeight: 300,
-  bottomContainerMaxHeight: 600,
   mouseClickedElement: {},
-  mouseOverElement: {},
   mouseOverElementInfinite: {},
+  mouseOverElement: {},
 };
 
+// Reducer that takes state and action to modify it
 const mapInteractionReducer = (state = initialState, action) => {
   switch (action.type) {
-    case SET_ZOOM_TO:
+    case SET_ZOOM_TO_ENTITY:
+      const { id, gazName, position } = action;
       return {
         ...state,
-        zoomTo: action.position,
+        zoomTo: { id, gazName, position },
       };
-    case SET_INITIAL_ZOOM:
-      return {
-        ...state,
-        initialZoomValue: action.value,
-      };
-    case SET_ZOOM_TO_NULL:
+    case SET_ZOOM_TO_ENTITY_TO_INITIAL:
       return {
         ...state,
         zoomTo: initialState.zoomTo,
       };
-    case MOUSE_CLICK:
+    case SET_INITIAL_ZOOM_LEVEL:
+      return {
+        ...state,
+        initialZoomValue: action.value,
+      };
+    case MOUSE_CLICK_MARKER:
       return {
         ...state,
         mouseClickedElement: action.element,
       };
-    case MOUSE_CLICK_CLEAR:
+    case MOUSE_CLICK_MARKER_TO_INITIAL:
       return {
         ...state,
         mouseClickedElement: initialState.mouseClickedElement,
       };
-    case MOUSE_OVER_INFINITE:
+    case MOUSE_OVER_MARKER_INFINITE:
       return {
         ...state,
         mouseOverElementInfinite: action.element,
       };
-    case MOUSE_OVER:
-      return {
-        ...state,
-        mouseOverElement: action.element,
-      };
-    case MOUSE_OUT:
-      return {
-        ...state,
-        mouseOverElement: initialState.mouseOverElement,
-      };
-    case MOUSE_OUT_INFINITE:
+    case MOUSE_OUT_MARKER_INFINITE:
       return {
         ...state,
         mouseOverElementInfinite: initialState.mouseOverElementInfinite,
       };
-    case SET_MAP_HEIGHT:
+    case MOUSE_OVER_MARKER:
       return {
         ...state,
-        actualBottomContainerHeight: action.value,
+        mouseOverElement: action.element,
       };
-    case SET_BOTTOM_CONTAINER_MIN_HEIGHT: {
+    case MOUSE_OUT_MARKER:
       return {
         ...state,
-        bottomContainerMinHeight: action.value,
+        mouseOverElement: initialState.mouseOverElement,
       };
-    }
-    case SET_BOTTOM_CONTAINER_MAX_HEIGHT: {
-      return {
-        ...state,
-        bottomContainerMaxHeight: action.value,
-      };
-    }
     default:
       return state;
   }
 };
 
-export const setInitialZoom = value => ({
-  type: SET_INITIAL_ZOOM,
-  value,
-});
-const setZoomTo = position => ({
-  type: SET_ZOOM_TO,
+// Action creators to modify the state
+const setZoomToEntity = (id, gazName, position) => ({
+  type: SET_ZOOM_TO_ENTITY,
+  id,
+  gazName,
   position,
 });
-export const setZoomToNull = () => ({
-  type: SET_ZOOM_TO_NULL,
+export const setZoomToEntityToInitial = () => ({
+  type: SET_ZOOM_TO_ENTITY_TO_INITIAL,
 });
-export const mouseClick = element => ({
-  type: MOUSE_CLICK,
-  element,
-});
-export const mouseClickClear = () => ({
-  type: MOUSE_CLICK_CLEAR,
-});
-export const setBottomContainerActualHeight = value => ({
-  type: SET_MAP_HEIGHT,
+export const setInitialZoomLevel = value => ({
+  type: SET_INITIAL_ZOOM_LEVEL,
   value,
 });
-export const setBottomContainerMinHeight = value => ({
-  type: SET_BOTTOM_CONTAINER_MIN_HEIGHT,
-  value,
-});
-export const setBottomContainerMaxHeight = value => ({
-  type: SET_BOTTOM_CONTAINER_MAX_HEIGHT,
-  value,
-});
-export const mouseOver = element => ({
-  type: MOUSE_OVER,
+export const mouseClickMarker = element => ({
+  type: MOUSE_CLICK_MARKER,
   element,
 });
-export const mouseOverInfinite = element => ({
-  type: MOUSE_OVER_INFINITE,
+export const mouseClickMarkerToInitial = () => ({
+  type: MOUSE_CLICK_MARKER_TO_INITIAL,
+});
+export const mouseOverMarkerInfinite = element => ({
+  type: MOUSE_OVER_MARKER_INFINITE,
   element,
 });
-export const mouseOut = () => ({
-  type: MOUSE_OUT,
+export const mouseOutMarkerInfinite = () => ({
+  type: MOUSE_OUT_MARKER_INFINITE,
 });
-export const mouseOutInfinite = () => ({
-  type: MOUSE_OUT_INFINITE,
+export const mouseOverMarker = element => ({
+  type: MOUSE_OVER_MARKER,
+  element,
+});
+export const mouseOutMarker = () => ({
+  type: MOUSE_OUT_MARKER,
 });
 
+// Thunk creators to modify state under more complex conditions. Often contains asynchronous operations or multiple action calls
+
+// Changes current value whether the map has initial zoom level to update map state and to get back to initial zoom level on demand
 export const setInitialZoomContainer = () => (dispatch, getState) => {
   const initialZoomValue = getInitialZoom(getState());
-  dispatch(setInitialZoom(!initialZoomValue));
+  dispatch(setInitialZoomLevel(!initialZoomValue));
 };
 
-export const setBottomContainerHeight = () => (dispatch, getState) => {
-  const { height } = getWindowDimensions(getState());
-  const minHeight = height / 3;
-  const maxHeight = height / 2;
-  dispatch(setBottomContainerMaxHeight(maxHeight));
-  dispatch(setBottomContainerMinHeight(minHeight));
-  dispatch(setBottomContainerActualHeight(minHeight));
-};
-
-export const handleZoomTo = element => dispatch => {
+// Validate location of the entity and, if it is valid, zoom to this entity on the map
+export const handleZoomToEntity = (element, gazName) => dispatch => {
   if (validateLocations(element)) {
-    dispatch(setZoomTo(element.position));
+    dispatch(setZoomToEntity(element.id, gazName, element.position));
   }
 };
 
+// Handle mouse click on the marker on the map: check if the results table is hidden - if yes, show it; hide opened detail views; check, if current gazetteer subtable is expanded - if no, expand the subtable
 export const handleMouseClick = element => (dispatch, getState) => {
+  const { gazName } = element;
   const isResultsHidden = getIsResultsHidden(getState());
   if (isResultsHidden) {
     dispatch(switchResultsHidden(false));
   }
-
-  const separateEntries = getSeparateEntries(getState());
-  if (!isEntryInSeparatedEntries(element, separateEntries)) {
-    dispatch(setDetailsStatusToPassive(element.gazName));
-    const tableStateExpanded = getTableStateExpanded(getState());
-    if (tableStateExpanded[element.gazName] === false) {
-      dispatch(setStateOfExpandedOfAGazetteer(element.gazName, true));
-    }
+  dispatch(setDetailsStatusesOfGazetteerToPassive(gazName));
+  const tableStateExpanded = getTableStateExpanded(getState());
+  if (checkIfPropertyIsFalse(tableStateExpanded[gazName])) {
+    dispatch(setStateOfExpandedOfAGazetteer(gazName, true));
   }
-  dispatch(mouseClick(element));
+  dispatch(mouseClickMarker(element));
 };
 
 export default mapInteractionReducer;

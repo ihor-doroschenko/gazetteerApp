@@ -9,6 +9,8 @@ import { normalizePRNG } from './normalizePRNG/normalizePRNG';
 import { normalizePrusijalit } from './normalizePrusijalit/normalizePrusijalit';
 import { normalizeWikidata } from './normalizeWikidata/normalizeWikidata';
 
+// Wrapper to normalize gazetteers after requesting the server
+
 const normalizeGazetteers = {
   geonames: normalizeGeonames,
   gov: normalizeGOV,

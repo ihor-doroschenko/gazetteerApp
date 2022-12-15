@@ -6,9 +6,17 @@ import React from 'react';
 import MarkerContainerClasses from './MarkerContainer.module.css';
 import SvgMarkerComponent from './SvgMarkerComponent';
 
-const MarkerContainer = ({ internId, position, color, mapMarker, isMouseOverElementInfinite }) => {
+// Wrapper component to contain a marker or a respective icon showing that there is no spatial information related to the entity
+
+const MarkerContainer = ({
+  internId,
+  position,
+  gazName,
+  mapMarker = false,
+  isMouseOverElementInfinite = false,
+}) => {
   const element = position ? (
-    <SvgMarkerComponent color={color} border='#989898' mapMarker={mapMarker} internId={internId} />
+    <SvgMarkerComponent gazName={gazName} mapMarker={mapMarker} internId={internId} />
   ) : (
     <FontAwesomeIcon icon={faQuestion} className={MarkerContainerClasses.questionMark} />
   );

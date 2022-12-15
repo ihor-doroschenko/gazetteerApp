@@ -1,6 +1,13 @@
 import { convertArrayItemsToNumbers } from 'utils/Converting/convertArrayItemsToNumbers';
 
-// In some gazetteers the attribute names can be in Polish
+// Normalize the Poland16thc gazetteer.
+// Renaming `objectid` attribute to `id` attribute.
+// Renaming `current name` attribute to `name` attribute.
+// Renaming `settlement type` attribute to `type` attribute.
+// Renaming `lon` attribute to `lng` attribute.
+// Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
+// Coercing value of `id` attribute to string data type.
+// Transformation of all attribute values having `null` to empty string `''`.
 
 export const normalizePoland16thc = database => {
   return database

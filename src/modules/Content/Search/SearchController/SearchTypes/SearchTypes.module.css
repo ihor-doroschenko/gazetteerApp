@@ -1,0 +1,10 @@
+.radioOptionsContainerResized {
+  flex-direction: column;
+}
+
+/* media queries */
+@media (max-height: 900px), (max-width: 1772px) and (max-height: 900px) {
+  .radioOptionsContainerResized > div:last-child > label > span:last-child {
+    width: 100px;
+  }
+}

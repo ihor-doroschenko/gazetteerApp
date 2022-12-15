@@ -11,8 +11,8 @@
   margin: 10px !important;
 }
 .arrowNext {
-  right: 0px;
+  right: -5px;
 }
 .arrowPrev {
-  left: 0px;
+  left: -5px;
 }

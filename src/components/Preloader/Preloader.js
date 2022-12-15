@@ -3,6 +3,8 @@ import classNames from 'classnames';
 import React from 'react';
 import PreloaderClasses from './Preloader.module.css';
 
+// Component to contain text being shown if the data are loaded
+
 const Preloader = ({ gazName, message, heightValue }) => {
   return (
     <div

@@ -1,5 +1,7 @@
-import GazetteerResultsHead from 'modules/Content/MainContent/Results/ResultsTable/TableWrapperBody/GazetteerResultsHead/GazetteerResultsHead';
+import ResultsSubTableHead from 'modules/Content/Results/ResultsTable/TableWrapperBody/ResultsSubTableHead/ResultsSubTableHead';
 import React from 'react';
+
+// Get columns for side view to contain gazetteer headers
 
 export const getColumnsForSideView = getOrCreateRef => {
   return [
@@ -7,7 +9,7 @@ export const getColumnsForSideView = getOrCreateRef => {
       Cell: props => {
         const { original } = props;
         return (
-          <GazetteerResultsHead original={original} newRef={getOrCreateRef(original.gazName)} />
+          <ResultsSubTableHead original={original} newRef={getOrCreateRef(original.gazName)} />
         );
       },
       style: { padding: '0' },

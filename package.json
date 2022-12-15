@@ -16,6 +16,7 @@
     "html-react-parser": "^0.14.0",
     "leaflet": "^1.6.0",
     "leaflet-draw": "^1.0.4",
+    "lodash.clonedeep": "^4.5.0",
     "npm-watch": "^0.6.0",
     "react": "^16.13.1",
     "react-csv": "^2.0.3",

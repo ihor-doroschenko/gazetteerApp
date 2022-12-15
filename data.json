@@ -1,18 +1,58 @@
 {
   "unavailableMatching": {
-    "id": "Q1792",
-    "names": [
-      { "name": "Oliva", "lang": "de" },
-      { "name": "Oliwa", "lang": "en" },
-      { "name": "Oliwa", "lang": "pl" }
-    ],
-    "coordinates": [{ "lat": "54.410555555", "lon": "18.558888888" }],
-    "types": [{ "name": "dzielnica" }],
-    "sameas": [
-      { "database": "geonames", "entity": "3090147" },
-      { "database": "gnd", "entity": "4075642-7" }
-    ],
-    "link": "https://www.wikidata.org/wiki/Q1447540"
+    "id": "184538",
+    "main name": "Gdynia",
+    "object type": "część wsi",
+    "object class": "miejscowość",
+    "super object": "Marzęcice",
+    "admin. function": null,
+    "genitive": "-ni",
+    "adjective": null,
+    "comment": null,
+    "source": "Wykaz urzędowych nazw miejscowości w Polsce, t. I - III  GUS (1980 - 1982)./Rozporządzenie Ministra Administracji i Cyfryzacji z dnia 13 grudnia 2012 r., Dz. U. z 2013 r., poz. 200",
+    "distinguishing element": "Gdynia",
+    "general element": null,
+    "ipa pronunciation": null,
+    "polish pronunciation": null,
+    "latitude": "53°25'48''",
+    "longitude": "19°32'20''",
+    "cartesian coordinate y": "618460",
+    "cartesian coordinate x": "535794,3",
+    "change date": "16.06.2016",
+    "display type": "Punkt centralny",
+    "external system": "TERYT",
+    "external system id": "0845772",
+    "id iip": "00000000-0000-0000-0000-000000184538",
+    "map scale": null,
+    "name status": "urzędowa",
+    "other names": null,
+    "other names lang code ": null,
+    "other names language": null,
+    "other names romanized form": null,
+    "historical name": null,
+    "certain name": null,
+    "other name comment": null,
+    "historical name comment": null,
+    "certain name comment": null,
+    "exonym foreign": null,
+    "exonym written": null,
+    "exonym language": null,
+    "exonym romanized": null,
+    "endonym foreign": null,
+    "endonym written": null,
+    "endonym language": null,
+    "endonym romanized": null,
+    "state": "Polska",
+    "voivodeship": "warmińsko-mazurskie",
+    "powiat": "nowomiejski",
+    "gmina": "Kurzętnik-gmina wiejska",
+    "id territorial unit": "2812042",
+    "edit date": "10.09.2009",
+    "delete date": null,
+    "namespace": "PL.PZGiK.204.PRNG",
+    "lat normalized": "53.43",
+    "lon normalized": "19.538888888889",
+    "matchings": []
   },
   "geonames": [
     {
@@ -2542,7 +2582,7 @@
     {
       "id": "DANZIGJO94HI",
       "last-modification": "2021-02-13T00:00:00.000Z",
-      "position": { "lon": 18.65, "lat": 54.35, "type": "p" },
+      "position": { "lon": 18.65142, "lat": 54.34958, "type": "p" },
       "external-reference": [
         { "value": "SIMC:0933016" },
         { "value": "nima:-501400" },
@@ -3659,473 +3699,4651 @@
   ],
   "wikidata": [
     {
-      "id": "Q100734675",
+      "id": "Q11684947",
       "names": [
-        { "name": "Hungarian consulate general, Gdansk", "lang": "en" },
-        { "name": "Konsulat Generalny Węgier w Gdansku", "lang": "pl" }
+        { "name": "Aleja Marszałka Józefa Piłsudskiego w Olsztynie", "lang": "pl" },
+        { "name": "Piłsudskiego Avenue, Olsztyn", "lang": "en" }
       ],
-      "coordinates": [{ "lat": "54.359861111", "lon": "18.649361111" }],
-      "types": [{ "name": "consulate general" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q100734675"
+      "coordinates": [{ "lat": "53.771722222", "lon": "20.505027777" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q11684947"
     },
     {
-      "id": "Q102047936",
+      "id": "Q11689686",
       "names": [
-        { "name": "39 Długi Targ Square in Gdańsk", "lang": "en" },
-        { "name": "Ratsapotheke Danzig", "lang": "de" }
+        { "name": "Cerkiew Opieki Matki Bożej w Olsztynie", "lang": "pl" },
+        { "name": "Orthodox church of the Pokrov in Olsztyn", "lang": "en" }
       ],
-      "coordinates": [{ "lat": "54.348598", "lon": "18.653993" }],
-      "types": [{ "name": "building" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q102047936"
+      "coordinates": [{ "lat": "53.7919", "lon": "20.4828" }],
+      "types": [{ "name": "church building" }, { "name": "Eastern Orthodox church" }],
+      "link": "https://www.wikidata.org/wiki/Q11689686"
     },
     {
-      "id": "Q104545123",
+      "id": "Q11716675",
       "names": [
-        { "name": "dům Herschmann", "lang": "cs" },
-        { "name": "Gdaňsk House", "lang": "en" },
-        { "name": "Haus Herschmann", "lang": "de" }
+        { "name": "", "lang": "en" },
+        { "name": "Jakubowo (Olsztyn)", "lang": "pl" }
       ],
-      "coordinates": [{ "lat": "50.2300614", "lon": "12.8692161" }],
-      "types": [{ "name": "house" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q104545123"
+      "coordinates": [{ "lat": "53.7972", "lon": "20.481741" }],
+      "types": [{ "name": "neighborhood" }],
+      "link": "https://www.wikidata.org/wiki/Q11716675"
     },
     {
-      "id": "Q107097514",
+      "id": "Q11726192",
       "names": [
-        { "name": "Gdańsk Jelitkowo", "lang": "en" },
-        { "name": "Gdańsk Jelitkowo", "lang": "pl" }
+        { "name": "", "lang": "en" },
+        { "name": "Jezioro Czarne (Olsztyn)", "lang": "pl" }
       ],
-      "coordinates": [{ "lat": "54.42611", "lon": "18.5975" }],
-      "types": [{ "name": "bathing water" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q107097514"
+      "coordinates": [{ "lat": "53.7822", "lon": "20.4544" }],
+      "types": [{ "name": "lake" }],
+      "link": "https://www.wikidata.org/wiki/Q11726192"
     },
     {
-      "id": "Q10969246",
+      "id": "Q11726277",
       "names": [
-        { "name": "Botanical Garden in Gdańsk Oliwa", "lang": "en" },
-        { "name": "Ogród Botaniczny w Oliwie", "lang": "pl" }
+        { "name": "", "lang": "en" },
+        { "name": "Jezioro Długie (Olsztyn)", "lang": "pl" }
       ],
-      "coordinates": [{ "lat": "54.4107", "lon": "18.5624" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q10969246"
+      "coordinates": [{ "lat": "53.7853", "lon": "20.4606" }],
+      "types": [{ "name": "lake" }],
+      "link": "https://www.wikidata.org/wiki/Q11726277"
     },
     {
-      "id": "Q10970283",
+      "id": "Q11736403",
       "names": [
-        { "name": "Collegiate church of Gdańsk Wrzeszcz", "lang": "en" },
-        { "name": "Herz-Jesu-Kirche", "lang": "de" },
-        { "name": "Kolegiata Gdańska pw. Serca Jezusowego w Gdańsku Wrzeszczu", "lang": "pl" }
+        { "name": "", "lang": "en" },
+        { "name": "Karolin (Olsztyn)", "lang": "pl" }
       ],
-      "coordinates": [{ "lat": "54.3799", "lon": "18.6091" }],
-      "types": [{ "name": "church building" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q10970283"
+      "coordinates": [{ "lat": "53.80317", "lon": "20.530476" }],
+      "types": [{ "name": "neighborhood" }],
+      "link": "https://www.wikidata.org/wiki/Q11736403"
     },
     {
-      "id": "Q10971573",
+      "id": "Q11739058",
       "names": [
-        { "name": "Adam Mickiewicz Park in Gdańsk-Oliwa", "lang": "en" },
-        { "name": "Park Oliwski", "lang": "pl" }
-      ],
-      "coordinates": [{ "lat": "54.411111", "lon": "18.5625" }],
-      "types": [{ "name": "park" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q10971573"
-    },
-    {
-      "id": "Q10982578",
-      "names": [
-        { "name": "Kościół św. Jakuba w Oliwie", "lang": "pl" },
-        { "name": "Saint James church in Gdańsk Oliwa", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.4118", "lon": "18.5568" }],
-      "types": [{ "name": "church building" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q10982578"
-    },
-    {
-      "id": "Q11129717",
-      "names": [
-        { "name": "Museum des Zweiten Weltkriegs in Danzig", "lang": "de" },
-        { "name": "Museum of World War II in Gdańsk", "lang": "en" },
-        { "name": "Muzeum II Wojny Światowej w Gdańsku", "lang": "pl" }
-      ],
-      "coordinates": [{ "lat": "54.35583333", "lon": "18.66055556" }],
-      "types": [{ "name": "military museum" }],
-      "sameas": [{ "database": "gnd", "entity": "1038435064" }],
-      "matchings": [{ "db": "gnd", "id": "1038435064", "type": "ref (from live data)" }],
-      "link": "https://www.wikidata.org/wiki/Q11129717"
-    },
-    {
-      "id": "Q1123290",
-      "names": [
-        { "name": "Brama Krowia", "lang": "pl" },
-        { "name": "Cow Gate in Gdańsk", "lang": "en" },
-        { "name": "Kuhtor", "lang": "de" }
-      ],
-      "coordinates": [{ "lat": "54.346921", "lon": "18.655021" }],
-      "types": [{ "name": "water gate" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q1123290"
-    },
-    {
-      "id": "Q1149689",
-      "names": [
-        { "name": "Czirenberg-Haus", "lang": "de" },
-        { "name": "Czirenbergs House in Gdańsk", "lang": "en" },
-        { "name": "Kamienica Czirenbergów", "lang": "pl" }
-      ],
-      "coordinates": [{ "lat": "54.34938889", "lon": "18.65005556" }],
-      "types": [{ "name": "house" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q1149689"
-    },
-    {
-      "id": "Q1165710",
-      "names": [
-        { "name": "Gdańsk County", "lang": "en" },
-        { "name": "powiat gdański", "lang": "pl" },
-        { "name": "Powiat Gdański", "lang": "de" }
-      ],
-      "coordinates": [{ "lat": "54.266666666", "lon": "18.633333333" }],
-      "types": [{ "name": "powiat of Poland" }],
-      "sameas": [{ "database": "geonames", "entity": "7530971" }],
-      "matchings": [
-        { "db": "geonames", "id": "7530971", "type": "ref (from live data)" },
-        {
-          "db": "gov",
-          "id": "object_218109",
-          "type": "ref",
-          "description": "ref dbpath: gov>geonamesteryt_simcteryt_simcviafviafteryt_simcteryt_simcgeonamesviafteryt_simcteryt_simcteryt_simcteryt_simcgeonames }"
-        }
-      ],
-      "link": "https://www.wikidata.org/wiki/Q5005499"
-    },
-    {
-      "id": "Q5005558",
-      "names": [
-        { "name": "Będzieszyn", "lang": "pl" },
-        { "name": "Będzieszyn, Gdańsk County", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.24305556", "lon": "18.59555556" }],
-      "types": [{ "name": "village of Poland" }],
-      "sameas": [{ "database": "simc", "entity": "0169176" }],
-      "matchings": [
-        { "db": "teryt_simc", "id": "0169176", "type": "ref (from live data)" },
-        {
-          "db": "gov",
-          "id": "BANHINJO94HG",
-          "type": "ref",
-          "description": "ref dbpath: wikidata>teryt_simcteryt_simcteryt_simcgeonames",
-          "link": "https://www.geonames.org/3101182"
-        },
-        {
-          "db": "gov",
-          "id": "SCHTTEJO94DE",
-          "type": "ref",
-          "description": "ref dbpath: wikidata>teryt_simcteryt_simcteryt_simcgeonames }"
-        }
-      ],
-      "link": "https://www.wikidata.org/wiki/Q5201557"
-    },
-    {
-      "id": "Q5529372",
-      "names": [
-        { "name": "Gdańsk Biskupia Górka", "lang": "pl" },
-        { "name": "Gdańsk Biskupia Górka railway station", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.3422", "lon": "18.6436" }],
-      "types": [{ "name": "railway station" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q5529372"
-    },
-    {
-      "id": "Q5529375",
-      "names": [
-        { "name": "Gdańsk Olszynka", "lang": "pl" },
-        { "name": "Gdańsk Olszynka railway station", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.3375", "lon": "18.6789" }],
-      "types": [{ "name": "railway station" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q5529375"
-    },
-    {
-      "id": "Q5529377",
-      "names": [
-        { "name": "Gdańsk Południowy", "lang": "pl" },
-        { "name": "Gdańsk Południowy railway station", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.3317", "lon": "18.6371" }],
-      "types": [{ "name": "railway station" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q5529377"
-    },
-    {
-      "id": "Q5529378",
-      "names": [
-        { "name": "Gdański Uniwersytet Medyczny", "lang": "pl" },
-        { "name": "Medical University of Gdańsk", "lang": "en" },
-        { "name": "Medizinische Universität Danzig", "lang": "de" }
-      ],
-      "coordinates": [{ "lat": "54.36611111", "lon": "18.63055556" }],
-      "types": [{ "name": "medical school" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q5529378"
-    },
-    {
-      "id": "Q5529380",
-      "names": [
-        { "name": "Elektrociepłownie Wybrzeże", "lang": "pl" },
-        { "name": "Gdańsk Power Station", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.378306", "lon": "18.641694" }],
-      "types": [
-        { "name": "coal-fired power station" },
-        { "name": "combined heat and power station" }
-      ],
-      "sameas": [{ "database": "geonames", "entity": "7284120" }],
-      "matchings": [{ "db": "geonames", "id": "7284120", "type": "ref (from live data)" }],
-      "link": "https://www.wikidata.org/wiki/Q5529380"
-    },
-    {
-      "id": "Q55398546",
-      "names": [
-        { "name": "Aleja Rzeczypospolitej w Gdańsku", "lang": "pl" },
-        { "name": "Rzeczypospolitej avenue in Gdańsk", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.39606", "lon": "18.5994097" }],
-      "types": [{ "name": "allée" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q55398546"
-    },
-    {
-      "id": "Q55517577",
-      "names": [
-        { "name": "Former franciscan monastery in Gdańsk", "lang": "en" },
-        { "name": "Franziskanerkloster Danzig", "lang": "de" },
-        { "name": "Zespół klasztorny franciszkanów", "lang": "pl" }
-      ],
-      "coordinates": [{ "lat": "54.345873", "lon": "18.647107" }],
-      "types": [{ "name": "building complex" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q55517577"
-    },
-    {
-      "id": "Q557448",
-      "names": [
-        { "name": "Bahnhof Gdańsk Główny", "lang": "de" },
-        { "name": "Gdańsk Główny", "lang": "pl" },
-        { "name": "Gdańsk Główny railway station", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.355556", "lon": "18.644722" }],
-      "types": [{ "name": "railway station" }],
-      "sameas": [{ "database": "geonames", "entity": "3099432" }],
-      "matchings": [{ "db": "geonames", "id": "3099432", "type": "ref (from live data)" }],
-      "link": "https://www.wikidata.org/wiki/Q557448"
-    },
-    {
-      "id": "Q5587629",
-      "names": [
-        { "name": "Goszyn", "lang": "pl" },
-        { "name": "Goszyn, Gdańsk County", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.26555556", "lon": "18.53611111" }],
-      "types": [{ "name": "village of Poland" }],
-      "sameas": [{ "database": "simc", "entity": "0169354" }],
-      "matchings": [
-        { "db": "teryt_simc", "id": "0169354", "type": "ref (from live data)" },
-        {
-          "db": "gov",
-          "id": "GOSHINJO94GG",
-          "type": "ref",
-          "description": "ref dbpath: gov>teryt_simcteryt_simcviafviafgeonames }",
-          "link": "http://gov.genealogy.net/item/show/FREHALJO94GJ"
-        }
-      ],
-      "link": "https://www.wikidata.org/wiki/Q594376"
-    },
-    {
-      "id": "Q59535619",
-      "names": [
-        { "name": "Gdańska Fundacja Wody", "lang": "pl" },
-        { "name": "Gdansk Water Foundation", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.305885", "lon": "18.631386" }],
-      "types": [{ "name": "nonprofit organization" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q59535619"
-    },
-    {
-      "id": "Q63146955",
-      "names": [
-        { "name": "Orunia Górna-Gdańsk Południe", "lang": "de" },
-        { "name": "Orunia Górna-Gdańsk Południe", "lang": "en" },
-        { "name": "Orunia Górna-Gdańsk Południe", "lang": "pl" }
-      ],
-      "coordinates": [{ "lat": "54.324722222", "lon": "18.618333333" }],
-      "types": [{ "name": "dzielnica" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q63146955"
-    },
-    {
-      "id": "Q6333059",
-      "names": [
-        { "name": "Neue Synagoge", "lang": "de" },
-        { "name": "New Synagogue in Gdańsk-Wrzeszcz", "lang": "en" },
-        { "name": "Nowa Synagoga w Gdańsku-Wrzeszczu", "lang": "pl" }
-      ],
-      "coordinates": [{ "lat": "54.378", "lon": "18.605" }],
-      "types": [{ "name": "architectural structure" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q6333059"
-    },
-    {
-      "id": "Q63724811",
-      "names": [
-        { "name": "Cmentarz Garnizonowy in Danzig", "lang": "de" },
-        { "name": "Cmentarz Garnizonowy w Gdańsku", "lang": "pl" },
-        { "name": "Garnizonowy Cemetery in Gdańsk", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.358888888", "lon": "18.638611111" }],
-      "types": [{ "name": "cemetery" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q63724811"
-    },
-    {
-      "id": "Q6405609",
-      "names": [
-        { "name": "Kierzkowo", "lang": "pl" },
-        { "name": "Kierzkowo, Gdańsk County", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.165", "lon": "18.33611111" }],
-      "types": [{ "name": "village of Poland" }],
-      "sameas": [{ "database": "simc", "entity": "0169934" }],
-      "matchings": [
-        { "db": "teryt_simc", "id": "0169934", "type": "ref (from live data)" },
-        {
-          "db": "geonames",
-          "id": "3096248",
-          "type": "ref",
-          "description": "ref dbpath: geonamesteryt_simcteryt_simcteryt_simcteryt_simcteryt_simcteryt_simcgeonamesteryt_simcgeonames }"
-        }
-      ],
-      "link": "https://www.wikidata.org/wiki/Q6434930"
-    },
-    {
-      "id": "Q64554184",
-      "names": [
-        { "name": "7 Szpital Marynarki Wojennej", "lang": "pl" },
-        { "name": "7th Navy Hospital in Gdańsk", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.393305555", "lon": "18.566111111" }],
-      "types": [{ "name": "hospital" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q64554184"
-    },
-    {
-      "id": "Q64698526",
-      "names": [{ "name": "Gdansk - Town of Memory and Freedom", "lang": "en" }],
-      "coordinates": [{ "lat": "54.36043", "lon": "18.64889" }],
-      "types": [{ "name": "old town" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q64698526"
-    },
-    {
-      "id": "Q647822",
-      "names": [
-        { "name": "Bahnstrecke Warschau–Danzig", "lang": "de" },
-        { "name": "linia kolejowa nr 9", "lang": "pl" },
-        { "name": "Warsaw–Gdańsk railway", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "52.426222", "lon": "20.712889" }],
-      "types": [{ "name": "railway line" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q647822"
-    },
-    {
-      "id": "Q65160950",
-      "names": [
-        { "name": "Kościół Garnizonowy Świętych Apostołów Piotra i Pawła w Gdańsku", "lang": "pl" },
-        { "name": "Redemptoris Mater church in Gdańsk", "lang": "en" }
-      ],
-      "coordinates": [{ "lat": "54.374908", "lon": "18.609725" }],
-      "types": [{ "name": "church building" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q65160950"
-    },
-    {
-      "id": "Q65160955",
-      "names": [
-        { "name": "Immaculate Conception church in Gdańsk", "lang": "en" },
-        {
-          "name": "Kościół Niepokalanego Poczęcia Najświętszej Maryi Panny w Gdańsku",
-          "lang": "pl"
-        }
-      ],
-      "coordinates": [{ "lat": "54.34114", "lon": "18.65928" }],
-      "types": [{ "name": "church building" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q65160955"
-    },
-    {
-      "id": "Q65164240",
-      "names": [
-        { "name": "Forum Gdańsk", "lang": "en" },
-        { "name": "Forum Gdańsk", "lang": "pl" }
-      ],
-      "coordinates": [{ "lat": "54.3495", "lon": "18.642416666" }],
-      "types": [{ "name": "shopping center" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q65164240"
-    },
-    {
-      "id": "Q65976364",
-      "names": [
-        { "name": "Gdańsk refinery", "lang": "en" },
-        { "name": "Rafineria Gdańska", "lang": "pl" }
-      ],
-      "coordinates": [{ "lat": "54.346477777", "lon": "18.739591666" }],
-      "types": [{ "name": "oil refinery" }],
-      "matchings": [],
-      "link": "https://www.wikidata.org/wiki/Q65976364"
-    },
-    {
-      "id": "Q6711665",
-      "names": [
-        { "name": "Lędowo", "lang": "pl" },
-        { "name": "Lędowo, Gdańsk County", "lang": "en" }
+        { "name": "Kiersztanowo", "lang": "pl" },
+        { "name": "Kiersztanowo, Olsztyn County", "lang": "en" }
       ],
       "coordinates": [
-        { "lat": "54.27388889", "lon": "18.73472222" },
-        { "lat": "54.27753", "lon": "18.73306" }
+        { "lat": "53.9237", "lon": "20.78497" },
+        { "lat": "53.92416667", "lon": "20.78388889" }
       ],
       "types": [{ "name": "village of Poland" }],
       "sameas": [
-        { "database": "geonames", "entity": "3093714" },
-        { "database": "simc", "entity": "0169220" }
+        { "database": "geonames", "entity": "769210" },
+        { "database": "simc", "entity": "0476808" }
       ],
-      "matchings": [
-        { "db": "geonames", "id": "3093714", "type": "ref (from live data)" },
-        { "db": "teryt_simc", "id": "0169220", "type": "ref (from live data)" },
+      "link": "https://www.wikidata.org/wiki/Q11739058"
+    },
+    {
+      "id": "Q11744904",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Kościuszki (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.77525", "lon": "20.486139" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q11744904"
+    },
+    {
+      "id": "Q11744960",
+      "names": [
+        { "name": "Christ the King and Saint Francis church in Olsztyn", "lang": "en" },
+        { "name": "Kościół Chrystusa Króla w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7842", "lon": "20.485" }],
+      "types": [{ "name": "church building" }],
+      "link": "https://www.wikidata.org/wiki/Q11744960"
+    },
+    {
+      "id": "Q11745253",
+      "names": [
+        { "name": "Kościół Matki Bożej Różańcowej w Olsztynie", "lang": "pl" },
+        { "name": "Our Lady of the Rosary church in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7664", "lon": "20.4231" }],
+      "types": [{ "name": "church building" }],
+      "link": "https://www.wikidata.org/wiki/Q11745253"
+    },
+    {
+      "id": "Q11746073",
+      "names": [
+        { "name": "Christus-Erlöser-Kirche", "lang": "de" },
+        { "name": "Kościół ewangelicko-augsburski w Olsztynie", "lang": "pl" },
+        { "name": "Salvator church in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7772", "lon": "20.4756" }],
+      "types": [{ "name": "church building" }],
+      "link": "https://www.wikidata.org/wiki/Q11746073"
+    },
+    {
+      "id": "Q11746106",
+      "names": [
+        { "name": "Kirche der Mutter Gottes", "lang": "de" },
+        { "name": "Kościół garnizonowy Matki Boskiej Królowej Polski w Olsztynie", "lang": "pl" },
+        { "name": "Our Lady Queen of Poland church in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7778", "lon": "20.4706" }],
+      "types": [{ "name": "church building" }],
+      "link": "https://www.wikidata.org/wiki/Q11746106"
+    },
+    {
+      "id": "Q11746951",
+      "names": [
+        { "name": "Kościół św. Józefa w Olsztynie", "lang": "pl" },
+        { "name": "Saint Joseph church in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.79", "lon": "20.4897" }],
+      "types": [{ "name": "church building" }],
+      "link": "https://www.wikidata.org/wiki/Q11746951"
+    },
+    {
+      "id": "Q11747567",
+      "names": [
+        { "name": "Kościół św. Wawrzyńca w Olsztynie", "lang": "pl" },
+        { "name": "Saint Lawrence church in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.8021413", "lon": "20.4042467" }],
+      "types": [{ "name": "church building" }],
+      "link": "https://www.wikidata.org/wiki/Q11747567"
+    },
+    {
+      "id": "Q11756778",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Likusy (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.793499", "lon": "20.436823" }],
+      "types": [{ "name": "neighborhood" }],
+      "link": "https://www.wikidata.org/wiki/Q11756778"
+    },
+    {
+      "id": "Q11762736",
+      "names": [
+        { "name": "Dajtki Airport", "lang": "en" },
+        { "name": "Lotnisko Olsztyn-Dajtki", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7731", "lon": "20.415" }],
+      "types": [{ "name": "airport" }],
+      "link": "https://www.wikidata.org/wiki/Q11762736"
+    },
+    {
+      "id": "Q11764604",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Lądowisko Olsztyn-Szpital", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7686", "lon": "20.4919" }],
+      "types": [{ "name": "special airfield" }],
+      "link": "https://www.wikidata.org/wiki/Q11764604"
+    },
+    {
+      "id": "Q11787162",
+      "names": [
+        { "name": "5 Metalowa Street in Olsztyn", "lang": "en" },
+        { "name": "Muzeum Przyrody w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7611", "lon": "20.4943" }],
+      "types": [{ "name": "museum" }],
+      "link": "https://www.wikidata.org/wiki/Q11787162"
+    },
+    {
+      "id": "Q11789216",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Nagórki (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.757083", "lon": "20.494778" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q11789216"
+    },
+    {
+      "id": "Q11793914",
+      "names": [
+        { "name": "Nowy Ratusz w Olsztynie", "lang": "pl" },
+        { "name": "Olsztyn Town Hall", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7787", "lon": "20.4797" }],
+      "types": [{ "name": "city hall" }],
+      "link": "https://www.wikidata.org/wiki/Q11793914"
+    },
+    {
+      "id": "Q11795179",
+      "names": [
+        { "name": "Obserwatorium Astronomiczne w Olsztynie", "lang": "pl" },
+        { "name": "Olsztyn Observatory", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.772472", "lon": "20.488806" }],
+      "types": [{ "name": "water tower" }],
+      "link": "https://www.wikidata.org/wiki/Q11795179"
+    },
+    {
+      "id": "Q11798130",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Olsztyn Gutkowo", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.8086", "lon": "20.4006" }],
+      "types": [{ "name": "railway station" }],
+      "link": "https://www.wikidata.org/wiki/Q11798130"
+    },
+    {
+      "id": "Q11798137",
+      "names": [
         {
-          "db": "gov",
-          "id": "LANDAUJO94IG",
-          "type": "ref",
-          "description": "ref dbpath: wikidata>teryt_simcteryt_simcteryt_simcteryt_simcgeonamesteryt_simcteryt_simcteryt_simcteryt_simcteryt_simcviafgeonames",
-          "link": "https://www.geonames.org/3081318"
+          "name": "Kotarbinski University of Information Technology and Management in Olsztyn",
+          "lang": "en"
         },
         {
-          "db": "gnd",
-          "id": "4815012-5",
-          "type": "ref",
-          "description": "ref dbpath: wikidata>viaf"
+          "name": "Wyższa Szkoła Informatyki i Zarządzania im. Prof. Tadeusza Kotarbińskiego z siedzibą w Olsztynie",
+          "lang": "pl"
         }
-      ]
+      ],
+      "coordinates": [{ "lat": "53.7798", "lon": "20.4653" }],
+      "types": [{ "name": "educational institution" }, { "name": "private university" }],
+      "link": "https://www.wikidata.org/wiki/Q11798137"
+    },
+    {
+      "id": "Q11799729",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Osiedle Grunwaldzkie (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.771861", "lon": "20.458778" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q11799729"
+    },
+    {
+      "id": "Q11800277",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Osiedle Wojska Polskiego (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.797936", "lon": "20.482119" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q11800277"
+    },
+    {
+      "id": "Q11811552",
+      "names": [
+        { "name": "Park Zamkowy in Olsztyn", "lang": "en" },
+        { "name": "Park Zamkowy w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7782", "lon": "20.4732" }],
+      "types": [{ "name": "park" }],
+      "link": "https://www.wikidata.org/wiki/Q11811552"
+    },
+    {
+      "id": "Q11814720",
+      "names": [
+        { "name": "5 Staszica Street in Olsztyn", "lang": "en" },
+        { "name": "Pałac Archiprezbitera w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7755", "lon": "20.4776" }],
+      "types": [{ "name": "palace" }],
+      "link": "https://www.wikidata.org/wiki/Q11814720"
+    },
+    {
+      "id": "Q11819080",
+      "names": [
+        { "name": "Bema Square in Olsztyn", "lang": "en" },
+        { "name": "Plac Józefa Bema w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7837", "lon": "20.4926" }],
+      "types": [{ "name": "square" }],
+      "link": "https://www.wikidata.org/wiki/Q11819080"
+    },
+    {
+      "id": "Q11819088",
+      "names": [
+        { "name": "Plac Kazimierza Pułaskiego w Olsztynie", "lang": "pl" },
+        { "name": "Pułaskiego Square in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7816", "lon": "20.4905" }],
+      "types": [{ "name": "square" }],
+      "link": "https://www.wikidata.org/wiki/Q11819088"
+    },
+    {
+      "id": "Q11819388",
+      "names": [
+        { "name": "Olsztyn Planetarium and Astronomical Observatory", "lang": "en" },
+        { "name": "Planetarium w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773333", "lon": "20.495" }],
+      "types": [{ "name": "planetarium" }],
+      "link": "https://www.wikidata.org/wiki/Q11819388"
+    },
+    {
+      "id": "Q11820092",
+      "names": [
+        { "name": "Main Post Office in Olsztyn", "lang": "en" },
+        { "name": "Poczta Główna w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7764", "lon": "20.4798" }],
+      "types": [{ "name": "post office" }],
+      "link": "https://www.wikidata.org/wiki/Q11820092"
+    },
+    {
+      "id": "Q11820317",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Podgrodzie (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.764361", "lon": "20.470189" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q11820317"
+    },
+    {
+      "id": "Q11820436",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Podlesie (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.783372", "lon": "20.441222" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q11820436"
+    },
+    {
+      "id": "Q11820464",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Podleśna (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.803917", "lon": "20.516625" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q11820464"
+    },
+    {
+      "id": "Q11821195",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Pojezierze (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776233", "lon": "20.506753" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q11821195"
+    },
+    {
+      "id": "Q11826186",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Pozorty (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.757917", "lon": "20.478306" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q11826186"
+    },
+    {
+      "id": "Q1432944",
+      "names": [
+        { "name": "Flughafen Olsztyn-Mazury", "lang": "de" },
+        { "name": "Port lotniczy Mazury", "lang": "pl" },
+        { "name": "Szczytno-Szymany International Airport", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.481944444", "lon": "20.937777777" }],
+      "types": [{ "name": "commercial traffic aerodrome" }, { "name": "international airport" }],
+      "sameas": [{ "database": "geonames", "entity": "757155" }],
+      "link": "https://www.wikidata.org/wiki/Q1432944"
+    },
+    {
+      "id": "Q1557225",
+      "names": [
+        { "name": "Gutkowo", "lang": "de" },
+        { "name": "Gutkowo", "lang": "en" },
+        { "name": "Gutkowo (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.80430556", "lon": "20.40538889" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q1557225"
+    },
+    {
+      "id": "Q16484924",
+      "names": [
+        { "name": "Artyleryjska Street in Olsztyn", "lang": "en" },
+        { "name": "Ulica Artyleryjska w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7806", "lon": "20.4731" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q16484924"
+    },
+    {
+      "id": "Q1672666",
+      "names": [
+        { "name": "Waplewo", "lang": "de" },
+        { "name": "Waplewo", "lang": "pl" },
+        { "name": "Waplewo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.5", "lon": "20.333333333" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "756164" },
+        { "database": "simc", "entity": "0484699" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q1672666"
+    },
+    {
+      "id": "Q1733433",
+      "names": [
+        { "name": "Universität Ermland-Masuren", "lang": "de" },
+        { "name": "University of Warmia and Mazury in Olsztyn", "lang": "en" },
+        { "name": "Uniwersytet Warmińsko-Mazurski w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7573", "lon": "20.4612" }],
+      "types": [{ "name": "university" }],
+      "sameas": [{ "database": "gnd", "entity": "10003818-9" }],
+      "link": "https://www.wikidata.org/wiki/Q1733433"
+    },
+    {
+      "id": "Q17467472",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Lądowisko Olsztyn-Szpital SP ZOZ MSW", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7944", "lon": "20.4839" }],
+      "types": [{ "name": "heliport" }],
+      "link": "https://www.wikidata.org/wiki/Q17467472"
+    },
+    {
+      "id": "Q1760646",
+      "names": [
+        { "name": "FM- and TV-mast Olsztyn-Pieczewo", "lang": "en" },
+        { "name": "Radiowo-Telewizyjne Centrum Nadawcze Olsztyn/Osiedle Pieczewo", "lang": "pl" },
+        { "name": "Sendemast Olsztyn-Pieczewo", "lang": "de" }
+      ],
+      "coordinates": [{ "lat": "53.753316666", "lon": "20.518147222" }],
+      "types": [{ "name": "tower" }],
+      "link": "https://www.wikidata.org/wiki/Q1760646"
+    },
+    {
+      "id": "Q1787966",
+      "names": [
+        { "name": "Worławki", "lang": "de" },
+        { "name": "Worławki", "lang": "pl" },
+        { "name": "Worławki, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.96805556", "lon": "20.26805556" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "754775" },
+        { "database": "simc", "entity": "0489828" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q1787966"
+    },
+    {
+      "id": "Q1789946",
+      "names": [
+        { "name": "Kronowo", "lang": "de" },
+        { "name": "Kronowo", "lang": "pl" },
+        { "name": "Kronowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.833333333", "lon": "20.683333333" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "767493" },
+        { "database": "simc", "entity": "0469889" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q1789946"
+    },
+    {
+      "id": "Q19400484",
+      "names": [
+        {
+          "name": "Centrum Techniki i Rozwoju Regionu „Muzeum Nowoczesności” w Olsztynie",
+          "lang": "pl"
+        },
+        { "name": "Tartak Raphaelsohnów in Olsztyn", "lang": "en" },
+        {
+          "name": "Zentrum für Technik und Entwicklung - \"Museum der Moderne\" in Allenstein",
+          "lang": "de"
+        }
+      ],
+      "coordinates": [
+        { "lat": "53.7734", "lon": "20.4951" },
+        { "lat": "53.773486", "lon": "20.481306" }
+      ],
+      "types": [{ "name": "museum" }],
+      "link": "https://www.wikidata.org/wiki/Q19400484"
+    },
+    {
+      "id": "Q23681104",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Cmentarz Komunalny w Olsztynie", "lang": "pl" },
+        { "name": "Kommunaler Friedhof in Olsztyn", "lang": "de" }
+      ],
+      "coordinates": [{ "lat": "53.794444", "lon": "20.506944" }],
+      "types": [{ "name": "cemetery" }],
+      "link": "https://www.wikidata.org/wiki/Q23681104"
+    },
+    {
+      "id": "Q24946608",
+      "names": [
+        { "name": "Old Granary in Olsztyn", "lang": "en" },
+        { "name": "Spichlerz w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "50.751694444", "lon": "19.277472222" }],
+      "types": [{ "name": "granary" }],
+      "link": "https://www.wikidata.org/wiki/Q24946608"
+    },
+    {
+      "id": "Q259995",
+      "names": [
+        { "name": "Olsztyn Voivodeship", "lang": "en" },
+        { "name": "Woiwodschaft Olsztyn", "lang": "de" },
+        { "name": "Województwo olsztyńskie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7833", "lon": "20.4833" }],
+      "types": [{ "name": "voivodeship of Poland" }],
+      "link": "https://www.wikidata.org/wiki/Q259995"
+    },
+    {
+      "id": "Q2979387",
+      "names": [
+        { "name": "Mojtyny", "lang": "de" },
+        { "name": "Mojtyny", "lang": "pl" },
+        { "name": "Mojtyny, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.780277777", "lon": "21.089444444" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "gnd", "entity": "7676847-8" },
+        { "database": "simc", "entity": "0471722" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q2979387"
+    },
+    {
+      "id": "Q30061541",
+      "names": [
+        { "name": "Church of St. John the Baptist in Olsztyn", "lang": "en" },
+        { "name": "kościół parafialny św. Jana Chrzciciela w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "50.751944444", "lon": "19.271944444" }],
+      "types": [{ "name": "church building" }],
+      "link": "https://www.wikidata.org/wiki/Q30061541"
+    },
+    {
+      "id": "Q30061543",
+      "names": [
+        { "name": "Cemetery in Olsztyn, Silesian Voivodeship", "lang": "en" },
+        { "name": "Cmentarz rzym.-kat.", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "50.753611111", "lon": "19.271388888" }],
+      "types": [{ "name": "cemetery" }],
+      "link": "https://www.wikidata.org/wiki/Q30061543"
+    },
+    {
+      "id": "Q31810225",
+      "names": [
+        { "name": "Franciscan monastery in Olsztyn", "lang": "en" },
+        { "name": "Zespół klasztorny bernardynów", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.784417", "lon": "20.484722" }],
+      "types": [{ "name": "building complex" }],
+      "link": "https://www.wikidata.org/wiki/Q31810225"
+    },
+    {
+      "id": "Q31810254",
+      "names": [
+        { "name": "Chapel of Zjednoczony Kościół Ewangeliczny in Olsztyn", "lang": "en" },
+        { "name": "Kaplica Zjednoczonego Kościoła Ewangelicznego", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.78075", "lon": "20.483667" }],
+      "types": [{ "name": "chapel" }],
+      "link": "https://www.wikidata.org/wiki/Q31810254"
+    },
+    {
+      "id": "Q31810278",
+      "names": [
+        { "name": "Kapliczka z dzwonniczką", "lang": "pl" },
+        { "name": "Wayside shrine at Pstrowskiego Street in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.76125", "lon": "20.509361" }],
+      "link": "https://www.wikidata.org/wiki/Q31810278"
+    },
+    {
+      "id": "Q31810294",
+      "names": [
+        { "name": "Cmentarz św. Józefa w Olsztynie", "lang": "pl" },
+        { "name": "Saint Joseph Cemetery in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.791411", "lon": "20.487055" }],
+      "types": [{ "name": "institutional complex" }],
+      "link": "https://www.wikidata.org/wiki/Q31810294"
+    },
+    {
+      "id": "Q31810334",
+      "names": [
+        { "name": "Communal cemetery in Olsztyn", "lang": "en" },
+        { "name": "Zespół cmentarza rzym-kat, ob. komunalnego", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.783139", "lon": "20.479167" }],
+      "types": [{ "name": "institutional complex" }],
+      "link": "https://www.wikidata.org/wiki/Q31810334"
+    },
+    {
+      "id": "Q31810354",
+      "names": [
+        { "name": "Kaplica cmentarna, ob. kościół polsko-katolicki", "lang": "pl" },
+        { "name": "Polish Catholic church in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.783028", "lon": "20.480556" }],
+      "types": [{ "name": "church building" }],
+      "link": "https://www.wikidata.org/wiki/Q31810354"
+    },
+    {
+      "id": "Q31810391",
+      "names": [
+        { "name": "Cmentarz ewangelicko-augsburski, ob. park miejski", "lang": "pl" },
+        { "name": "Evangelical cemetery in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.792111", "lon": "20.483722" }],
+      "types": [{ "name": "park" }],
+      "link": "https://www.wikidata.org/wiki/Q31810391"
+    },
+    {
+      "id": "Q31810421",
+      "names": [
+        { "name": "Cmentarz garnizonowy", "lang": "pl" },
+        { "name": "Military cemetery in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.772917", "lon": "20.458417" }],
+      "types": [{ "name": "cemetery" }],
+      "link": "https://www.wikidata.org/wiki/Q31810421"
+    },
+    {
+      "id": "Q31810481",
+      "names": [
+        { "name": "City walls in Olsztyn", "lang": "en" },
+        { "name": "Mury obronne (pozostałości)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.77625", "lon": "20.474194" }],
+      "link": "https://www.wikidata.org/wiki/Q31810481"
+    },
+    {
+      "id": "Q31810494",
+      "names": [
+        { "name": "Budynki w zespole koszar piechoty", "lang": "pl" },
+        { "name": "Former infantry barracks in Olsztyn, Artyleryjska Street", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.779722", "lon": "20.466028" }],
+      "types": [{ "name": "building" }],
+      "link": "https://www.wikidata.org/wiki/Q31810494"
+    },
+    {
+      "id": "Q31810567",
+      "names": [
+        { "name": "Former artillery barracks in Olsztyn, Artyleryjska Street", "lang": "en" },
+        { "name": "Zespół koszar artylerii", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782222", "lon": "20.469444" }],
+      "link": "https://www.wikidata.org/wiki/Q31810567"
+    },
+    {
+      "id": "Q31810987",
+      "names": [
+        { "name": "1 Artyleryjska Street in Olsztyn", "lang": "en" },
+        { "name": "Artyleryjska 1", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.77875", "lon": "20.465639" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31810987"
+    },
+    {
+      "id": "Q31811001",
+      "names": [
+        { "name": "4 Bałtycka Street in Olsztyn", "lang": "en" },
+        { "name": "Schronisko młodzieżowe, ob. kat. LO", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781153", "lon": "20.459556" }],
+      "types": [{ "name": "building" }],
+      "link": "https://www.wikidata.org/wiki/Q31811001"
+    },
+    {
+      "id": "Q31811015",
+      "names": [
+        { "name": "2 Świętej Barbary Street in Olsztyn", "lang": "en" },
+        { "name": "Św. Barbary 2", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776583", "lon": "20.477361" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811015"
+    },
+    {
+      "id": "Q31811044",
+      "names": [
+        { "name": "4 Świętej Barbary Street in Olsztyn", "lang": "en" },
+        {
+          "name": "Dom (beneficjentów Fundacji Różańca Św. przy kościele św. Jakuba)",
+          "lang": "pl"
+        }
+      ],
+      "coordinates": [{ "lat": "53.7765", "lon": "20.477889" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811044"
+    },
+    {
+      "id": "Q31811086",
+      "names": [
+        { "name": "2 Bema Square in Olsztyn", "lang": "en" },
+        { "name": "pl. Bema 2", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.783528", "lon": "20.493528" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31811086"
+    },
+    {
+      "id": "Q31811101",
+      "names": [
+        { "name": "3/4/4a Bema Square in Olsztyn", "lang": "en" },
+        { "name": "pl. Bema 3/4/4a", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.783236", "lon": "20.492861" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811101"
+    },
+    {
+      "id": "Q31811114",
+      "names": [
+        { "name": "2 Chrobrego Street in Olsztyn", "lang": "en" },
+        { "name": "Bolesława Chrobrego 2", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775306", "lon": "20.477222" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811114"
+    },
+    {
+      "id": "Q31811141",
+      "names": [
+        { "name": "5 Chrobrego Street in Olsztyn", "lang": "en" },
+        { "name": "Bolesława Chrobrego 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775236", "lon": "20.476722" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811141"
+    },
+    {
+      "id": "Q31811179",
+      "names": [
+        { "name": "5 Curie-Skłodowskiej Street in Olsztyn", "lang": "en" },
+        { "name": "Curie-Skłodowskiej 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779014", "lon": "20.477833" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811179"
+    },
+    {
+      "id": "Q31811190",
+      "names": [
+        { "name": "6a Curie-Skłodowskiej Street in Olsztyn", "lang": "en" },
+        { "name": "Curie-Skłodowskiej 6a", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779208", "lon": "20.477889" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811190"
+    },
+    {
+      "id": "Q31811203",
+      "names": [
+        { "name": "7 Curie-Skłodowskiej Street in Olsztyn", "lang": "en" },
+        { "name": "Curie-Skłodowskiej 7", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779333", "lon": "20.477972" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811203"
+    },
+    {
+      "id": "Q31811216",
+      "names": [
+        { "name": "9/10 Curie-Skłodowskiej Street in Olsztyn", "lang": "en" },
+        { "name": "Curie-Skłodowskiej 9/10", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779625", "lon": "20.477944" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811216"
+    },
+    {
+      "id": "Q31811228",
+      "names": [
+        { "name": "11 Curie-Skłodowskiej Street in Olsztyn", "lang": "en" },
+        { "name": "Curie-Skłodowskiej 11", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779806", "lon": "20.478069" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811228"
+    },
+    {
+      "id": "Q31811257",
+      "names": [
+        { "name": "13 Curie-Skłodowskiej Street in Olsztyn", "lang": "en" },
+        { "name": "Curie-Skłodowskiej 13", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780167", "lon": "20.478167" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811257"
+    },
+    {
+      "id": "Q31811270",
+      "names": [
+        { "name": "14 Curie-Skłodowskiej Street in Olsztyn", "lang": "en" },
+        { "name": "Curie-Skłodowskiej 14", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780431", "lon": "20.47825" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811270"
+    },
+    {
+      "id": "Q31811300",
+      "names": [
+        { "name": "2 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 2", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778625", "lon": "20.481833" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811300"
+    },
+    {
+      "id": "Q31811315",
+      "names": [
+        { "name": "3 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Willa", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778944", "lon": "20.482556" }],
+      "types": [{ "name": "villa" }],
+      "link": "https://www.wikidata.org/wiki/Q31811315"
+    },
+    {
+      "id": "Q31811326",
+      "names": [
+        { "name": "4 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 4", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779056", "lon": "20.482833" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811326"
+    },
+    {
+      "id": "Q31811340",
+      "names": [
+        { "name": "5 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779194", "lon": "20.483167" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811340"
+    },
+    {
+      "id": "Q31811355",
+      "names": [
+        { "name": "6 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Willa", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779333", "lon": "20.483528" }],
+      "types": [{ "name": "villa" }],
+      "link": "https://www.wikidata.org/wiki/Q31811355"
+    },
+    {
+      "id": "Q31811368",
+      "names": [
+        { "name": "10 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 10", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780194", "lon": "20.484972" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811368"
+    },
+    {
+      "id": "Q31811383",
+      "names": [
+        { "name": "12 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 12", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780611", "lon": "20.485611" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31811383"
+    },
+    {
+      "id": "Q31811440",
+      "names": [
+        { "name": "15 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 15", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781139", "lon": "20.486222" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31811440"
+    },
+    {
+      "id": "Q31811453",
+      "names": [
+        { "name": "18 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 18", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781667", "lon": "20.486889" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811453"
+    },
+    {
+      "id": "Q31811465",
+      "names": [
+        { "name": "19 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 19", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781889", "lon": "20.487139" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811465"
+    },
+    {
+      "id": "Q31811478",
+      "names": [
+        { "name": "24 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 24", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782375", "lon": "20.488472" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811478"
+    },
+    {
+      "id": "Q31811492",
+      "names": [
+        { "name": "26 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 26", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782042", "lon": "20.488111" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811492"
+    },
+    {
+      "id": "Q31811504",
+      "names": [
+        { "name": "28 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dom, ok.1890", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781569", "lon": "20.487667" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811504"
+    },
+    {
+      "id": "Q31811516",
+      "names": [
+        { "name": "29 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 29", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781403", "lon": "20.487361" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811516"
+    },
+    {
+      "id": "Q31811529",
+      "names": [
+        { "name": "30 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 30", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781111", "lon": "20.487083" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811529"
+    },
+    {
+      "id": "Q31811545",
+      "names": [
+        { "name": "31 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 31", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780917", "lon": "20.486833" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811545"
+    },
+    {
+      "id": "Q31811557",
+      "names": [
+        { "name": "32 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 32", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780778", "lon": "20.486694" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811557"
+    },
+    {
+      "id": "Q31811569",
+      "names": [
+        { "name": "34 Dąbrowszczaków Street in Olsztyn", "lang": "en" },
+        { "name": "Dąbrowszczaków 34", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780417", "lon": "20.486278" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811569"
+    },
+    {
+      "id": "Q31811597",
+      "names": [
+        { "name": "5 Długosza Street in Olsztyn", "lang": "en" },
+        { "name": "Długosza 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776083", "lon": "20.477" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811597"
+    },
+    {
+      "id": "Q31811621",
+      "names": [
+        { "name": "Gietkowska-Dąbrowskiego street barracks in Olsztyn", "lang": "en" },
+        { "name": "Zespół koszar kawaleryjskich", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.783889", "lon": "20.476667" }],
+      "link": "https://www.wikidata.org/wiki/Q31811621"
+    },
+    {
+      "id": "Q31811850",
+      "names": [
+        { "name": "1 Grunwaldzka Street in Olsztyn", "lang": "en" },
+        { "name": "Grunwaldzka 1/ Warszawska 2b", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.774514", "lon": "20.473528" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811850"
+    },
+    {
+      "id": "Q31811864",
+      "names": [
+        { "name": "3 Grunwaldzka Street in Olsztyn", "lang": "en" },
+        { "name": "Grunwaldzka 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.774597", "lon": "20.473306" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811864"
+    },
+    {
+      "id": "Q31811881",
+      "names": [
+        { "name": "4 Grunwaldzka Street in Olsztyn", "lang": "en" },
+        { "name": "Grunwaldzka 4", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775014", "lon": "20.472903" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811881"
+    },
+    {
+      "id": "Q31811896",
+      "names": [
+        { "name": "7 Grunwaldzka Street in Olsztyn", "lang": "en" },
+        { "name": "Grunwaldzka 7", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.774819", "lon": "20.472694" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811896"
+    },
+    {
+      "id": "Q31811925",
+      "names": [
+        { "name": "13 Grunwaldzka Street in Olsztyn", "lang": "en" },
+        { "name": "Grunwaldzka 13", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775111", "lon": "20.471444" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811925"
+    },
+    {
+      "id": "Q31811937",
+      "names": [
+        { "name": "23 Grunwaldzka Street in Olsztyn", "lang": "en" },
+        { "name": "Grunwaldzka 23", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775792", "lon": "20.469569" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811937"
+    },
+    {
+      "id": "Q31811951",
+      "names": [
+        { "name": "25 Grunwaldzka Street in Olsztyn", "lang": "en" },
+        { "name": "Grunwaldzka 25", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775861", "lon": "20.469375" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811951"
+    },
+    {
+      "id": "Q31811966",
+      "names": [
+        { "name": "29 Grunwaldzka Street in Olsztyn", "lang": "en" },
+        { "name": "Grunwaldzka 29", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775958", "lon": "20.469083" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811966"
+    },
+    {
+      "id": "Q31811979",
+      "names": [
+        { "name": "31 Grunwaldzka Street in Olsztyn", "lang": "en" },
+        { "name": "Grunwaldzka 31", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776069", "lon": "20.468792" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811979"
+    },
+    {
+      "id": "Q31811993",
+      "names": [
+        { "name": "33 Grunwaldzka Street in Olsztyn", "lang": "en" },
+        { "name": "Grunwaldzka 33", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776181", "lon": "20.468528" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31811993"
+    },
+    {
+      "id": "Q31812005",
+      "names": [
+        { "name": "39 Grunwaldzka Street in Olsztyn", "lang": "en" },
+        { "name": "Grunwaldzka 39", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776486", "lon": "20.467722" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812005"
+    },
+    {
+      "id": "Q31812044",
+      "names": [
+        { "name": "15 Jagiellońska Street in Olsztyn", "lang": "en" },
+        { "name": "Jagiellońska 15", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.786458", "lon": "20.485278" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812044"
+    },
+    {
+      "id": "Q31812059",
+      "names": [
+        { "name": "19 Jagiellońska Street in Olsztyn", "lang": "en" },
+        { "name": "Jagiellońska 19", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.786917", "lon": "20.485847" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812059"
+    },
+    {
+      "id": "Q31812084",
+      "names": [
+        { "name": "24 Jagiellońska Street in Olsztyn", "lang": "en" },
+        { "name": "Jagiellońska 24", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.787792", "lon": "20.487736" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812084"
+    },
+    {
+      "id": "Q31812120",
+      "names": [
+        { "name": "29 Jagiellońska Street in Olsztyn", "lang": "en" },
+        { "name": "Jagiellońska 29", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.788333", "lon": "20.487681" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812120"
+    },
+    {
+      "id": "Q31812134",
+      "names": [
+        { "name": "31 Jagiellońska Street in Olsztyn", "lang": "en" },
+        { "name": "Jagiellońska 31", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.788444", "lon": "20.487833" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812134"
+    },
+    {
+      "id": "Q31812173",
+      "names": [
+        { "name": "2 Jedności Słowiańskiej Square in Olsztyn", "lang": "en" },
+        { "name": "Szkoła ewangelicka, ob. dom mieszkalny", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.777389", "lon": "20.478903" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812173"
+    },
+    {
+      "id": "Q31812187",
+      "names": [
+        { "name": "3 Kajki Street in Olsztyn", "lang": "en" },
+        { "name": "Dawna loża masońska", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781667", "lon": "20.489139" }],
+      "types": [{ "name": "building" }],
+      "link": "https://www.wikidata.org/wiki/Q31812187"
+    },
+    {
+      "id": "Q31812199",
+      "names": [
+        { "name": "4 Kajki Street in Olsztyn", "lang": "en" },
+        { "name": "Willa", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781083", "lon": "20.489306" }],
+      "types": [{ "name": "villa" }],
+      "link": "https://www.wikidata.org/wiki/Q31812199"
+    },
+    {
+      "id": "Q31812211",
+      "names": [
+        { "name": "6 Kajki Street in Olsztyn", "lang": "en" },
+        { "name": "Willa", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781194", "lon": "20.488972" }],
+      "types": [{ "name": "villa" }],
+      "link": "https://www.wikidata.org/wiki/Q31812211"
+    },
+    {
+      "id": "Q31812224",
+      "names": [
+        { "name": "8 Kajki Street in Olsztyn", "lang": "en" },
+        { "name": "Kajki 8", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781292", "lon": "20.488667" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812224"
+    },
+    {
+      "id": "Q31812252",
+      "names": [
+        { "name": "2 Kętrzyńskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Kętrzyńskiego 2", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.783167", "lon": "20.493417" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812252"
+    },
+    {
+      "id": "Q31812265",
+      "names": [
+        { "name": "3 Kętrzyńskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Kętrzyńskiego 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782528", "lon": "20.495208" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812265"
+    },
+    {
+      "id": "Q31812280",
+      "names": [
+        { "name": "4 Kętrzyńskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Kętrzyńskiego 4", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.783069", "lon": "20.493569" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812280"
+    },
+    {
+      "id": "Q31812294",
+      "names": [
+        { "name": "6 Kętrzyńskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Kętrzyńskiego 6", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782972", "lon": "20.493736" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812294"
+    },
+    {
+      "id": "Q31812322",
+      "names": [
+        { "name": "7 Knosały Street in Olsztyn", "lang": "en" },
+        { "name": "Knosały 7", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773375", "lon": "20.478611" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812322"
+    },
+    {
+      "id": "Q31812336",
+      "names": [
+        { "name": "16 Kolejowa Street in Olsztyn", "lang": "en" },
+        { "name": "Kolejowa 16", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.784806", "lon": "20.490833" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812336"
+    },
+    {
+      "id": "Q31812350",
+      "names": [
+        { "name": "3 Kołłątaja Street in Olsztyn", "lang": "en" },
+        { "name": "Kołłątaja 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775639", "lon": "20.474861" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812350"
+    },
+    {
+      "id": "Q31812384",
+      "names": [
+        { "name": "17 Kołłątaja Street in Olsztyn", "lang": "en" },
+        { "name": "Kołłątaja 17", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775778", "lon": "20.474583" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812384"
+    },
+    {
+      "id": "Q31812399",
+      "names": [
+        { "name": "18 Kołłątaja Street in Olsztyn", "lang": "en" },
+        { "name": "Kołłątaja 18", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775861", "lon": "20.474639" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812399"
+    },
+    {
+      "id": "Q31812410",
+      "names": [
+        { "name": "19 Kołłątaja Street in Olsztyn", "lang": "en" },
+        { "name": "Kołłątaja 19", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775917", "lon": "20.474708" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812410"
+    },
+    {
+      "id": "Q31812424",
+      "names": [
+        { "name": "20 Kołłątaja Street in Olsztyn", "lang": "en" },
+        { "name": "Kołłątaja 20", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775986", "lon": "20.474778" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812424"
+    },
+    {
+      "id": "Q31812437",
+      "names": [
+        { "name": "21 Kołłątaja Street in Olsztyn", "lang": "en" },
+        { "name": "Kołłątaja 21", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776042", "lon": "20.474847" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812437"
+    },
+    {
+      "id": "Q31812450",
+      "names": [
+        { "name": "22 Kołłątaja Street in Olsztyn", "lang": "en" },
+        { "name": "Kołłątaja 22", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776125", "lon": "20.474903" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812450"
+    },
+    {
+      "id": "Q31812465",
+      "names": [
+        { "name": "23 Kołłątaja Street in Olsztyn", "lang": "en" },
+        { "name": "Kołłątaja 23", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776181", "lon": "20.475" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812465"
+    },
+    {
+      "id": "Q31812476",
+      "names": [
+        { "name": "24 Kołłątaja Street in Olsztyn", "lang": "en" },
+        { "name": "Kołłątaja 24", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776264", "lon": "20.475056" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812476"
+    },
+    {
+      "id": "Q31812503",
+      "names": [
+        { "name": "5 Konsulatu Polskiego Square in Olsztyn", "lang": "en" },
+        { "name": "Kamienica - budynek dawnego konsulatu polskiego", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780472", "lon": "20.482778" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31812503"
+    },
+    {
+      "id": "Q31812517",
+      "names": [
+        { "name": "6 Konsulatu Polskiego Square in Olsztyn", "lang": "en" },
+        { "name": "pl. Konsulatu Polskiego 6", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780306", "lon": "20.483083" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812517"
+    },
+    {
+      "id": "Q31812531",
+      "names": [
+        { "name": "5 Kopernika Street in Olsztyn", "lang": "en" },
+        { "name": "Dom Pod Kotwicami, ob. biura (bryła i fasada budynku)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778556", "lon": "20.486222" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812531"
+    },
+    {
+      "id": "Q31812590",
+      "names": [
+        { "name": "28 Kopernika Street in Olsztyn", "lang": "en" },
+        { "name": "Willa Martha", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.783014", "lon": "20.492403" }],
+      "types": [{ "name": "villa" }],
+      "link": "https://www.wikidata.org/wiki/Q31812590"
+    },
+    {
+      "id": "Q31812602",
+      "names": [
+        { "name": "36 Kopernika Street in Olsztyn", "lang": "en" },
+        { "name": "Kopernika 36", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781903", "lon": "20.49075" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812602"
+    },
+    {
+      "id": "Q31812615",
+      "names": [
+        { "name": "21 Kościuszki Street in Olsztyn", "lang": "en" },
+        { "name": "Kościuszki 21", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782889", "lon": "20.495056" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31812615"
+    },
+    {
+      "id": "Q31812631",
+      "names": [
+        { "name": "22 Kościuszki Street in Olsztyn", "lang": "en" },
+        { "name": "Kościuszki 22", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.78225", "lon": "20.49325" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812631"
+    },
+    {
+      "id": "Q31812644",
+      "names": [
+        { "name": "23 Kościuszki Street in Olsztyn", "lang": "en" },
+        { "name": "Kościuszki 23", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782722", "lon": "20.494861" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812644"
+    },
+    {
+      "id": "Q31812658",
+      "names": [
+        { "name": "28 Kościuszki Street in Olsztyn", "lang": "en" },
+        { "name": "Kościuszki 28", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781833", "lon": "20.492694" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812658"
+    },
+    {
+      "id": "Q31812671",
+      "names": [
+        { "name": "30 Kościuszki Street in Olsztyn", "lang": "en" },
+        { "name": "Kościuszki 30", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781708", "lon": "20.492528" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812671"
+    },
+    {
+      "id": "Q31812683",
+      "names": [
+        { "name": "32 Kościuszki Street in Olsztyn", "lang": "en" },
+        { "name": "Kościuszki 32", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781569", "lon": "20.492333" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812683"
+    },
+    {
+      "id": "Q31812699",
+      "names": [
+        { "name": "52 Kościuszki Street in Olsztyn", "lang": "en" },
+        { "name": "Kościuszki 52", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779097", "lon": "20.4895" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812699"
+    },
+    {
+      "id": "Q31812713",
+      "names": [
+        { "name": "54 Kościuszki Street in Olsztyn", "lang": "en" },
+        { "name": "Kościuszki 54", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778889", "lon": "20.489347" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812713"
+    },
+    {
+      "id": "Q31812726",
+      "names": [
+        { "name": "70 Kościuszki Street in Olsztyn", "lang": "en" },
+        { "name": "Szkoła powszechna", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776944", "lon": "20.487778" }],
+      "types": [{ "name": "building" }],
+      "link": "https://www.wikidata.org/wiki/Q31812726"
+    },
+    {
+      "id": "Q31812750",
+      "names": [
+        { "name": "6 Kraszewskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Kraszewskiego 6", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.784889", "lon": "20.485306" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812750"
+    },
+    {
+      "id": "Q31812830",
+      "names": [
+        { "name": "2 Lanca Street in Olsztyn", "lang": "en" },
+        { "name": "Lanca 2", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780972", "lon": "20.482194" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812830"
+    },
+    {
+      "id": "Q31812868",
+      "names": [
+        { "name": "7 Lelewela Street in Olsztyn", "lang": "en" },
+        { "name": "Lelewela 7", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776736", "lon": "20.477736" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812868"
+    },
+    {
+      "id": "Q31812881",
+      "names": [
+        { "name": "8 Lelewela Street in Olsztyn", "lang": "en" },
+        { "name": "Lelewela 8", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776778", "lon": "20.477625" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812881"
+    },
+    {
+      "id": "Q31812905",
+      "names": [
+        { "name": "5 Linki Street in Olsztyn", "lang": "en" },
+        { "name": "Linki 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780042", "lon": "20.481667" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812905"
+    },
+    {
+      "id": "Q31812961",
+      "names": [
+        { "name": "1 Maja 3", "lang": "pl" },
+        { "name": "3 1 Maja Street in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.779889", "lon": "20.479875" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812961"
+    },
+    {
+      "id": "Q31812976",
+      "names": [
+        { "name": "5 1 Maja Street in Olsztyn", "lang": "en" },
+        { "name": "Dom, ob. biblioteka", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781167", "lon": "20.480208" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31812976"
+    },
+    {
+      "id": "Q31812991",
+      "names": [
+        { "name": "11 1 Maja Street in Olsztyn", "lang": "en" },
+        { "name": "1 Maja 11", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.78", "lon": "20.481111" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31812991"
+    },
+    {
+      "id": "Q31813006",
+      "names": [
+        { "name": "3 Mariańska Street in Olsztyn", "lang": "en" },
+        { "name": "Dom opieki Wilhelm, Augusta, Wiktoria Haus, ob. internat", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.771083", "lon": "20.478889" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813006"
+    },
+    {
+      "id": "Q31813019",
+      "names": [
+        { "name": "2 Mazurska/1 Warmińska Street in Olsztyn", "lang": "en" },
+        { "name": "Mazurska 2 / Warmińska 1", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7815", "lon": "20.485167" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31813019"
+    },
+    {
+      "id": "Q31813037",
+      "names": [
+        { "name": "3 Mazurska Street in Olsztyn", "lang": "en" },
+        { "name": "Mazurska 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781736", "lon": "20.485444" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813037"
+    },
+    {
+      "id": "Q31813058",
+      "names": [
+        { "name": "4 Mazurska Street in Olsztyn", "lang": "en" },
+        { "name": "Mazurska 4", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781444", "lon": "20.485472" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813058"
+    },
+    {
+      "id": "Q31813084",
+      "names": [
+        { "name": "5 Mazurska Street in Olsztyn", "lang": "en" },
+        { "name": "Mazurska 5, 5a", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781625", "lon": "20.485694" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813084"
+    },
+    {
+      "id": "Q31813106",
+      "names": [
+        { "name": "6 Mazurska Street in Olsztyn", "lang": "en" },
+        { "name": "Mazurska 6", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781347", "lon": "20.485694" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813106"
+    },
+    {
+      "id": "Q31813122",
+      "names": [
+        { "name": "7 Mazurska Street in Olsztyn", "lang": "en" },
+        { "name": "Mazurska 7", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781528", "lon": "20.485944" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813122"
+    },
+    {
+      "id": "Q31813136",
+      "names": [
+        { "name": "7a Mazurska Street in Olsztyn", "lang": "en" },
+        { "name": "Mazurska 7a", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781431", "lon": "20.48625" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813136"
+    },
+    {
+      "id": "Q31813162",
+      "names": [
+        { "name": "11 Mazurska Street in Olsztyn", "lang": "en" },
+        { "name": "Mazurska 11", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780806", "lon": "20.487875" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813162"
+    },
+    {
+      "id": "Q31813197",
+      "names": [
+        { "name": "3 Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "Mickiewicza 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780083", "lon": "20.483806" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813197"
+    },
+    {
+      "id": "Q31813211",
+      "names": [
+        { "name": "5 Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "Mickiewicza 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780028", "lon": "20.484056" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813211"
+    },
+    {
+      "id": "Q31813242",
+      "names": [
+        { "name": "7 Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "Mickiewicza 7", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779958", "lon": "20.484306" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813242"
+    },
+    {
+      "id": "Q31813255",
+      "names": [
+        { "name": "13 Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "Mickiewicza 13", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779389", "lon": "20.486597" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813255"
+    },
+    {
+      "id": "Q31813269",
+      "names": [
+        { "name": "14 Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "Mickiewicza 14", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778194", "lon": "20.4895" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813269"
+    },
+    {
+      "id": "Q31813283",
+      "names": [
+        { "name": "14a Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "Mickiewicza 14a", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778139", "lon": "20.489736" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813283"
+    },
+    {
+      "id": "Q31813298",
+      "names": [
+        { "name": "16 Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "Mickiewicza 16", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778056", "lon": "20.489972" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813298"
+    },
+    {
+      "id": "Q31813313",
+      "names": [
+        { "name": "17 Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "Mickiewicza 17", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779083", "lon": "20.487708" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813313"
+    },
+    {
+      "id": "Q31813328",
+      "names": [
+        { "name": "25 Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "Mickiewicza 25", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778817", "lon": "20.488355" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813328"
+    },
+    {
+      "id": "Q31813342",
+      "names": [
+        { "name": "27 Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "Mickiewicza 27", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778694", "lon": "20.489111" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813342"
+    },
+    {
+      "id": "Q31813358",
+      "names": [
+        { "name": "31 Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "Mickiewicza 31, 31a", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778375", "lon": "20.490167" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813358"
+    },
+    {
+      "id": "Q31813372",
+      "names": [
+        { "name": "33 Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "Mickiewicza 33", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778278", "lon": "20.490583" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813372"
+    },
+    {
+      "id": "Q31813397",
+      "names": [
+        { "name": "1 Mochnackiego Street in Olsztyn", "lang": "en" },
+        { "name": "Mochnackiego 1", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.774361", "lon": "20.473958" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813397"
+    },
+    {
+      "id": "Q31813411",
+      "names": [
+        { "name": "3 Mochnackiego Street in Olsztyn", "lang": "en" },
+        { "name": "Mochnackiego 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.774278", "lon": "20.474056" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813411"
+    },
+    {
+      "id": "Q31813427",
+      "names": [
+        { "name": "4 Mochnackiego Street in Olsztyn", "lang": "en" },
+        { "name": "Mochnackiego 4", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773736", "lon": "20.474194" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813427"
+    },
+    {
+      "id": "Q31813439",
+      "names": [
+        { "name": "5 Mochnackiego Street in Olsztyn", "lang": "en" },
+        { "name": "Mochnackiego 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.774208", "lon": "20.474139" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813439"
+    },
+    {
+      "id": "Q31813453",
+      "names": [
+        { "name": "7 Mochnackiego Street in Olsztyn", "lang": "en" },
+        { "name": "Mochnackiego 7", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.774153", "lon": "20.474181" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813453"
+    },
+    {
+      "id": "Q31813465",
+      "names": [
+        { "name": "9 Mochnackiego Street in Olsztyn", "lang": "en" },
+        { "name": "Dom", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.774111", "lon": "20.474222" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813465"
+    },
+    {
+      "id": "Q31813478",
+      "names": [
+        { "name": "11 Mochnackiego Street in Olsztyn", "lang": "en" },
+        { "name": "Mochnackiego 11", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.774083", "lon": "20.474292" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813478"
+    },
+    {
+      "id": "Q31813491",
+      "names": [
+        { "name": "2 Mrongowiusza Street in Olsztyn", "lang": "en" },
+        { "name": "Mrongowiusza 2", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779389", "lon": "20.481208" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813491"
+    },
+    {
+      "id": "Q31813505",
+      "names": [
+        { "name": "3 Mrongowiusza Street in Olsztyn", "lang": "en" },
+        { "name": "Mrongowiusza 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779319", "lon": "20.481458" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813505"
+    },
+    {
+      "id": "Q31813521",
+      "names": [
+        { "name": "4 Mrongowiusza Street in Olsztyn", "lang": "en" },
+        { "name": "Mrongowiusza 4", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779111", "lon": "20.482083" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813521"
+    },
+    {
+      "id": "Q31813534",
+      "names": [
+        { "name": "7 Mrongowiusza Street in Olsztyn", "lang": "en" },
+        { "name": "Mrongowiusza 7", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779", "lon": "20.481639" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813534"
+    },
+    {
+      "id": "Q31813547",
+      "names": [
+        { "name": "8/10 Mrongowiusza Street in Olsztyn", "lang": "en" },
+        { "name": "Mrongowiusza 8/10", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779097", "lon": "20.481319" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813547"
+    },
+    {
+      "id": "Q31813565",
+      "names": [
+        { "name": "10a, b Mrongowiusza Street in Olsztyn", "lang": "en" },
+        { "name": "Mrongowiusza 10 a, b", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779222", "lon": "20.480944" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813565"
+    },
+    {
+      "id": "Q31813579",
+      "names": [
+        { "name": "16 Niepodległości Street in Olsztyn", "lang": "en" },
+        { "name": "Remiza strażacka", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.772667", "lon": "20.476875" }],
+      "types": [{ "name": "building" }],
+      "link": "https://www.wikidata.org/wiki/Q31813579"
+    },
+    {
+      "id": "Q31813589",
+      "names": [
+        { "name": "18 Niepodległości Street in Olsztyn", "lang": "en" },
+        { "name": "Szkoła", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.772194", "lon": "20.477667" }],
+      "types": [{ "name": "school building" }],
+      "link": "https://www.wikidata.org/wiki/Q31813589"
+    },
+    {
+      "id": "Q31813637",
+      "names": [
+        { "name": "85 Niepodległości Street in Olsztyn", "lang": "en" },
+        { "name": "Willa", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.769833", "lon": "20.482056" }],
+      "types": [{ "name": "villa" }],
+      "link": "https://www.wikidata.org/wiki/Q31813637"
+    },
+    {
+      "id": "Q31813653",
+      "names": [
+        { "name": "3 Nowowiejskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Nowowiejskiego 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778542", "lon": "20.477264" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813653"
+    },
+    {
+      "id": "Q31813667",
+      "names": [
+        { "name": "5/7 Nowowiejskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Nowowiejskiego 5/7", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778694", "lon": "20.476944" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813667"
+    },
+    {
+      "id": "Q31813678",
+      "names": [
+        { "name": "10 Nowowiejskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Dom (dawny Klub Łowiecki)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778556", "lon": "20.475139" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813678"
+    },
+    {
+      "id": "Q31813693",
+      "names": [
+        { "name": "10 Okopowa Street in Olsztyn", "lang": "en" },
+        { "name": "Okopowa 10", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776278", "lon": "20.474722" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813693"
+    },
+    {
+      "id": "Q31813707",
+      "names": [
+        { "name": "12 Okopowa Street in Olsztyn", "lang": "en" },
+        { "name": "Okopowa 12", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776139", "lon": "20.474556" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31813707"
+    },
+    {
+      "id": "Q31813731",
+      "names": [
+        { "name": "23 Okopowa Street in Olsztyn", "lang": "en" },
+        { "name": "Okopowa 23", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776694", "lon": "20.474708" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813731"
+    },
+    {
+      "id": "Q31813745",
+      "names": [
+        { "name": "25 Okopowa Street in Olsztyn", "lang": "en" },
+        { "name": "Okopowa 25", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776861", "lon": "20.474028" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813745"
+    },
+    {
+      "id": "Q31813760",
+      "names": [
+        { "name": "4 Okrzei Street in Olsztyn", "lang": "en" },
+        { "name": "Okrzei 4", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.785083", "lon": "20.486694" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813760"
+    },
+    {
+      "id": "Q31813776",
+      "names": [
+        { "name": "5 Okrzei Street in Olsztyn", "lang": "en" },
+        { "name": "Okrzei 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.785028", "lon": "20.486889" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813776"
+    },
+    {
+      "id": "Q31813791",
+      "names": [
+        { "name": "20 Okrzei Street in Olsztyn", "lang": "en" },
+        { "name": "Okrzei 20", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.78475", "lon": "20.486833" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813791"
+    },
+    {
+      "id": "Q31813822",
+      "names": [
+        { "name": "22 Okrzei Street in Olsztyn", "lang": "en" },
+        { "name": "Okrzei 22", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.784875", "lon": "20.486389" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813822"
+    },
+    {
+      "id": "Q31813838",
+      "names": [
+        { "name": "22a Okrzei Street in Olsztyn", "lang": "en" },
+        { "name": "Okrzei 22a", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.784931", "lon": "20.486181" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813838"
+    },
+    {
+      "id": "Q31813869",
+      "names": [
+        { "name": "25 Okrzei Street in Olsztyn", "lang": "en" },
+        { "name": "Okrzei 25, 25a, 25b", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.785278", "lon": "20.485" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813869"
+    },
+    {
+      "id": "Q31813886",
+      "names": [
+        { "name": "27 Okrzei Street in Olsztyn", "lang": "en" },
+        { "name": "Okrzei 27", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.785472", "lon": "20.484194" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813886"
+    },
+    {
+      "id": "Q31813900",
+      "names": [
+        { "name": "28 Okrzei Street in Olsztyn", "lang": "en" },
+        { "name": "Okrzei 28 / Jagiellońska 6", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.785569", "lon": "20.483861" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813900"
+    },
+    {
+      "id": "Q31813930",
+      "names": [
+        { "name": "5 Orkana Street in Olsztyn", "lang": "en" },
+        { "name": "Orkana 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773556", "lon": "20.474" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813930"
+    },
+    {
+      "id": "Q31813947",
+      "names": [
+        { "name": "5b Orkana Street in Olsztyn", "lang": "en" },
+        { "name": "Orkana 5b", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773292", "lon": "20.474847" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813947"
+    },
+    {
+      "id": "Q31813974",
+      "names": [
+        { "name": "18 Orkana Street in Olsztyn", "lang": "en" },
+        { "name": "Orkana 18", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773375", "lon": "20.473903" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813974"
+    },
+    {
+      "id": "Q31813989",
+      "names": [
+        { "name": "19 Orkana Street in Olsztyn", "lang": "en" },
+        { "name": "Orkana 19", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773444", "lon": "20.473667" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31813989"
+    },
+    {
+      "id": "Q31814005",
+      "names": [
+        { "name": "1 Parkowa Street in Olsztyn", "lang": "en" },
+        {
+          "name": "Dawny pawilon wystawowy i restauracja Neu Jakobsberg, ob. Miejski Ośrodek Kultury (na terenie parku)",
+          "lang": "pl"
+        }
+      ],
+      "coordinates": [{ "lat": "53.797444", "lon": "20.480722" }],
+      "types": [{ "name": "park" }],
+      "link": "https://www.wikidata.org/wiki/Q31814005"
+    },
+    {
+      "id": "Q31814059",
+      "names": [
+        { "name": "3 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781792", "lon": "20.481972" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814059"
+    },
+    {
+      "id": "Q31814071",
+      "names": [
+        { "name": "5 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781847", "lon": "20.482278" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814071"
+    },
+    {
+      "id": "Q31814082",
+      "names": [
+        { "name": "16 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 16", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782556", "lon": "20.486194" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814082"
+    },
+    {
+      "id": "Q31814097",
+      "names": [
+        { "name": "21 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 21", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782972", "lon": "20.487917" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814097"
+    },
+    {
+      "id": "Q31814114",
+      "names": [
+        { "name": "22 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 22", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.783153", "lon": "20.488292" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814114"
+    },
+    {
+      "id": "Q31814127",
+      "names": [
+        { "name": "23 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Budynek zarządu kolei, ob. komenda policji", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.783153", "lon": "20.488917" }],
+      "types": [{ "name": "building" }],
+      "link": "https://www.wikidata.org/wiki/Q31814127"
+    },
+    {
+      "id": "Q31814143",
+      "names": [
+        { "name": "30 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 30", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.78375", "lon": "20.491347" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814143"
+    },
+    {
+      "id": "Q31814161",
+      "names": [
+        { "name": "67 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 67", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782931", "lon": "20.490028" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814161"
+    },
+    {
+      "id": "Q31814178",
+      "names": [
+        { "name": "68 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 68", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782861", "lon": "20.489792" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814178"
+    },
+    {
+      "id": "Q31814193",
+      "names": [
+        { "name": "69 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 69", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782778", "lon": "20.489417" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814193"
+    },
+    {
+      "id": "Q31814207",
+      "names": [
+        { "name": "73 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 73", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782292", "lon": "20.486861" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814207"
+    },
+    {
+      "id": "Q31814221",
+      "names": [
+        { "name": "74 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 74", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782222", "lon": "20.486528" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814221"
+    },
+    {
+      "id": "Q31814235",
+      "names": [
+        { "name": "75 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 75", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782167", "lon": "20.486111" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814235"
+    },
+    {
+      "id": "Q31814245",
+      "names": [
+        { "name": "76 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 76", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782083", "lon": "20.485722" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814245"
+    },
+    {
+      "id": "Q31814256",
+      "names": [
+        { "name": "77 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Partyzantów 77", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781917", "lon": "20.484833" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814256"
+    },
+    {
+      "id": "Q31814270",
+      "names": [
+        { "name": "87 Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Dom Polski (rekonstrukcja)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781222", "lon": "20.481528" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814270"
+    },
+    {
+      "id": "Q31814283",
+      "names": [
+        { "name": "6/7 Pieniężnego Street in Olsztyn", "lang": "en" },
+        { "name": "Bank Olsztyński, ob. dom", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.777458", "lon": "20.479417" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814283"
+    },
+    {
+      "id": "Q31814297",
+      "names": [
+        { "name": "15 Pieniężnego Street in Olsztyn", "lang": "en" },
+        { "name": "Pieniężnego 15", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.777694", "lon": "20.480181" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814297"
+    },
+    {
+      "id": "Q31814311",
+      "names": [
+        { "name": "17 Pieniężnego Street in Olsztyn", "lang": "en" },
+        { "name": "Pieniężnego 17", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.777389", "lon": "20.48" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814311"
+    },
+    {
+      "id": "Q31814325",
+      "names": [
+        { "name": "18 Pieniężnego Street in Olsztyn", "lang": "en" },
+        { "name": "Pieniężnego 18", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.77725", "lon": "20.479931" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814325"
+    },
+    {
+      "id": "Q31814367",
+      "names": [
+        { "name": "22 Pieniężnego Street in Olsztyn", "lang": "en" },
+        {
+          "name": "Dom towarzyski Kopernik, ob. kuria biskupia (restauracja Pod Żaglami)",
+          "lang": "pl"
+        }
+      ],
+      "coordinates": [{ "lat": "53.775944", "lon": "20.479583" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814367"
+    },
+    {
+      "id": "Q31814405",
+      "names": [
+        { "name": "10 Warszawska Street in Olsztyn", "lang": "en" },
+        { "name": "Warszawska 10", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773958", "lon": "20.473111" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31814405"
+    },
+    {
+      "id": "Q31814642",
+      "names": [
+        { "name": "3 Pułaskiego Square in Olsztyn", "lang": "en" },
+        { "name": "pl. Pułaskiego 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781556", "lon": "20.491347" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814642"
+    },
+    {
+      "id": "Q31814655",
+      "names": [
+        { "name": "4 Pułaskiego Square in Olsztyn", "lang": "en" },
+        { "name": "pl. Pułaskiego 4", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781653", "lon": "20.491014" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814655"
+    },
+    {
+      "id": "Q31814665",
+      "names": [
+        { "name": "5 Pułaskiego Square in Olsztyn", "lang": "en" },
+        { "name": "pl. Pułaskiego 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781736", "lon": "20.490653" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814665"
+    },
+    {
+      "id": "Q31814681",
+      "names": [
+        { "name": "1 Ratuszowa Street in Olsztyn", "lang": "en" },
+        { "name": "Ratuszowa 1 / Curie-Skłodowskiej 26", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779778", "lon": "20.478444" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814681"
+    },
+    {
+      "id": "Q31814695",
+      "names": [
+        { "name": "3 Ratuszowa Street in Olsztyn", "lang": "en" },
+        { "name": "Ratuszowa 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779722", "lon": "20.478792" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814695"
+    },
+    {
+      "id": "Q31814707",
+      "names": [
+        { "name": "6 Ratuszowa Street in Olsztyn", "lang": "en" },
+        { "name": "Ratuszowa 6", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779625", "lon": "20.4795" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814707"
+    },
+    {
+      "id": "Q31814719",
+      "names": [
+        { "name": "7 Ratuszowa Street in Olsztyn", "lang": "en" },
+        { "name": "Ratuszowa 7", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779583", "lon": "20.47975" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814719"
+    },
+    {
+      "id": "Q31814730",
+      "names": [
+        { "name": "10 Ratuszowa Street in Olsztyn", "lang": "en" },
+        { "name": "Ratuszowa 10", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779486", "lon": "20.478972" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814730"
+    },
+    {
+      "id": "Q31814740",
+      "names": [
+        { "name": "11 Ratuszowa Street in Olsztyn", "lang": "en" },
+        { "name": "Ratuszowa 11", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779514", "lon": "20.478819" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814740"
+    },
+    {
+      "id": "Q31814751",
+      "names": [
+        { "name": "6 Samulowskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Samulowskiego 6", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780875", "lon": "20.483806" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814751"
+    },
+    {
+      "id": "Q31814912",
+      "names": [
+        { "name": "1 Stare Miasto in Olsztyn", "lang": "en" },
+        { "name": "Kamienica podcieniowa", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.777097", "lon": "20.476083" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31814912"
+    },
+    {
+      "id": "Q31814928",
+      "names": [
+        { "name": "2 Stare Miasto in Olsztyn", "lang": "en" },
+        { "name": "Stare Miasto 2", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.777014", "lon": "20.476167" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814928"
+    },
+    {
+      "id": "Q31814944",
+      "names": [
+        { "name": "3 Stare Miasto in Olsztyn", "lang": "en" },
+        { "name": "Stare Miasto 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776986", "lon": "20.476278" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814944"
+    },
+    {
+      "id": "Q31814976",
+      "names": [
+        { "name": "24/25 Stare Miasto in Olsztyn", "lang": "en" },
+        { "name": "Stare Miasto 24/25", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7765", "lon": "20.475361" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814976"
+    },
+    {
+      "id": "Q31814988",
+      "names": [
+        { "name": "26/27 Stare Miasto in Olsztyn", "lang": "en" },
+        { "name": "Stare Miasto 26/27", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776597", "lon": "20.475417" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31814988"
+    },
+    {
+      "id": "Q31815001",
+      "names": [
+        { "name": "28 Stare Miasto in Olsztyn", "lang": "en" },
+        { "name": "Stare Miasto 28", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776667", "lon": "20.475472" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815001"
+    },
+    {
+      "id": "Q31815015",
+      "names": [
+        { "name": "6 Staromiejska Street in Olsztyn", "lang": "en" },
+        { "name": "Staromiejska 6", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776944", "lon": "20.477194" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815015"
+    },
+    {
+      "id": "Q31815025",
+      "names": [
+        { "name": "5a Staszica Street in Olsztyn", "lang": "en" },
+        { "name": "Wikarówka, ob. dom", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775708", "lon": "20.477778" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815025"
+    },
+    {
+      "id": "Q31815038",
+      "names": [
+        { "name": "10 Staszica Street in Olsztyn", "lang": "en" },
+        { "name": "Dom", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775431", "lon": "20.477167" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815038"
+    },
+    {
+      "id": "Q31815050",
+      "names": [
+        { "name": "11 Staszica Street in Olsztyn", "lang": "en" },
+        { "name": "Kamieniczka", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7755", "lon": "20.477097" }],
+      "types": [{ "name": "building" }],
+      "link": "https://www.wikidata.org/wiki/Q31815050"
+    },
+    {
+      "id": "Q31815061",
+      "names": [
+        { "name": "12 Staszica Street in Olsztyn", "lang": "en" },
+        { "name": "Dom", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775528", "lon": "20.477014" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815061"
+    },
+    {
+      "id": "Q31815072",
+      "names": [
+        { "name": "13 Staszica Street in Olsztyn", "lang": "en" },
+        { "name": "Dom", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775583", "lon": "20.476917" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815072"
+    },
+    {
+      "id": "Q31815082",
+      "names": [
+        { "name": "14 Staszica Street in Olsztyn", "lang": "en" },
+        { "name": "Dom", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775625", "lon": "20.476806" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815082"
+    },
+    {
+      "id": "Q31815094",
+      "names": [
+        { "name": "15 Staszica Street in Olsztyn", "lang": "en" },
+        { "name": "Dom", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775667", "lon": "20.476722" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815094"
+    },
+    {
+      "id": "Q31815109",
+      "names": [
+        { "name": "16 Staszica Street in Olsztyn", "lang": "en" },
+        { "name": "Dom", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775708", "lon": "20.476625" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815109"
+    },
+    {
+      "id": "Q31815123",
+      "names": [
+        { "name": "17/18 Staszica Street in Olsztyn", "lang": "en" },
+        { "name": "Staszica 17/18", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.77575", "lon": "20.476528" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815123"
+    },
+    {
+      "id": "Q31815140",
+      "names": [
+        { "name": "1 22 Stycznia Street in Olsztyn", "lang": "en" },
+        { "name": "22 Stycznia 1", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776889", "lon": "20.479889" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815140"
+    },
+    {
+      "id": "Q31815161",
+      "names": [
+        { "name": "1 Szrajbera Street in Olsztyn", "lang": "en" },
+        { "name": "Willa", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773833", "lon": "20.477861" }],
+      "types": [{ "name": "villa" }],
+      "link": "https://www.wikidata.org/wiki/Q31815161"
+    },
+    {
+      "id": "Q31815178",
+      "names": [
+        { "name": "12 Targ Rybny in Olsztyn", "lang": "en" },
+        { "name": "Targ Rybny 12", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.777292", "lon": "20.476278" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815178"
+    },
+    {
+      "id": "Q31815190",
+      "names": [
+        { "name": "2 Warmińska Street in Olsztyn", "lang": "en" },
+        { "name": "Warmińska 2", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781306", "lon": "20.484931" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815190"
+    },
+    {
+      "id": "Q31815203",
+      "names": [
+        { "name": "3 Warmińska Street in Olsztyn", "lang": "en" },
+        { "name": "Warmińska 3", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781222", "lon": "20.484819" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815203"
+    },
+    {
+      "id": "Q31815216",
+      "names": [
+        { "name": "4 Warmińska Street in Olsztyn", "lang": "en" },
+        { "name": "Warmińska 4, 4a", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781083", "lon": "20.484639" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815216"
+    },
+    {
+      "id": "Q31815231",
+      "names": [
+        { "name": "5 Warmińska Street in Olsztyn", "lang": "en" },
+        { "name": "Warmińska 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780917", "lon": "20.484389" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815231"
+    },
+    {
+      "id": "Q31815250",
+      "names": [
+        { "name": "6 Warmińska Street in Olsztyn", "lang": "en" },
+        { "name": "Warmińska 6", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.78075", "lon": "20.484167" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815250"
+    },
+    {
+      "id": "Q31815269",
+      "names": [
+        { "name": "7 Warmińska Street in Olsztyn", "lang": "en" },
+        { "name": "Warmińska 7", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780528", "lon": "20.483917" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815269"
+    },
+    {
+      "id": "Q31815287",
+      "names": [
+        { "name": "8 Warmińska Street in Olsztyn", "lang": "en" },
+        { "name": "Warmińska 8", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780375", "lon": "20.483708" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815287"
+    },
+    {
+      "id": "Q31815314",
+      "names": [
+        { "name": "21 Warmińska Street in Olsztyn", "lang": "en" },
+        { "name": "Warmińska 21", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780472", "lon": "20.483333" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815314"
+    },
+    {
+      "id": "Q31815329",
+      "names": [
+        { "name": "22 Warmińska Street in Olsztyn", "lang": "en" },
+        { "name": "Warmińska 22", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.780639", "lon": "20.483556" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815329"
+    },
+    {
+      "id": "Q31815341",
+      "names": [
+        { "name": "25 Warmińska Street in Olsztyn", "lang": "en" },
+        { "name": "Warmińska 25", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781236", "lon": "20.484361" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815341"
+    },
+    {
+      "id": "Q31815354",
+      "names": [
+        { "name": "26 Warmińska Street in Olsztyn", "lang": "en" },
+        { "name": "Warmińska 26", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.781389", "lon": "20.484528" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815354"
+    },
+    {
+      "id": "Q31815367",
+      "names": [
+        { "name": "2 Warszawska Street in Olsztyn", "lang": "en" },
+        { "name": "Kamienica", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.774375", "lon": "20.473431" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815367"
+    },
+    {
+      "id": "Q31815376",
+      "names": [
+        { "name": "5 Warszawska Street in Olsztyn", "lang": "en" },
+        { "name": "Warszawska 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773889", "lon": "20.4735" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815376"
+    },
+    {
+      "id": "Q31815388",
+      "names": [
+        { "name": "6 Warszawska Street in Olsztyn", "lang": "en" },
+        { "name": "Warszawska 6", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.774111", "lon": "20.473222" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815388"
+    },
+    {
+      "id": "Q31815411",
+      "names": [
+        { "name": "13 Warszawska Street in Olsztyn", "lang": "en" },
+        { "name": "Warszawska 13", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773431", "lon": "20.473167" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815411"
+    },
+    {
+      "id": "Q31815432",
+      "names": [
+        { "name": "14 Warszawska Street in Olsztyn", "lang": "en" },
+        { "name": "Warszawska 14", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773819", "lon": "20.473" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815432"
+    },
+    {
+      "id": "Q31815450",
+      "names": [
+        { "name": "16 Warszawska Street in Olsztyn", "lang": "en" },
+        { "name": "Kamienica, l. 80-te XIX", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773639", "lon": "20.472889" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815450"
+    },
+    {
+      "id": "Q31815470",
+      "names": [
+        { "name": "20 Warszawska Street in Olsztyn", "lang": "en" },
+        { "name": "Warszawska 20", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773306", "lon": "20.472694" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815470"
+    },
+    {
+      "id": "Q31815485",
+      "names": [
+        { "name": "22 Warszawska Street in Olsztyn", "lang": "en" },
+        { "name": "Warszawska 22", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773153", "lon": "20.472528" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815485"
+    },
+    {
+      "id": "Q31815503",
+      "names": [
+        { "name": "26 Warszawska Street in Olsztyn", "lang": "en" },
+        { "name": "Warszawska 26", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.772944", "lon": "20.472361" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815503"
+    },
+    {
+      "id": "Q31815518",
+      "names": [
+        { "name": "28 Warszawska Street in Olsztyn", "lang": "en" },
+        { "name": "Warszawska 28", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.772847", "lon": "20.472292" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815518"
+    },
+    {
+      "id": "Q31815589",
+      "names": [
+        { "name": "33 Wojska Polskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Dom zdrojowy, ob. dom mieszkalny", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.795861", "lon": "20.482861" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815589"
+    },
+    {
+      "id": "Q31815601",
+      "names": [
+        { "name": "60 Wojska Polskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Aleja Wojska Polskiego 60", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.787833", "lon": "20.482667" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815601"
+    },
+    {
+      "id": "Q31815656",
+      "names": [
+        { "name": "2/3 Jana Pawła II Square in Olsztyn", "lang": "en" },
+        { "name": "pl. Wolności 2/3 (ob. pl. Jana Pawła II)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778167", "lon": "20.479361" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815656"
+    },
+    {
+      "id": "Q31815674",
+      "names": [
+        { "name": "4 Wyzwolenia Street in Olsztyn", "lang": "en" },
+        { "name": "Wyzwolenia 4", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778764", "lon": "20.477903" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815674"
+    },
+    {
+      "id": "Q31815687",
+      "names": [
+        { "name": "6 Wyzwolenia Street in Olsztyn", "lang": "en" },
+        { "name": "Wyzwolenia 6", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778819", "lon": "20.477528" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815687"
+    },
+    {
+      "id": "Q31815700",
+      "names": [
+        { "name": "7 Wyzwolenia Street in Olsztyn", "lang": "en" },
+        { "name": "Wyzwolenia 7", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778861", "lon": "20.477292" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815700"
+    },
+    {
+      "id": "Q31815720",
+      "names": [
+        { "name": "8 Wyzwolenia Street in Olsztyn", "lang": "en" },
+        { "name": "Wyzwolenia 8", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778931", "lon": "20.477" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815720"
+    },
+    {
+      "id": "Q31815743",
+      "names": [
+        { "name": "9 Wyzwolenia Street in Olsztyn", "lang": "en" },
+        { "name": "Wyzwolenia 9", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779014", "lon": "20.476694" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815743"
+    },
+    {
+      "id": "Q31815766",
+      "names": [
+        { "name": "21,21a,21b Wyzwolenia Street in Olsztyn", "lang": "en" },
+        { "name": "Kamienica (z oficynami)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779306", "lon": "20.476111" }],
+      "types": [{ "name": "rearhouse" }],
+      "link": "https://www.wikidata.org/wiki/Q31815766"
+    },
+    {
+      "id": "Q31815779",
+      "names": [
+        { "name": "28 Wyzwolenia Street in Olsztyn", "lang": "en" },
+        { "name": "Wyzwolenia 28", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779028", "lon": "20.477528" }],
+      "types": [{ "name": "kamienica" }],
+      "link": "https://www.wikidata.org/wiki/Q31815779"
+    },
+    {
+      "id": "Q31815789",
+      "names": [
+        { "name": "30 Wyzwolenia Street in Olsztyn", "lang": "en" },
+        { "name": "Szkoła żeńska", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778972", "lon": "20.478222" }],
+      "types": [{ "name": "building" }],
+      "link": "https://www.wikidata.org/wiki/Q31815789"
+    },
+    {
+      "id": "Q31815830",
+      "names": [
+        { "name": "5 Zamkowa Street in Olsztyn", "lang": "en" },
+        { "name": "Willa", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.777736", "lon": "20.472833" }],
+      "types": [{ "name": "villa" }],
+      "link": "https://www.wikidata.org/wiki/Q31815830"
+    },
+    {
+      "id": "Q31815845",
+      "names": [
+        { "name": "2 Zientary-Malewskiej Street in Olsztyn", "lang": "en" },
+        { "name": "Zientary Malewskiej 2", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.785125", "lon": "20.492611" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815845"
+    },
+    {
+      "id": "Q31815867",
+      "names": [
+        { "name": "21 Zientary-Malewskiej Street in Olsztyn", "lang": "en" },
+        { "name": "Zientary Malewskiej 21", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.787472", "lon": "20.496639" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815867"
+    },
+    {
+      "id": "Q31815879",
+      "names": [
+        { "name": "5 Piłsudskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Hala sportowa", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.777361", "lon": "20.485278" }],
+      "types": [{ "name": "building" }],
+      "link": "https://www.wikidata.org/wiki/Q31815879"
+    },
+    {
+      "id": "Q31815903",
+      "names": [
+        { "name": "2 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 2", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.786736", "lon": "20.483222" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815903"
+    },
+    {
+      "id": "Q31815919",
+      "names": [
+        { "name": "4 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 4", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.786736", "lon": "20.483889" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815919"
+    },
+    {
+      "id": "Q31815934",
+      "names": [
+        { "name": "5 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 5", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.786736", "lon": "20.48425" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815934"
+    },
+    {
+      "id": "Q31815948",
+      "names": [
+        { "name": "6 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 6", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.786736", "lon": "20.485194" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815948"
+    },
+    {
+      "id": "Q31815995",
+      "names": [
+        { "name": "11 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 11", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.785986", "lon": "20.488597" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31815995"
+    },
+    {
+      "id": "Q31816010",
+      "names": [
+        { "name": "12 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 12", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.785861", "lon": "20.489" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31816010"
+    },
+    {
+      "id": "Q31816033",
+      "names": [
+        { "name": "15 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 15", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.785639", "lon": "20.489806" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31816033"
+    },
+    {
+      "id": "Q31816048",
+      "names": [
+        { "name": "31 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 31", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.78575", "lon": "20.488389" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31816048"
+    },
+    {
+      "id": "Q31816097",
+      "names": [
+        { "name": "35 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 35", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.786306", "lon": "20.486431" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31816097"
+    },
+    {
+      "id": "Q31816112",
+      "names": [
+        { "name": "37 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 37", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7865", "lon": "20.484722" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31816112"
+    },
+    {
+      "id": "Q31816124",
+      "names": [
+        { "name": "38 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 38", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.786486", "lon": "20.4845" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31816124"
+    },
+    {
+      "id": "Q31816137",
+      "names": [
+        { "name": "39 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 39", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.786472", "lon": "20.484278" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31816137"
+    },
+    {
+      "id": "Q31816159",
+      "names": [
+        { "name": "41 Żeromskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Żeromskiego 41, 41a", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.786486", "lon": "20.483611" }],
+      "types": [{ "name": "house" }],
+      "link": "https://www.wikidata.org/wiki/Q31816159"
+    },
+    {
+      "id": "Q31816173",
+      "names": [
+        { "name": "14 Kołłątaja Street in Olsztyn", "lang": "en" },
+        { "name": "Spichlerz", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.77525", "lon": "20.474403" }],
+      "types": [{ "name": "granary" }],
+      "link": "https://www.wikidata.org/wiki/Q31816173"
+    },
+    {
+      "id": "Q31816233",
+      "names": [
+        { "name": "3 Zamkowa Street in Olsztyn", "lang": "en" },
+        { "name": "Spichlerz (magazyn solny)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.777417", "lon": "20.473861" }],
+      "types": [{ "name": "granary" }],
+      "link": "https://www.wikidata.org/wiki/Q31816233"
+    },
+    {
+      "id": "Q31816256",
+      "names": [
+        { "name": "Mill in Olsztyn", "lang": "en" },
+        { "name": "Młyn", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.784417", "lon": "20.493111" }],
+      "types": [{ "name": "watermill" }],
+      "link": "https://www.wikidata.org/wiki/Q31816256"
+    },
+    {
+      "id": "Q31816286",
+      "names": [
+        { "name": "Water tower in Olsztyn, 2a Zientary-Malewskiej Street", "lang": "en" },
+        { "name": "Wodociągowa wieża ciśnień (kolejowa)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.784875", "lon": "20.492125" }],
+      "types": [{ "name": "water tower" }],
+      "link": "https://www.wikidata.org/wiki/Q31816286"
+    },
+    {
+      "id": "Q31816301",
+      "names": [
+        { "name": "Water tower in Olsztyn, Main Train Station", "lang": "en" },
+        { "name": "Wodociągowa wieża ciśnień (kolejowa)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.786917", "lon": "20.499389" }],
+      "types": [{ "name": "water tower" }],
+      "link": "https://www.wikidata.org/wiki/Q31816301"
+    },
+    {
+      "id": "Q31816328",
+      "names": [
+        { "name": "Viaducts in Olsztyn", "lang": "en" },
+        { "name": "Wiadukty kolejowe nad rz. Łyną", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.779861", "lon": "20.473194" }],
+      "link": "https://www.wikidata.org/wiki/Q31816328"
+    },
+    {
+      "id": "Q31816406",
+      "names": [
+        { "name": "Kapliczka przydrożna", "lang": "pl" },
+        { "name": "Wayside shrine at 27 Sielska Street in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.767375", "lon": "20.422597" }],
+      "link": "https://www.wikidata.org/wiki/Q31816406"
+    },
+    {
+      "id": "Q31816420",
+      "names": [
+        { "name": "Dzwonniczka słupowa", "lang": "pl" },
+        { "name": "Wooden pillar belfry in Olsztyn Dajtki", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.765778", "lon": "20.422458" }],
+      "link": "https://www.wikidata.org/wiki/Q31816420"
+    },
+    {
+      "id": "Q31816433",
+      "names": [
+        { "name": "Krzyż przydrożny", "lang": "pl" },
+        { "name": "Wayside cross in Olsztyn Dajtki", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.765792", "lon": "20.422472" }],
+      "link": "https://www.wikidata.org/wiki/Q31816433"
+    },
+    {
+      "id": "Q31816444",
+      "names": [
+        { "name": "Kapliczka przydrożna", "lang": "pl" },
+        { "name": "Wayside shrine at 7 Żurawia Street in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.781389", "lon": "20.373611" }],
+      "link": "https://www.wikidata.org/wiki/Q31816444"
+    },
+    {
+      "id": "Q31816544",
+      "names": [
+        { "name": "Kapliczka przydrożna", "lang": "pl" },
+        { "name": "Wayside shrine at 170 Bałtycka Street in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.803333", "lon": "20.403889" }],
+      "link": "https://www.wikidata.org/wiki/Q31816544"
+    },
+    {
+      "id": "Q31816664",
+      "names": [
+        { "name": "Pawilon szpitalny nr 31", "lang": "pl" },
+        { "name": "Plac Łódzki 2, University of Warmia and Mazury in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.759667", "lon": "20.458722" }],
+      "link": "https://www.wikidata.org/wiki/Q31816664"
+    },
+    {
+      "id": "Q31816814",
+      "names": [
+        { "name": "Park dworski", "lang": "pl" },
+        { "name": "Park in Olsztyn Pozorty", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.756833", "lon": "20.475083" }],
+      "types": [{ "name": "park" }],
+      "link": "https://www.wikidata.org/wiki/Q31816814"
+    },
+    {
+      "id": "Q31906073",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Kapliczka przydrożna, przy drodze Olsztyn - Ostróda", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.746777", "lon": "20.232047" }],
+      "link": "https://www.wikidata.org/wiki/Q31906073"
+    },
+    {
+      "id": "Q31917520",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Kapliczka przydrożna z dzwonniczką, przy drodze Olsztyn - Morąg", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.801708", "lon": "20.32325" }],
+      "link": "https://www.wikidata.org/wiki/Q31917520"
+    },
+    {
+      "id": "Q31917662",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Kapliczka przydrożna, przy drodze Olsztyn - Morąg", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.789931", "lon": "20.217889" }],
+      "link": "https://www.wikidata.org/wiki/Q31917662"
+    },
+    {
+      "id": "Q32045437",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Cmentarz ewangelicki, przy drodze Olsztyn - Szczytno", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.6425", "lon": "20.784722" }],
+      "types": [{ "name": "cemetery" }],
+      "link": "https://www.wikidata.org/wiki/Q32045437"
+    },
+    {
+      "id": "Q33699456",
+      "names": [{ "name": "Olsztyn", "lang": "en" }],
+      "coordinates": [{ "lat": "53.7765", "lon": "20.4665" }],
+      "sameas": [{ "database": "geonames", "entity": "7532914" }],
+      "link": "https://www.wikidata.org/wiki/Q33699456"
+    },
+    {
+      "id": "Q369699",
+      "names": [
+        { "name": "Olsztyn", "lang": "de" },
+        { "name": "Olsztyn", "lang": "en" },
+        { "name": "Olsztyn", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "50.751944", "lon": "19.267778" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "3090104" },
+        { "database": "gnd", "entity": "1156758378" },
+        { "database": "simc", "entity": "0140675" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q369699"
+    },
+    {
+      "id": "Q3919808",
+      "names": [
+        { "name": "Bazylika konkatedralna św. Jakuba w Olsztynie", "lang": "pl" },
+        { "name": "Kathedralbasilika St. Jakob", "lang": "de" },
+        { "name": "Olsztyn Cathedral", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.776", "lon": "20.4776" }],
+      "types": [{ "name": "church building" }],
+      "link": "https://www.wikidata.org/wiki/Q3919808"
+    },
+    {
+      "id": "Q3967963",
+      "names": [
+        { "name": "OSiR Stadium in Olsztyn", "lang": "en" },
+        { "name": "Stadion OSiR w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.772778", "lon": "20.508056" }],
+      "types": [{ "name": "stadium" }],
+      "link": "https://www.wikidata.org/wiki/Q3967963"
+    },
+    {
+      "id": "Q4351208",
+      "names": [
+        { "name": "Górowo", "lang": "de" },
+        { "name": "Górowo", "lang": "pl" },
+        { "name": "Górowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.95", "lon": "20.96666667" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0478380" }],
+      "link": "https://www.wikidata.org/wiki/Q4351208"
+    },
+    {
+      "id": "Q4401131",
+      "names": [
+        { "name": "Ruś", "lang": "de" },
+        { "name": "Ruś", "lang": "pl" },
+        { "name": "Ruś, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [
+        { "lat": "53.68882", "lon": "20.49513" },
+        { "lat": "53.691944444", "lon": "20.493611111" }
+      ],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "759991" },
+        { "database": "simc", "entity": "0488987" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q4401131"
+    },
+    {
+      "id": "Q445351",
+      "names": [
+        { "name": "Bahnhof Olsztyn Zachodni", "lang": "de" },
+        { "name": "Olsztyn Zachodni", "lang": "pl" },
+        { "name": "Olsztyn Zachodni train station", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.77805556", "lon": "20.4675" }],
+      "types": [{ "name": "railway station" }],
+      "link": "https://www.wikidata.org/wiki/Q445351"
+    },
+    {
+      "id": "Q4680231",
+      "names": [
+        { "name": "Adamowo", "lang": "pl" },
+        { "name": "Adamowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.881944444", "lon": "20.974444444" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0471403" }],
+      "link": "https://www.wikidata.org/wiki/Q4680231"
+    },
+    {
+      "id": "Q475019",
+      "names": [
+        { "name": "Brama Górna w Olsztynie", "lang": "pl" },
+        { "name": "High Gate in Olsztyn", "lang": "en" },
+        { "name": "Hohes Tor", "lang": "de" }
+      ],
+      "coordinates": [{ "lat": "53.777165", "lon": "20.477954" }],
+      "types": [{ "name": "gate" }],
+      "link": "https://www.wikidata.org/wiki/Q475019"
+    },
+    {
+      "id": "Q49331132",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Nadleśnictwo Olsztyn", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.73", "lon": "20.64" }],
+      "types": [{ "name": "forest" }, { "name": "forestry agency" }],
+      "sameas": [{ "database": "geonames", "entity": "3090102" }],
+      "link": "https://www.wikidata.org/wiki/Q49331132"
+    },
+    {
+      "id": "Q4937524",
+      "names": [
+        { "name": "Bogdany", "lang": "pl" },
+        { "name": "Bogdany, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.8", "lon": "20.65" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0469777" }],
+      "link": "https://www.wikidata.org/wiki/Q4937524"
+    },
+    {
+      "id": "Q4981716",
+      "names": [
+        { "name": "Brzydowo", "lang": "pl" },
+        { "name": "Brzydowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.911388888", "lon": "20.134444444" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0489633" }],
+      "link": "https://www.wikidata.org/wiki/Q4981716"
+    },
+    {
+      "id": "Q5103306",
+      "names": [
+        { "name": "Chmielówka", "lang": "pl" },
+        { "name": "Chmielówka (Biskupiec)", "lang": "de" },
+        { "name": "Chmielówka, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.78694444", "lon": "21.06027778" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0471739" }],
+      "link": "https://www.wikidata.org/wiki/Q5103306"
+    },
+    {
+      "id": "Q5202054",
+      "names": [
+        { "name": "Czerwona Woda", "lang": "pl" },
+        { "name": "Czerwona Woda, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.606944444", "lon": "20.206666666" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0484222" }],
+      "link": "https://www.wikidata.org/wiki/Q5202054"
+    },
+    {
+      "id": "Q5309825",
+      "names": [
+        { "name": "Drzazgi", "lang": "pl" },
+        { "name": "Drzazgi, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.9325", "lon": "20.28388889" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0489656" }],
+      "link": "https://www.wikidata.org/wiki/Q5309825"
+    },
+    {
+      "id": "Q5320793",
+      "names": [
+        { "name": "Dąbrówka", "lang": "pl" },
+        { "name": "Dąbrówka, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.918333333", "lon": "20.1975" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0489640" }],
+      "link": "https://www.wikidata.org/wiki/Q5320793"
+    },
+    {
+      "id": "Q5320840",
+      "names": [
+        { "name": "Dąbrówka Mała", "lang": "pl" },
+        { "name": "Dąbrówka Mała, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.842777777", "lon": "20.645833333" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0469990" }],
+      "link": "https://www.wikidata.org/wiki/Q5320840"
+    },
+    {
+      "id": "Q5506796",
+      "names": [
+        { "name": "Frączki", "lang": "pl" },
+        { "name": "Frączki, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.93333333", "lon": "20.6" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "772495" },
+        { "database": "simc", "entity": "0472970" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q5506796"
+    },
+    {
+      "id": "Q553570",
+      "names": [
+        { "name": "Gmina Olsztyn", "lang": "de" },
+        { "name": "Gmina Olsztyn", "lang": "en" },
+        { "name": "Olsztyn", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "50.751944", "lon": "19.267778" }],
+      "types": [{ "name": "rural municipality of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "7531933" },
+        { "database": "teryt", "entity": "2404122" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q553570"
+    },
+    {
+      "id": "Q554052",
+      "names": [
+        { "name": "Biskupiec", "lang": "pl" },
+        { "name": "Gmina Biskupiec", "lang": "de" },
+        { "name": "Gmina Biskupiec, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.85", "lon": "20.95" }],
+      "types": [{ "name": "urban-rural municipality of Poland" }],
+      "sameas": [{ "database": "teryt", "entity": "6283614023" }],
+      "link": "https://www.wikidata.org/wiki/Q554052"
+    },
+    {
+      "id": "Q5612477",
+      "names": [
+        { "name": "Gryźliny", "lang": "pl" },
+        { "name": "Gryźliny, Olsztyn County", "lang": "en" },
+        { "name": "Gryźliny (Stawiguda)", "lang": "de" }
+      ],
+      "coordinates": [
+        { "lat": "53.6167", "lon": "20.35" },
+        { "lat": "53.61912", "lon": "20.34038" }
+      ],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "771305" },
+        { "database": "simc", "entity": "0488906" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q5612477"
+    },
+    {
+      "id": "Q5627335",
+      "names": [
+        { "name": "Gąsiorowo", "lang": "de" },
+        { "name": "Gąsiorowo", "lang": "pl" },
+        { "name": "Gąsiorowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7222", "lon": "20.8194" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0486511" }],
+      "link": "https://www.wikidata.org/wiki/Q5627335"
+    },
+    {
+      "id": "Q590140",
+      "names": [
+        { "name": "Holy Cross chapel in Olsztyn", "lang": "en" },
+        { "name": "Jerusalemkapelle Olsztyn", "lang": "de" },
+        { "name": "Kaplica Jerozolimska w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.77636389", "lon": "20.46852778" }],
+      "types": [{ "name": "chapel" }],
+      "link": "https://www.wikidata.org/wiki/Q590140"
+    },
+    {
+      "id": "Q591723",
+      "names": [
+        { "name": "Pupki", "lang": "pl" },
+        { "name": "Pupki, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.8667", "lon": "20.25" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0477162" }],
+      "link": "https://www.wikidata.org/wiki/Q591723"
+    },
+    {
+      "id": "Q60861410",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Olsztyn Dajtki", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.765556", "lon": "20.438083" }],
+      "link": "https://www.wikidata.org/wiki/Q60861410"
+    },
+    {
+      "id": "Q6101703",
+      "names": [
+        { "name": "Linowo", "lang": "pl" },
+        { "name": "Linowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7333", "lon": "20.5667" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0486623" }],
+      "link": "https://www.wikidata.org/wiki/Q6101703"
+    },
+    {
+      "id": "Q6154960",
+      "names": [
+        { "name": "Jankowo", "lang": "pl" },
+        { "name": "Jankowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.9333", "lon": "20.2833" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0489685" }],
+      "link": "https://www.wikidata.org/wiki/Q6154960"
+    },
+    {
+      "id": "Q6156130",
+      "names": [
+        { "name": "Januszewo", "lang": "pl" },
+        { "name": "Januszewo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.8775", "lon": "20.985833333" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0471426" }],
+      "link": "https://www.wikidata.org/wiki/Q6156130"
+    },
+    {
+      "id": "Q6185755",
+      "names": [
+        { "name": "Jesionowo", "lang": "pl" },
+        { "name": "Jesionowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.94388889", "lon": "20.52611111" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0472696" }],
+      "link": "https://www.wikidata.org/wiki/Q6185755"
+    },
+    {
+      "id": "Q6320891",
+      "names": [
+        { "name": "Józefowo", "lang": "pl" },
+        { "name": "Józefowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.813611111", "lon": "20.917222222" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0471828" }],
+      "link": "https://www.wikidata.org/wiki/Q6320891"
+    },
+    {
+      "id": "Q6358374",
+      "names": [
+        { "name": "Kamionka", "lang": "de" },
+        { "name": "Kamionka", "lang": "pl" },
+        { "name": "Kamionka, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.8167", "lon": "21.1" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "769628" },
+        { "database": "simc", "entity": "0471550" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q6358374"
+    },
+    {
+      "id": "Q6436010",
+      "names": [
+        { "name": "Kramarzewo", "lang": "pl" },
+        { "name": "Kramarzewo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "54.01361111", "lon": "20.78666667" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0476837" }],
+      "link": "https://www.wikidata.org/wiki/Q6436010"
+    },
+    {
+      "id": "Q6438816",
+      "names": [
+        { "name": "Krokowo", "lang": "pl" },
+        { "name": "Krokowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.94388889", "lon": "20.70666667" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0476843" }],
+      "link": "https://www.wikidata.org/wiki/Q6438816"
+    },
+    {
+      "id": "Q6441817",
+      "names": [
+        { "name": "Kudypy", "lang": "pl" },
+        { "name": "Kudypy, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.76555556", "lon": "20.38416667" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0473626" }],
+      "link": "https://www.wikidata.org/wiki/Q6441817"
+    },
+    {
+      "id": "Q6446126",
+      "names": [
+        { "name": "Kurki", "lang": "pl" },
+        { "name": "Kurki, Olsztyn County", "lang": "en" },
+        { "name": "Kurki (Olsztynek)", "lang": "de" }
+      ],
+      "coordinates": [{ "lat": "53.55", "lon": "20.4833" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "766987" },
+        { "database": "simc", "entity": "0484357" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q6446126"
+    },
+    {
+      "id": "Q6543325",
+      "names": [
+        { "name": "Lichtajny", "lang": "pl" },
+        { "name": "Lichtajny, Olsztyn County", "lang": "en" },
+        { "name": "Lichtajny (Olsztynek)", "lang": "de" }
+      ],
+      "coordinates": [{ "lat": "53.55444444", "lon": "20.22805556" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0484363" }],
+      "link": "https://www.wikidata.org/wiki/Q6543325"
+    },
+    {
+      "id": "Q6556881",
+      "names": [
+        { "name": "Lipowo", "lang": "de" },
+        { "name": "Lipowo", "lang": "pl" },
+        { "name": "Lipowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.86138889", "lon": "21.00833333" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0471797" }],
+      "link": "https://www.wikidata.org/wiki/Q6556881"
+    },
+    {
+      "id": "Q6743780",
+      "names": [
+        { "name": "Malinowo", "lang": "pl" },
+        { "name": "Malinowo, Olsztyn County", "lang": "en" },
+        { "name": "Malinowo (Olsztynek)", "lang": "de" }
+      ],
+      "coordinates": [{ "lat": "53.480833333", "lon": "20.360277777" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0484794" }],
+      "link": "https://www.wikidata.org/wiki/Q6743780"
+    },
+    {
+      "id": "Q6757311",
+      "names": [
+        { "name": "Marcinkowo", "lang": "pl" },
+        { "name": "Marcinkowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.6972", "lon": "20.6758" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0486646" }],
+      "link": "https://www.wikidata.org/wiki/Q6757311"
+    },
+    {
+      "id": "Q676787",
+      "names": [
+        { "name": "Herz-Jesu-Kirche", "lang": "de" },
+        { "name": "Kościół Najświętszego Serca Pana Jezusa w Olsztynie", "lang": "pl" },
+        { "name": "Sacred Heart church in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.77851", "lon": "20.48732" }],
+      "types": [{ "name": "church building" }],
+      "link": "https://www.wikidata.org/wiki/Q676787"
+    },
+    {
+      "id": "Q6885022",
+      "names": [
+        { "name": "Międzylesie", "lang": "pl" },
+        { "name": "Międzylesie, Olsztyn County", "lang": "en" },
+        { "name": "Międzylesie (powiat olsztyński)", "lang": "de" }
+      ],
+      "coordinates": [
+        { "lat": "53.98178", "lon": "20.4847" },
+        { "lat": "53.9833", "lon": "20.5" }
+      ],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "764864" },
+        { "database": "simc", "entity": "0472785" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q6885022"
+    },
+    {
+      "id": "Q7066275",
+      "names": [
+        { "name": "Nowa Wieś Mała", "lang": "de" },
+        { "name": "Nowa Wieś Mała", "lang": "pl" },
+        { "name": "Nowa Wieś Mała, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.9903", "lon": "20.3492" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0472791" }],
+      "link": "https://www.wikidata.org/wiki/Q7066275"
+    },
+    {
+      "id": "Q7067160",
+      "names": [
+        { "name": "Nowy Młyn", "lang": "pl" },
+        { "name": "Nowy Młyn, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7775", "lon": "20.1892" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0995945" }],
+      "link": "https://www.wikidata.org/wiki/Q7067160"
+    },
+    {
+      "id": "Q7105371",
+      "names": [
+        { "name": "Orzechówko", "lang": "pl" },
+        { "name": "Orzechówko, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.8406", "lon": "20.5947" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "1046145" }],
+      "link": "https://www.wikidata.org/wiki/Q7105371"
+    },
+    {
+      "id": "Q7125323",
+      "names": [
+        { "name": "Pajtuny", "lang": "pl" },
+        { "name": "Pajtuny, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7333", "lon": "20.7167" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "762726" },
+        { "database": "simc", "entity": "0486706" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q7125323"
+    },
+    {
+      "id": "Q7156404",
+      "names": [
+        { "name": "Pawłowo", "lang": "pl" },
+        { "name": "Pawłowo, Olsztyn County", "lang": "en" },
+        { "name": "Pawłowo (Olsztynek)", "lang": "de" }
+      ],
+      "coordinates": [
+        { "lat": "53.5333", "lon": "20.2667" },
+        { "lat": "53.533333333", "lon": "20.266666666" }
+      ],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "762522" },
+        { "database": "simc", "entity": "0484529" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q7156404"
+    },
+    {
+      "id": "Q7253632",
+      "names": [
+        { "name": "Przykop", "lang": "pl" },
+        { "name": "Przykop, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [
+        { "lat": "53.62935", "lon": "20.60255" },
+        { "lat": "53.62972222", "lon": "20.60138889" }
+      ],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "761067" },
+        { "database": "simc", "entity": "0486741" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q7253632"
+    },
+    {
+      "id": "Q7281613",
+      "names": [
+        { "name": "Radostowo", "lang": "de" },
+        { "name": "Radostowo", "lang": "pl" },
+        { "name": "Radostowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [
+        { "lat": "53.98347", "lon": "20.61357" },
+        { "lat": "53.985", "lon": "20.60583333" }
+      ],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "760750" },
+        { "database": "simc", "entity": "0476926" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q7281613"
+    },
+    {
+      "id": "Q7293868",
+      "names": [
+        { "name": "Rapaty", "lang": "pl" },
+        { "name": "Rapaty, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.73333333", "lon": "20.15" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "760619" },
+        { "database": "simc", "entity": "0473810" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q7293868"
+    },
+    {
+      "id": "Q7384706",
+      "names": [
+        { "name": "Rybaki", "lang": "pl" },
+        { "name": "Rybaki, Olsztyn County", "lang": "en" },
+        { "name": "Rybaki (Stawiguda)", "lang": "de" }
+      ],
+      "coordinates": [{ "lat": "53.58944444", "lon": "20.47027778" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0488970" }],
+      "link": "https://www.wikidata.org/wiki/Q7384706"
+    },
+    {
+      "id": "Q7386645",
+      "names": [
+        { "name": "Różnowo", "lang": "pl" },
+        { "name": "Różnowo, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.8667", "lon": "20.5167" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0473069" }],
+      "link": "https://www.wikidata.org/wiki/Q7386645"
+    },
+    {
+      "id": "Q7602807",
+      "names": [
+        { "name": "Stary Olsztyn", "lang": "de" },
+        { "name": "Stary Olsztyn", "lang": "en" },
+        { "name": "Stary Olsztyn", "lang": "pl" }
+      ],
+      "coordinates": [
+        { "lat": "53.7167", "lon": "20.5333" },
+        { "lat": "53.7264029", "lon": "20.5294267" }
+      ],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "758286" },
+        { "database": "simc", "entity": "0486824" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q7602807"
+    },
+    {
+      "id": "Q7969468",
+      "names": [
+        { "name": "Warkały", "lang": "de" },
+        { "name": "Warkały", "lang": "pl" },
+        { "name": "Warkały, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [
+        { "lat": "53.8015", "lon": "20.32304" },
+        { "lat": "53.8167", "lon": "20.3333" }
+      ],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "756150" },
+        { "database": "simc", "entity": "0477222" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q7969468"
+    },
+    {
+      "id": "Q8002594",
+      "names": [
+        { "name": "Wilkowo", "lang": "pl" },
+        { "name": "Wilkowo, Olsztyn County", "lang": "en" },
+        { "name": "Wilkowo (Olsztynek)", "lang": "de" }
+      ],
+      "coordinates": [{ "lat": "53.6167", "lon": "20.2833" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0484765" }],
+      "link": "https://www.wikidata.org/wiki/Q8002594"
+    },
+    {
+      "id": "Q801295",
+      "names": [
+        { "name": "Bahnhof Olsztyn Główny", "lang": "de" },
+        { "name": "Olsztyn Główny", "lang": "pl" },
+        { "name": "Olsztyn Główny railway station", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7875", "lon": "20.5075" }],
+      "types": [{ "name": "railway station" }],
+      "link": "https://www.wikidata.org/wiki/Q801295"
+    },
+    {
+      "id": "Q8039800",
+      "names": [
+        { "name": "Wygoda", "lang": "pl" },
+        { "name": "Wygoda, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.6868", "lon": "20.5975" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0486876" }],
+      "link": "https://www.wikidata.org/wiki/Q8039800"
+    },
+    {
+      "id": "Q8063552",
+      "names": [
+        { "name": "Zaborowo", "lang": "pl" },
+        { "name": "Zaborowo, Olsztyn County", "lang": "en" },
+        { "name": "Zaborowo (Purda)", "lang": "de" }
+      ],
+      "coordinates": [{ "lat": "53.7", "lon": "20.7667" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0486557" }],
+      "link": "https://www.wikidata.org/wiki/Q8063552"
+    },
+    {
+      "id": "Q8065401",
+      "names": [
+        { "name": "Zalesie", "lang": "pl" },
+        { "name": "Zalesie, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.8167", "lon": "20.75" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0470243" }],
+      "link": "https://www.wikidata.org/wiki/Q8065401"
+    },
+    {
+      "id": "Q8065771",
+      "names": [
+        { "name": "Zameczek", "lang": "pl" },
+        { "name": "Zameczek, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.8789", "lon": "20.964" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0471455" }],
+      "link": "https://www.wikidata.org/wiki/Q8065771"
+    },
+    {
+      "id": "Q8067040",
+      "names": [
+        { "name": "Zaskwierki", "lang": "pl" },
+        { "name": "Zaskwierki, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7422", "lon": "20.1897" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0473709" }],
+      "link": "https://www.wikidata.org/wiki/Q8067040"
+    },
+    {
+      "id": "Q8067325",
+      "names": [
+        { "name": "Zawada", "lang": "pl" },
+        { "name": "Zawada, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.9033", "lon": "21.0531" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0471892" }],
+      "link": "https://www.wikidata.org/wiki/Q8067325"
+    },
+    {
+      "id": "Q8067385",
+      "names": [
+        { "name": "Zawady", "lang": "pl" },
+        { "name": "Zawady, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.6333", "lon": "20.2" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0484819" }],
+      "link": "https://www.wikidata.org/wiki/Q8067385"
+    },
+    {
+      "id": "Q8068032",
+      "names": [
+        { "name": "Zdrojek", "lang": "pl" },
+        { "name": "Zdrojek, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7309", "lon": "20.1604" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0473827" }],
+      "link": "https://www.wikidata.org/wiki/Q8068032"
+    },
+    {
+      "id": "Q8080419",
+      "names": [
+        { "name": "Łajsy", "lang": "pl" },
+        { "name": "Łajsy, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7257", "lon": "20.2719" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0473780" }],
+      "link": "https://www.wikidata.org/wiki/Q8080419"
+    },
+    {
+      "id": "Q8081044",
+      "names": [
+        { "name": "Łupstych", "lang": "pl" },
+        { "name": "Łupstych, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [
+        { "lat": "53.78156", "lon": "20.37337" },
+        { "lat": "53.78167", "lon": "20.37389" }
+      ],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "765711" },
+        { "database": "simc", "entity": "0473715" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q8081044"
+    },
+    {
+      "id": "Q82765",
+      "names": [
+        { "name": "Olsztyn", "lang": "de" },
+        { "name": "Olsztyn", "lang": "en" },
+        { "name": "Olsztyn", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.78", "lon": "20.494166666" }],
+      "types": [{ "name": "big city" }, { "name": "city" }, { "name": "city with powiat rights" }],
+      "sameas": [
+        { "database": "geonames", "entity": "763166" },
+        { "database": "gnd", "entity": "1008435-6" },
+        { "database": "teryt", "entity": "2862011" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q82765"
+    },
+    {
+      "id": "Q83395",
+      "names": [
+        { "name": "Olsztyn County", "lang": "en" },
+        { "name": "powiat olsztyński", "lang": "pl" },
+        { "name": "Powiat Olsztyński", "lang": "de" }
+      ],
+      "coordinates": [{ "lat": "53.783333333", "lon": "20.5" }],
+      "types": [{ "name": "powiat of Poland" }],
+      "sameas": [{ "database": "geonames", "entity": "6619358" }],
+      "link": "https://www.wikidata.org/wiki/Q83395"
+    },
+    {
+      "id": "Q8510794",
+      "names": [
+        { "name": "Cmentarz żydowski w Olsztynie", "lang": "pl" },
+        { "name": "Jewish cemetery in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7758", "lon": "20.4684" }],
+      "types": [{ "name": "cemetery" }],
+      "link": "https://www.wikidata.org/wiki/Q8510794"
+    },
+    {
+      "id": "Q8512587",
+      "names": [
+        { "name": "Cemetery in Olsztyn", "lang": "en" },
+        { "name": "Cmentarz Szpitala Mariackiego w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.770667", "lon": "20.476444" }],
+      "types": [{ "name": "cemetery" }, { "name": "park" }],
+      "link": "https://www.wikidata.org/wiki/Q8512587"
+    },
+    {
+      "id": "Q9144927",
+      "names": [
+        { "name": "Aleja Niepodległości w Olsztynie", "lang": "pl" },
+        { "name": "Niepodległości Street in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7708", "lon": "20.4809" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9144927"
+    },
+    {
+      "id": "Q9145004",
+      "names": [
+        { "name": "Aleja Warszawska w Olsztynie", "lang": "pl" },
+        { "name": "Warszawska Avenue in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7623", "lon": "20.4634" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9145004"
+    },
+    {
+      "id": "Q9145016",
+      "names": [
+        { "name": "Aleja Wojska Polskiego w Olsztynie", "lang": "pl" },
+        { "name": "Wojska Polskiego Avenue in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.8025", "lon": "20.4816" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9145016"
+    },
+    {
+      "id": "Q9147386",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Alfa Centrum Olsztyn", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7772", "lon": "20.4826" }],
+      "types": [{ "name": "shopping center" }],
+      "link": "https://www.wikidata.org/wiki/Q9147386"
+    },
+    {
+      "id": "Q9159454",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Areszt Śledczy Olsztyn", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7783", "lon": "20.4805" }],
+      "types": [{ "name": "Maison d'arrêt" }],
+      "link": "https://www.wikidata.org/wiki/Q9159454"
+    },
+    {
+      "id": "Q9181516",
+      "names": [
+        { "name": "1 Emilii Plater Street in Olsztyn", "lang": "en" },
+        { "name": "Budynek Rejencji w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7764", "lon": "20.4864" }],
+      "types": [{ "name": "building" }],
+      "link": "https://www.wikidata.org/wiki/Q9181516"
+    },
+    {
+      "id": "Q9186978",
+      "names": [
+        { "name": "Cerkiew Opieki Najświętszej Maryi Panny w Olsztynie", "lang": "pl" },
+        { "name": "Greek Catholic Church of the Pokrov in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7839", "lon": "20.5011" }],
+      "types": [{ "name": "Eastern Orthodox church" }],
+      "link": "https://www.wikidata.org/wiki/Q9186978"
+    },
+    {
+      "id": "Q9296588",
+      "names": [
+        { "name": "6 Mickiewicza Street in Olsztyn", "lang": "en" },
+        { "name": "I Liceum Ogólnokształcące im. Adama Mickiewicza w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [
+        { "lat": "53.779056", "lon": "20.485444" },
+        { "lat": "53.7792", "lon": "20.4856" }
+      ],
+      "types": [{ "name": "general education liceum" }],
+      "link": "https://www.wikidata.org/wiki/Q9296588"
+    },
+    {
+      "id": "Q9305163",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Redykajny (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.806756", "lon": "20.438433" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q9305163"
+    },
+    {
+      "id": "Q9324466",
+      "names": [
+        { "name": "Market Square in Olsztyn", "lang": "en" },
+        { "name": "Rynek Starego Miasta w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7837", "lon": "20.4998" }],
+      "types": [{ "name": "market square" }],
+      "link": "https://www.wikidata.org/wiki/Q9324466"
+    },
+    {
+      "id": "Q9341232",
+      "names": [
+        { "name": "Kazimierz Sikorski Stadium in Olsztyn", "lang": "en" },
+        { "name": "Stadion UWM w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.755", "lon": "20.457778" }],
+      "types": [{ "name": "stadium" }],
+      "link": "https://www.wikidata.org/wiki/Q9341232"
+    },
+    {
+      "id": "Q9341235",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Stadion Warmii Olsztyn", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.795556", "lon": "20.488611" }],
+      "types": [{ "name": "stadium" }],
+      "link": "https://www.wikidata.org/wiki/Q9341235"
+    },
+    {
+      "id": "Q9344302",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Stary Dwór (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.745797", "lon": "20.449997" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q9344302"
+    },
+    {
+      "id": "Q9344346",
+      "names": [
+        { "name": "Old Town Hall in Olsztyn", "lang": "en" },
+        { "name": "Stary Ratusz w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7765", "lon": "20.4759" }],
+      "types": [{ "name": "city hall" }],
+      "link": "https://www.wikidata.org/wiki/Q9344346"
+    },
+    {
+      "id": "Q9352166",
+      "names": [
+        { "name": "University Hospital in Olsztyn", "lang": "en" },
+        { "name": "Uniwersytecki Szpital Kliniczny w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7725", "lon": "20.4717" }],
+      "types": [{ "name": "hospital" }],
+      "link": "https://www.wikidata.org/wiki/Q9352166"
+    },
+    {
+      "id": "Q9353373",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Słoneczny Stok (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.750758", "lon": "20.447553" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q9353373"
+    },
+    {
+      "id": "Q9355646",
+      "names": [
+        { "name": "Rybny Square in Olsztyn", "lang": "en" },
+        { "name": "Targ Rybny (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7773", "lon": "20.4764" }],
+      "types": [{ "name": "square" }],
+      "link": "https://www.wikidata.org/wiki/Q9355646"
+    },
+    {
+      "id": "Q9360665",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Track", "lang": "de" },
+        { "name": "Track (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.796278", "lon": "20.537653" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q9360665"
+    },
+    {
+      "id": "Q9364930",
+      "names": [
+        { "name": "Bałtycka Street in Olsztyn", "lang": "en" },
+        { "name": "Ulica Bałtycka w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7976", "lon": "20.4279" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9364930"
+    },
+    {
+      "id": "Q9365088",
+      "names": [
+        { "name": "Dworcowa Street in Olsztyn", "lang": "en" },
+        { "name": "Ulica Dworcowa w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7737", "lon": "20.5017" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9365088"
+    },
+    {
+      "id": "Q9365221",
+      "names": [
+        { "name": "Grunwaldzka Street in Olsztyn", "lang": "en" },
+        { "name": "Ulica Grunwaldzka w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.776", "lon": "20.4696" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9365221"
+    },
+    {
+      "id": "Q9365303",
+      "names": [
+        { "name": "Jagiellońska Street in Olsztyn", "lang": "en" },
+        { "name": "Ulica Jagiellońska w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.800842", "lon": "20.503936" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9365303"
+    },
+    {
+      "id": "Q9365585",
+      "names": [
+        { "name": "Lubelska Street in Olsztyn", "lang": "en" },
+        { "name": "Ulica Lubelska", "lang": "de" },
+        { "name": "Ulica Lubelska w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7864", "lon": "20.5298" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9365585"
+    },
+    {
+      "id": "Q9365628",
+      "names": [
+        { "name": "Mochnackiego Street in Olsztyn", "lang": "en" },
+        { "name": "Ulica Maurycego Mochnackiego w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.773296", "lon": "20.475657" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9365628"
+    },
+    {
+      "id": "Q9365774",
+      "names": [
+        { "name": "Partyzantów Street in Olsztyn", "lang": "en" },
+        { "name": "Ulica Partyzantów w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7828", "lon": "20.4886" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9365774"
+    },
+    {
+      "id": "Q9365934",
+      "names": [
+        { "name": "Pieniężnego Street in Olsztyn", "lang": "en" },
+        { "name": "Ulica Seweryna Pieniężnego w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.775833", "lon": "20.478947" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9365934"
+    },
+    {
+      "id": "Q9365936",
+      "names": [
+        { "name": "Sielska Street in Olsztyn", "lang": "en" },
+        { "name": "Ulica Sielska w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.769732", "lon": "20.42341" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9365936"
+    },
+    {
+      "id": "Q9366075",
+      "names": [
+        { "name": "Kościuszki Street in Olsztyn", "lang": "en" },
+        { "name": "Ulica Tadeusza Kościuszki w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.77719", "lon": "20.48841" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9366075"
+    },
+    {
+      "id": "Q9366209",
+      "names": [
+        { "name": "Kętrzyńskiego Street in Olsztyn", "lang": "en" },
+        { "name": "Ulica Wojciecha Kętrzyńskiego w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.782042", "lon": "20.495678" }],
+      "types": [{ "name": "street" }],
+      "link": "https://www.wikidata.org/wiki/Q9366209"
+    },
+    {
+      "id": "Q9377096",
+      "names": [
+        { "name": "Öffentliche Wojewodschaftsbibliothek in Allenstein", "lang": "de" },
+        { "name": "The Provincial Public Library in Olsztyn", "lang": "en" },
+        {
+          "name": "Wojewódzka Biblioteka Publiczna im. Emilii Sukertowej-Biedrawiny w Olsztynie",
+          "lang": "pl"
+        }
+      ],
+      "coordinates": [{ "lat": "53.781728", "lon": "20.480019" }],
+      "types": [{ "name": "public library" }],
+      "sameas": [{ "database": "gnd", "entity": "5138119-9" }],
+      "link": "https://www.wikidata.org/wiki/Q9377096"
+    },
+    {
+      "id": "Q9379445",
+      "names": [
+        {
+          "name": "Faculty of Geodesy and Land Management of the University of Warmia and Mazury in Olsztyn",
+          "lang": "en"
+        },
+        {
+          "name": "Wydział Geodezji i Gospodarki Przestrzennej Uniwersytetu Warmińsko-Mazurskiego",
+          "lang": "pl"
+        }
+      ],
+      "coordinates": [{ "lat": "53.7603", "lon": "20.4608" }],
+      "types": [{ "name": "academic institution" }, { "name": "faculty" }],
+      "link": "https://www.wikidata.org/wiki/Q9379445"
+    },
+    {
+      "id": "Q9380768",
+      "names": [
+        { "name": "University of Computer Sciences and Economics in Olsztyn", "lang": "en" },
+        { "name": "Wyższa Szkoła Informatyki i Ekonomii TWP w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.7943", "lon": "20.496" }],
+      "types": [{ "name": "educational institution" }, { "name": "private university" }],
+      "link": "https://www.wikidata.org/wiki/Q9380768"
+    },
+    {
+      "id": "Q9381224",
+      "names": [
+        { "name": "Wólka", "lang": "pl" },
+        { "name": "Wólka, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.9439", "lon": "21.035" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0478345" }],
+      "link": "https://www.wikidata.org/wiki/Q9381224"
+    },
+    {
+      "id": "Q9386171",
+      "names": [
+        { "name": "Zakład Elektronicznej Techniki Obliczeniowej w Olsztynie", "lang": "pl" },
+        { "name": "ZETO Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7774", "lon": "20.4794" }],
+      "types": [{ "name": "commercial organization" }],
+      "link": "https://www.wikidata.org/wiki/Q9386171"
+    },
+    {
+      "id": "Q9386527",
+      "names": [
+        { "name": "Burg Allenstein", "lang": "de" },
+        { "name": "Castle of Warmian Bishops in Olsztyn", "lang": "en" },
+        { "name": "Zamek Kapituły Warmińskiej w Olsztynie", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.77768", "lon": "20.474267" }],
+      "types": [{ "name": "castle" }],
+      "sameas": [{ "database": "gnd", "entity": "4538026-0" }],
+      "link": "https://www.wikidata.org/wiki/Q9386527"
+    },
+    {
+      "id": "Q9386695",
+      "names": [
+        { "name": "Olsztyn Castle", "lang": "en" },
+        { "name": "Zamek w Olsztynie (województwo śląskie)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "50.7497", "lon": "19.2741" }],
+      "types": [{ "name": "castle" }],
+      "link": "https://www.wikidata.org/wiki/Q9386695"
+    },
+    {
+      "id": "Q9387456",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Zatorze (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.788267", "lon": "20.488128" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q9387456"
+    },
+    {
+      "id": "Q9394080",
+      "names": [
+        { "name": "Ławeczka Mikołaja Kopernika w Olsztynie", "lang": "pl" },
+        { "name": "Nicolaus Copernicus Bench in Olsztyn", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.7772", "lon": "20.4753" }],
+      "types": [{ "name": "bench with statue" }],
+      "link": "https://www.wikidata.org/wiki/Q9394080"
+    },
+    {
+      "id": "Q9394848",
+      "names": [
+        { "name": "", "lang": "en" },
+        { "name": "Łupstych (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.783739", "lon": "20.371914" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q9394848"
+    },
+    {
+      "id": "Q9395921",
+      "names": [
+        { "name": "Śródmieście", "lang": "en" },
+        { "name": "Śródmieście (Olsztyn)", "lang": "pl" }
+      ],
+      "coordinates": [{ "lat": "53.778453", "lon": "20.480189" }],
+      "types": [{ "name": "quarter" }],
+      "link": "https://www.wikidata.org/wiki/Q9395921"
+    },
+    {
+      "id": "Q950518",
+      "names": [
+        { "name": "Nowa Wieś", "lang": "de" },
+        { "name": "Nowa Wieś", "lang": "pl" },
+        { "name": "Nowa Wieś, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.65055556", "lon": "20.61027778" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [
+        { "database": "geonames", "entity": "763704" },
+        { "database": "simc", "entity": "0486675" }
+      ],
+      "link": "https://www.wikidata.org/wiki/Q950518"
+    },
+    {
+      "id": "Q980469",
+      "names": [
+        { "name": "Owczarnia", "lang": "pl" },
+        { "name": "Owczarnia, Olsztyn County", "lang": "en" }
+      ],
+      "coordinates": [{ "lat": "53.725", "lon": "20.49111111" }],
+      "types": [{ "name": "village of Poland" }],
+      "sameas": [{ "database": "simc", "entity": "0488846" }],
+      "link": "https://www.wikidata.org/wiki/Q980469"
     }
   ],
   "prng": [
@@ -6413,14 +10631,7 @@
       "lon": "20.7735880290001"
     }
   ],
-  "naszekaszuby": [
-    {
-      "polish name": "Kartuzy",
-      "kashubian name": "Kartuze, Kartuzë, Kartëzë",
-      "powiat": "KA",
-      "idx": 495
-    }
-  ],
+  "naszekaszuby": [],
   "carpathorusyn": [
     {
       "refnum": " ",

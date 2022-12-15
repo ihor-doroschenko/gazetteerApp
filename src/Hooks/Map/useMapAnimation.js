@@ -3,7 +3,8 @@ import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { getIsSearch, getIsSideSwitched } from 'selectors/simple-selectors/nav-selectors';
 import {
-  getResultsBlockRightWidth,
+  getAdditionalResultsBottomWidth,
+  getResultsWidth,
   getSearchWidth,
   getTableStateExpanded,
 } from 'selectors/simple-selectors/table-state-selectors';
@@ -13,17 +14,16 @@ import {
 export const useMapAnimation = (isAnimation, setIsAnimation) => {
   const { isCompareHidden, isMatchingTableHidden, isResultsHidden } =
     useHiddenValuesForAllResultWindows();
-  const resultsWidth = useSelector(getResultsBlockRightWidth);
+  const resultsSideWidth = useSelector(getResultsWidth);
   const tableStateExpanded = useSelector(getTableStateExpanded);
   const isSearch = useSelector(getIsSearch);
   const searchWidth = useSelector(getSearchWidth);
   const isSwitched = useSelector(getIsSideSwitched);
+  const additionalResultsBottomWidth = useSelector(getAdditionalResultsBottomWidth);
 
   useEffect(() => {
     if (!isAnimation) {
-      if (isSwitched) {
-        setIsAnimation(true);
-      }
+      setIsAnimation(true);
     }
   }, [isCompareHidden, isMatchingTableHidden, isResultsHidden, isSearch, isSwitched]);
 
@@ -31,7 +31,7 @@ export const useMapAnimation = (isAnimation, setIsAnimation) => {
     if (isAnimation) {
       setIsAnimation(false);
     }
-  }, [tableStateExpanded, resultsWidth]);
+  }, [tableStateExpanded, resultsSideWidth, additionalResultsBottomWidth]);
 
   // useEffect for setting isAnimation to false to prevent animation on search window resize and simultaneously to allow further animation effects immediately
 

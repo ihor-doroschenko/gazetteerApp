@@ -1,6 +1,14 @@
 import { convertArrayItemsToNumbers } from 'utils/Converting/convertArrayItemsToNumbers';
 
-// In some gazetteers the attribute names can be in German
+// Normalize the PRNG gazetteer.
+// Renaming `main name` attribute to `name` attribute.
+// Renaming `object type` attribute to `type` attribute.
+// Renaming `lat normalized` attribute to `lat` attribute.
+// Renaming `lon normalized` attribute to `lng` attribute.
+// Renaming `lat` attribute to `geograph_lat` attribute.
+// Renaming `lon` attribute to `geograph_lng` attribute.
+// Coercing value of `id` attribute to string data type.
+// Combining the attributes `lat` and `lng` into one attribute `position`. Coercing the coordinates to float number data type.
 
 export const normalizePRNG = database => {
   return database

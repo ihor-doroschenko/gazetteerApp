@@ -1,8 +1,16 @@
+// Textes for all tooltips in the app
+
 export const TooltipTextes = {
   //// Allgemein
 
   // InfoHelp
-  tt_go_to_InfoHelp: { en: 'Click to go to the info/text area', de: '' },
+  tt_go_to_InfoHelp: { en: 'Click to go to the info/help area', de: '' },
+
+  // Impressum
+  tt_go_to_Impressum: {
+    en: 'Click to go to information about legal notice and privacy policy',
+    de: '',
+  },
 
   // FAQ
   tt_go_to_faq: { en: 'Click to go to FAQ', de: '' },
@@ -29,7 +37,7 @@ export const TooltipTextes = {
   },
 
   tt_search_bounding_box: {
-    en: 'Search for a place name in a specific geographic area (via a boundingbox)',
+    en: 'Search for a place name in a specific geographic area (via a bounding box)',
     de: '',
   },
 
@@ -56,9 +64,9 @@ export const TooltipTextes = {
   tt_options_search_type: {
     en: `<div class='optionTooltips'>
 <div><b>Select search type (required):</b></div>
-<div><b>Original search:</b> Use the specific default name search behavior of each gazetteer</div>
-<div><b>Match whole name:</b> Search string must match an entity's name (e.g.: search for 'Wrocław' does not match 'Wrocław-Bartoszewice')</div>
 <div><b>Match word in name:</b> Search string must match a word in an entity's name (e.g.: search for 'Wrocław' does also match 'Wrocław-Bartoszewice')</div>
+<div><b>Match whole name:</b> Search string must match an entity's name (e.g.: search for 'Wrocław' does not match 'Wrocław-Bartoszewice')</div>
+<div><b>Original search:</b> Use the specific default name search behavior of each gazetteer</div>
 </div>`,
     de: '',
   },
@@ -122,7 +130,7 @@ export const TooltipTextes = {
 
   tt_gnd: {
     en: `<div class='gazTooltips'><div><b>GND Geografika</b></div>
-<div>German Authority File</div>
+<div>Integrated Authority File of German-speaking institutions</div>
 <div>Coverage: basically global, currently sparse, growing</div>
 <div>Gazapp data access: via GND Web Service</div></div>`,
     de: '',
@@ -162,7 +170,7 @@ export const TooltipTextes = {
 
   tt_histonamen: {
     en: `<div class='gazTooltips'><div><b>BKG Historische Ortsnamen</b></div>
-<div>Gazetteer by the Bundesamt für Kartographie und Geodäsie</div>
+<div>Gazetteer by the Bundesamt für Kartographie und Geodäsie (Germany) </div>
 <div>Coverage: mainly East-Central Europe; with historical names</div>
 <div>Data creation: Bundesamt für Kartographie und Geodäsie (BKG)</div>
 <div>Gazapp data access: Gazapp database (dump)</div></div>`,
@@ -227,8 +235,8 @@ export const TooltipTextes = {
     de: '',
   },
 
-  // Export CSV
-  tt_export_csv: { en: 'Click to export as csv', de: '' },
+  // Export
+  tt_export: { en: 'Click to export', de: '' },
 
   // Clear filter
   tt_clear_filter: { en: 'Click to clear the filter', de: '' },
@@ -280,6 +288,9 @@ export const TooltipTextes = {
 
   // Matchings switcher off
   tt_matchings_switcher_off: { en: 'Click to hide matchings table', de: '' },
+
+  // Additional matchings entities in results
+  tt_matched_entities: { en: 'Additional matched entities', de: '' },
 
   //// Tabellen (vertikale Ansicht)
 

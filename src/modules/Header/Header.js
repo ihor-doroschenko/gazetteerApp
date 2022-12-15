@@ -1,17 +1,19 @@
 import React from 'react';
 import HeaderClasses from './Header.module.css';
 import Headline from './Headline/Headline';
-import Icons from './Icons/Icons';
-import InfoHelp from './InfoHelp/InfoHelp';
+import Info from './Info/Info';
+import Logos from './Logos/Logos';
 
-const Headerabove = () => {
+// Wrapper component to contain three elements of the header of the app: icons wrapper, headline, and info wrapper
+
+const Header = () => {
   return (
     <nav className={HeaderClasses.header}>
-      <Icons />
+      <Logos />
       <Headline />
-      <InfoHelp />
+      <Info />
     </nav>
   );
 };
 
-export default Headerabove;
+export default Header;

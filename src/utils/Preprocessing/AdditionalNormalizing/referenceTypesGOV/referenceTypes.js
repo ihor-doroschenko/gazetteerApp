@@ -2,6 +2,8 @@ import { getGOVTypes } from 'constants/getGOVTypes';
 import { isObject } from '../../../validators/ValidateDataTypes/validateObject';
 import { referenceTypesEntity } from './referenceTypesEntity';
 
+// Wrapper to reference types of GOV-entities (for both saved as arrays and objects)
+
 export const referenceTypes = types => {
   const GOVtypes = getGOVTypes();
   if (GOVtypes) {

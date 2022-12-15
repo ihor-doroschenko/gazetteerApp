@@ -1,11 +1,11 @@
 import { useSelector } from 'react-redux';
-import { getActualBottomContainerHeight } from 'selectors/simple-selectors/map-interaction-selectors';
 import { getIsSideSwitched } from 'selectors/simple-selectors/nav-selectors';
+import { getResultsBottomHeight } from 'selectors/simple-selectors/table-state-selectors';
 
 // Hook to control map height
 
 export const useMapHeight = () => {
   const isSideSwitched = useSelector(getIsSideSwitched);
-  const actualBottomContainerHeight = useSelector(getActualBottomContainerHeight);
-  return isSideSwitched ? `calc(100% - ${actualBottomContainerHeight}px)` : '100%';
+  const resultsBottomHeight = useSelector(getResultsBottomHeight);
+  return isSideSwitched ? `calc(100% - ${resultsBottomHeight}px)` : '100%';
 };

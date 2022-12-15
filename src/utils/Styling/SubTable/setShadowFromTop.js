@@ -1,3 +1,5 @@
+// Get box-shadow value for subtable of the results table and details view
+
 export const setShadowFromTop = () => {
   return {
     style: {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { getIsSideSwitched } from 'selectors/simple-selectors/nav-selectors';
-import { getFirstAndLastPages } from 'utils/Helpers/TabHelpers/getFirstAndLastPages';
+import { getFirstIndexesOfCurrentAndNextPages } from 'utils/Helpers/TabHelpers/getFirstIndexesOfCurrentAndNextPages';
 import { getWidthOfTabs } from 'utils/Helpers/TabHelpers/getWidthOfTabs';
 //TODO
 export function useTabs(detailsFiltered, elementWidth) {
@@ -47,15 +47,18 @@ export function useTabs(detailsFiltered, elementWidth) {
     changePageParametersOnResizing();
   }, [elementWidth, isSideSwitched]);
 
-  const [indexOfFirstTodo, indexOfLastTodo] = getFirstAndLastPages(currentPage, tabsPerPage);
+  const [firstIndexOfCurrentTab, firstIndexOfNextTab] = getFirstIndexesOfCurrentAndNextPages(
+    currentPage,
+    tabsPerPage
+  );
   return {
     detailsFiltered,
     currentPageLength,
     currentPage,
     tabsPerPage,
     pages,
-    indexOfFirstTodo,
-    indexOfLastTodo,
+    firstIndexOfCurrentTab,
+    firstIndexOfNextTab,
     setCurrentPage,
   };
 }

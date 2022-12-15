@@ -7,11 +7,11 @@ const instanceAxios = axios.create({
 
 export const resultsAPI = {
   // Request to get main search results with method getMainResults of GET-type with 4 required parameters (gaz, name, resultschema, namesearchmode) and 6 optional parameters (north, south, west, east, settlement, matchings).
-  getMainResults(gazetteer, searchText, coordinates, searchType, matchings, settlement) {
+  getMainResults(gazetteer, placeName, coordinates, searchType, matchings, settlement) {
     return instanceAxios.get('fcts.php', {
       params: {
         gaz: gazetteer,
-        name: searchText,
+        name: placeName,
         resultschema: 'org',
         namesearchmode: searchType,
         ...(coordinates.length !== 0 ? { north: coordinates[0] } : {}),

@@ -1,5 +1,7 @@
 import { validateLocations } from '../validators/PropertyValidators/validateLocations';
 
+// Filter entities of a gazetteer that have valid coordinates
+
 export const filterEntitiesWithCoordinates = entries => {
   const entitiesWithCoordinates = [];
   Object.entries(entries).forEach(([key, value]) => {

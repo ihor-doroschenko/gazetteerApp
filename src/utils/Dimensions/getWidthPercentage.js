@@ -6,7 +6,7 @@ import {
 import {
   getCompareWidth,
   getMatchingsWidth,
-  getResultsBlockRightWidth,
+  getResultsWidth,
   getWindowDimensions,
 } from 'selectors/simple-selectors/table-state-selectors';
 
@@ -19,12 +19,16 @@ export const getWidthPercentages = getState => {
   const isResultsHidden = getIsResultsHidden(getState());
   const isMatchingTableHidden = getIsMatchingTableHidden(getState());
   const isCompareHidden = getIsCompareHidden(getState());
-  const resultsWidth = getResultsBlockRightWidth(getState());
-  const matchingsWidth = getMatchingsWidth(getState());
-  const compareWidth = getCompareWidth(getState());
-  const widthResultsPercentage = getWidthPercentage(isResultsHidden, resultsWidth, width);
-  const widthMatchingsPercentage = getWidthPercentage(isMatchingTableHidden, matchingsWidth, width);
-  const widthComparePercentage = getWidthPercentage(isCompareHidden, compareWidth, width);
+  const resultsSideWidth = getResultsWidth(getState());
+  const matchingsSideWidth = getMatchingsWidth(getState());
+  const compareSideWidth = getCompareWidth(getState());
+  const widthResultsPercentage = getWidthPercentage(isResultsHidden, resultsSideWidth, width);
+  const widthMatchingsPercentage = getWidthPercentage(
+    isMatchingTableHidden,
+    matchingsSideWidth,
+    width
+  );
+  const widthComparePercentage = getWidthPercentage(isCompareHidden, compareSideWidth, width);
 
   return { widthResultsPercentage, widthMatchingsPercentage, widthComparePercentage };
 };
