@@ -2,8 +2,8 @@
 
 export const getDifferenceArraysOfObjects = (array1, array2, prop = false) => {
   return array1.filter(
-    ({ details: detail1 }) =>
-      !array2.some(({ details: detail2 }) => {
+    ({ detail: detail1 }) =>
+      !array2.some(({ detail: detail2 }) => {
         return prop ? detail1[prop] === detail2[prop] : detail1 === detail2;
       })
   );

@@ -1,26 +1,25 @@
-import { checkSeparateEntities } from 'utils/validators/checkSeparateEntities';
-import { getUsedGazetteerWithoutSeparateEntries } from './getUsedGazetteerWithoutSeparateEntries';
-import { getUsedGazetteerWithSeparateEntries } from './getUsedGazetteerWithSeparateEntries';
+import { getUsedGazetteerWithExternEntities } from './getUsedGazetteerWithExternEntities';
+import { getUsedGazetteerWithoutExternEntities } from './getUsedGazetteerWithoutExternEntities';
 
 // Wrapper function to get head for gazetteers originally requested in the search
 
 export const getHeadForUsedGazetteers = ({
   text,
-  startEntries,
+  startEntities,
   gazName,
   externEntities,
   matchingsLength,
 }) => {
-  const resultsLength = startEntries[gazName] ? startEntries[gazName].length : 0;
-  const separateEntriesGazetteer = checkSeparateEntities(externEntities) && externEntities[gazName];
-  if (separateEntriesGazetteer) {
-    return getUsedGazetteerWithSeparateEntries(
+  const resultsLength = startEntities[gazName] ? startEntities[gazName].length : 0;
+  const externEntitiesGazetteer = externEntities[gazName];
+  if (externEntitiesGazetteer) {
+    return getUsedGazetteerWithExternEntities(
       text,
       resultsLength,
-      separateEntriesGazetteer,
+      externEntitiesGazetteer,
       matchingsLength
     );
   } else {
-    return getUsedGazetteerWithoutSeparateEntries(text, resultsLength, matchingsLength);
+    return getUsedGazetteerWithoutExternEntities(text, resultsLength, matchingsLength);
   }
 };

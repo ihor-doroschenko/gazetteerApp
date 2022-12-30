@@ -22,8 +22,14 @@ const SearchResizingContainer = props => {
   const isSatellite = useSelector(getIsSatellite);
   const isSearch = useSelector(getIsSearch);
   const { resized } = useSearchBottomDimensions();
-  const { searchWidth, setSearchWidth, searchHeight, searchMinWidth, searchMaxWidth } =
-    useSearchDimensions();
+  const {
+    searchWidth,
+    sideSearchHeight,
+    setSearchWidth,
+    searchHeight,
+    searchMinWidth,
+    searchMaxWidth,
+  } = useSearchDimensions();
   return (
     <ResizableBox
       onResize={(e, data) => {
@@ -32,7 +38,7 @@ const SearchResizingContainer = props => {
       }}
       resizeHandles={['e']}
       width={searchWidth}
-      height={isSideSwitched ? searchHeight : Infinity}
+      height={isSideSwitched ? searchHeight : sideSearchHeight}
       minConstraints={[searchMinWidth, Infinity]}
       maxConstraints={[searchMaxWidth, Infinity]}
       style={{ marginLeft: !isSearch && `-${searchWidth}px` }}

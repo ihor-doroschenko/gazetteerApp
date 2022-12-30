@@ -7,7 +7,7 @@ const Error = ({ text, item }) => {
   return (
     <div className={ErrorClasses.error}>
       <p>
-        {text} for {item}
+        Error occured {text} for {item} while requesting data
       </p>
     </div>
   );

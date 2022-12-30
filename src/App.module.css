@@ -1,0 +1,9 @@
+.appWrapper {
+  height: 100vh;
+  font-family: 'CustomFont', Arial, sans-serif !important;
+  font-size: 13px !important;
+  line-height: initial !important;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 5% 95%;
+}

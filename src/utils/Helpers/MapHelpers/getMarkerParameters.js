@@ -1,14 +1,14 @@
-import { IsGazetteerInUsedGazetteers } from 'utils/validators/IsGazetteerInUsedGazetteers';
+import { isGazetteerInUsedGazetteers } from 'utils/validators/isGazetteerInUsedGazetteers';
 
 // Get parameters for marker geo-validation function
 
 export const getMarkerParameters = ({ usedGazetteers, gazName, entities, externEntities }) => {
-  const isUsedGazetteer = IsGazetteerInUsedGazetteers(usedGazetteers, gazName);
+  const isUsedGazetteer = isGazetteerInUsedGazetteers(usedGazetteers, gazName);
   return isUsedGazetteer
     ? {
-        [gazName]: entities[gazName],
+        [gazName]: entities,
       }
     : {
-        [gazName]: externEntities[gazName],
+        [gazName]: externEntities,
       };
 };

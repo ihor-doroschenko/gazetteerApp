@@ -1,6 +1,6 @@
-// Get name (place name) to form name of the file to export
-
 import { removeDiacritics } from './removeDiacritics';
+
+// Get name (place name) to form name of the file to export
 
 export const getNameForExport = name => {
   const withoutDiacritica = removeDiacritics(name);

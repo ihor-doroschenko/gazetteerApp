@@ -18,6 +18,7 @@ const MainMap = ({ actualWidth }) => {
   const dispatch = useDispatch();
   const mapRef = React.createRef();
   useMainMap(mapRef, actualWidth);
+
   return (
     <Map
       ref={mapRef}

@@ -25,7 +25,6 @@ export const normalizeGND = database => {
             position: position,
             name,
             link,
-            id,
             ...other,
           };
         } else {
@@ -33,12 +32,11 @@ export const normalizeGND = database => {
             id,
             name,
             link,
-            id,
             ...other,
           };
         }
       } else {
-        return { id, name, link, id, ...rest };
+        return { id, name, link, ...rest };
       }
     });
 };

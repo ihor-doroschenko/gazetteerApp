@@ -10,10 +10,10 @@
 .toogleHover:hover {
   color: blue;
 }
-.standardGOVBild {
+.standardGOVgraph {
   text-align: center;
 }
-.standardGOVBild > img {
+.standardGOVgraph > img {
   max-width: 100%;
   max-height: 100px;
   cursor: pointer;
@@ -48,4 +48,8 @@
 .dialog > div:last-child,
 .dialog > div:first-child {
   padding: 5px;
+}
+.graphEnlarged {
+  display: flex;
+  justify-content: center;
 }

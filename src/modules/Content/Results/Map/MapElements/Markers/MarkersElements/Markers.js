@@ -19,7 +19,6 @@ const Markers = props => {
   const isMouseOverElementInfinite = areIdAndGazNameEqual(id, gazName, mouseOverElementInfinite);
   return (
     <Marker
-      key={`${id}_${gazName}_marker`}
       position={position}
       icon={divIcon({
         iconSize: [30, 30],

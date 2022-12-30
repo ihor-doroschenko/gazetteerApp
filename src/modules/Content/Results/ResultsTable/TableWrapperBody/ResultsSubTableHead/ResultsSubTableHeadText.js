@@ -16,7 +16,7 @@ const ResultsSubTableHeadText = ({ original }) => {
   return (
     <>
       {mainText && (
-        <p className={ResultsSubTableHeadClasses.wrapper}>
+        <div className={ResultsSubTableHeadClasses.wrapper}>
           {mainText} &nbsp;
           {resLength && (
             <span style={{ color: onlyMatchedResults && 'rgba(0,0,0,0.3)' }}>{resLength}</span>
@@ -35,7 +35,7 @@ const ResultsSubTableHeadText = ({ original }) => {
               }
             />
           )}
-        </p>
+        </div>
       )}
     </>
   );

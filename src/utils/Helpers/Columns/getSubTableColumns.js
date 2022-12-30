@@ -11,7 +11,7 @@ import ColumnsClasses from './Columns.module.css';
 
 // Get columns for subtables
 
-export const getSubTableColumns = (entries, gazName) => {
+export const getSubTableColumns = (entities, gazName) => {
   return [
     // Column without header to contain markers with intern ids
     {
@@ -80,11 +80,17 @@ export const getSubTableColumns = (entries, gazName) => {
     {
       Header: '',
       accessor: 'addToDetails',
-      Cell: props => (
-        <div onClick={e => e.stopPropagation()}>
-          <CompareTool id={props.original.id} gazName={gazName} />
-        </div>
-      ),
+      Cell: props => {
+        return (
+          <>
+            {!props.original.hasOwnProperty('error') && (
+              <div onClick={e => e.stopPropagation()}>
+                <CompareTool id={props.original.id} gazName={gazName} />
+              </div>
+            )}
+          </>
+        );
+      },
       filterable: true,
       sortable: false,
       width: 48,
@@ -93,10 +99,10 @@ export const getSubTableColumns = (entries, gazName) => {
       Filter: () => (
         <div className={ColumnsClasses.exportWrapper}>
           <ExportContainer
-            entries={entries}
-            jsonEntries={entries}
+            entities={entities}
+            jsonEntries={entities}
             headers={getHeadersForSubTableExport()}
-            filename={`entries-from-${gazName}-exported`}
+            filename={`entities-from-${gazName}-exported`}
             gazName={gazName}
           />
         </div>

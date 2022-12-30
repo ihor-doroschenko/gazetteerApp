@@ -11,8 +11,6 @@ import { areAllResultWidthsBiggerThatFreeSpace } from 'utils/Dimensions/areAllRe
 import { handleDimensionsAutomatically } from 'utils/Dimensions/handleDimensionsAutomatically';
 import { switchSearchIsShown } from './nav-reducer';
 
-// TODO: side view, bottom view, but not results or compare view - results and compare table!
-// TODO: search area better than search block or search window
 // Constants for actions names written using the rule of the redux-ducks - reducer/actions
 // Set state of whether the subtable of respective gazetteer is collapsed or expanded
 const SET_STATE_OF_EXPANDED_OF_A_GAZETTEER =

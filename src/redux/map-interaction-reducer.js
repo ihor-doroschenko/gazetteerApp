@@ -3,7 +3,6 @@
 import { getInitialZoom } from 'selectors/simple-selectors/map-interaction-selectors';
 import { getIsResultsHidden } from 'selectors/simple-selectors/nav-selectors';
 import { getTableStateExpanded } from 'selectors/simple-selectors/table-state-selectors';
-import { checkIfPropertyIsFalse } from 'utils/validators/PropertyValidators/checkIfPropertyIsFalse';
 import { validateLocations } from 'utils/validators/PropertyValidators/validateLocations';
 import { setDetailsStatusesOfGazetteerToPassive } from './details-reducer';
 import { switchResultsHidden } from './nav-reducer';
@@ -151,7 +150,7 @@ export const handleMouseClick = element => (dispatch, getState) => {
   }
   dispatch(setDetailsStatusesOfGazetteerToPassive(gazName));
   const tableStateExpanded = getTableStateExpanded(getState());
-  if (checkIfPropertyIsFalse(tableStateExpanded[gazName])) {
+  if (tableStateExpanded[gazName] === false) {
     dispatch(setStateOfExpandedOfAGazetteer(gazName, true));
   }
   dispatch(mouseClickMarker(element));

@@ -1,6 +1,6 @@
-// Get all possible values for filter to filter matchings in the matching view
-
 import { getDefaultValueForMatchingsFilter } from 'constants/getDefaultValueForMatchingsFilter';
+
+// Get all possible values for filter to filter matchings in the matchings table
 
 export const getGazetteerFilterValues = values => {
   const obj = getDefaultValueForMatchingsFilter();

@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import ReactTable from 'react-table-6';
 import 'react-table-6/react-table.css';
 import { getCombinedFilteredEntities } from 'selectors/reselectors/getCombinedFilteredEntities';
-import { getSelectedEntries } from 'selectors/reselectors/simple-reselectors';
+import { getSelectedEntities } from 'selectors/reselectors/simple-reselectors';
 import {
   getMouseClickedElement,
   getMouseOverElement,
@@ -25,20 +25,20 @@ import { markSortableColumns } from 'utils/Styling/SubTable/markSortableColumns'
 import { setShadowFromTop } from 'utils/Styling/SubTable/setShadowFromTop';
 import SubTableClasses from './SubTable.module.css';
 
+// Wrapper component to contain subtable for gazetteer-specific results (one subtable for one gazetteer). It is based on a table element from react-tables (v6). This wrapper provides such additional functionalities for this table as interaction with the map, filtering, sorting, conditional styling, and autoscrolling
+
 const SubTable = ({ gazName, columns }) => {
   const customRef = useRef();
   const isSideSwitched = useSelector(getIsSideSwitched);
   const mouseOverElement = useSelector(getMouseOverElement);
   const mouseOverElementInfinite = useSelector(getMouseOverElementInfinite);
   const mouseClickedElement = useSelector(getMouseClickedElement);
-  const entries = useSelector(state => getSelectedEntries(state, gazName));
-  const filterEntries = useSelector(state => getCombinedFilteredEntities(state, gazName));
+  const entities = useSelector(state => getSelectedEntities(state, gazName));
+  const filteredEntities = useSelector(state => getCombinedFilteredEntities(state, gazName));
   const filterValues = useSubTableFilter(gazName);
   const subTableEventHandlers = useSubTableEventHandlers();
-  const length = getCurrentEntitiesLength(filterEntries, entries, filterValues);
-
+  const length = getCurrentEntitiesLength(filteredEntities, entities, filterValues);
   useAutoscroll(customRef, mouseClickedElement);
-
   return (
     <div
       className={classNames(SubTableClasses.subTableWrapper, 'shadowInResultsTable', {
@@ -48,7 +48,7 @@ const SubTable = ({ gazName, columns }) => {
       <ReactTable
         ref={customRef}
         columns={columns}
-        data={entries}
+        data={entities}
         pageSize={length}
         minRows={getMinRows(isSideSwitched, length)}
         filtered={filterValues}
@@ -56,9 +56,11 @@ const SubTable = ({ gazName, columns }) => {
         showPagination={false}
         filterable
         className={classNames('-striped -highlight', SubTableClasses.subTable)}
-        noDataText='No entries found'
+        noDataText='No entities found'
         defaultFilterMethod={(filter, row) => filterEntities(filter, row, gazName)}
-        getTbodyProps={el => changeOverflow(isSideSwitched, entries, filterEntries, filterValues)}
+        getTbodyProps={el =>
+          changeOverflow(isSideSwitched, entities, filteredEntities, filterValues)
+        }
         getTheadFilterProps={el => setShadowFromTop()}
         getTrGroupProps={(row, rowInfo) =>
           getMousedColorForRow({ rowInfo, gazName, mouseOverElementInfinite, mouseOverElement })

@@ -1,5 +1,6 @@
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import TooltipContainer from 'components/Tooltip/TooltipContainer';
+import { withReactMemo } from 'HOCs/withReactMemo';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { setInitialZoomContainer } from 'redux/map-interaction-reducer';
@@ -23,4 +24,4 @@ const InitialZoomTool = () => {
   );
 };
 
-export default InitialZoomTool;
+export default withReactMemo(InitialZoomTool);

@@ -1,41 +1,20 @@
-// Selector to get all gazetteers available in the app
-export const getGazetteers = state => {
-  return state.search.gazetteers;
-};
-
-// Selector to get whether option to receive results only related to the settlements is enabled
-export const getOnlySettlements = state => {
-  return state.search.onlySettlements;
-};
-
 // Selector to get search type
-export const getSearchType = state => {
-  return state.search.searchType;
-};
+export const getSearchType = state => state.search.searchType;
 
 // Selector to get coordinatess of the bounding box
-export const getSearchCoordinates = state => {
-  return state.search.coordinates;
-};
+export const getSearchCoordinates = state => state.search.coordinates;
 
 // Selector to pass draw tool globally
-export const getDraw = state => {
-  return state.search.draw;
-};
+export const getDraw = state => state.search.draw;
 
-// Selector to get current matching value (disabled ot enabled) from the input form in the search window
-export const getIsMatchingEnabled = state => {
-  return state.search.isMatchingEnabled;
-};
+// Selector to get whether option to receive results only related to the settlements is enabled
+export const getOnlySettlements = state => state.search.onlySettlements;
 
 // Selector to get search textes used previously in current app session
-export const getPreviousSearchedPlaceNames = state => {
-  return state.search.previousSearchedPlaceNames;
-};
+export const getPreviousSearchedPlaceNames = state => state.search.previousSearchedPlaceNames;
 
-// Selector to get actual search text
-export const getSearchText = state => {
-  return state.search.placeName;
-};
+// Selector to get all gazetteers available in the app
+export const getGazetteers = state => state.search.gazetteers;
 
-//TODO: order reducers vs selectors
+// Selector to get current matching value (disabled ot enabled) from the input form in the search area
+export const getIsMatchingEnabled = state => state.search.isMatchingEnabled;

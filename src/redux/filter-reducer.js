@@ -49,7 +49,10 @@ const filterReducer = (state = initialState, action) => {
       const { gazName, value } = action;
       return {
         ...state,
-        types: { ...state.types, [gazName]: [...state.types[gazName], value] },
+        types: {
+          ...state.types,
+          [gazName]: state.types[gazName] ? [...state.types[gazName], value] : [value],
+        },
       };
     }
     case SET_FILTER_REDUCER_TO_INITIAL: {

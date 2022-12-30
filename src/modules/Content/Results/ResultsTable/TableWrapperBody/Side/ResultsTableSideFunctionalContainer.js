@@ -1,23 +1,18 @@
-import { usePrevious } from 'Hooks/usePrevious';
-import React, { useEffect, useState } from 'react';
+import { useAutoScrollForResultsSide } from 'Hooks/RightResults/useAutoScrollForResultsSide';
+import { useColumnsForResultsSide } from 'Hooks/RightResults/useColumnsForResultsSide';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import 'react-table-6/react-table.css';
 import { mouseClickMarkerToInitial } from 'redux/map-interaction-reducer';
-import { getDetails } from 'selectors/simple-selectors/details-selectors';
 import { getTableStateExpanded } from 'selectors/simple-selectors/table-state-selectors';
 import { autoScrollWrapper } from 'utils/Autoscroll/autoScrollWrapper';
-import { getColumnsForSideView } from 'utils/Helpers/Columns/getColumnsForSideView';
-import { getDifferenceArraysOfObjects } from 'utils/ObjectOperations/getDifferenceArraysOfObjects';
 import ResultsTableSide from './ResultsTableSide';
+
+// Wrapper to contain functionalities to handle autoscroll of the results table in side view. The wrapper is of the first order for the ResultsTableSide component
 
 const ResultsTableSideFunctionalContainer = props => {
   const dispatch = useDispatch();
-  const tableStateExpanded = useSelector(getTableStateExpanded);
-  const details = useSelector(getDetails);
-  const previousDetails = usePrevious(details);
-
-  const [columns, setColumns] = useState([]);
-  const [referencesState, setReferencesState] = useState({});
+  const expanded = useSelector(getTableStateExpanded);
   const references = {};
 
   const getOrCreateRef = gazName => {
@@ -26,6 +21,7 @@ const ResultsTableSideFunctionalContainer = props => {
     }
     return references[gazName];
   };
+  const { referencesState, columns } = useColumnsForResultsSide(getOrCreateRef, references);
   const handleAutoScroll = gazName => {
     const params = {
       ref: referencesState[gazName],
@@ -34,27 +30,10 @@ const ResultsTableSideFunctionalContainer = props => {
     };
     autoScrollWrapper(params);
   };
-
-  useEffect(() => {
-    setColumns(getColumnsForSideView(getOrCreateRef));
-    setReferencesState(references);
-  }, []);
-  useEffect(() => {
-    if (previousDetails) {
-      const results = getDifferenceArraysOfObjects(details, previousDetails);
-      if (results.length !== 0) {
-        handleAutoScroll(results[0].gazName);
-      }
-    }
-  }, [details]);
+  useAutoScrollForResultsSide(handleAutoScroll);
 
   return (
-    <ResultsTableSide
-      columns={columns}
-      expanded={tableStateExpanded}
-      details={details}
-      handleAutoScroll={handleAutoScroll}
-    />
+    <ResultsTableSide columns={columns} handleAutoScroll={handleAutoScroll} expanded={expanded} />
   );
 };
 

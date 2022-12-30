@@ -1,6 +1,6 @@
-// Get length of gazetteer specific results to show in gazetteer head
-
 import { checkStatus } from 'utils/validators/checkStatus';
+
+// Get length of gazetteer specific results to show in gazetteer head
 
 export const getResultsLength = original => {
   const { actualState, types } = original;

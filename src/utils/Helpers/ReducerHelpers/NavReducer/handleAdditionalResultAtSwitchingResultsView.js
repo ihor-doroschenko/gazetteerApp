@@ -2,7 +2,7 @@ import { getIsSideSwitched } from 'selectors/simple-selectors/nav-selectors';
 import { collapseAdditionalResultIfNotEnoughSpaceInSideView } from './collapseAdditionalResultIfNotEnoughSpaceInSideView';
 import { isAdditionalTableNotHiddenAtViewSwitching } from './isAdditionalTableNotHiddenAtViewSwitching';
 
-// Handle additional results (compare or matchings view) while the results view is switched (e.g. from side to bottom)
+// Handle additional results (compare or matchings table) while the results table is switched (e.g. from side to bottom)
 
 export const handleAdditionalResultAtSwitchingResultsView = params => {
   const { dispatch, getState, value, isHidden, switchAnother } = params;

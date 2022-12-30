@@ -5,6 +5,8 @@ import React from 'react';
 import PartOf from './PartOf';
 import PartOfClasses from './PartOf.module.css';
 
+// Wrapper component to contain bread crumb element and the condition to switch between graph and text view for the part-of attribute of the GOV entity
+
 const PartOfWrapper = ({ id, image, value }) => {
   return (
     <div className={PartOfClasses.govBildSwitch}>

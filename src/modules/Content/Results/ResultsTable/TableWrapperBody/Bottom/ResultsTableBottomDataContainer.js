@@ -12,6 +12,8 @@ const MatchingsTable = React.lazy(() =>
   import('../../../AdditionalResults/MatchingsTable/MatchingsTable')
 );
 
+// Wrapper component to contain results table as well as additional result tables (matchings and/or compare) in bottom view. The wrapper is of the third order for the ResultsTableBottom component
+
 const ResultsTableBottomDataContainer = () => {
   const resultsBottomHeight = useSelector(getResultsBottomHeight);
   return (
@@ -21,6 +23,7 @@ const ResultsTableBottomDataContainer = () => {
         style={{ height: `calc(100% - ${resultsBottomHeight}px)` }}>
         {[
           {
+            key: 'compareTableBottom',
             value: true,
             component: (
               <Suspense fallback={<Preloader message='The compare table is loading...' />}>
@@ -29,6 +32,7 @@ const ResultsTableBottomDataContainer = () => {
             ),
           },
           {
+            key: 'matchingsTableBottom',
             value: false,
             component: (
               <Suspense fallback={<Preloader message='The matching table is loading...' />}>
@@ -37,7 +41,9 @@ const ResultsTableBottomDataContainer = () => {
             ),
           },
         ].map(el => (
-          <AdditionalTablesContainer value={el.value}>{el.component}</AdditionalTablesContainer>
+          <AdditionalTablesContainer key={el.key} value={el.value}>
+            {el.component}
+          </AdditionalTablesContainer>
         ))}
       </div>
       <ResultsTableBottomResizerContainer />

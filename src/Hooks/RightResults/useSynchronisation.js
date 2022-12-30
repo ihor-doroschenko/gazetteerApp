@@ -5,5 +5,6 @@ import { useEffect } from 'react';
 export function useSynchronisation(propGlobal, setLocal) {
   useEffect(() => {
     setLocal(propGlobal);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [propGlobal]);
 }

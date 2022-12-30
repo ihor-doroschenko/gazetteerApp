@@ -1,19 +1,20 @@
+import { withReactMemo } from 'HOCs/withReactMemo';
 import { useTabIndex } from 'Hooks/Tabs/useTabIndex';
 import TabContainer from 'modules/Content/Results/ResultsTable/TableWrapperBody/TableBodyContainer/TableBody/TabsWrapper/TabContainer/TabContainer';
 import TabSwitchButton from 'modules/Content/Results/ResultsTable/TableWrapperBody/TableBodyContainer/TableBody/TabsWrapper/TabSwitchButtons/TabSwitchButton';
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 import { setDetailsStatusesOfGazetteerToPassive, switchDetailsStatus } from 'redux/details-reducer';
-import { getExternEntities } from 'selectors/simple-selectors/results-selectors';
-import { checkStatus } from 'utils/validators/checkStatus';
-import DetailTabPanel from './DetailTabPanel';
+import { getKey } from 'utils/TextHandlers/getKey';
+import DetailTabPanel from './Details/DetailTabPanel';
 import SubTableDataContainer from './SubTables/SubTableDataContainer';
 import TabsWrapperClasses from './TabsWrapper.module.css';
 
+// Wrapper component to contain elements of the tabs from react-tabs with assigning of the custom functionalities from previous wrapper (TableBody)
+
 const TabsWrapper = ({
   detailsFiltered,
-  actualState,
   setCurrentPage,
   currentPageLength,
   currentPage,
@@ -22,15 +23,13 @@ const TabsWrapper = ({
   firstIndexOfCurrentTab,
   firstIndexOfNextTab,
   pages,
-  entries,
 }) => {
   const dispatch = useDispatch();
   const { tabIndex, setTabIndex } = useTabIndex(detailsFiltered);
-  const AreSeparateEntries = checkStatus(actualState, 'separate');
-  const externEntities = useSelector(getExternEntities);
   const detailTabs = detailsFiltered.map((el, index) => {
     return (
       <TabContainer
+        key={getKey(el.detail.id, 'tabContainer')}
         el={el}
         index={index + 1}
         tabIndex={tabIndex}
@@ -41,14 +40,6 @@ const TabsWrapper = ({
       />
     );
   });
-
-  const detailTabPanel = detailsFiltered.map(el => {
-    return (
-      <TabPanel key={el.details.id}>
-        <DetailTabPanel el={el} gazName={gazName} />
-      </TabPanel>
-    );
-  });
   return (
     <Tabs
       selectedIndex={tabIndex}
@@ -57,7 +48,7 @@ const TabsWrapper = ({
         const newIndex = index !== 0 ? (currentPage - 1) * tabsPerPage + index : index;
         const details = detailsFiltered[newIndex - 1];
         if (details) {
-          dispatch(switchDetailsStatus(gazName, details.details.id));
+          dispatch(switchDetailsStatus(gazName, details.detail.id));
         }
       }}>
       <TabList className={TabsWrapperClasses.tabListBackground}>
@@ -87,14 +78,18 @@ const TabsWrapper = ({
         />
       </TabList>
       <TabPanel forceRender={true}>
-        <SubTableDataContainer
-          gazName={gazName}
-          entries={!AreSeparateEntries ? entries : externEntities[gazName]}
-        />
+        <SubTableDataContainer gazName={gazName} />
       </TabPanel>
-      {detailTabPanel}
+      {detailsFiltered.map(el => {
+        const key = getKey(el.detail.id, 'TabsWrapperDetails');
+        return (
+          <TabPanel key={key}>
+            <DetailTabPanel el={el} gazName={gazName} />
+          </TabPanel>
+        );
+      })}
     </Tabs>
   );
 };
 
-export default TabsWrapper;
+export default withReactMemo(TabsWrapper);

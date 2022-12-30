@@ -7,11 +7,11 @@ import { validateLocations } from 'utils/validators/PropertyValidators/validateL
 
 // Component to contain a tool that allows to zoom to entity on the map, if the entity has valid coordinates
 
-const ZoomToEntity = ({ details, gazName }) => {
+const ZoomToEntity = ({ detail, gazName }) => {
   const dispatch = useDispatch();
   return (
-    <div onClick={() => dispatch(handleZoomToEntity(details, gazName))}>
-      {validateLocations(details) && (
+    <div onClick={() => dispatch(handleZoomToEntity(detail, gazName))}>
+      {validateLocations(detail) && (
         <TooltipContainer placement='left' icon={faMapMarker} text='tt_zoom_to' />
       )}
     </div>

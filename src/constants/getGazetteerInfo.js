@@ -1,8 +1,5 @@
 // Get additional parameters for a gazetteer representation
 
-export const getGazetteerInfo = gazName => {
-  return gazetteerInfo[gazName];
-};
 export const gazetteerInfo = {
   geonames: {
     id: 1,

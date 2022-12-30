@@ -11,6 +11,8 @@ import ResultsTableHead from '../../ResultsTableHead/ResultsTableHead';
 import ResultsTableBottomFunctionalContainer from './ResultsTableBottomFunctionalContainer';
 import ResultsTableBottomViewClasses from './ResultsTableBottomView.module.css';
 
+// Wrapper to contain functionalities to handle autoscroll and to form the elements of the results table in bottom view. The wrapper is of the second order for the ResultsTableBottom component
+
 const ResultsTableBottomResizerContainer = props => {
   const resultsBottomMinHeight = useSelector(getResultsBottomMinHeight);
   const resultsBottomMaxHeight = useSelector(getResultsBottomMaxHeight);
@@ -34,8 +36,10 @@ const ResultsTableBottomResizerContainer = props => {
           </div>
         </span>
       )}>
-      <ResultsTableHead />
-      <ResultsTableBottomFunctionalContainer />
+      <>
+        <ResultsTableHead />
+        <ResultsTableBottomFunctionalContainer />
+      </>
     </ResizableBox>
   );
 };

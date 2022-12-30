@@ -33,7 +33,7 @@ export const useMapAnimation = (isAnimation, setIsAnimation) => {
     }
   }, [tableStateExpanded, resultsSideWidth, additionalResultsBottomWidth]);
 
-  // useEffect for setting isAnimation to false to prevent animation on search window resize and simultaneously to allow further animation effects immediately
+  // useEffect for setting isAnimation to false to prevent animation on search area resize and simultaneously to allow further animation effects immediately
 
   useEffect(() => {
     if (isAnimation && isSwitched) {

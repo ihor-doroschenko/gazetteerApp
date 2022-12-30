@@ -34,6 +34,7 @@ const AdditionalTables = ({ value, setElementWidth, elementWidth, maxElementWidt
   const additionalResultsBottomWidth = useSelector(getAdditionalResultsBottomWidth);
   const styles = useAdditionalTableStyle(isToolHidden, elementWidth);
   const maxHeight = getAdditionalResultMaxHeight(height);
+
   return (
     <ResizableBox
       onResize={(e, data) => {
@@ -46,7 +47,7 @@ const AdditionalTables = ({ value, setElementWidth, elementWidth, maxElementWidt
         }
       }}
       resizeHandles={!isSideSwitched ? ['w', 's'] : ['w']}
-      width={elementWidth ? elementWidth : additionalResultsBottomWidth}
+      width={!isSideSwitched ? elementWidth : additionalResultsBottomWidth}
       height={!isSideSwitched ? elementHeight : (height * contentHeight) / 100 - actualHeight}
       minConstraints={[defaultElementWidth, defaultAdditionalResultHeight]}
       maxConstraints={[

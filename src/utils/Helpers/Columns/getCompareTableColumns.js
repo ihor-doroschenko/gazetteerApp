@@ -4,7 +4,7 @@ import DetailAttribute from 'modules/Content/Results/ResultsTable/TableWrapperBo
 import React from 'react';
 import ColumnsClasses from './Columns.module.css';
 
-// Get columns for compare view
+// Get columns for compare table
 
 export const getCompareTableColumns = entitiesToCompare => {
   // Column with header "attribute" to contain attribute name

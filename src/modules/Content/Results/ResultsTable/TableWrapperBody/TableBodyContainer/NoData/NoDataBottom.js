@@ -6,10 +6,11 @@ import { getEmptyTablesInBottomView } from 'utils/Helpers/TableHelpers/getEmptyT
 import ResultsTableBottomViewClasses from '../../Bottom/ResultsTableBottomView.module.css';
 import NoDataClasses from './NoData.module.css';
 
+// Component to contain text for subtables of trequested gazetteers that do not provide any data (bottom view)
+
 const NoDataBottom = props => {
   const data = useSelector(getResults);
   const emptyTablesInBottomView = getEmptyTablesInBottomView(data);
-
   return (
     <div
       className={classNames(

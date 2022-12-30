@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import {
   getExternEntities,
-  getStartEntries,
+  getStartEntities,
   getUsedGazetteers,
 } from 'selectors/simple-selectors/results-selectors';
 import { getMatchingsLength } from 'utils/Helpers/Matchings/getMatchingsLength';
@@ -14,7 +14,7 @@ export function useGazetteerResultsHeadTitle(original) {
   const { text, actualState, ...rest } = original;
   const [state, setState] = useState(`${text} [0] [0]`);
   const usedGazetteers = useSelector(getUsedGazetteers);
-  const startEntries = useSelector(getStartEntries);
+  const startEntities = useSelector(getStartEntities);
   const externEntities = useSelector(getExternEntities);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export function useGazetteerResultsHeadTitle(original) {
     const headForGazetteers = getHeadForGazetteersWrapper({
       usedGazetteers,
       text,
-      startEntries,
+      startEntities,
       gazName,
       externEntities,
       matchingsLength,

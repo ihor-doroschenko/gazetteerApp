@@ -1,4 +1,4 @@
-// Get headers to export data from the matchings view
+// Get headers to export data from the matchings table
 
 export const getHeadersForMatchingExport = () => {
   return [

@@ -1,6 +1,6 @@
 import { isObject } from 'utils/validators/ValidateDataTypes/validateObject';
 
-// Get name of GOV entity. As the "name" attribute originally contains multiple values, only one of them is taken as the "name" attribute and all others are listed in "names" attribute. Original "name" attribute can be seen in compare view
+// Get name of GOV entity. As the "name" attribute originally contains multiple values, only one of them is taken as the "name" attribute and all others are listed in "names" attribute. Original "name" attribute can be seen in compare table
 
 export const getNameGOV = govName => {
   if (isObject(govName) && govName.hasOwnProperty('value')) {

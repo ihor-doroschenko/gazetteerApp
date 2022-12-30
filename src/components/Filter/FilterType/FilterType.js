@@ -6,6 +6,7 @@ import { useFilterType } from 'Hooks/Filter/useFilterType';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setTypeFilterValues } from 'redux/filter-reducer';
+import { getKey } from 'utils/TextHandlers/getKey';
 import FilterTypeClasses from './FilterType.module.css';
 
 // Component to contain filter for the subtables in the results table that filters entities by type. Filter is based on form elements from the material-ui
@@ -31,11 +32,15 @@ const FilterType = ({ gazName }) => {
             {typelessGazetteer ? 'No types provided' : 'select a type'}
           </p>
         </MenuItem>
-        {types.map(el => (
-          <MenuItem key={el} value={el}>
-            {el}
-          </MenuItem>
-        ))}
+        {types &&
+          types.map(el => {
+            const key = getKey(el, 'typeFilterElement');
+            return (
+              <MenuItem key={key} value={el}>
+                {el}
+              </MenuItem>
+            );
+          })}
       </Select>
     </FormControl>
   );

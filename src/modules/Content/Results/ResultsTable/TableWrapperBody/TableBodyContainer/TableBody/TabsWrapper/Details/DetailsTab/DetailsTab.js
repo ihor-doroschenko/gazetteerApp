@@ -5,21 +5,30 @@ import { useDispatch } from 'react-redux';
 import { removeDetail } from 'redux/details-reducer';
 import DetailsClasses from '../Details.module.css';
 
-const DetailsTab = props => {
+// Component to contain elements of the tab itself (under tab is here meant actual buttons to switch between tab panels with data). The functionalities are passed from previous wrapper components and are used here mainly to handle closing of the tab
+
+const DetailsTab = ({
+  index,
+  tabIndex,
+  el,
+  setTabIndex,
+  currentPageLength,
+  setCurrentPage,
+  currentPage,
+}) => {
   const dispatch = useDispatch();
-  const { focus, id, index, panelId, selected, tabRef, tabIndex, el, ...other } = props;
   const closeTab = event => {
     event.stopPropagation();
-    dispatch(removeDetail(el.details.id));
-    other.setTabIndex(0);
-    if (other.currentPageLength === 1 && other.currentPage !== 1) {
-      other.setCurrentPage(other.currentPage - 1);
+    setTabIndex(0);
+    dispatch(removeDetail(el.detail.id));
+    if (currentPageLength === 1 && currentPage !== 1) {
+      setCurrentPage(currentPage - 1);
     }
   };
   return (
     <div className={DetailsClasses.windowWrapper}>
       <div>
-        <p>{el.details.internId ? el.details.internId : index}</p>
+        <p>{el.detail.internId ? el.detail.internId : index}</p>
       </div>
       {index === tabIndex && (
         <div onClick={event => closeTab(event)}>

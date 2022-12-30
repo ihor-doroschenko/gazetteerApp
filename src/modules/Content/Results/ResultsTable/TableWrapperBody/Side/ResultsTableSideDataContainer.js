@@ -1,5 +1,5 @@
 import Preloader from 'components/Preloader/Preloader';
-import { useRightContainerTableDimensions } from 'Hooks/RightResults/useRightContainerTableDimensions';
+import { useSideContainerTableDimensions } from 'Hooks/RightResults/useSideContainerTableDimensions';
 import React, { Suspense } from 'react';
 import AdditionalTablesContainer from '../../../AdditionalResults/AdditionalTablesContainer';
 import ResultsTableSideResizerContainer from './ResultsTableSideResizerContainer';
@@ -10,14 +10,17 @@ const CompareTable = React.lazy(() =>
 const MatchingsTable = React.lazy(() =>
   import('../../../AdditionalResults/MatchingsTable/MatchingsTable')
 );
+
+// Wrapper component to contain results table as well as additional result tables (matchings and/or compare) in side view. The wrapper is of the third order for the ResultsTableSide component
+
 const ResultsTableSideDataContainer = props => {
   const { compareDimensions, matchingsDimensions, resultsDimensions } =
-    useRightContainerTableDimensions();
+    useSideContainerTableDimensions();
   return (
     <div className={ResultsTableSideViewClasses.rightWrapper}>
       {[
         {
-          key: 1,
+          key: 'compareTableSide',
           value: true,
           component: (
             <Suspense fallback={<Preloader message='The compare table is loading...' />}>
@@ -27,7 +30,7 @@ const ResultsTableSideDataContainer = props => {
           dimensions: compareDimensions,
         },
         {
-          key: 2,
+          key: 'matchingsTableSide',
           value: false,
           component: (
             <Suspense fallback={<Preloader message='The matching table is loading...' />}>

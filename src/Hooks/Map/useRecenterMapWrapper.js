@@ -1,15 +1,17 @@
 import { defaultElementWidth } from 'constants/numericConstants';
 import { useSelector } from 'react-redux';
+import { getIsMatched } from 'selectors/simple-selectors/matching-selectors';
 import { getIsSideSwitched } from 'selectors/simple-selectors/nav-selectors';
-import { getStatus } from 'selectors/simple-selectors/results-selectors';
+import { getOriginalStatus } from 'selectors/simple-selectors/results-selectors';
 import { getSearchWidth } from 'selectors/simple-selectors/table-state-selectors';
 import { useRecenterMap } from './useRecenterMap';
 
 // Container hook for recenter map hook
 
 export function useRecenterMapWrapper(mapRef) {
-  const status = useSelector(getStatus);
+  const originalStatus = useSelector(getOriginalStatus);
   const isSideSwitched = useSelector(getIsSideSwitched);
+  const isMatched = useSelector(getIsMatched);
   const searchWidth = useSelector(getSearchWidth);
 
   const paramsForStartRecentering = {
@@ -17,7 +19,7 @@ export function useRecenterMapWrapper(mapRef) {
     paddingBottomRight: [defaultElementWidth, 50],
     // 100 because of initial values, less costly operation, and absence of animation
     seconds: 100,
-    dependencies: [status],
+    dependencies: [originalStatus, isMatched],
   };
   const paramsForSwitchingView = {
     paddingTopLeft: [100, 100],

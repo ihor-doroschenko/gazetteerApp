@@ -1,5 +1,6 @@
 import { logosList } from 'constants/logosList';
 import React from 'react';
+import { getKey } from 'utils/TextHandlers/getKey';
 import HeaderClasses from '../Header.module.css';
 
 // Wrapper component to contain logos of the institutions related to the app
@@ -7,7 +8,7 @@ import HeaderClasses from '../Header.module.css';
 const Logos = () => {
   const logosElements = logosList.map(el => {
     return (
-      <a href={el.link}>
+      <a href={el.link} key={getKey(el.alt, 'logos')}>
         <img className={HeaderClasses.icon} src={el.logo} alt={el.alt} />
       </a>
     );

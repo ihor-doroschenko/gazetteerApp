@@ -1,7 +1,7 @@
 import { getTypeValues } from './getTypeValues';
 
 // Wrapper function to get all possible type values for setting them into a filter to filter entities of a gazetteer by type (in subtable)
-// TODO: fix new Set assignment
+
 export const getTypeValuesWrapper = (gazName, type) => {
   const newSet = new Set();
   getTypeValues(newSet, gazName, type);

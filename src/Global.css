@@ -1,0 +1,93 @@
+/* Global available classes used thoughout the app*/
+/* fonts */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../src/assets/webfontkit/poppins-regular-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'CustomFontSemiBold';
+  src: url('../src/assets/webfontkit-semi-bold/poppins-semibold-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'CustomFontBold';
+  src: url('../src/assets/webfontkit-bold/poppins-bold-webfont.woff') format('woff');
+}
+/* classes */
+html,
+body,
+#root {
+  height: 100vh;
+  font-family: 'CustomFont', Arial, sans-serif !important;
+  font-size: 13px !important;
+  line-height: initial !important;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+button {
+  font-family: 'CustomFont', Arial, sans-serif !important;
+  font-size: 13px;
+  line-height: initial !important;
+}
+.smallHeaders {
+  font-size: 1.1rem;
+  font-family: 'CustomFontBold', 'Arial Black', sans-serif;
+  color: black !important;
+  cursor: default;
+}
+.buttons {
+  font-size: 1rem;
+  font-weight: bold;
+  background: black;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin: 4px;
+  color: white !important;
+}
+.buttons:hover {
+  background: rgb(80, 79, 79);
+}
+.noShadow {
+  box-shadow: none !important;
+}
+.shadowInResultsTable {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -15px 10px -15px inset;
+}
+.borderBottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.namesBreaks {
+  overflow-wrap: break-word;
+}
+.wordBreak {
+  word-break: break-all;
+}
+.optionTooltips {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.optionTooltips > div {
+  margin-bottom: 8px;
+}
+.gazTooltips {
+  margin: 5px;
+}
+.gazTooltips > div {
+  margin-bottom: 8px;
+}
+@media (max-width: 1772px) {
+  .appwrapper {
+    font-size: 12px;
+  }
+}

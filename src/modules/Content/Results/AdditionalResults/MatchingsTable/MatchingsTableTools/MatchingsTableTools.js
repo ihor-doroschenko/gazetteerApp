@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import { useMatchingsTableFilterValuesExtraction } from 'Hooks/Matchings/useMatchingsTableFilterValuesExtraction';
 import React from 'react';
 import { setCurrentGazetteer, setCurrentSourceGazetteer } from 'redux/matching-reducer';
+import { getKey } from 'utils/TextHandlers/getKey';
 import MatchingsTableFilter from './MatchingsTableFilter';
 import MatchingsTableToolClasses from './MatchingsTableTool.module.css';
 
@@ -29,7 +30,7 @@ const MatchingsTableTools = props => {
       <div className={MatchingsTableToolClasses.filtersWrapper}>
         {matchingFilters.map(el => {
           return (
-            <div>
+            <div key={getKey(el.name, 'matchingsTableTools')}>
               <p>{el.name}</p>
               <MatchingsTableFilter
                 value={el.value}

@@ -23,11 +23,11 @@ const SWITCH_SATELLITE_BASEMAP = 'gazetteer-app/nav/SWITCH_SATELLITE_BASEMAP';
 const SWITCH_SEARCH_IS_SHOWN = 'gazetteer-app/nav/SWITCH_SEARCH_IS_SHOWN';
 // Switch the results value (enabled or disabled)
 const SWITCH_RESULTS = 'gazetteer-app/nav/SWITCH_RESULTS';
-// Switch the value whether the results view (in side view) should be hidden or shown
+// Switch the value whether the results table (in side view) should be hidden or shown
 const SWITCH_RESULTS_HIDDEN = 'gazetteer-app/nav/SWITCH_RESULTS_HIDDEN';
-// Switch the value whether the matchings view should be hidden or shown
+// Switch the value whether the matchings table should be hidden or shown
 const SWITCH_MATCHING_TABLE_HIDDEN = 'gazetteer-app/nav/SWITCH_MATCHING_TABLE_HIDDEN';
-// Switch the value whether the compare view should be hidden or shown
+// Switch the value whether the compare table should be hidden or shown
 const SWITCH_COMPARE_TABLE_HIDDEN = 'gazetteer-app/nav/SWITCH_COMPARE_TABLE_HIDDEN';
 // Switch the value whether matchings should be in entities as attributes
 const SWITCH_IS_MATCHING = 'gazetteer-app/nav/SWITCH_IS_MATCHING';
@@ -188,7 +188,7 @@ export const switchCompareHidden = value => ({
 
 // Thunk creators to modify state under more complex conditions. Often contains asynchronous operations or multiple action calls
 
-// Wrapper to do additional operations at switching the view (such as handling the visibility of matchings and compare view)
+// Wrapper to do additional operations at switching the view (such as handling the visibility of matchings and compare table)
 export const switchViewWrapper = value => (dispatch, getState) => {
   const isMatchingTableHidden = getIsMatchingTableHidden(getState());
   const isCompareHidden = getIsCompareHidden(getState());
@@ -198,13 +198,13 @@ export const switchViewWrapper = value => (dispatch, getState) => {
   }
 };
 
-// Wrapper to do additional operations at switching the visibility of the compare view (such as coniditinal hiding of the search window)
+// Wrapper to do additional operations at switching the visibility of the compare table (such as coniditinal hiding of the search area)
 export const switchCompareHiddenWrapper = value => dispatch => {
   dispatch(switchCompareHidden(value));
   dispatch(conditionallyHideSearch());
 };
 
-// Wrapper to do additional operations at switching the visibility of the matchings view (such as coniditinal hiding of the search window)
+// Wrapper to do additional operations at switching the visibility of the matchings table (such as coniditinal hiding of the search area)
 export const switchMatchingsHiddenWrapper = value => dispatch => {
   dispatch(switchMatchingHidden(value));
   dispatch(conditionallyHideSearch());
@@ -220,11 +220,11 @@ export const switchAdditionalResult =
     handleAdditionalResultAtSwitchingAdditionalResults(paramsForAdditionalResults);
   };
 
-// Wrapper to do additional operations at closing the results view
+// Wrapper to do additional operations at closing the results table
 export const closeResults = () => dispatch => {
-  dispatch(switchViewToInitial());
   dispatch(removeResultsGlobally());
   dispatch(setNavPartlyToInitial());
+  dispatch(switchViewToInitial());
 };
 
 // Wrapper to do reset initial values at starting new search

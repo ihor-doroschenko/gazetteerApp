@@ -7,7 +7,7 @@ import {
   getResultsBottomHeight,
 } from 'selectors/simple-selectors/table-state-selectors';
 
-// Hook to control map dimensions if results view in switched to bottom.
+// Hook to control map dimensions if results table in switched to bottom.
 
 export function useBottomMapBounds(mapRef, actualMapWidth) {
   const isSwitched = useSelector(getIsSideSwitched);

@@ -1,6 +1,7 @@
 import { List } from 'antd';
 import MatchingsTools from 'components/MatchingsTools/MatchingsTools';
 import React from 'react';
+import { getKey } from 'utils/TextHandlers/getKey';
 import MatchingsClasses from './Matchings.module.css';
 import MatchingsProperty from './MatchingsProperty';
 
@@ -19,7 +20,11 @@ const Matchings = ({ entities }) => {
               description={
                 <>
                   {Object.keys(item).map(property => (
-                    <MatchingsProperty item={item} property={property} />
+                    <MatchingsProperty
+                      key={getKey(property, 'matchings')}
+                      item={item}
+                      property={property}
+                    />
                   ))}
                 </>
               }

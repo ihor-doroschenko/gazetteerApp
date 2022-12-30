@@ -3,7 +3,9 @@ import { useSelector } from 'react-redux';
 import { getIsSideSwitched } from 'selectors/simple-selectors/nav-selectors';
 import { getFirstIndexesOfCurrentAndNextPages } from 'utils/Helpers/TabHelpers/getFirstIndexesOfCurrentAndNextPages';
 import { getWidthOfTabs } from 'utils/Helpers/TabHelpers/getWidthOfTabs';
-//TODO
+
+// Hook to use functionalities to customly adjust tabs from react-tabs
+
 export function useTabs(detailsFiltered, elementWidth) {
   const isSideSwitched = useSelector(getIsSideSwitched);
 
@@ -41,10 +43,12 @@ export function useTabs(detailsFiltered, elementWidth) {
 
   useEffect(() => {
     changePageParametersOnDetailsChange();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [detailsFiltered.length]);
 
   useEffect(() => {
     changePageParametersOnResizing();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [elementWidth, isSideSwitched]);
 
   const [firstIndexOfCurrentTab, firstIndexOfNextTab] = getFirstIndexesOfCurrentAndNextPages(

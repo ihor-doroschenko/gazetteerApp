@@ -9,7 +9,7 @@ import {
 import { filterMatchingsByMatchingsGazetteer } from 'utils/Filtering/Matchings/filterMatchingsByMatchingsGazetteer';
 import { filterMatchingsBySourceGazetteer } from 'utils/Filtering/Matchings/filterMatchingsBySourceGazetteer';
 
-// Hook to wrap two filters for matching table in matching view: filter by source gazetteer and by matched gazetteer
+// Hook to wrap two filters for matchings table: filter by source gazetteer and by matched gazetteer
 
 export function useMatchingsFilterData() {
   const matchings = useSelector(getMatchings);

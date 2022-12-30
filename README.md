@@ -56,7 +56,7 @@ For state management Redux with React wrapper above it is used. To split state i
 - `details-reducer.js` - details view state, where an entity with all its attributes and values.
 - `filter-reducer.js` - state for filters in results table.
 - `map-interaction-reducer.js` - state for map interaction effects.
-- `matching-reducer.js` - state for matchings view.
+- `matching-reducer.js` - state for matchings table.
 - `nav-reducer.js` - state for boolean flags to control such operations as show/hide, filter/unfilter, etc.
 - `results-store.js` - state to store main results, pre-processed already.
 - `search-reducer.js` - state to store search parameters sent to the server.

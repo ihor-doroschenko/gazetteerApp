@@ -9,6 +9,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSearchType } from 'redux/search-reducer';
 import { getSearchType } from 'selectors/simple-selectors/search-selectors';
+import { getKey } from 'utils/TextHandlers/getKey';
 import SearchTypesClasses from './SearchTypes.module.css';
 
 // Wrapper component to contain search type options
@@ -34,7 +35,7 @@ const SearchTypes = ({ resized }) => {
         }}
         size={resized && 'small'}>
         {options.map(el => (
-          <RadioButton el={el} />
+          <RadioButton key={getKey(el.text, 'searchTypes')} el={el} />
         ))}
       </Radio.Group>
     </div>

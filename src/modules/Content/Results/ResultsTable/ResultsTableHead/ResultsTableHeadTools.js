@@ -25,10 +25,10 @@ const ResultsTableHeadTools = ({ validatedStatus }) => {
       })}>
       <DynamicHelpIcon title='results' />
       <ExportContainer
-        entries={resultsDataToExport}
+        entities={resultsDataToExport}
         jsonEntries={resultsDataToExport}
         headers={headers}
-        filename={`entries-from-results-exported`}
+        filename={`entities-from-results-exported`}
       />
       <div onClick={() => validatedStatus && dispatch(switchViewWrapper(!isSideSwitched))}>
         <TooltipContainer

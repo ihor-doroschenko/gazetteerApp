@@ -11,6 +11,8 @@ import { areAllResultWidthsBiggerThatFreeSpace } from './areAllResultWidthsBigge
 import { getFreeSpace } from './getFreeSpace';
 import { getWidthPercentage, getWidthPercentages } from './getWidthPercentage';
 
+// Handle dimentions of additional results automatically
+
 export const handleDimensionsAutomatically = (dispatch, getState) => {
   const { width } = getWindowDimensions(getState());
   const isResultsHidden = getIsResultsHidden(getState());

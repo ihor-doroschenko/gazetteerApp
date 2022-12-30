@@ -1,11 +1,13 @@
 import React from 'react';
-import PartOfImage from './PartOfImage';
+import PartOfGraph from './PartOfGraph';
+
+// Wrapper component to contain the part-of graph. If the graph request was successfull, show the graph, if not, show the error message
 
 const PartOf = ({ image, id }) => {
   return (
     <div>
       {image.status ? (
-        <PartOfImage image={image} id={id} />
+        <PartOfGraph image={image} id={id} />
       ) : (
         <div>
           <p>{image.info}</p>

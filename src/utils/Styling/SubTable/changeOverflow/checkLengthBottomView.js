@@ -3,8 +3,13 @@ import { checkFilteredLengthInBottomView } from './checkFilteredLengthInBottomVi
 
 // Get length of current available entities for a gazetteer specific subtable in bottom view
 
-export const checkLengthBottomView = (isSideSwitched, entries, filteredValues, filteredEntries) => {
-  const entriesLength = entries.length <= minVisibleRowsBottomView;
-  const filteredEntriesLength = checkFilteredLengthInBottomView(filteredValues, filteredEntries);
-  return isSideSwitched && (entriesLength || filteredEntriesLength);
+export const checkLengthBottomView = (
+  isSideSwitched,
+  entities,
+  filteredValues,
+  filteredEntities
+) => {
+  const entitiesLength = entities.length <= minVisibleRowsBottomView;
+  const filteredEntitiesLength = checkFilteredLengthInBottomView(filteredValues, filteredEntities);
+  return isSideSwitched && (entitiesLength || filteredEntitiesLength);
 };

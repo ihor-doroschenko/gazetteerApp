@@ -3,6 +3,7 @@ import { referenceTypes } from '../Preprocessing/AdditionalNormalizing/reference
 import { getPartOfErrorMessage } from './getPartOfErrorMessage';
 
 // Handle part-of request for GOV
+
 export const handlePartOfRequest = element => {
   const { ref, ...rest } = element;
   return partOfAPI

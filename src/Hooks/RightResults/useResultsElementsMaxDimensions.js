@@ -1,6 +1,8 @@
 import { useHiddenValuesForAllResultWindows } from 'Hooks/useHiddenValuesForAllResultWindows';
 import { useEffect } from 'react';
-// TODO
+
+// Hook to control maximal dimensions for the results table
+
 export function useResultsElementsMaxDimensions(props) {
   const { isCompareHidden, isMatchingTableHidden, isResultsHidden } =
     useHiddenValuesForAllResultWindows();

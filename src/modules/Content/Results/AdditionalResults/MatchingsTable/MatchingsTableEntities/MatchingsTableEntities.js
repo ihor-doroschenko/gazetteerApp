@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux';
 import { getFilteredMatchingsEntities } from 'selectors/simple-selectors/matching-selectors';
 import { getMatchingFullGazName } from 'utils/Helpers/Matchings/getMatchingFullGazName';
 import { sortArrayByAnotherArray } from 'utils/Sorting/sortArrayByAnotherArray';
+import { getKey } from 'utils/TextHandlers/getKey';
 import Matchings from './Matchings/Matchings';
 import MatchingsTableEntitiesClasses from './MatchingsTableEntities.module.css';
 import MatchingsTableEntityHeader from './MatchingsTableEntityHeader/MatchingsTableEntityHeader';
@@ -38,14 +39,15 @@ const MatchingsTableEntities = props => {
           const fullGazName = getMatchingFullGazName(key);
           const isEmpty = filteredMatchings[key].length === 0;
           return (
-            <>
+            <React.Fragment key={getKey(key, 'matchingsTableEntityWrapper')}>
               <div className={MatchingsTableEntitiesClasses.gazNameHead}>{fullGazName}</div>
               {!isEmpty &&
                 filteredMatchings[key].map((el, index) => {
+                  const key = getKey(el.id, 'matchingsTableEntity');
                   return (
                     <Panel
                       header={<MatchingsTableEntityHeader el={el} gazName={key} />}
-                      key={`${el.id}_${fullGazName}`}
+                      key={key}
                       className={classNames(MatchingsTableEntitiesClasses.panel, {
                         [MatchingsTableEntitiesClasses.even]: index % 2 !== 0,
                       })}>
@@ -54,7 +56,7 @@ const MatchingsTableEntities = props => {
                   );
                 })}
               {isEmpty && <div className={MatchingsTableEntitiesClasses.noData}> No Data </div>}
-            </>
+            </React.Fragment>
           );
         })}
       </Collapse>

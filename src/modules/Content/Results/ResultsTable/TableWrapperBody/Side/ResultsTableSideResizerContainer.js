@@ -13,10 +13,13 @@ import {
 } from 'selectors/simple-selectors/nav-selectors';
 import { getResultsSideHeight } from 'selectors/simple-selectors/table-state-selectors';
 import { addNoShadow } from 'utils/Styling/addNoShadow';
+import { getGridStyleForResultsSide } from 'utils/Styling/MainTable/getGridStyleForResultsSide';
 import TableSwitcher from '../../../../../../components/TableSwitcher/TableSwitcher';
 import ResultsTableHead from '../../ResultsTableHead/ResultsTableHead';
 import ResultsTableSideFunctionalContainer from './ResultsTableSideFunctionalContainer';
 import ResultsTableSideViewClasses from './ResultsTableSideView.module.css';
+
+// Wrapper to contain functionalities to handle autoscroll of the results table in side view. The wrapper is of the second order for the ResultsTableSide component
 
 const ResultsTableSideResizerContainer = props => {
   const isSatellite = useSelector(getIsSatellite);
@@ -55,9 +58,7 @@ const ResultsTableSideResizerContainer = props => {
               <div
                 className={ResultsTableSideViewClasses.resultsTableResizeWrapper}
                 style={{
-                  gridTemplateRows: isMatching
-                    ? `45px 35px calc(100% - 45px)`
-                    : `45px calc(100% - 45px)`,
+                  gridTemplateRows: getGridStyleForResultsSide(isMatching),
                 }}>
                 <ResultsTableHead />
                 <ResultsTableSideFunctionalContainer />

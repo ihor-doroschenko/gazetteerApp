@@ -3,6 +3,8 @@ import { ResizableBox } from 'react-resizable';
 import CompareColumn from '../CompareColumnsWrapper/CompareColumn/CompareColumn';
 import CompareTableHeaderColumnClasses from './CompareTableHeaderColumn.module.css';
 
+// Wrapper component to contain column for the header for the compare table
+
 const CompareTableHeaderColumn = ({ setColumnWidth, columnWidth, data, customRef, headerCol }) => {
   return (
     <ResizableBox

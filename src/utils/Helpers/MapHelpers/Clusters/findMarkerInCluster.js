@@ -3,7 +3,7 @@
 import { areIdAndGazNameEqual } from 'utils/EqualComparing/areIdAndGazNameEqual';
 
 export const findMarkerInCluster = (markers, mouseOverElementInfinite) => {
-  const layersProps = markers.map(el => el.options.children._owner.pendingProps);
+  const layersProps = markers.map(el => el.options.children.props.children.props);
   const { gazName, id } = mouseOverElementInfinite;
   return layersProps.some(el => areIdAndGazNameEqual(id, gazName, el));
 };

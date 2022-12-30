@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom';
 import scrollIntoView from 'scroll-into-view-if-needed';
 
 // Handle automatic scroll to subtable or entity by click event (on marker on the map)
+
 export const autoScrollWrapper = ({
   ref,
   mouseClickMarkerToInitial,

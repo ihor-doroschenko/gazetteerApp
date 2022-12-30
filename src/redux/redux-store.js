@@ -29,6 +29,6 @@ let reducers = combineReducers({
 const store = createStore(reducers, compose(applyMiddleware(thunkMiddleware)));
 
 // For development (to check actual values in the console of the browser) can be commented out
-window.store = store;
+//window.store = store;
 
 export default store;

@@ -2,24 +2,29 @@ import Error from 'components/Error/Error';
 import Preloader from 'components/Preloader/Preloader';
 import { withReactMemo } from 'HOCs/withReactMemo';
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { getGazetteerStatus } from 'selectors/reselectors/simple-reselectors';
 import { checkStatus } from 'utils/validators/checkStatus';
 import NoData from './NoData/NoData';
 import TableBody from './TableBody/TableBody';
 import TabsWrapper from './TableBody/TabsWrapper/TabsWrapper';
 
-const TableBodyContainer = props => {
+// Wrapper component to contain content for the subtable of the results table depending on the actual status of each requested gazetteer
+
+const TableBodyContainer = ({ gazName }) => {
+  const status = useSelector(state => getGazetteerStatus(state, gazName));
   return (
     <>
-      {checkStatus(props.actualState, 'done') || checkStatus(props.actualState, 'separate') ? (
-        <TableBody {...props}>
+      {checkStatus(status, 'done') ? (
+        <TableBody gazName={gazName}>
           <TabsWrapper />
         </TableBody>
-      ) : props.actualState === 'noData' ? (
+      ) : checkStatus(status, 'noData') ? (
         <NoData />
-      ) : checkStatus(props.actualState, 'isFetching') ? (
-        <Preloader gazName={props.gazName} />
+      ) : checkStatus(status, 'isFetching') ? (
+        <Preloader gazName={gazName} />
       ) : (
-        <Error text={props.actualState} item={props.gazName} />
+        <Error item={gazName} />
       )}
     </>
   );

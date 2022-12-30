@@ -1,3 +1,5 @@
+// Data access level for the development mode
+
 import * as axios from 'axios';
 
 // Instance of axios used for all other requests (with base url as a parameter)

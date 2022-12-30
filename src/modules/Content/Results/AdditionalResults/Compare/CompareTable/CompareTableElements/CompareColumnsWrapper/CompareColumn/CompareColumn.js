@@ -13,7 +13,7 @@ const CompareColumn = ({ data, customRef, col }) => {
       data={data}
       sortable={false}
       resizable={false}
-      noDataText='No entries found'
+      noDataText='No entities found'
       pageSize={data.length}
       showPagination={false}
       className={classNames('-striped -highlight', CompareColumnClasses.table)}

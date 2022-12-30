@@ -6,8 +6,10 @@ import { useSelector } from 'react-redux';
 import { getIsSideSwitched } from 'selectors/simple-selectors/nav-selectors';
 import DetailsClasses from '../Details.module.css';
 import DetailsTable from './DetailsTable/DetailsTable';
-import PartOfImageEnlargedWrapper from './DetailsTable/DetailValue/PartOf/PartOfImageEnlargedWrapper';
+import PartOfGraphEnlargedWrapper from './DetailsTable/DetailValue/PartOf/PartOfGraphEnlargedWrapper';
 import MainDetailsWindowHead from './MainDetailsWindowHead/MainDetailsWindowHead';
+
+// Wrapper to contain condition to show enlarged part of picture if needed or details table with its header
 
 const Details = props => {
   const detailsToRender = useDetailsData(props.details);
@@ -18,10 +20,10 @@ const Details = props => {
         [DetailsClasses.mainDetailsBottom]: isSideSwitched,
       })}>
       {props.details.hasOwnProperty('image') && props.details.image.isEnlarged ? (
-        <PartOfImageEnlargedWrapper
+        <PartOfGraphEnlargedWrapper
           info={props.details.image.info}
-          id={props.details.details.id}
-          name={props.details.details.name}
+          id={props.details.detail.id}
+          name={props.details.detail.name}
         />
       ) : (
         <>

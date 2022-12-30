@@ -1,9 +1,9 @@
-import { getAbstractMetaAttributes } from 'constants/getAbstractMetaAttributes';
+import { getEssentialAttributes } from 'constants/getEssentialAttributes';
 
-// Filter data for details view and return only those attributes that are essential (see getAbstractMetaAttributes function)
+// Filter data for details view and return only those attributes that are essential (see getEssentialAttributes function)
 
 export const filterIsEssential = (value, elements) => {
-  const abstractMetaAttributes = getAbstractMetaAttributes();
+  const abstractMetaAttributes = getEssentialAttributes();
   return value
     ? Object.keys(elements)
         .filter(item => abstractMetaAttributes.includes(item))

@@ -11,35 +11,36 @@ import { switchDetailMetaProperty } from 'redux/details-reducer';
 import { getNameForExport } from 'utils/TextHandlers/getNameForExport';
 import DetailsToolSetClasses from './DetailsToolSet.module.css';
 
+// Wrapper component to contain tools to work with the details data inthe details view. It includes toogleSkip (exclude those attributes that do not have values), toogle essential attributes (show only the essential attributes with their values), zoom to entity (zoom to current entity on the map, if it has valid coordinates), compare tool (enable compare table to compare entities), and export container (export current entity as JSON, geoJSON or CSV)
+
 const DetailsToolSet = ({ details, data }) => {
   const dispatch = useDispatch();
   const dataToExport = useDetailsDataToExport(data);
+  const { isFilled, detail, isEssential, gazName } = details;
   return (
     <div className={DetailsToolSetClasses.detailsToolSet}>
       <ToogleSkip
-        isFilled={details.isFilled}
+        isFilled={isFilled}
         callback={() =>
-          details.details.id
-            ? dispatch(switchDetailMetaProperty(details.details.id, 'isFilled'))
+          detail.id
+            ? dispatch(switchDetailMetaProperty(detail.id, 'isFilled'))
             : dispatch(switchDetailMetaProperty())
         }
       />
       <ToogleEssentialAttributes
-        isEssential={details.isEssential}
-        callback={() => dispatch(switchDetailMetaProperty(details.details.id, 'isEssential'))}
+        isEssential={isEssential}
+        callback={() => dispatch(switchDetailMetaProperty(detail.id, 'isEssential'))}
       />
-      <ZoomToEntity details={details.details} gazName={details.gazName} />
-      <CompareTool id={details.details.id} gazName={details.gazName} />
+      <ZoomToEntity detail={detail} gazName={gazName} />
+      <CompareTool id={detail.id} gazName={gazName} />
       <div>
         <ExportContainer
-          entries={[dataToExport.values]}
-          jsonEntries={[details.details]}
+          entities={[dataToExport.values]}
+          jsonEntries={[detail]}
           passedClass={ExportClasses.exportCSVDetails}
-          filename={`${details.gazName}_${details.details.id}_${getNameForExport(
-            details.details.name
-          )}`}
+          filename={`${gazName}_${detail.id}_${getNameForExport(detail.name)}`}
           headers={dataToExport.attributes}
-          gazName={details.gazName}
+          gazName={gazName}
         />
       </div>
     </div>

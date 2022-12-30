@@ -6,14 +6,14 @@ import { sortObject } from 'utils/Sorting/sortObject';
 
 // Hook to generate details data to render in the detail view
 
-export function useDetailsData(detailsObj) {
+export function useDetailsData(details) {
   let [detailsToRender, setDetailsToRender] = useState([]);
-  const { details, isFilled, isEssential } = detailsObj;
+  const { detail, isFilled, isEssential } = details;
   useEffect(() => {
-    const sortedFilled = filterIsFilled(isFilled, sortObject(details));
+    const sortedFilled = filterIsFilled(isFilled, sortObject(detail));
     const sortedEssential = filterIsEssential(isEssential, sortedFilled);
     setDetailsToRender(getAttributesAndValuesOfEntity(sortedEssential));
-  }, [detailsObj]);
+  }, [details]);
 
   return detailsToRender;
 }

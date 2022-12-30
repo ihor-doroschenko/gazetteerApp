@@ -1,17 +1,4 @@
-/* fonts */
-@font-face {
-  font-family: 'CustomFont';
-  src: url('../src/assets/webfontkit/poppins-regular-webfont.woff') format('woff');
-}
-@font-face {
-  font-family: 'CustomFontSemiBold';
-  src: url('../src/assets/webfontkit-semi-bold/poppins-semibold-webfont.woff') format('woff');
-}
-@font-face {
-  font-family: 'CustomFontBold';
-  src: url('../src/assets/webfontkit-bold/poppins-bold-webfont.woff') format('woff');
-}
-/* R E S E T I N G    F O R    L I B R A R I E S */
+/* Reseting classes for used libraries */
 /* react-table */
 .ReactTable {
   border: none;
@@ -123,6 +110,10 @@
   padding: 5px;
   border: 1px solid black;
 }
+.leaflet-fade-anim .leaflet-tile,
+.leaflet-zoom-anim .leaflet-zoom-animated {
+  will-change: auto !important;
+}
 .basemaps {
   margin-bottom: 5px;
 }
@@ -185,7 +176,7 @@
 .react-tabs > div {
   height: auto;
 }
-/* React Resizable */
+/* React resizable */
 .react-resizable-handle-w,
 .react-resizable-handle-e {
   position: absolute;

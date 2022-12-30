@@ -1,4 +1,4 @@
-// Constants used in the app
+// Numeric constants used in the app
 
 export const lowestResolution = 585;
 export const defaultResultsSideHeight = 400;
@@ -16,5 +16,7 @@ export const rightContainerMaxWidthoutMargin = 96;
 export const defaultSearchWidth = 30;
 export const defaultExtraSpace = 200;
 export const resultsTabWidth = 100;
-export const maxVisibleRowsSideView = 6;
+export const maxVisibleRowsSideView = 5;
 export const minVisibleRowsBottomView = 3;
+export const enlargedPartOfGraphHeight = 240;
+export const enlargedPartOfGraphWidth = 400;

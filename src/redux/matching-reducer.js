@@ -1,7 +1,7 @@
 // Reducer to control part of the store related to the matchings. It contains state and take actions as arguments to modify the state and return new state
 
 import { getMatchingsEntities } from 'selectors/simple-selectors/matching-selectors';
-import { getStartEntries, getStatus } from 'selectors/simple-selectors/results-selectors';
+import { getStartEntities, getStatus } from 'selectors/simple-selectors/results-selectors';
 import { setValuesForTypeFilter } from 'utils/Filtering/TypeFilter/setValuesForTypeFilter';
 import { validateStatus } from 'utils/validators/PropertyValidators/validateStatus';
 import { setTypes } from './filter-reducer';
@@ -25,7 +25,6 @@ const SET_CURRENT_SOURCE_GAZETTEER = 'gazetteer-app/matching/SET_CURRENT_SOURCE_
 // Set this part of the store that controlls this reducer to initial values
 const SET_MATCHING_REDUCER_TO_INITIAL = 'gazetteer-app/matching/SET_MATCHING_REDUCER_TO_INITIAL';
 
-// TODO: matchingsView vs Matchingstable
 // State to contain data
 let initialState = {
   onlyMatchedResults: false,
@@ -126,9 +125,9 @@ export const setMatchingReducerToInitial = () => ({
 });
 
 const setFilterTypes = getSelector => (dispatch, getState) => {
-  const entries = getSelector(getState());
-  for (let key of Object.keys(entries)) {
-    dispatch(setTypes(setValuesForTypeFilter(entries[key], key), key));
+  const entities = getSelector(getState());
+  for (let key of Object.keys(entities)) {
+    dispatch(setTypes(setValuesForTypeFilter(entities[key], key), key));
   }
 };
 
@@ -140,11 +139,11 @@ export const filterOnlyMatchedResults = value => (dispatch, getState) => {
   if (validateStatus(status)) {
     dispatch(resetInitialData());
     dispatch(setOnlyMatchedResults(value));
-    dispatch(setFilterTypes(value ? getMatchingsEntities : getStartEntries));
+    dispatch(setFilterTypes(value ? getMatchingsEntities : getStartEntities));
   }
 };
 
-// Close matchings view
+// Close matchings table
 export const closeMatchingTable = () => dispatch => {
   dispatch(setMatchingReducerToInitial());
   dispatch(switchAdditionalResult(true));

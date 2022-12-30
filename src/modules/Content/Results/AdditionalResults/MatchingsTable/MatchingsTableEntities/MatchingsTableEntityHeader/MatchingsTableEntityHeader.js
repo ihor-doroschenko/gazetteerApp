@@ -2,6 +2,8 @@ import MatchingsTools from 'components/MatchingsTools/MatchingsTools';
 import React from 'react';
 import MatchingsTableEntityHeaderClasses from './MatchingsTableEntityHeader.module.css';
 
+// Wrapper component to contain header for the entity in the matchings table
+
 const MatchingsTableEntityHeader = ({ el, gazName }) => {
   return (
     <div className={MatchingsTableEntityHeaderClasses.entityHeader}>

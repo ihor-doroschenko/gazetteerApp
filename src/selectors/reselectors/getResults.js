@@ -1,23 +1,24 @@
 import { createSelector } from 'reselect';
-import { getEntries } from 'selectors/simple-selectors/matching-selectors';
+import { getEntities } from 'selectors/simple-selectors/matching-selectors';
 import {
   getExternEntities,
   getStatus,
   getUsedGazetteers,
 } from 'selectors/simple-selectors/results-selectors';
+import { getDataFromExternEntities } from 'utils/ReselectorHelpers/getDataFromExternEntities';
 import { getDataFromOriginalEntities } from 'utils/ReselectorHelpers/getDataFromOriginalEntities';
-import { getDataFromSeparateEntries } from 'utils/ReselectorHelpers/getDataFromSeparateEntries';
 
 // Selector to get results - both for originally requested and for separate requested
+
 export const getResults = createSelector(
   getStatus,
   getUsedGazetteers,
-  getEntries,
+  getEntities,
   getExternEntities,
-  (status, usedGazetteers, entries, externEntities) => {
+  (status, usedGazetteers, entities, externEntities) => {
     const data = [];
-    getDataFromOriginalEntities(data, status, entries, usedGazetteers);
-    getDataFromSeparateEntries(data, externEntities, usedGazetteers);
+    getDataFromOriginalEntities(data, status, entities, usedGazetteers);
+    getDataFromExternEntities(data, externEntities, usedGazetteers);
     return data;
   }
 );

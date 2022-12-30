@@ -1,19 +1,19 @@
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { getEntries } from 'selectors/simple-selectors/matching-selectors';
+import { getEntities } from 'selectors/simple-selectors/matching-selectors';
 import { getHeadersForResultsExport } from 'utils/Exporting/getHeadersForResultsExport';
 import { combineTwoArraysIntoObject } from 'utils/ObjectOperations/combineTwoArraysIntoObject';
 
 // Hook to provide export for results data
-// TODO: make a module from useResultsDataToExport and useMatchingsDataToExport
+
 export function useResultsDataToExport() {
-  const entries = useSelector(getEntries);
+  const entities = useSelector(getEntities);
   const headers = getHeadersForResultsExport();
   const [resultsDataToExport, setValuesToExport] = useState([]);
-  let vals = [];
   useEffect(() => {
-    for (let key of Object.keys(entries)) {
-      for (let el of entries[key]) {
+    let vals = [];
+    for (let key of Object.keys(entities)) {
+      for (let el of entities[key]) {
         const { internId, id, name, type, position } = el;
         let values = [key, internId, id, name, type, position ? position : []];
         let resultsObj = combineTwoArraysIntoObject({ headers, values });
@@ -21,6 +21,6 @@ export function useResultsDataToExport() {
       }
     }
     setValuesToExport(vals);
-  }, [entries]);
+  }, [entities]);
   return { resultsDataToExport, headers };
 }

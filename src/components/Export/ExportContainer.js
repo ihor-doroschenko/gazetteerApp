@@ -13,10 +13,12 @@ import ExportJSON from './ExportJSON';
 
 // Component wrapper to contain export components (in CSV, JSON, and geoJSON formats)
 
-const ExportContainer = ({ gazName = false, entries, jsonEntries, headers, filename }) => {
-  const combinedFilteredEntries = useSelector(state => getCombinedFilteredEntities(state, gazName));
+const ExportContainer = ({ gazName = false, entities, jsonEntries, headers, filename }) => {
+  const combinedFilteredEntities = useSelector(state =>
+    getCombinedFilteredEntities(state, gazName)
+  );
   const areFilterValues = useFilterValuesForExport(gazName);
-  const exportData = areFilterValues ? combinedFilteredEntries : entries;
+  const exportData = areFilterValues ? combinedFilteredEntities : entities;
   const menu = (
     <Menu>
       <Menu.Item>
@@ -33,7 +35,7 @@ const ExportContainer = ({ gazName = false, entries, jsonEntries, headers, filen
 
   return (
     <Dropdown overlay={menu} trigger={['click']}>
-      <a onClick={e => e.preventDefault()}>
+      <div onClick={e => e.preventDefault()}>
         <Space>
           <TooltipContainer
             placement='left'
@@ -42,7 +44,7 @@ const ExportContainer = ({ gazName = false, entries, jsonEntries, headers, filen
             styleProp={ExportClasses.iconExport}
           />
         </Space>
-      </a>
+      </div>
     </Dropdown>
   );
 };

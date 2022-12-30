@@ -1,5 +1,5 @@
-// Get pre-defined meta attributes (used for the compare table and the essential tool)
-// TODO: work on one meta attribute system
+// Get pre-defined meta attributes (used for the compare table)
+
 export const getAbstractMetaAttributes = () => {
   return ['id', 'name', 'variant names', 'position', 'type', 'link'];
 };

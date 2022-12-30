@@ -2,15 +2,13 @@ import Preloader from 'components/Preloader/Preloader';
 import React from 'react';
 import Details from './Details';
 
+// Wrapper component to contain condition to show preloader if the data for the detail view is still loading or Details component if the data are available
+
 const DetailsContainer = props => {
-  const { gazName, selectedDetails, ...rest } = props;
+  const { gazName, details, ...rest } = props;
   return (
     <>
-      {selectedDetails.loading ? (
-        <Preloader gazName={gazName} />
-      ) : (
-        <Details details={selectedDetails} {...rest} />
-      )}
+      {details.loading ? <Preloader gazName={gazName} /> : <Details details={details} {...rest} />}
     </>
   );
 };

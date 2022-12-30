@@ -14,6 +14,8 @@ export const getWidthPercentage = (isHidden, elementWidth, width) => {
   return !isHidden ? (elementWidth * 100) / width : 0;
 };
 
+// Get width percentages for all results
+
 export const getWidthPercentages = getState => {
   const { width } = getWindowDimensions(getState());
   const isResultsHidden = getIsResultsHidden(getState());

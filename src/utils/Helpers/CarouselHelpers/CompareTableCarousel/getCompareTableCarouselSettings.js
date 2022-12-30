@@ -2,7 +2,7 @@ import CarouselArrow from 'components/CarouselArrow/CarouselArrow';
 import React from 'react';
 import CarouselClasses from '../Carousel.module.css';
 
-// Get slick (carousel) settings for the compare view
+// Get slick (carousel) settings for the compare table
 
 export const getCompareTableCarouselSettings = slideAmount => {
   return {

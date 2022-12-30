@@ -3,7 +3,7 @@ import DetailValueContainer from 'modules/Content/Results/ResultsTable/TableWrap
 import React from 'react';
 import ColumnsClasses from './Columns.module.css';
 
-// Get columns for detail view
+// Get columns for details view
 
 export const getDetailColumns = ({ details }) => {
   return [

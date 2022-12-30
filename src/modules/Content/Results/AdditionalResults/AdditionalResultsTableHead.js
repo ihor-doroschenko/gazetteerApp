@@ -31,9 +31,9 @@ const AdditionalResultsTableHead = ({ close, value, switchValue, title, data, he
         <DynamicHelpIcon title={title} />
         <ExportContainer
           jsonEntries={data}
-          entries={data}
+          entities={data}
           headers={headers}
-          filename={`entries-from-${title}-exported`}
+          filename={`entities-from-${title}-exported`}
         />
         <div onClick={() => dispatch(close())}>
           <TooltipContainer

@@ -1,13 +1,13 @@
 import { getAbstractMetaAttributes } from 'constants/getAbstractMetaAttributes';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { getOriginalEntries } from 'selectors/simple-selectors/results-selectors';
+import { getOriginalEntities } from 'selectors/simple-selectors/results-selectors';
 import { getMetaAttributeFromOriginalAttributes } from 'utils/Helpers/CompareHelpers/getMetaAttributeFromOriginalAttributes';
 
 // Hook to provide functionalities for compare table. It tracks gazetteer original data and prepares data for export
 
 export function useCompareTableData(entities) {
-  const originalEntries = useSelector(getOriginalEntries);
+  const originalEntities = useSelector(getOriginalEntities);
   let [data, setData] = useState([]);
   let [dataForExport, setDataForExport] = useState(new Set());
   useEffect(() => {
@@ -20,7 +20,7 @@ export function useCompareTableData(entities) {
         entity.forEach(element => {
           const elementToParse = getMetaAttributeFromOriginalAttributes(
             el,
-            originalEntries,
+            originalEntities,
             element.attribute
           );
           element[el.gazName + el.entity.id] = elementToParse;

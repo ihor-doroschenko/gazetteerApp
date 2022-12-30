@@ -4,7 +4,7 @@ import {
   getIsSideSwitched,
 } from 'selectors/simple-selectors/nav-selectors';
 
-// Handle additional results (compare or matchings view) at switching them, while the results are in bottom view
+// Handle additional results (compare or matchings table) at switching them, while the results are in bottom view
 
 export const handleAdditionalResultAtSwitchingAdditionalResults = params => {
   const { dispatch, getState, value, switchAnother } = params;

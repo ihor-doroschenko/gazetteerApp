@@ -1,11 +1,10 @@
-import { getGazetteerInfo } from 'constants/getGazetteerInfo';
+import { gazetteerInfo } from 'constants/getGazetteerInfo';
 import React from 'react';
 import MarkerContainerClasses from './MarkerContainer.module.css';
 
 // Component to contain svg icon for marker representation both in the result table and on the map
-//TODO: getGazetteerInfo or just gazetteerInfo
 const SvgMarkerComponent = ({ mapMarker, gazName, internId }) => {
-  const color = getGazetteerInfo(gazName).color;
+  const color = gazetteerInfo[gazName].color;
   return (
     <div>
       <svg

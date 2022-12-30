@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getIsSideSwitched } from 'selectors/simple-selectors/nav-selectors';
+import { getKey } from 'utils/TextHandlers/getKey';
 import MatchingsTableToolClasses from './MatchingsTableTool.module.css';
 
 // Wrapper component to contain filter for the matchings table. Filter is based on form elements from the material-ui
@@ -23,7 +24,9 @@ const MatchingsTableFilter = ({ values, value, onChangeCallback }) => {
           [MatchingsTableToolClasses.selectSmallBottom]: isSideSwitched,
         })}>
         {Object.keys(values).map(key => (
-          <MenuItem value={key}>{values[key]}</MenuItem>
+          <MenuItem key={getKey(key, 'matchingsTableFilter')} value={key}>
+            {values[key]}
+          </MenuItem>
         ))}
       </Select>
     </FormControl>

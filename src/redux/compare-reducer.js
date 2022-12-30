@@ -1,21 +1,22 @@
-// Reducer to control part of the store related to the compare view. It contains state and take actions as arguments to modify the state and return new state
+// Reducer to control part of the store related to the compare table. It contains state and take actions as arguments to modify the state and return new state
 
 import { resultsAPI } from 'dal/DALWrapper';
 import { getDetailById } from 'selectors/reselectors/getDetailById';
 import { getEntitiesToCompare } from 'selectors/simple-selectors/compare-selectors';
+import { getEntities } from 'selectors/simple-selectors/matching-selectors';
 import { handleDetailRequestError } from 'utils/Helpers/ReducerHelpers/DetailsReducer/handleDetailRequestError';
 import { normalize } from 'utils/Preprocessing/normalizeResults';
 import { switchAdditionalResult, switchCompareTool } from './nav-reducer';
 import { addExternEntityToOriginalData } from './results-reducer';
 
 // Constants for actions names written using the rule of the redux-ducks - reducer/actions
-// Adds new entity to compare view
+// Adds new entity to compare table
 const ADD_ENTITY = 'compare-tool/ADD_ENTITY';
-// Updates loading property of the object of the entity in compare view
+// Updates loading property of the object of the entity in compare table
 const UPDATE_ENTITY = 'compare-tool/UPDATE_ENTITY';
-// Removes entity from the compare view
+// Removes entity from the compare table
 const REMOVE_ENTITY = 'compare-tool/REMOVE_ENTITY';
-// Set amount of slides considering current width of the compare view
+// Set amount of slides considering current width of the compare table
 const SET_SLIDE_AMOUNT = 'compare-tool/SET_SLIDE_AMOUNT';
 // Set this part of the store that controlls this reducer to initial values
 const SET_COMPARE_REDUCER_TO_INITIAL = 'compare-tool/SET_COMPARE_REDUCER_TO_INITIAL';
@@ -102,7 +103,7 @@ export const setCompareReducerToInitial = () => ({
 });
 
 // Thunk creators to modify state under more complex conditions. Often contains asynchronous operations or multiple action calls
-// Hide compare view if it was last entity in compare view
+// Hide compare table if it was last entity in compare table
 export const removeEntityFromCompareTool = id => (dispatch, getState) => {
   const currentEntitiesToCompare = getEntitiesToCompare(getState());
   if (currentEntitiesToCompare.length === 1) {
@@ -111,28 +112,29 @@ export const removeEntityFromCompareTool = id => (dispatch, getState) => {
   dispatch(removeEntity(id));
 };
 
-// Add entity to compare view. If it is not in requested entities, make extra request to get this entity from the server. This extra request works only for gazetteers that are available in the app (even if they were not enabled for current request/search)
+// Add entity to compare table. If it is not in requested entities, make extra request to get this entity from the server. This extra request works only for gazetteers that are available in the app (even if they were not enabled for current request/search)
 export const addEntityToCompare = (id, gazName) => (dispatch, getState) => {
-  const entity = getDetailById(getState(), id);
+  const entities = getEntities(getState());
+  const entity = getDetailById(entities, id);
   if (!entity) {
     dispatch(addEntity({ id: id }, gazName, true));
     resultsAPI
       .getEntityById(gazName, id)
       .then(response => {
         dispatch(addExternEntityToOriginalData(gazName, response.data));
-        const [details] = normalize([response.data], gazName);
-        dispatch(updateEntity(details.id, false));
+        const [detail] = normalize([response.data], gazName);
+        dispatch(updateEntity(detail.id, false));
       })
       .catch(error => {
-        const details = handleDetailRequestError(id, error);
-        dispatch(updateEntity(details.id, false));
+        const detail = handleDetailRequestError(id, error);
+        dispatch(updateEntity(detail.id, false));
       });
   } else {
     dispatch(addEntity(entity, gazName, false));
   }
 };
 
-// Close compare view
+// Close compare table
 export const closeCompareTable = () => dispatch => {
   dispatch(setCompareReducerToInitial());
   dispatch(switchCompareTool(false));

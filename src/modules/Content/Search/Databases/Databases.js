@@ -6,6 +6,7 @@ import { useTheLowestValidResolution } from 'Hooks/useTheLowestValidResolution';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { getIsSideSwitched } from 'selectors/simple-selectors/nav-selectors';
+import { getKey } from 'utils/TextHandlers/getKey';
 import DatabaseElement from './DatabaseElement';
 import DatabasesClasses from './Databases.module.css';
 import SelectDeselect from './SelectDeselect';
@@ -15,6 +16,7 @@ import SelectDeselect from './SelectDeselect';
 const Databases = ({ setIsNoDatabase, isNoDatabase, resized }) => {
   const isSideSwitched = useSelector(getIsSideSwitched);
   const theLowestValidResolution = useTheLowestValidResolution();
+  const gazetteers = Object.keys(gazetteerInfo);
   return (
     <div
       className={classNames(DatabasesClasses.databasesWrapper, {
@@ -34,8 +36,8 @@ const Databases = ({ setIsNoDatabase, isNoDatabase, resized }) => {
             [DatabasesClasses.databasesGroupResized]: resized,
             [DatabasesClasses.databasesGroupSide]: !isSideSwitched && theLowestValidResolution,
           })}>
-          {Object.keys(gazetteerInfo).map(el => (
-            <DatabaseElement gazetteer={el} />
+          {gazetteers.map(el => (
+            <DatabaseElement key={getKey(el, 'databaseElement')} gazetteer={el} />
           ))}
         </Checkbox.Group>
       </Form.Item>
